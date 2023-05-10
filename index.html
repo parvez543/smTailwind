@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,14 +23,15 @@
                         '3xl': "1280px",
                         '4xl': "1440px",
                         '5xl': "1512px",
-                        '6xl': "1920px",
-                        '7xl': "2560px",
-                        '8xl': "3840px",
-                       
-                       
+                        '6xl': "1728px",
+                        '7xl': "1920px",
+                        '8xl': "2560px",
+                        '9xl': "3840px"
+
+
                     },
                 }
-                
+
             }
         }
     </script>
@@ -33,9 +39,31 @@
 </head>
 
 <body>
-    <nav class="px-[112px] py-[16px]">
-        <img class="3xl:w-[194.94] 3xl:h-[60px] 7xl:w-[258.24px] 7xl:h-[79.8px] 8xl:w-[388.34px] 8xl:h-[120px]" src="./home4k/H_S/Studio Metrodesk_Logo Only 1 (1).svg" alt="StudioMetroDesk Logo"/>
+    <!-- NavBar Start -->
+    <nav class="px-[112px] py-[16px] flex items-center justify-center">
+        <img class="3xl:w-[194.94] 3xl:h-[60px] 8xl:w-[258.24px] 8xl:h-[79.8px] 9xl:w-[388.34px] 9xl:h-[120px] 3xl:mr-[52.92px] 4xl:mr-[132.92px] 5xl:mr-[168.92] 6xl:mr-[276.92px] 7xl:mr-[372.92px] 8xl:mr-[497.87px] 9xl:w-[747.33px]"
+            src="./home4k/H_S/Studio Metrodesk_Logo Only 1 (1).svg" alt="StudioMetroDesk Logo" />
+        <div class="3xl:mr-[68.92px] 4xl:mr-[148.92px] 5xl:mr-[184.92] 6xl:mr-[292.92px] 7xl:mr-[388.92px] 8xl:mr-[519.2px] 9xl:mr-[779.33px]">
+            <ul class="navItem flex items-center 3xl:gap-[30px] 7xl:gap-[70px] 8xl:gap-[104px]">
+                <li>How It Works</li>
+               <div class="flex gap-[13px]">
+                    <li>Our Services</li>
+                    <img src="./home4k/H_S/Icon.svg"/>
+               </div>
+               <div class="flex gap-[13px]">
+                <li>Company</li>
+                <img src="./home4k/H_S/Icon.svg"/>
+           </div>
+                <li>Pricing</li>
+            </ul>
+        </div>
+        <div class="flex gap-[12px] justify-end">
+            <button class="px-[10px] py-[16px] text-[#475467] text-[14px] getStartedBtn">Get A Quote</button>
+            <button class="px-[16px] py-[12px] text-[#344054] text-[14px] loginBtn">Login</button>
+            <button class="px-[16px] py-[12px] text-[#FFFFFF] text-[14px] startBtn">Get Started</button>
+        </div>
     </nav>
+    <!-- NavBar End -->
 </body>
 
 </html>
