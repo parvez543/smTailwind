@@ -6,6 +6,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.navContent{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
 .navItem {
   font-family: "Poppins";
   font-style: normal;
@@ -94,9 +98,11 @@ body {
 
 /* Header */
 .headContent {
-  background-image: url(./home4k/H_S/Shadow.svg);
+  background-image: url(./home4k/H_S/Vector_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /* height: 716px; */
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
 .heading {
   font-weight: 700;
