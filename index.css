@@ -97,7 +97,7 @@ body {
 /* Header */
 .headContent{
     background-image: url(./home4k/H_S/Shadow.svg);
-    height: 716px;
+    /* height: 716px; */
     margin-top: 32px;
 }
 .heading{
