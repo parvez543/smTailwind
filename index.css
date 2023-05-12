@@ -176,11 +176,15 @@ body {
 
   background-repeat: no-repeat;
 }
+.tryUsFreeContent{
+  height: 152px !important;
+}
+
 .tryUsFreeContainer {
   background: rgba(255, 255, 255, 0.8);
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
   /* Shadow/3xl */
-
+ 
   box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
   border-radius: 16px 16px 0px 0px;
 }
@@ -291,7 +295,7 @@ body {
   width: 360px;
   height: 580px;
   right: 24px;
-  top: calc(50% - 580px / 2);
+  margin-top: -30px;
 
   background: rgba(249, 250, 251, 0.8);
   /* Base/White */
@@ -488,21 +492,7 @@ line-height: 20px;
 
 color: #004EEB;
 }
-.uploadFullText{
-  /* Text sm/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-
-
-/* Gray/600 */
-
-color: #475467;
-}
 .transferBtn{
   font-family: 'Poppins';
 font-style: normal;
@@ -514,7 +504,7 @@ line-height: 24px;
 
 /* Gray/400 */
 
-color: #98A2B3;
+color: white;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -527,10 +517,10 @@ height: 44px;
 
 /* Gray/200 */
 
-background: #EAECF0;
+background: #0e53df;
 /* Gray/200 */
 
-border: 1px solid #EAECF0;
+border: 1px solid #0e53df;
 /* Shadow/xs */
 
 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
