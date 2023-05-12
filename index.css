@@ -375,7 +375,7 @@ border-radius: 8px;
 }
 
 .selectFlag{
-  width: 81.6px;
+  width: 100px;
 height: 38px;
 
 /* Gray/100 */
@@ -389,7 +389,7 @@ border-color: #D0D5DD;
 border-radius: 8px 0px 0px 8px;
 }
 .phoneInput{
-  width: 230px;
+  width: 210px;
 height: 38px;
 
 /* Base/White */
