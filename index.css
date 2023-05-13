@@ -176,7 +176,7 @@ body {
 
   background-repeat: no-repeat;
 }
-.tryUsFreeContent{
+.tryUsFreeContent {
   height: 152px !important;
 }
 
@@ -184,7 +184,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
   /* Shadow/3xl */
- 
+  width: 232px !important ;
   box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
   border-radius: 16px 16px 0px 0px;
 }
@@ -288,14 +288,14 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 24px;
   gap: 20px;
 
   width: 360px;
   height: 580px;
   right: 24px;
-  margin-top: -30px;
+  margin-top: 15px;
 
   background: rgba(249, 250, 251, 0.8);
   /* Base/White */
@@ -321,7 +321,7 @@ body {
 
   width: 312px;
   height: 40px;
-
+  margin-bottom: 0px;
   /* Base/White */
 
   background: #ffffff;
@@ -393,7 +393,30 @@ body {
   z-index: 500;
 }
 .receiveCall {
+  width: 260px !important;
+  height: 18px !important;
+
+  /* Text xs/Regular */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  /* identical to box height, or 150% */
+
+  text-align: right !important;
+
+  /* Primary/600 */
+
+  color: #155eef !important;
+}
+.callContainer {
   width: 260px;
+  height: 18px;
+
+  /* Text xs/Regular */
+
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -402,9 +425,8 @@ body {
   /* identical to box height, or 150% */
 
   text-align: right;
-  margin-top: -12px;
 }
-.selectService{
+.selectService {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -416,7 +438,35 @@ body {
   gap: 8px;
 
   width: 312px;
-  height: 40px;
+  /* height: 40px; */
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+select option[disabled] {
+  color: #667085;
+}
+.instructionBox {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 14px;
+  gap: 8px;
+
+  width: 312px;
+  height: 80px;
 
   /* Base/White */
 
@@ -429,102 +479,175 @@ body {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
 
+  /* Inside auto layout */
 }
-select option[disabled] {
-  color: #667085;
-}
-.instructionBox{
+.fileBox {
   box-sizing: border-box;
 
-/* Auto layout */
+  /* Auto layout */
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 4px;
 
-/* align-items: flex-start; */
-padding: 0 0 14px 14px;
-gap: 8px;
+  width: 312px;
+  height: 104px;
 
-width: 312px;
-height: 80px;
+  /* Base/White */
 
-/* Base/White */
+  background: #ffffff;
+  /* Primary/300 */
 
-background: #FFFFFF;
-/* Gray/300 */
-
-border: 1px solid #D0D5DD;
-/* Shadow/xs */
-
-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-border-radius: 8px;
+  border: 2px dashed #84adff;
+  border-radius: 12px;
 }
-.fileBox{
-  box-sizing: border-box;
+.uploadText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-/* Auto layout */
+  /* Primary/700 */
 
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 16px 24px;
-gap: 4px;
-
-width: 312px;
-height: 104px;
-
-/* Base/White */
-
-background: #FFFFFF;
-/* Primary/300 */
-
-border: 2px dashed #84ADFF;
-border-radius: 12px;
-}
-.uploadText{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
-
-
-/* Primary/700 */
-
-color: #004EEB;
+  color: #004eeb;
 }
 
-.transferBtn{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+.transferBtn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
+  /* Gray/400 */
 
-/* Gray/400 */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  gap: 8px;
 
-color: white;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 18px;
-gap: 8px;
+  width: 312px;
+  height: 44px;
+  background: #eaecf0 !important;
+  color: #98a2b3;
+  border: 1px solid #eaecf0;
 
-width: 312px;
-height: 44px;
+  /* Gray/200 */
 
-/* Gray/200 */
+  /* Shadow/xs */
 
-background: #0e53df;
-/* Gray/200 */
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.transferBtn.transferBtnActive {
+  background: #0e53df !important;
+  /* Gray/200 */
 
-border: 1px solid #0e53df;
-/* Shadow/xs */
+  border: 1px solid #0e53df;
+  color: #ffffff;
+}
+.transferBtn.disabled {
+  background: #eaecf0;
+  color: #98a2b3;
+  border: 1px solid #eaecf0;
+}
 
-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-border-radius: 8px;
-
+.radioBtn {
+  width: 4%;
+  margin-top: -30px;
+  /* height: 100; */
 }
 /* How It Works End */
+
+/* form Start */
+.flip-container {
+  /* perspective: 1000; */
+}
+.flipper {
+  padding: 30px;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  /* background: #f5f5f5; */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  /*background-color: rgba(0,0,0,.3);*/
+  position: absolute;
+  /* padding:10px 30px; */
+  top: 0;
+  left: 0;
+  right: 0;
+
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+.flip {
+  transform: rotateY(180deg);
+}
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+.flipbutton {
+  color: #4096ee;
+  text-decoration: none;
+  text-align: left !important;
+}
+
+/* Alignment styles */
+
+/* form ends */
+
+/* Validate Form Start */
+.validateFormContainer {
+  width: 360px;
+  height: 470px;
+  right: 24px;
+  top: 79px;
+
+  /* G/5 */
+
+  background: radial-gradient(
+      91.82% 118.45% at 78.47% -8.71%,
+      #f5f7f3 0%,
+      #f9fafa 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  /* Shadow/3xl */
+
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+  border-radius: 16px;
+}
+/* Validate Form Ends */
