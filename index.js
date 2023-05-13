@@ -57,6 +57,19 @@ validateForm.addEventListener('submit', function(event){
   event.preventDefault();
 })
 
+// const verifyBox = document.querySelector('.verifyBox');
+
+// verifyBox.addEventListener('input', () => {
+//   if (verifyBox.value.length > 5) {
+//     registerButton.disabled = false;
+//     registerButton.classList.remove('disabled');
+//     registerButton.classList.add('active');
+//   } else {
+//     registerButton.disabled = false;
+//     registerButton.classList.add('disabled');
+//     registerButton.classList.disabled('active');
+//   }
+// });
 
   
  
