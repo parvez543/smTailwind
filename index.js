@@ -51,7 +51,11 @@ registerButton.addEventListener("click", function(){
   document.getElementById('formText').style.display = "block";
 })
 
-
+// Form Validation
+const validateForm = document.getElementById('validForm')
+validateForm.addEventListener('submit', function(event){
+  event.preventDefault();
+})
 
 
   
