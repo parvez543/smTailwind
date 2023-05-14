@@ -4,6 +4,13 @@ form.addEventListener('submit', function(event){
    
 
 })
+const validateForm = document.getElementById('validateForm')
+validateForm.addEventListener('submit', function(event){
+  event.preventDefault();
+})
+
+document.getElementById('stepThree').style.display = 'none';
+document.getElementById('stepFour').style.display = 'none'
 
 // Get form and loginButton elements
 const formDetails = document.getElementById("my-form");
@@ -38,6 +45,7 @@ const registerButton = document.getElementById("registerButton");
 
 loginButton.addEventListener("click", function(){
 	document.querySelector("#flipper").classList.toggle("flip");
+ 
 })
 
 registerButton.addEventListener("click", function(){
@@ -52,35 +60,41 @@ registerButton.addEventListener("click", function(){
 })
 
 // Form Validation
-const validateForm = document.getElementById('validateForm')
-validateForm.addEventListener('submit', function(event){
-  event.preventDefault();
-})
 
+
+// Select the HTML elements
 const verifyBox = document.querySelector('.verifyBox');
-// console.log(verifyBox);
-const verifyMail = document.getElementById('verifyMail')
+const verifyMail = document.getElementById('verifyMail');
 
+// Add an event listener to the verifyBox input
 verifyBox.addEventListener('input', function() {
-  if (verifyBox.value.length > 5) {
-    verifyMail.disabled = false;
-    verifyMail.classList.remove('disabled');
-    verifyMail.classList.add('active');
-  } else{
-    verifyMail.disabled = true;
-    verifyMail.classList.add('disabled');
-    verifyMail.classList.remove('active');
+  // If the input value has 5 or more characters, enable the button
+  if (verifyBox.value.length >= 5) {
+    verifyMail.disabled = false; // Enable the button
+    verifyMail.classList.remove('disabled'); // Remove the 'disabled' class
+    verifyMail.classList.add('active'); // Add the 'active' class
+  } else {
+    // If the input value has less than 5 characters, disable the button
+    verifyMail.disabled = true; // Disable the button
+    verifyMail.classList.add('disabled'); // Add the 'disabled' class
+    verifyMail.classList.remove('active'); // Remove the 'active' class
   }
 });
 
+
 verifyMail.addEventListener("click", function() {
   document.querySelector("#flipper").classList.toggle("flip");
+  document.getElementById('stepThree').style.display = "block"
+  document.getElementById("my-form").style.display = 'none'
 });
  
 
 
 
-
+setTimeout(function() {
+  document.getElementById("stepThree").style.display = "none";
+  // document.getElementById("stepFour").style.display = "block";
+}, 5000);
 
 
 // function submitForm() {
