@@ -52,26 +52,30 @@ registerButton.addEventListener("click", function(){
 })
 
 // Form Validation
-const validateForm = document.getElementById('validForm')
+const validateForm = document.getElementById('validateForm')
 validateForm.addEventListener('submit', function(event){
   event.preventDefault();
 })
 
-// const verifyBox = document.querySelector('.verifyBox');
+const verifyBox = document.querySelector('.verifyBox');
+// console.log(verifyBox);
+const verifyMail = document.getElementById('verifyMail')
 
-// verifyBox.addEventListener('input', () => {
-//   if (verifyBox.value.length > 5) {
-//     registerButton.disabled = false;
-//     registerButton.classList.remove('disabled');
-//     registerButton.classList.add('active');
-//   } else {
-//     registerButton.disabled = false;
-//     registerButton.classList.add('disabled');
-//     registerButton.classList.disabled('active');
-//   }
-// });
+verifyBox.addEventListener('input', function() {
+  if (verifyBox.value.length > 5) {
+    verifyMail.disabled = false;
+    verifyMail.classList.remove('disabled');
+    verifyMail.classList.add('active');
+  } else{
+    verifyMail.disabled = true;
+    verifyMail.classList.add('disabled');
+    verifyMail.classList.remove('active');
+  }
+});
 
-  
+verifyMail.addEventListener("click", function() {
+  document.querySelector("#flipper").classList.toggle("flip");
+});
  
 
 

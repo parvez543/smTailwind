@@ -586,7 +586,7 @@ select option[disabled] {
 }
 
 .front,
-.back {
+.back, .stepThree {
   /*background-color: rgba(0,0,0,.3);*/
   position: absolute;
   /* padding:10px 30px; */
@@ -604,6 +604,12 @@ select option[disabled] {
 }
 
 .back {
+  transform: rotateY(180deg);
+}
+
+
+.stepThree{
+  z-index: 5;
   transform: rotateY(180deg);
 }
 .flip {
@@ -767,18 +773,19 @@ width: 252px;
 height: 44px;
 
 /* Gray/200 */
-
-background: #EAECF0;
+background: #eaecf0 !important;
+color: #98A2B3;
+/* background: #EAECF0; */
 /* Gray/200 */
 
-border: 1px solid #EAECF0;
+
 /* Shadow/xs */
 
 box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 border-radius: 8px;
 }
 .verifyBtn.disabled{
-  background: #EAECF0;
+  background: #EAECF0 !important;
 /* Gray/200 */
 
 border: 1px solid #EAECF0;
@@ -792,3 +799,15 @@ color: #98A2B3;
   color: #ffffff;
 }
 /* Validate Form Ends */
+.card{
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+  }
+}
