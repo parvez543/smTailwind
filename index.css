@@ -612,9 +612,10 @@ select option[disabled] {
   z-index: 5;
   transform: rotateY(0deg);
 }
-.stepFour{
+#stepFour{
   /* z-index: 10; */
-  transform: rotateY(0deg);
+  /* transform: rotateY(0deg); */
+  display: none;
 }
 .flip {
   transform: rotateY(180deg);
@@ -916,4 +917,80 @@ line-height: 20px;
 /* Gray/600 */
 
 color: #475467;
+}
+.lastText{
+  width: 352px;
+height: 88px;
+
+/* Display md/Bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* or 122% */
+
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+.lastPara{
+  width: 352px;
+height: 96px;
+
+/* Text md/Regular */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Gray/600 */
+
+color: #475467;
+
+}
+.lastContainer{
+  margin-top: 150px;
+}
+.checkButton{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Primary/700 */
+
+color: #004EEB;
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 8px;
+
+
+/* Primary/50 */
+
+background: #EFF4FF;
+/* Primary/50 */
+
+border: 1px solid #EFF4FF;
+border-radius: 8px;
+}
+.animateIcon{
+  width: 450px;
 }

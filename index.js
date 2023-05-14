@@ -22,6 +22,7 @@ loginButton.disabled = true;
 // Add event listener to form
 form.addEventListener("input", () => {
   // Check if all required fields have a value
+ 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const service = document.getElementById("service").value;
@@ -38,6 +39,7 @@ form.addEventListener("input", () => {
     loginButton.classList.add('disabled');
     loginButton.classList.remove('transferBtnActive');
   }
+
 });
 
 
@@ -68,16 +70,16 @@ const verifyMail = document.getElementById('verifyMail');
 
 // Add an event listener to the verifyBox input
 verifyBox.addEventListener('input', function() {
-  // If the input value has 5 or more characters, enable the button
+  
   if (verifyBox.value.length >= 5) {
-    verifyMail.disabled = false; // Enable the button
-    verifyMail.classList.remove('disabled'); // Remove the 'disabled' class
-    verifyMail.classList.add('active'); // Add the 'active' class
+    verifyMail.disabled = false; 
+    verifyMail.classList.remove('disabled'); 
+    verifyMail.classList.add('active'); 
   } else {
-    // If the input value has less than 5 characters, disable the button
-    verifyMail.disabled = true; // Disable the button
-    verifyMail.classList.add('disabled'); // Add the 'disabled' class
-    verifyMail.classList.remove('active'); // Remove the 'active' class
+    
+    verifyMail.disabled = true; 
+    verifyMail.classList.add('disabled'); 
+    verifyMail.classList.remove('active'); 
   }
 });
 
@@ -86,15 +88,17 @@ verifyMail.addEventListener("click", function() {
   document.querySelector("#flipper").classList.toggle("flip");
   document.getElementById('stepThree').style.display = "block"
   document.getElementById("my-form").style.display = 'none'
+
+  setTimeout(function() {
+    document.getElementById("stepThree").style.display = "none";
+    document.getElementById("stepFour").style.display = "block"
+  }, 5000);
+  
 });
  
 
 
 
-setTimeout(function() {
-  document.getElementById("stepThree").style.display = "none";
-  // document.getElementById("stepFour").style.display = "block";
-}, 5000);
 
 
 // function submitForm() {
