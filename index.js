@@ -9,6 +9,11 @@ validateForm.addEventListener('submit', function(event){
   event.preventDefault();
 })
 
+const getForm = document.getElementById('getFormText')
+getForm.addEventListener('submit', function(event){
+  event.preventDefault()
+})
+
 document.getElementById('stepThree').style.display = 'none';
 document.getElementById('stepFour').style.display = 'none'
 
@@ -96,10 +101,52 @@ verifyMail.addEventListener("click", function() {
   
 });
  
+// Try Us Free 
 
+const tryFree = document.getElementById("tryFreeContainer")
+tryFree.addEventListener('click', () =>{
+  document.getElementById('tryUs').style.display = 'block'
+  document.querySelector('.howItWorksContainer').style.display = 'block'
+  document.getElementById('getFormText').style.display = 'none'
+  
+ 
+  // document.querySelector('.getStartedContainer').style.display = 'none'
+})
 
+tryFree.addEventListener('click', function(){
+  document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-BG1.svg')";
+  document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-1.svg')";
+  document.querySelector('.tryUsFreeContainer ').style.background = "rgba(255, 255, 255, 0.8)"
+  document.querySelector('.getQuoteContainer ').style.background = "rgba(255, 255, 255, 0.3)"
+})
 
+// Get A Quote Button
 
+const getButton = document.getElementById('getQuote')
+
+getButton.addEventListener('click', () => {
+  document.getElementById('tryUs').style.display = 'none'
+  document.getElementById('getFormText').style.display = 'block'
+  // document.classList.remove('.howItWorksContainer')
+  // document.querySelector('#getQuoteContent').style.display = 'block'
+ 
+})
+
+getButton.addEventListener('click', function(){
+  document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/getStart.svg')";
+  document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/getQuoteBg.svg')";
+  document.querySelector('.getQuoteContainer ').style.background = "rgba(255, 255, 255, 0.8)"
+  document.getElementById('tryFreeContainer').style.background = 'rgba(255, 255, 255, 0.3)'
+
+})
+
+// PlaceOrder
+const placeOrder = document.getElementById('placeOrder')
+placeOrder.addEventListener('click', () => {
+  document.getElementById('tryUs').style.display = 'none'
+  document.getElementById('getFormText').style.display = 'none'
+
+})
 
 // function submitForm() {
    

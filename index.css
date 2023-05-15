@@ -159,6 +159,7 @@ body {
   background-image: url(./home4k/H_S/Mesh-BG1.svg);
   height: 1058px;
   background-size: cover;
+  margin-top: 100px;
 }
 .howItWorksPara {
   font-weight: 400;
@@ -176,6 +177,8 @@ body {
 
   background-repeat: no-repeat;
 }
+
+
 .tryUsFreeContent {
   height: 152px !important;
 }
@@ -993,4 +996,7 @@ border-radius: 8px;
 }
 .animateIcon{
   width: 450px;
+}
+.getContent{
+  /* display: none; */
 }
