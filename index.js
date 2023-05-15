@@ -116,8 +116,11 @@ tryFree.addEventListener('click', () =>{
 tryFree.addEventListener('click', function(){
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-BG1.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-1.svg')";
-  document.querySelector('.tryUsFreeContainer ').style.background = "rgba(255, 255, 255, 0.8)"
-  document.querySelector('.getQuoteContainer ').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.8)"
+  document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+  document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+  document.getElementById('handIcon').style.fill= 'rgba(53, 221, 216, 1)'
 })
 
 // Get A Quote Button
@@ -135,8 +138,12 @@ getButton.addEventListener('click', () => {
 getButton.addEventListener('click', function(){
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/getStart.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/getQuoteBg.svg')";
-  document.querySelector('.getQuoteContainer ').style.background = "rgba(255, 255, 255, 0.8)"
-  document.getElementById('tryFreeContainer').style.background = 'rgba(255, 255, 255, 0.3)'
+  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.8)"
+  document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+  document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+  document.getElementById('handIcon').style.fill= 'rgba(71, 84, 103, 1)'
+  document.getElementById('getAQuote').style.fill = 'rgba(254, 102, 166, 1)'
 
 })
 
@@ -147,6 +154,30 @@ placeOrder.addEventListener('click', () => {
   document.getElementById('getFormText').style.display = 'none'
 
 })
+
+placeOrder.addEventListener('click', function(){
+  document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/customOrder.svg')";
+  document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/customOrderBg.svg')";
+  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
+  document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+
+
+})
+
+// CustomOrder
+const customOrder = document.getElementById('customOrder')
+customOrder.addEventListener('click', function(){
+  document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/placeOrderBg.svg')";
+  document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/placeOrderBack.svg')";
+  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
+  document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+  document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
+
+})
+
 
 // function submitForm() {
    

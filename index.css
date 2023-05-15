@@ -184,12 +184,15 @@ body {
 }
 
 .tryUsFreeContainer {
-  background: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
   /* Shadow/3xl */
   width: 232px !important ;
   box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
   border-radius: 16px 16px 0px 0px;
+  /* border-width: 2px;
+  border-style: solid; */
+  /* border-image: linear-gradient(to top, rgba(21, 94, 239, 1), rgba(82, 54, 255, 1), rgba(139, 53, 247, 1), rgba(255, 255, 255, 1)) 1; */
 }
 .tryUsFreeHead {
   font-weight: 600;
@@ -997,6 +1000,6 @@ border-radius: 8px;
 .animateIcon{
   width: 450px;
 }
-.getContent{
-  /* display: none; */
+#getFormText{
+  display: none;
 }
