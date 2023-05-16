@@ -1058,7 +1058,8 @@
                 <!-- Get A Quote Start -->
                 <div id="step2" class="step -mt-[10px]">
                     <div class="flex gap-[32px] getQuoteAllContent">
-                        <button class="getQuoteContainer w-[232px]px-[16px] py-[20px]"
+                        <div>
+                            <button class="getQuoteContainer w-[232px] px-[16px] py-[20px]"
                             data-step="2" id="getQuote">
                             <figure class="flex justify-center">
                                 <img src='./home4k/H_S/getQuote.svg' id="getAQuote"
@@ -1067,13 +1068,14 @@
                             <h6 class="text-[20px] text-center mt-[11.33px] getQuoteHead">Get A Quote</h6>
                             <p class="mt-[4px] text-[#475467] text-center getQuotePara">Let us quote you</p>
                         </button>
+                        </div>
                       
                         <div id="getQuoteContent">
                             <div class="">
                                 <div id="getFormText">
                                     <!-- Form Content -->
                                    <div class="flipTwoContainer">
-                                        <div class="flipperTwo">
+                                         <div> <!--id="flipperTwo" -->
                                             <div class="frontTwo">
                                                 <div>
                                                     <h2 class="getQuoteFirstHeading">We help you assess your project cost!</h2>
@@ -1159,7 +1161,7 @@
                                             <div class="backTwo">
                                                 <div class="grid grid-cols-2">
                                                     <!-- Form Content -->
-                                                    <div>
+                                                    <div id="fromTwoContent">
                                                         <h2 class="letUsDoTheWork">Let us do the work!</h2>
                                                         <p class="letUsDoTheWorkPara mt-[16px]">Going through a bulk of images to analyze complexity and pricing can be tiresome. Fill out the form, send us your files, and we will send back a manually-made quotation delivered to you within up to two-hour.</p>
                                                         <p class="letUsDoTheWorkPara mt-[56px]">We accept all kinds of file types, such as jpeg, tiff, png, raw etc. You can upload an unlimited number of images and file types to the specified field here.</p>
@@ -1169,7 +1171,7 @@
                                                             </figure>
                                                         </div>
                                                    </div>
-                                                   <!-- Form -->
+                                                   <!-- Form Part One -->
                                                    <form id="myFormTwo" class="-mt-[145px]">
                                                     <div class="formContainer">
                                                         <input type="text" id="names" name="name" class="nameInput"
@@ -1855,13 +1857,27 @@
                                                                     drag and drop</p>
                                                             </div>
                                                         </div>
-                                                        <div>
-                                                            <button type="submit" class="transferBtnTwo" id="loginButtonTwo"
-                                                                value="Transfer">Transfer</button>
+                                                        <div class="flex justify-center items-center mt-[24px] gap-[16px]">
+                                                            <div>
+                                                                <figure>
+                                                                    <img src="./home4k/H_S/back.svg" id="registerButtonTwo"
+                                                                        alt="Studio MetroDesk Back Button"
+                                                                        class="backBtnContainer" />
+                                                                </figure>
+                                                            </div>
+                                                            <div>
+                                                                <button type="submit" class="transferBtnTwo" id="loginButtonTwo"
+                                                                    value="Transfer">Transfer</button>
+                                                            </div>
                                                         </div>
+                                                        
                                                         <!-- <input type="button" id="loginButton" value="Transfer" /> -->
                                                     </div>
                                                     </form>
+                                                   <!-- Form Part Three -->
+                                                   <div id="FormTwoStepThree">
+                                                        <h1>Hello</h1>
+                                                   </div>
                                                 </div>
                                             </div>
                                         </div>

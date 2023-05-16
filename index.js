@@ -71,7 +71,7 @@ formTwo.addEventListener("input", () => {
 
   // console.log(name, email, service, instruction)
   
-  if (name && email && service && instruction) {
+  if (name && email && service && instruction && phoneNumber) {
     // Enable loginButton if all fields have a value
     loginButtonTwo.disabled = false;
     loginButtonTwo.classList.remove('disabled');
@@ -87,6 +87,12 @@ formTwo.addEventListener("input", () => {
 
 
 const registerButton = document.getElementById("registerButton");
+const registerButtonTwo = document.getElementById("registerButtonTwo");
+
+registerButtonTwo.addEventListener("click", function(){
+  document.querySelector("#flipperTwo").classList.toggle("flipperTwo");
+})
+
 
 loginButton.addEventListener("click", function(){
 	document.querySelector("#flipper").classList.toggle("flip");
@@ -238,6 +244,22 @@ radioButtons.forEach((radioButton) => {
   });
 });
 
+const formTwoTransfer = document.getElementById('myFormTwo');
+const transferButton = document.getElementById('loginButtonTwo')
+const helloMessage = document.getElementById('formTwoStepThree');
+const twoContent = document.getElementById('fromTwoContent')
+
+transferButton.addEventListener('click', function (event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Hide the form
+  formTwoTransfer.style.display = 'none';
+  twoContent.style.display = 'none'
+
+  // Show the hello message
+  helloMessage.style.display = 'block';
+});
 // function submitForm() {
    
 //     // 
