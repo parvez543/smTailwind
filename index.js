@@ -14,15 +14,24 @@ getForm.addEventListener('submit', function(event){
   event.preventDefault()
 })
 
+const formTwo = document.getElementById('myFormTwo')
+formTwo.addEventListener('submit', function(event){
+  event.preventDefault()
+})
+
 document.getElementById('stepThree').style.display = 'none';
 document.getElementById('stepFour').style.display = 'none'
 
 // Get form and loginButton elements
 const formDetails = document.getElementById("my-form");
 const loginButton = document.getElementById("loginButton");
+const loginButtonTwo = document.getElementById("loginButtonTwo");
+
+
 
 // Disable loginButton by default
 loginButton.disabled = true;
+loginButtonTwo.disabled = true
 
 // Add event listener to form
 form.addEventListener("input", () => {
@@ -32,8 +41,10 @@ form.addEventListener("input", () => {
   const email = document.getElementById("email").value;
   const service = document.getElementById("service").value;
   const instruction = document.getElementById("instruction").value;
+  const phoneNumber = document.getElementById("select").value + document.getElementById("tel").value;
 
-  if (name && email && service && instruction) {
+  
+  if (name && email && service && instruction && phoneNumber) {
     // Enable loginButton if all fields have a value
     loginButton.disabled = false;
     loginButton.classList.remove('disabled');
@@ -43,6 +54,33 @@ form.addEventListener("input", () => {
     loginButton.disabled = true;
     loginButton.classList.add('disabled');
     loginButton.classList.remove('transferBtnActive');
+  }
+
+});
+
+// Form Two
+
+formTwo.addEventListener("input", () => {
+  // Check if all required fields have a value
+ 
+  const name = document.getElementById("names").value;
+  const email = document.getElementById("emails").value;
+  const service = document.getElementById("services").value;
+  const instruction = document.getElementById("instructions").value;
+  const phoneNumber = document.getElementById("selects").value + document.getElementById("tels").value;
+
+  // console.log(name, email, service, instruction)
+  
+  if (name && email && service && instruction) {
+    // Enable loginButton if all fields have a value
+    loginButtonTwo.disabled = false;
+    loginButtonTwo.classList.remove('disabled');
+    loginButtonTwo.classList.add('transferBtnActive');
+  } else {
+    // Disable loginButton if any required field is empty
+    loginButtonTwo.disabled = true;
+    loginButtonTwo.classList.add('disabled');
+    loginButtonTwo.classList.remove('transferBtnActive');
   }
 
 });
@@ -178,6 +216,27 @@ customOrder.addEventListener('click', function(){
 
 })
 
+// Service
+// Get all radio buttons
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+// Get the flipper element
+const flipper = document.querySelector('.flipperTwo');
+
+// Get the front and back elements
+const front = document.querySelector('.frontTwo');
+const back = document.querySelector('.backTwo');
+
+// Attach event listener to each radio button
+radioButtons.forEach((radioButton) => {
+  radioButton.addEventListener('click', function() {
+    // Hide the front element
+    front.style.display = 'none';
+
+    // Show the back element
+    back.style.display = 'block';
+  });
+});
 
 // function submitForm() {
    
