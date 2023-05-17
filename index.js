@@ -87,11 +87,11 @@ formTwo.addEventListener("input", () => {
 
 
 const registerButton = document.getElementById("registerButton");
-const registerButtonTwo = document.getElementById("registerButtonTwo");
+// const registerButtonTwo = document.getElementById("registerButtonTwo");
 
-registerButtonTwo.addEventListener("click", function(){
-  document.querySelector("#flipperTwo").classList.toggle("flipperTwo");
-})
+// registerButtonTwo.addEventListener("click", function(){
+//   document.querySelector("#flipperTwo").classList.toggle("flipperTwo");
+// })
 
 
 loginButton.addEventListener("click", function(){
@@ -244,10 +244,12 @@ radioButtons.forEach((radioButton) => {
   });
 });
 
+document.getElementById('formTwoStepThree').style.display = 'none'
+
 const formTwoTransfer = document.getElementById('myFormTwo');
 const transferButton = document.getElementById('loginButtonTwo')
 const helloMessage = document.getElementById('formTwoStepThree');
-const twoContent = document.getElementById('fromTwoContent')
+const twoContent = document.getElementById('formTwoContent')
 
 transferButton.addEventListener('click', function (event) {
   // Prevent the default form submission behavior
@@ -260,6 +262,62 @@ transferButton.addEventListener('click', function (event) {
   // Show the hello message
   helloMessage.style.display = 'block';
 });
+
+const verifyTwoBox = document.getElementById('verifyTwoBox');
+const verifyBtn = document.getElementById('verifyMailTwo');
+
+verifyTwoBox.addEventListener('input', function() {
+  // const value = parseInt(verifyBox.value);
+  
+  if (verifyTwoBox.value.length >= 5) {
+    verifyBtn.disabled = false; 
+    verifyBtn.classList.remove('disabled'); 
+    verifyBtn.classList.add('active'); 
+  } else {
+    
+    verifyBtn.disabled = true; 
+    verifyBtn.classList.add('disabled'); 
+    verifyBtn.classList.remove('active'); 
+  }
+});
+
+const registerButtonTwo = document.getElementById('registerButtonTwo')
+
+
+registerButtonTwo.addEventListener('click', function() {
+  document.getElementById('formTwoContent').style.display = 'none'
+  document.getElementById('myFormTwo').style.display = 'none'
+  document.getElementById('formFirstContent').style.display = 'block'
+  // document.getElementById('selectService').style.display = 'block'
+
+})
+
+
+const registerTwoButton = document.getElementById('registerTwoButton')
+
+registerTwoButton.addEventListener("click", function(){
+  // document.querySelector("#flipperTwo").classList.toggle("flip");
+  document.getElementById('formTwoContent').style.display = 'block'
+  document.getElementById('myFormTwo').style.display = 'block'
+  document.getElementById('formTwoStepThree').style.display = 'none'
+  
+
+})
+
+document.getElementById('formTwoStepFour').style.display = 'none'
+document.getElementById('formTwoStepFive').style.display = 'none'
+
+verifyBtn.addEventListener('click', function() {
+  document.getElementById('validateTwoForm').style.display = 'none'
+  document.getElementById('formTwoStepFour').style.display = 'block'
+
+  setTimeout(function() {
+    document.getElementById("formTwoStepFour").style.display = "none";
+    document.getElementById("formTwoStepFive").style.display = "block"
+  }, 5000);
+})
+
+// })
 // function submitForm() {
    
 //     // 

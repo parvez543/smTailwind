@@ -285,6 +285,16 @@ body {
 }
 .freeWork {
   font-weight: 600;
+  color: #004EEB;
+  cursor: pointer;
+}
+.freeWork:hover{
+  color: #0040C1;
+}
+
+
+.freeImage:hover{
+  color: #0040C1;
 }
 .formContainer {
   box-sizing: border-box;
@@ -1036,7 +1046,7 @@ input {
   border-radius: 8px;
 }
 .animateIcon {
-  width: 450px;
+  width: 2450px !important;
 }
 #getFormText {
   display: none;
@@ -1227,4 +1237,43 @@ color: #475467;
 
 .flipperTwo{
   transform: rotateY(180deg);
+}
+.verifyTwoBtn{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Gray/400 */
+
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  gap: 8px;
+
+  width: 252px;
+  height: 44px;
+  background: #eaecf0;
+  color: #98a2b3;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  cursor: not-allowed;
+}
+.verifyTwoBtn.disabled {
+  background: #eaecf0;
+  color: #98a2b3;
+  border: 1px solid #eaecf0;
+  cursor: not-allowed;
+}
+.verifyTwoBtn.active {
+  background: #0e53df !important;
+ 
+  cursor: pointer;
+  border: 1px solid #0e53df;
+  color: #ffffff;
 }
