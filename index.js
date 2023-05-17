@@ -152,6 +152,8 @@ tryFree.addEventListener('click', () =>{
   document.getElementById('tryUs').style.display = 'block'
   document.querySelector('.howItWorksContainer').style.display = 'block'
   document.getElementById('getFormText').style.display = 'none'
+  document.getElementById('placeOrderContent').style.display = 'none'
+  document.getElementById('customOrderContent').style.display = 'none'
   
  
   // document.querySelector('.getStartedContainer').style.display = 'none'
@@ -174,6 +176,9 @@ const getButton = document.getElementById('getQuote')
 getButton.addEventListener('click', () => {
   document.getElementById('tryUs').style.display = 'none'
   document.getElementById('getFormText').style.display = 'block'
+  document.getElementById('placeOrderContent').style.display = 'none'
+  document.getElementById('getQuoteContent').style.display = 'block'
+  document.getElementById('customOrderContent').style.display = 'none'
   // document.classList.remove('.howItWorksContainer')
   // document.querySelector('#getQuoteContent').style.display = 'block'
  
@@ -196,6 +201,8 @@ const placeOrder = document.getElementById('placeOrder')
 placeOrder.addEventListener('click', () => {
   document.getElementById('tryUs').style.display = 'none'
   document.getElementById('getFormText').style.display = 'none'
+  document.getElementById('placeOrderContent').style.display = 'block'
+ 
 
 })
 
@@ -315,6 +322,30 @@ verifyBtn.addEventListener('click', function() {
     document.getElementById("formTwoStepFour").style.display = "none";
     document.getElementById("formTwoStepFive").style.display = "block"
   }, 5000);
+})
+
+
+// Place Order
+
+
+const placeOrderStep = document.getElementById('placeOrder')
+
+placeOrderStep.addEventListener('click', function() {
+  document.getElementById('placeOrderContent').style.display = 'block'
+  document.getElementById('customOrderContent').style.display = 'none'
+
+});
+
+document.getElementById('customOrderContent').style.display = 'none'
+
+// Custom Order
+customOrder.addEventListener('click', function(){
+  document.getElementById('tryUs').style.display = 'none'
+  document.getElementById('getQuoteContent').style.display = 'none'
+  document.getElementById('placeOrderContent').style.display = 'none'
+  document.getElementById('customOrderContent').style.display = 'block'
+
+
 })
 
 // })
