@@ -1045,9 +1045,7 @@ input {
   border: 1px solid #eff4ff;
   border-radius: 8px;
 }
-.animateIcon {
-  width: 2450px !important;
-}
+
 #getFormText {
   display: none;
 }

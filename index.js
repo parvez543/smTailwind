@@ -425,6 +425,14 @@ verifyMailThree.addEventListener('click', () => {
   }, 5000);
 })
 
+const registerThreeButton = document.getElementById('registerThreeButton')
+
+registerThreeButton.addEventListener('click', () => {
+  document.getElementById('customOrderStepTwo').style.display = "none"
+  document.getElementById('formContent').style.display = 'block'
+
+})
+
 // })
 // function submitForm() {
    
