@@ -9,6 +9,7 @@ validateForm.addEventListener('submit', function(event){
   event.preventDefault();
 })
 
+
 const getForm = document.getElementById('getFormText')
 getForm.addEventListener('submit', function(event){
   event.preventDefault()
@@ -19,6 +20,10 @@ formTwo.addEventListener('submit', function(event){
   event.preventDefault()
 })
 
+const customForm = document.getElementById('validateThreeForm')
+customForm.addEventListener('submit', function(event){
+  event.preventDefault()
+}) 
 
 
 document.getElementById('stepThree').style.display = 'none';
@@ -391,6 +396,34 @@ loginButtonThree.addEventListener('click', () => {
 
 })
 
+
+const inputBox = document.getElementById('verifyFourBox')
+const verifyMailThree = document.getElementById('verifyMailThree')
+
+inputBox.addEventListener('input', () => {
+
+  if(inputBox.value.length >= 5){
+    verifyMailThree.disabled = false; 
+    verifyMailThree.classList.remove('disabled'); 
+    verifyMailThree.classList.add('active'); 
+  } else {
+    verifyMailThree.disabled = true; 
+    verifyMailThree.classList.add('disabled'); 
+    verifyMailThree.classList.remove('active'); 
+  }
+})
+
+document.getElementById('transferFile').style.display = "none"
+document.getElementById("transferLast").style.display = "none"
+
+verifyMailThree.addEventListener('click', () => {
+  document.getElementById('transferFile').style.display = "block"
+  document.getElementById('validateThreeForm').style.display = 'none'
+  setTimeout(function() {
+    document.getElementById("transferFile").style.display = "none";
+    document.getElementById("transferLast").style.display = "block"
+  }, 5000);
+})
 
 // })
 // function submitForm() {
