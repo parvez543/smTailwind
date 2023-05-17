@@ -19,6 +19,8 @@ formTwo.addEventListener('submit', function(event){
   event.preventDefault()
 })
 
+
+
 document.getElementById('stepThree').style.display = 'none';
 document.getElementById('stepFour').style.display = 'none'
 
@@ -347,6 +349,48 @@ customOrder.addEventListener('click', function(){
 
 
 })
+
+const formThree = document.getElementById('myFormThree')
+formThree.addEventListener('submit', function(event){
+  event.preventDefault()
+});
+
+const loginButtonThree = document.getElementById('loginButtonThree')
+// const customOrderContent = document.getElementById('customOrderContent');
+const customOrderStepTwo = document.getElementById('customOrderStepTwo');
+
+formThree.addEventListener("input", () => {
+  // Check if all required fields have a value
+ 
+  const name = document.getElementById("nameCustom").value;
+  const email = document.getElementById("emailCustom").value;
+  const service = document.getElementById("serviceCustom").value;
+  const instruction = document.getElementById("instructionCustom").value;
+  const phoneNumber = document.getElementById("selectCustom").value + document.getElementById("telCustom").value;
+
+  
+  if (name && email && service && instruction && phoneNumber) {
+    // Enable loginButton if all fields have a value
+    loginButtonThree.disabled = false;
+    loginButtonThree.classList.remove('disabled');
+    loginButtonThree.classList.add('transferBtnActive');
+  } else {
+    // Disable loginButton if any required field is empty
+    loginButtonThree.disabled = true;
+    loginButtonThree.classList.add('disabled');
+    loginButtonThree.classList.remove('transferBtnActive');
+  }
+
+});
+
+document.getElementById('customOrderStepTwo').style.display = 'none'
+
+loginButtonThree.addEventListener('click', () => {
+  document.getElementById('customContent').style.display = 'none'
+  customOrderStepTwo.style.display = 'block';
+
+})
+
 
 // })
 // function submitForm() {

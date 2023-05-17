@@ -1396,3 +1396,55 @@ line-height: 20px;
 
 color: #004EEB;
 }
+
+/* Custom Order */
+.customOrderHeading{
+  width: 352px;
+height: 132px;
+
+/* Display md/Bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* or 122% */
+
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+.customOrderPara{
+  width: 352px;
+height: 256px;
+
+/* Text md/Regular */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.customWorks{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Primary/700 */
+
+color: #004EEB;
+}
