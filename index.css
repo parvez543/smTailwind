@@ -179,21 +179,32 @@ body {
 }
 
 .tryUsFreeContent {
-  height: 152px !important;
+   height: 152px;
 }
 
 
 
 .tryUsFreeContainer {
   background: rgba(255, 255, 255, 0.8);
+  
+  
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
   /* Shadow/3xl */
   width: 232px !important ;
+  height: 152px;
   box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
   border-radius: 16px 16px 0px 0px;
   
  
 }
+.tryUsFreeContainer.active{
+  border-image: url(./home4k/H_S/logos/Stock.svg);
+  z-index: 1000;
+}
+
+
+
+
 .tryUsFreeHead {
   font-weight: 600;
 }
@@ -570,6 +581,8 @@ select option[disabled] {
   border: 1px solid #0e53df;
   color: #ffffff;
 }
+
+
 .transferBtn.disabled {
   background: #eaecf0;
   color: #98a2b3;
@@ -1156,6 +1169,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 20px;
+cursor: pointer;
 /* identical to box height, or 143% */
 
 
@@ -1163,6 +1177,10 @@ line-height: 20px;
 
 color: #004EEB;
 }
+.howQuoteWorks:hover{
+  color: #0040C1;
+}
+
 .selectServicePara{
   font-family: 'Poppins';
 font-style: normal;
@@ -1392,10 +1410,12 @@ line-height: 20px;
 
 
 /* Primary/700 */
-
+cursor: pointer;
 color: #004EEB;
 }
-
+.howAppWorks:hover{
+  color: #0040C1;
+}
 /* Custom Order */
 .customOrderHeading{
   width: 352px;
@@ -1447,6 +1467,10 @@ line-height: 20px;
 
 color: #004EEB;
 }
+.customWorks:hover{
+  color: #0040C1;
+}
+
 
 .handIcon{
   width: 40px;
@@ -1464,3 +1488,10 @@ transition: 0.2s;
 box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
 border-radius: 8px
 }
+
+.tryUsFreeButton{
+  background-image: url(./home4k/H_S/logos/Stock.svg);
+}
+/* #getButtonContainer:hover{
+  background-image: url(./home4k/H_S/logos/Stock.svg);
+} */

@@ -48,10 +48,14 @@ form.addEventListener("input", () => {
   const email = document.getElementById("email").value;
   const service = document.getElementById("service").value;
   const instruction = document.getElementById("instruction").value;
-  const phoneNumber = document.getElementById("select").value + document.getElementById("tel").value;
+  const countryCode = (document.getElementById("select").value) 
+  const phoneNumber = document.getElementById("tel").value;
+
+  const fulNumber = countryCode + phoneNumber
+  console.log(phoneNumber);
 
   
-  if (name && email && service && instruction && phoneNumber) {
+  if (name && email && service && instruction && Number(phoneNumber)) {
     // Enable loginButton if all fields have a value
     loginButton.disabled = false;
     loginButton.classList.remove('disabled');
@@ -74,7 +78,10 @@ formTwo.addEventListener("input", () => {
   const email = document.getElementById("emails").value;
   const service = document.getElementById("services").value;
   const instruction = document.getElementById("instructions").value;
-  const phoneNumber = document.getElementById("selects").value + document.getElementById("tels").value;
+  const countryCode = document.getElementById("selects").value 
+  const phoneNumber = document.getElementById("tels").value;
+
+  const fullNUmber = countryCode + fullNumber
 
   // console.log(name, email, service, instruction)
   
@@ -127,7 +134,7 @@ const verifyMail = document.getElementById('verifyMail');
 // Add an event listener to the verifyBox input
 verifyBox.addEventListener('input', function() {
   
-  if (verifyBox.value.length >= 5) {
+  if (Number(verifyBox.value.length >= 5)) {
     verifyMail.disabled = false; 
     verifyMail.classList.remove('disabled'); 
     verifyMail.classList.add('active'); 
@@ -170,7 +177,8 @@ tryFree.addEventListener('click', () =>{
 tryFree.addEventListener('click', function(){
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-BG1.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-1.svg')";
-  // document.getElementById('tryFreeContainer').style.background = "url('./home4k/H_S/bg.png')"
+  // document.getElementById('tryFreeContainer').style.backgroundImage.transform= 'scaleX(-1)'
+ 
   
   document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
   document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
@@ -290,7 +298,7 @@ const verifyBtn = document.getElementById('verifyMailTwo');
 verifyTwoBox.addEventListener('input', function() {
   // const value = parseInt(verifyBox.value);
   
-  if (verifyTwoBox.value.length >= 5) {
+  if (Number(verifyTwoBox.value.length >= 5)) {
     verifyBtn.disabled = false; 
     verifyBtn.classList.remove('disabled'); 
     verifyBtn.classList.add('active'); 
@@ -378,7 +386,11 @@ formThree.addEventListener("input", () => {
   const email = document.getElementById("emailCustom").value;
   const service = document.getElementById("serviceCustom").value;
   const instruction = document.getElementById("instructionCustom").value;
-  const phoneNumber = document.getElementById("selectCustom").value + document.getElementById("telCustom").value;
+  
+  const countryCode = document.getElementById("selectCustom").value 
+  const phoneNumber =  document.getElementById("telCustom").value;
+
+  const fullNumber = countryCode + phoneNumber
 
   
   if (name && email && service && instruction && phoneNumber) {
@@ -410,7 +422,7 @@ const verifyMailThree = document.getElementById('verifyMailThree')
 
 inputBox.addEventListener('input', () => {
 
-  if(inputBox.value.length >= 5){
+  if(Number(inputBox.value.length >= 5)){
     verifyMailThree.disabled = false; 
     verifyMailThree.classList.remove('disabled'); 
     verifyMailThree.classList.add('active'); 
@@ -447,6 +459,22 @@ registerThreeButton.addEventListener('click', ()=> {
   document.getElementById('backPartTwo').style.display = "none"
   document.getElementById('frontPartTwo').style.display = 'block'
 })
+
+const firstStep = document.getElementById('tryFreeContainer')
+firstStep.addEventListener('click', ()=> {
+  document.querySelector(".tryUsFreeButton").style.backgroundImage = "1px solid url('./home4k/H_S/logos/Stock.svg')"
+});
+
+// const customOrderIcon = document.getElementById('customOrder')
+// customOrder.addEventListener('click', ()=> {
+//   document.getElementById('handIcon').style.fill = 'rgba(254, 102, 166, 1)'
+// })
+
+// const quoteContainer = document.querySelector('.getQuoteContainer')
+// quoteContainer.addEventListener('click', ()=> {
+//   document.querySelector('.tryUsFreeButton').classList.remove('active')
+//   document.getElementById('getButtonContainer"').classList.add('active')
+// })
 
 // })
 // function submitForm() {
