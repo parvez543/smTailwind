@@ -161,6 +161,7 @@ tryFree.addEventListener('click', () =>{
   document.getElementById('getFormText').style.display = 'none'
   document.getElementById('placeOrderContent').style.display = 'none'
   document.getElementById('customOrderContent').style.display = 'none'
+  // document.getElementById('customContent').style.display = 'none'
   
  
   // document.querySelector('.getStartedContainer').style.display = 'none'
@@ -169,7 +170,8 @@ tryFree.addEventListener('click', () =>{
 tryFree.addEventListener('click', function(){
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-BG1.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-1.svg')";
-  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.8)"
+  // document.getElementById('tryFreeContainer').style.background = "url('./home4k/H_S/bg.png')"
+  
   document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
   document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
   document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
@@ -186,6 +188,7 @@ getButton.addEventListener('click', () => {
   document.getElementById('placeOrderContent').style.display = 'none'
   document.getElementById('getQuoteContent').style.display = 'block'
   document.getElementById('customOrderContent').style.display = 'none'
+  
   // document.classList.remove('.howItWorksContainer')
   // document.querySelector('#getQuoteContent').style.display = 'block'
  
@@ -194,12 +197,14 @@ getButton.addEventListener('click', () => {
 getButton.addEventListener('click', function(){
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/getStart.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/getQuoteBg.svg')";
-  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.3)"
+  
   document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.8)"
   document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
   document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
-  document.getElementById('handIcon').style.fill= 'rgba(71, 84, 103, 1)'
-  document.getElementById('getAQuote').style.fill = 'rgba(254, 102, 166, 1)'
+  // document.getElementById('tryFreeContainer').style.border = '1px solid linear-gradient(rgba(21, 94, 239, 1), rgba(82, 54, 255, 1), rgba(139, 53, 247, 1), rgba(255, 255, 255, 1));'
+  // document.getElementById('handIcon').style.border= 'blue'
+ 
+  // document.getElementById('handIcon').style.color = 'rgba(71, 84, 103, 1)'
 
 })
 
@@ -252,6 +257,8 @@ radioButtons.forEach((radioButton) => {
   radioButton.addEventListener('click', function() {
     // Hide the front element
     front.style.display = 'none';
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
 
     // Show the back element
     back.style.display = 'block';
@@ -295,16 +302,16 @@ verifyTwoBox.addEventListener('input', function() {
   }
 });
 
-const registerButtonTwo = document.getElementById('registerButtonTwo')
+// const registerButtonTwo = document.getElementById('registerButtonTwo')
 
 
-registerButtonTwo.addEventListener('click', function() {
-  document.getElementById('formTwoContent').style.display = 'none'
-  document.getElementById('myFormTwo').style.display = 'none'
-  document.getElementById('formFirstContent').style.display = 'block'
-  // document.getElementById('selectService').style.display = 'block'
+// registerButtonTwo.addEventListener('click', function() {
+//   document.getElementById('formTwoContent').style.display = 'none'
+//   document.getElementById('myFormTwo').style.display = 'none'
+//   document.getElementById('formFirstContent').style.display = 'block'
+//   // document.getElementById('selectService').style.display = 'block'
 
-})
+// })
 
 
 const registerTwoButton = document.getElementById('registerTwoButton')
@@ -396,6 +403,7 @@ loginButtonThree.addEventListener('click', () => {
 
 })
 
+// document.getElementById('customContent').style.display = 'block'
 
 const inputBox = document.getElementById('verifyFourBox')
 const verifyMailThree = document.getElementById('verifyMailThree')
@@ -425,12 +433,19 @@ verifyMailThree.addEventListener('click', () => {
   }, 5000);
 })
 
-const registerThreeButton = document.getElementById('registerThreeButton')
+const  backButton = document.getElementById('backButtonTwoContainer')
+backButton.addEventListener('click', ()=> {
+  document.getElementById('customContent').style.display = "block"
+  // document.getElementById('validateThreeForm').style.display = 'none'
+  document.getElementById('customOrderStepTwo').style.display = 'none'
+})
 
-registerThreeButton.addEventListener('click', () => {
-  document.getElementById('customOrderStepTwo').style.display = "none"
-  document.getElementById('formContent').style.display = 'block'
 
+const registerThreeButton = document.getElementById('registerBackButtonTwo')
+
+registerThreeButton.addEventListener('click', ()=> {
+  document.getElementById('backPartTwo').style.display = "none"
+  document.getElementById('frontPartTwo').style.display = 'block'
 })
 
 // })
