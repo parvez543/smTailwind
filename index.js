@@ -283,6 +283,69 @@ serviceOne.addEventListener('click', () =>{
   document.querySelector('.servicePara').style.color = "#155EEF"
   document.querySelector('.imgHover').style.border = "2px solid rgba(21, 94, 239, 1)"
 
+  document.getElementById('radioMarkTwo').style.display = "block"
+  document.getElementById('rightMarkTwo').style.display = "none"
+  document.getElementById('serviceParaTwo').style.color = "#344054"
+  document.querySelector('.imgHoverTwo').style.border = "0px"
+
+  document.getElementById('radioMarkFive').style.display = "block"
+  document.getElementById('rightMarkFive').style.display = "none"
+  document.getElementById('serviceParaFive').style.color = "#344054"
+  document.querySelector('.imgHoverFive').style.border = "0px"
+
+  document.getElementById('radioMarkFour').style.display = "block"
+  document.getElementById('rightMarkFour').style.display = "none"
+  document.getElementById('serviceParaFour').style.color = "#344054"
+  document.querySelector('.imgHoverFour').style.border = "0px"
+
+  document.getElementById('radioMarkSix').style.display = "block"
+  document.getElementById('rightMarkSix').style.display = "none"
+  document.getElementById('serviceParaSix').style.color = "#344054"
+  document.querySelector('.imgHoverSix').style.border = "0px"
+
+   setTimeout(function() {
+    front.style.display = 'none';
+  document.getElementById('backPartTwo').style.display = "block"
+  document.getElementById('frontPartTwo').style.display = 'none'
+  back.style.display = 'block';
+   }, 1000)
+
+})
+
+document.getElementById('rightMarkTwo').style.display = "none"
+
+const serviceTwo = document.getElementById('serviceTwo')
+serviceTwo.addEventListener('click', () =>{
+  document.getElementById('radioMarkTwo').style.display = "none"
+  document.getElementById('rightMarkTwo').style.display = "block"
+  document.getElementById('serviceParaTwo').style.color = "#155EEF"
+  document.querySelector('.imgHoverTwo').style.border = "2px solid rgba(21, 94, 239, 1)"
+
+  document.querySelector('.radioMark').style.display = "block"
+  document.querySelector('.rightMark').style.display = "none"
+  document.querySelector('.servicePara').style.color = "#344054"
+  document.querySelector('.imgHover').style.border = "0px"
+
+  document.getElementById('radioMarkThree').style.display = "block"
+  document.getElementById('rightMarkThree').style.display = "none"
+  document.getElementById('serviceParaThree').style.color = "#344054"
+  document.querySelector('.imgHoverThree').style.border = "0px"
+
+  document.getElementById('radioMarkFour').style.display = "block"
+  document.getElementById('rightMarkFour').style.display = "none"
+  document.getElementById('serviceParaFour').style.color = "#344054"
+  document.querySelector('.imgHoverFour').style.border = "0px"
+
+  document.getElementById('radioMarkFive').style.display = "block"
+  document.getElementById('rightMarkFive').style.display = "none"
+  document.getElementById('serviceParaFive').style.color = "#344054"
+  document.querySelector('.imgHoverFive').style.border = "0px"
+
+  document.getElementById('radioMarkSix').style.display = "block"
+  document.getElementById('rightMarkSix').style.display = "none"
+  document.getElementById('serviceParaSix').style.color = "#344054"
+  document.querySelector('.imgHoverSix').style.border = "0px"
+
    setTimeout(function() {
     front.style.display = 'none';
   document.getElementById('backPartTwo').style.display = "block"
@@ -293,9 +356,181 @@ serviceOne.addEventListener('click', () =>{
 })
 
 
+document.getElementById('rightMarkThree').style.display = 'none'
+const serviceThree = document.getElementById('serviceThree')
+serviceThree.addEventListener('click', () =>{
+  document.getElementById('radioMarkThree').style.display = "none"
+  document.getElementById('rightMarkThree').style.display = "block"
+  document.getElementById('serviceParaThree').style.color = "#155EEF"
+  document.querySelector('.imgHoverThree').style.border = "2px solid rgba(21, 94, 239, 1)"
 
 
+  // Service One And Two
+  document.getElementById('radioMarkTwo').style.display = "block"
+  document.getElementById('rightMarkTwo').style.display = "none"
+  document.getElementById('serviceParaTwo').style.color = "#344054"
+  document.querySelector('.imgHoverTwo').style.border = "0px"
 
+  document.querySelector('.radioMark').style.display = "block"
+  document.querySelector('.rightMark').style.display = "none"
+  document.querySelector('.servicePara').style.color = "#344054"
+  document.querySelector('.imgHover').style.border = "0px"
+
+  // Service Four
+  document.getElementById('radioMarkFour').style.display = "block"
+  document.getElementById('rightMarkFour').style.display = "none"
+  document.getElementById('serviceParaFour').style.color = "#344054"
+  document.querySelector('.imgHoverFour').style.border = "0px"
+
+  document.getElementById('radioMarkFive').style.display = "block"
+  document.getElementById('rightMarkFive').style.display = "none"
+  document.getElementById('serviceParaFive').style.color = "#344054"
+  document.querySelector('.imgHoverFive').style.border = "0px"
+
+  document.getElementById('radioMarkSix').style.display = "block"
+  document.getElementById('rightMarkSix').style.display = "none"
+  document.getElementById('serviceParaSix').style.color = "#344054"
+  document.querySelector('.imgHoverSix').style.border = "0px"
+
+   setTimeout(function() {
+    front.style.display = 'none';
+  document.getElementById('backPartTwo').style.display = "block"
+  document.getElementById('frontPartTwo').style.display = 'none'
+  back.style.display = 'block';
+   }, 1000)
+
+})
+
+document.getElementById('rightMarkFour').style.display = 'none'
+const serviceFour = document.getElementById('serviceFour')
+serviceFour.addEventListener('click', () =>{
+  document.getElementById('radioMarkFour').style.display = "none"
+  document.getElementById('rightMarkFour').style.display = "block"
+  document.getElementById('serviceParaFour').style.color = "#155EEF"
+  document.querySelector('.imgHoverFour').style.border = "2px solid rgba(21, 94, 239, 1)"
+
+  document.getElementById('radioMarkTwo').style.display = "block"
+  document.getElementById('rightMarkTwo').style.display = "none"
+  document.getElementById('serviceParaTwo').style.color = "#344054"
+  document.querySelector('.imgHoverTwo').style.border = "0px"
+
+  document.querySelector('.radioMark').style.display = "block"
+  document.querySelector('.rightMark').style.display = "none"
+  document.querySelector('.servicePara').style.color = "#344054"
+  document.querySelector('.imgHover').style.border = "0px"
+
+  document.getElementById('radioMarkThree').style.display = "block"
+  document.getElementById('rightMarkThree').style.display = "none"
+  document.getElementById('serviceParaThree').style.color = "#344054"
+  document.querySelector('.imgHoverThree').style.border = "0px"
+
+  document.getElementById('radioMarkFive').style.display = "block"
+  document.getElementById('rightMarkFive').style.display = "none"
+  document.getElementById('serviceParaFive').style.color = "#344054"
+  document.querySelector('.imgHoverFive').style.border = "0px"
+
+  document.getElementById('radioMarkSix').style.display = "block"
+  document.getElementById('rightMarkSix').style.display = "none"
+  document.getElementById('serviceParaSix').style.color = "#344054"
+  document.querySelector('.imgHoverSix').style.border = "0px"
+
+  setTimeout(function() {
+    front.style.display = 'none';
+  document.getElementById('backPartTwo').style.display = "block"
+  document.getElementById('frontPartTwo').style.display = 'none'
+  back.style.display = 'block';
+   }, 1000)
+})
+
+document.getElementById('rightMarkFive').style.display = 'none'
+
+const serviceFive = document.getElementById('serviceFive')
+serviceFive.addEventListener('click', () =>{
+  document.getElementById('radioMarkFive').style.display = "none"
+  document.getElementById('rightMarkFive').style.display = "block"
+  document.getElementById('serviceParaFive').style.color = "#155EEF"
+  document.querySelector('.imgHoverFive').style.border = "2px solid rgba(21, 94, 239, 1)"
+
+
+  document.getElementById('radioMarkFour').style.display = "block"
+  document.getElementById('rightMarkFour').style.display = "none"
+  document.getElementById('serviceParaFour').style.color = "#344054"
+  document.querySelector('.imgHoverFour').style.border = "0px"
+
+  document.getElementById('radioMarkTwo').style.display = "block"
+  document.getElementById('rightMarkTwo').style.display = "none"
+  document.getElementById('serviceParaTwo').style.color = "#344054"
+  document.querySelector('.imgHoverTwo').style.border = "0px"
+
+  document.querySelector('.radioMark').style.display = "block"
+  document.querySelector('.rightMark').style.display = "none"
+  document.querySelector('.servicePara').style.color = "#344054"
+  document.querySelector('.imgHover').style.border = "0px"
+
+  document.getElementById('radioMarkThree').style.display = "block"
+  document.getElementById('rightMarkThree').style.display = "none"
+  document.getElementById('serviceParaThree').style.color = "#344054"
+  document.querySelector('.imgHoverThree').style.border = "0px"
+
+  document.getElementById('radioMarkSix').style.display = "block"
+  document.getElementById('rightMarkSix').style.display = "none"
+  document.getElementById('serviceParaSix').style.color = "#344054"
+  document.querySelector('.imgHoverSix').style.border = "0px"
+
+  setTimeout(function() {
+    front.style.display = 'none';
+  document.getElementById('backPartTwo').style.display = "block"
+  document.getElementById('frontPartTwo').style.display = 'none'
+  back.style.display = 'block';
+   }, 1000)
+})
+
+
+document.getElementById('rightMarkSix').style.display = 'none'
+
+const serviceSix = document.getElementById('serviceSix')
+serviceSix.addEventListener('click', () =>{
+  document.getElementById('radioMarkSix').style.display = "none"
+  document.getElementById('rightMarkSix').style.display = "block"
+  document.getElementById('serviceParaSix').style.color = "#155EEF"
+  document.querySelector('.imgHoverSix').style.border = "2px solid rgba(21, 94, 239, 1)"
+
+  document.getElementById('radioMarkFive').style.display = "block"
+  document.getElementById('rightMarkFive').style.display = "none"
+  document.getElementById('serviceParaFive').style.color = "#344054"
+  document.querySelector('.imgHoverFive').style.border = "0px"
+
+
+  document.getElementById('radioMarkFour').style.display = "block"
+  document.getElementById('rightMarkFour').style.display = "none"
+  document.getElementById('serviceParaFour').style.color = "#344054"
+  document.querySelector('.imgHoverFour').style.border = "0px"
+
+  document.getElementById('radioMarkTwo').style.display = "block"
+  document.getElementById('rightMarkTwo').style.display = "none"
+  document.getElementById('serviceParaTwo').style.color = "#344054"
+  document.querySelector('.imgHoverTwo').style.border = "0px"
+
+  document.querySelector('.radioMark').style.display = "block"
+  document.querySelector('.rightMark').style.display = "none"
+  document.querySelector('.servicePara').style.color = "#344054"
+  document.querySelector('.imgHover').style.border = "0px"
+
+  document.getElementById('radioMarkThree').style.display = "block"
+  document.getElementById('rightMarkThree').style.display = "none"
+  document.getElementById('serviceParaThree').style.color = "#344054"
+  document.querySelector('.imgHoverThree').style.border = "0px"
+
+
+  setTimeout(function() {
+    front.style.display = 'none';
+  document.getElementById('backPartTwo').style.display = "block"
+  document.getElementById('frontPartTwo').style.display = 'none'
+  back.style.display = 'block';
+   }, 1000)
+})
+
+// Form Section
 document.getElementById('formTwoStepThree').style.display = 'none'
 
 const formTwoTransfer = document.getElementById('myFormTwo');
