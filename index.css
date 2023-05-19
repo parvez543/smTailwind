@@ -1465,9 +1465,6 @@ input {
   border-radius: 8px;
 }
 
-.tryUsFreeButton {
-}
-
 /* Pricing Start */
 .pricingContainer {
   height: 1184px;
@@ -1508,5 +1505,65 @@ input {
   /* Gray/600 */
 
   color: #475467;
+}
+.clippingBg {
+  /* width: 157px; */
+  height: 40px;
+
+  /* Primary/600 */
+
+  background: #155eef;
+  /* Primary/600 */
+
+  border: 1px solid #155eef;
+  color: white;
+  padding: 10px 16px;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.retouchBg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+
+  /* width: 186px; */
+  height: 40px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.priceCalculatorSection {
+  background: url(./home4k/H_S/Rectangle\ 12.svg);
+  width: 1056px;
+  height: 798.5px;
+  left: 112px;
+  top: 328px;
+
+  background: linear-gradient(
+    121.7deg,
+    rgba(255, 255, 255, 0.27) 1.94%,
+    rgba(255, 255, 255, 0.3) 98.32%
+  );
+  /* Background blur / xl */
+
+  backdrop-filter: blur(20px);
+ display: block;
+ margin: auto;
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 24px;
 }
 /* Pricing Ends */
