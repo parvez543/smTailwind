@@ -186,7 +186,7 @@ body {
 
 .tryUsFreeContainer {
   background: rgba(255, 255, 255, 0.8);
-  /* background-image: url(./home4k/H_S/logos/Stock.svg); */
+  /*  */
   backdrop-filter: blur(20px);
   
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
@@ -200,7 +200,6 @@ body {
   /* border-color: rgba(255, 255, 255, 0.5); */
  
 }
-
 
 
 

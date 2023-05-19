@@ -261,17 +261,40 @@ const front = document.querySelector('.frontTwo');
 const back = document.querySelector('.backTwo');
 
 // Attach event listener to each radio button
-radioButtons.forEach((radioButton) => {
-  radioButton.addEventListener('click', function() {
-    // Hide the front element
-    front.style.display = 'none';
-    document.getElementById('backPartTwo').style.display = "block"
-    document.getElementById('frontPartTwo').style.display = 'none'
+// radioButtons.forEach((radioButton) => {
+//   radioButton.addEventListener('click', function() {
+//     // Hide the front element
+//     front.style.display = 'none';
+//     document.getElementById('backPartTwo').style.display = "block"
+//     document.getElementById('frontPartTwo').style.display = 'none'
 
-    // Show the back element
-    back.style.display = 'block';
-  });
-});
+//     // Show the back element
+//     back.style.display = 'block';
+//   });
+// });
+
+// Service Section
+document.querySelector('.rightMark').style.display = "none"
+
+const serviceOne = document.getElementById('serviceOne')
+serviceOne.addEventListener('click', () =>{
+  document.querySelector('.radioMark').style.display = "none"
+  document.querySelector('.rightMark').style.display = "block"
+  document.querySelector('.servicePara').style.color = "#155EEF"
+  document.querySelector('.imgHover').style.border = "2px solid rgba(21, 94, 239, 1)"
+
+   setTimeout(function() {
+    front.style.display = 'none';
+  document.getElementById('backPartTwo').style.display = "block"
+  document.getElementById('frontPartTwo').style.display = 'none'
+  back.style.display = 'block';
+   }, 1000)
+
+})
+
+
+
+
 
 document.getElementById('formTwoStepThree').style.display = 'none'
 
@@ -545,6 +568,9 @@ tryUsFreeContentOne.addEventListener('click', () =>{
   
   document.querySelector(".tryUsFreeContainer").style.borderWidth = '0px 0px'
   document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+
+  document.querySelector(".customContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
   
 })
 
@@ -588,7 +614,8 @@ customOrderContentStep.addEventListener('click', ()=> {
   document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
   document.querySelector('.customContainer').style.backgroundImage = 'url("./home4k/H_S/last.svg")'
 
-  
+  document.querySelector(".tryUsFreeContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
 
   document.querySelector(".placeOrderContainer").style.borderWidth = '1px 1px'
   document.querySelector('.placeOrderContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
