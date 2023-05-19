@@ -179,11 +179,11 @@ tryFree.addEventListener('click', function(){
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-1.svg')";
   // document.getElementById('tryFreeContainer').style.backgroundImage.transform= 'scaleX(-1)'
  
-  
+  document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.8)"
   document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
   document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
   document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
-  document.getElementById('handIcon').style.fill= 'rgba(53, 221, 216, 1)'
+  
 })
 
 // Get A Quote Button
@@ -465,17 +465,61 @@ firstStep.addEventListener('click', ()=> {
   document.querySelector(".tryUsFreeButton").style.backgroundImage = "1px solid url('./home4k/H_S/logos/Stock.svg')"
 });
 
-// const customOrderIcon = document.getElementById('customOrder')
-// customOrder.addEventListener('click', ()=> {
-//   document.getElementById('handIcon').style.fill = 'rgba(254, 102, 166, 1)'
-// })
+// Icon Color Change
 
-// const quoteContainer = document.querySelector('.getQuoteContainer')
-// quoteContainer.addEventListener('click', ()=> {
-//   document.querySelector('.tryUsFreeButton').classList.remove('active')
-//   document.getElementById('getButtonContainer"').classList.add('active')
-// })
+document.getElementById('handIconBlack').style.display = "none"
+document.getElementById('getAQuoteColor').style.display = 'none'
+document.getElementById('placeOrderColor').style.display = 'none'
+document.getElementById('customOrderColor').style.display = 'none'
 
+const tryFreeIcon = document.getElementById('tryFreeContainer')
+tryFreeIcon.addEventListener('click', () =>{
+  document.getElementById('handIconColor').style.display = "block"
+  document.getElementById('handIconBlack').style.display = "none"
+  document.getElementById('getAQuoteBlack').style.display = 'block'
+  document.getElementById('getAQuoteColor').style.display = 'none'
+  document.getElementById('placeOrderBlack').style.display = 'block'
+  document.getElementById('placeOrderColor').style.display = 'none'
+  document.getElementById('customOrderBlack').style.display = 'block'
+  document.getElementById('customOrderColor').style.display = 'none'
+})
+
+const getQuoteContainer = document.getElementById('getQuote')
+getQuoteContainer.addEventListener('click', () =>{
+  document.getElementById('handIconColor').style.display = "none"
+  document.getElementById('handIconBlack').style.display = "block"
+  document.getElementById('getAQuoteBlack').style.display = 'none'
+  document.getElementById('getAQuoteColor').style.display = 'block'
+  document.getElementById('placeOrderBlack').style.display = 'block'
+  document.getElementById('placeOrderColor').style.display = 'none'
+  document.getElementById('customOrderBlack').style.display = 'block'
+  document.getElementById('customOrderColor').style.display = 'none'
+})
+
+const placeOrderImage = document.getElementById('placeOrder')
+placeOrderImage.addEventListener('click', () =>{
+  document.getElementById('placeOrderBlack').style.display = 'none'
+  document.getElementById('placeOrderColor').style.display = 'block'
+  document.getElementById('handIconColor').style.display = "none"
+  document.getElementById('handIconBlack').style.display = "block"
+  document.getElementById('getAQuoteBlack').style.display = 'block'
+  document.getElementById('getAQuoteColor').style.display = 'none'
+  document.getElementById('customOrderBlack').style.display = 'block'
+  document.getElementById('customOrderColor').style.display = 'none'
+})
+
+const customOrderIcon = document.getElementById('customOrder')
+
+customOrderIcon.addEventListener('click', () =>{
+  document.getElementById('placeOrderBlack').style.display = 'block'
+  document.getElementById('placeOrderColor').style.display = 'none'
+  document.getElementById('handIconColor').style.display = "none"
+  document.getElementById('handIconBlack').style.display = "block"
+  document.getElementById('getAQuoteBlack').style.display = 'block'
+  document.getElementById('getAQuoteColor').style.display = 'none'
+  document.getElementById('customOrderBlack').style.display = 'none'
+  document.getElementById('customOrderColor').style.display = 'block'
+})
 // })
 // function submitForm() {
    

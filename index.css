@@ -186,21 +186,18 @@ body {
 
 .tryUsFreeContainer {
   background: rgba(255, 255, 255, 0.8);
-  
+  backdrop-filter: blur(20px);
   
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
   /* Shadow/3xl */
   width: 232px !important ;
   height: 152px;
-  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+  /* box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14); */
   border-radius: 16px 16px 0px 0px;
   
  
 }
-.tryUsFreeContainer.active{
-  border-image: url(./home4k/H_S/logos/Stock.svg);
-  z-index: 1000;
-}
+
 
 
 
@@ -1490,7 +1487,7 @@ border-radius: 8px
 }
 
 .tryUsFreeButton{
-  background-image: url(./home4k/H_S/logos/Stock.svg);
+  
 }
 /* #getButtonContainer:hover{
   background-image: url(./home4k/H_S/logos/Stock.svg);
