@@ -186,6 +186,7 @@ body {
 
 .tryUsFreeContainer {
   background: rgba(255, 255, 255, 0.8);
+  /* background-image: url(./home4k/H_S/logos/Stock.svg); */
   backdrop-filter: blur(20px);
   
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
@@ -194,10 +195,11 @@ body {
   height: 152px;
   /* box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14); */
   border-radius: 16px 16px 0px 0px;
-  
+  /* border-width: 2px 2px; */
+  border-style: solid;
+  /* border-color: rgba(255, 255, 255, 0.5); */
  
 }
-
 
 
 
@@ -215,9 +217,10 @@ body {
   height: 153px;
 
   background: rgba(255, 255, 255, 0.3);
-  border-width: 2px 2px;
+  /* background-image: url(./home4k/H_S/logos/Stock.svg); */
+  /* border-width: 2px 2px; */
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.5);
+  /* border-color: rgba(255, 255, 255, 0.5); */
   /* Background blur / xl */
 
   backdrop-filter: blur(20px);
@@ -239,9 +242,9 @@ body {
   height: 153px;
 
   background: rgba(255, 255, 255, 0.3);
-  border-width: 0 2px;
+  /* border-width: 0 2px; */
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.5);
+  /* border-color: rgba(255, 255, 255, 0.5); */
   /* Background blur / xl */
 
   backdrop-filter: blur(20px);
@@ -263,7 +266,7 @@ body {
   height: 153px;
 
   background: rgba(255, 255, 255, 0.3);
-  border-width: 2px 2px;
+  /* border-width: 0.25px 0.25px; */
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.5);
   /* Background blur / xl */

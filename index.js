@@ -482,6 +482,9 @@ tryFreeIcon.addEventListener('click', () =>{
   document.getElementById('placeOrderColor').style.display = 'none'
   document.getElementById('customOrderBlack').style.display = 'block'
   document.getElementById('customOrderColor').style.display = 'none'
+  // document.getElementById('tryFreeContentOne').style.borderImage.display = "block"
+
+  
 })
 
 const getQuoteContainer = document.getElementById('getQuote')
@@ -519,6 +522,79 @@ customOrderIcon.addEventListener('click', () =>{
   document.getElementById('getAQuoteColor').style.display = 'none'
   document.getElementById('customOrderBlack').style.display = 'none'
   document.getElementById('customOrderColor').style.display = 'block'
+})
+
+
+// Border Js
+document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'url("./home4k/H_S/logos/Stock.svg")';
+
+document.querySelector(".getQuoteContainer").style.borderWidth = '1px 1px'
+document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+document.querySelector(".placeOrderContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.placeOrderContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+  document.querySelector(".customContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+
+const tryUsFreeContentOne = document.getElementById('tryFreeContentOne')
+tryUsFreeContentOne.addEventListener('click', () =>{
+  document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'url("./home4k/H_S/logos/Stock.svg")';
+  document.querySelector('.customContainer').style.backgroundImage = 'none'
+  document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
+  document.querySelector(".getQuoteContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+  
+  document.querySelector(".tryUsFreeContainer").style.borderWidth = '0px 0px'
+  document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+  
+})
+
+const getQuoteBorder = document.getElementById('getButtonContainer')
+getQuoteBorder.addEventListener('click', () =>{
+  document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'none';
+  document.querySelector(".getQuoteContainer").style.backgroundImage = 'url("./home4k/H_S/get_quote.svg")';
+  document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
+  document.querySelector('.customContainer').style.backgroundImage = 'none'
+  document.querySelector(".getQuoteContainer").style.borderWidth = '0px 0px'
+  document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+ 
+  document.querySelector(".tryUsFreeContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+})
+
+const placeOrderContent = document.getElementById('placeOrderContentStep')
+placeOrderContent.addEventListener('click', () =>{
+  document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'none';
+  document.querySelector(".getQuoteContainer").style.backgroundImage = 'none';
+  document.querySelector('.placeOrderContainer').style.backgroundImage = 'url("./home4k/H_S/get_quote.svg")'
+  document.querySelector('.customContainer').style.backgroundImage = 'none'
+
+  document.querySelector(".tryUsFreeContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+
+  document.querySelector(".getQuoteContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+
+  document.querySelector(".placeOrderContainer").style.borderWidth = '0px 0px'
+  document.querySelector('.placeOrderContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+
+  // document.querySelector(".getQuoteContainer").style.borderWidth = '1px 1px'
+  // document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+})
+
+const customOrderContentStep = document.getElementById('customOrderContentStep')
+customOrderContentStep.addEventListener('click', ()=> {
+  document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'none';
+  document.querySelector(".getQuoteContainer").style.backgroundImage = 'none';
+  document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
+  document.querySelector('.customContainer').style.backgroundImage = 'url("./home4k/H_S/last.svg")'
+
+  
+
+  document.querySelector(".placeOrderContainer").style.borderWidth = '1px 1px'
+  document.querySelector('.placeOrderContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+
+  document.querySelector(".customContainer").style.borderWidth = '0px 0px'
+  document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
 })
 // })
 // function submitForm() {
