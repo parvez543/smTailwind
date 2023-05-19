@@ -81,7 +81,7 @@ formTwo.addEventListener("input", () => {
   const countryCode = document.getElementById("selects").value 
   const phoneNumber = document.getElementById("tels").value;
 
-  const fullNUmber = countryCode + fullNumber
+  const fullNUmber = countryCode + phoneNumber
 
   // console.log(name, email, service, instruction)
   
