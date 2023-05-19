@@ -770,7 +770,6 @@ placeOrderImage.addEventListener('click', () =>{
 })
 
 const customOrderIcon = document.getElementById('customOrder')
-
 customOrderIcon.addEventListener('click', () =>{
   document.getElementById('placeOrderBlack').style.display = 'block'
   document.getElementById('placeOrderColor').style.display = 'none'

@@ -179,16 +179,14 @@ body {
 }
 
 .tryUsFreeContent {
-   height: 152px;
+  height: 152px;
 }
-
-
 
 .tryUsFreeContainer {
   background: rgba(255, 255, 255, 0.8);
   /*  */
   backdrop-filter: blur(20px);
-  
+
   /* outline: 2px solid rgba(16, 24, 40, 0.14); */
   /* Shadow/3xl */
   width: 232px !important ;
@@ -198,10 +196,7 @@ body {
   /* border-width: 2px 2px; */
   border-style: solid;
   /* border-color: rgba(255, 255, 255, 0.5); */
- 
 }
-
-
 
 .tryUsFreeHead {
   font-weight: 600;
@@ -296,16 +291,15 @@ body {
 }
 .freeWork {
   font-weight: 600;
-  color: #004EEB;
+  color: #004eeb;
   cursor: pointer;
 }
-.freeWork:hover{
-  color: #0040C1;
+.freeWork:hover {
+  color: #0040c1;
 }
 
-
-.freeImage:hover{
-  color: #0040C1;
+.freeImage:hover {
+  color: #0040c1;
 }
 .formContainer {
   box-sizing: border-box;
@@ -372,7 +366,7 @@ body {
   padding: 8px 12px;
   gap: 8px;
 
-  width: 312px;
+  width: 290px;
   height: 40px;
 
   /* Base/White */
@@ -581,13 +575,12 @@ select option[disabled] {
   color: #ffffff;
 }
 
-
 .transferBtn.disabled {
   background: #eaecf0;
   color: #98a2b3;
   border: 1px solid #eaecf0;
 }
-.transferBtnTwo{
+.transferBtnTwo {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -640,9 +633,6 @@ select option[disabled] {
 /* How It Works End */
 
 /* form Start */
-.flip-container {
-  /* perspective: 1000; */
-}
 .flipper {
   padding: 30px;
   width: 300px;
@@ -1079,138 +1069,134 @@ input {
   color: #101828;
 }
 
-.getQuoteParaOne{
+.getQuoteParaOne {
   width: 363px;
-height: 120px;
+  height: 120px;
 
-/* Text md/Regular */
+  /* Text md/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
+  /* Gray/600 */
 
-/* Gray/600 */
-
-color: #475467;
+  color: #475467;
 }
-.getQuoteAllContent{
+.getQuoteAllContent {
   height: 153px !important;
 }
-.getQuoteParaTwo{
+.getQuoteParaTwo {
   width: 363px;
-height: 96px;
+  height: 96px;
 
-/* Text md/Regular */
+  /* Text md/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
+  /* Gray/600 */
 
-/* Gray/600 */
-
-color: #475467;
+  color: #475467;
 }
-.getQuoteFirstHeading{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-/* identical to box height, or 122% */
+.getQuoteFirstHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
 
-text-align: center;
-letter-spacing: -0.02em;
-margin-top: -130px;
-margin-left: 35px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: -130px;
+  margin-left: 35px;
 
-/* Gray/900 */
+  /* Gray/900 */
 
-color: #101828;
+  color: #101828;
 }
-.getQuoteFirstPara{
+.getQuoteFirstPara {
   width: 630px;
-height: 72px;
+  height: 72px;
 
-/* Text md/Regular */
+  /* Text md/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
-text-align: center;
+  text-align: center;
 
-/* Gray/600 */
+  /* Gray/600 */
 
-color: #475467;
-margin-left: 55px;
-margin-top: 12px;
+  color: #475467;
+  margin-left: 55px;
+  margin-top: 12px;
 }
-.howQuoteWorksContainer{
+.howQuoteWorksContainer {
   margin-left: 277px;
 }
 
-.howQuoteWorks{
+.howQuoteWorks {
   width: 167px;
-height: 20px;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-cursor: pointer;
-/* identical to box height, or 143% */
+  height: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  /* identical to box height, or 143% */
 
+  /* Primary/700 */
 
-/* Primary/700 */
-
-color: #004EEB;
+  color: #004eeb;
 }
-.howQuoteWorks:hover{
-  color: #0040C1;
+.howQuoteWorks:hover {
+  color: #0040c1;
 }
 
-.selectServicePara{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+.selectServicePara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
+  /* Gray/700 */
 
-/* Gray/700 */
-
-color: #344054;
+  color: #344054;
 }
-.serviceImageContainer{
+.serviceImageContainer {
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding: 8px;
-/* gap: 16px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+  /* gap: 16px; */
 
-width: 217px;
-height: 178px;
+  width: 217px;
+  height: 178px;
 
-/* Base/White */
+  /* Base/White */
 
-background: #FFFFFF;
-border-radius: 8px;
+  background: #ffffff;
+  border-radius: 8px;
 }
-.radioBtn{
-  border: 2px solid #344054
+.radioBtn {
+  border: 2px solid #344054;
 }
 
 .backTwo {
@@ -1218,43 +1204,42 @@ border-radius: 8px;
   display: none;
 }
 
-.letUsDoTheWork{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-/* identical to box height, or 122% */
+.letUsDoTheWork {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
 
-letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-/* Gray/900 */
+  /* Gray/900 */
 
-color: #101828;
+  color: #101828;
 }
-.letUsDoTheWorkPara{
+.letUsDoTheWorkPara {
   width: 363px;
-height: 120px;
+  height: 120px;
 
-/* Text md/Regular */
+  /* Text md/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
+  /* Gray/600 */
 
-/* Gray/600 */
-
-color: #475467;
+  color: #475467;
 }
 
-.flipperTwo{
+.flipperTwo {
   transform: rotateY(180deg);
 }
-.verifyTwoBtn{
+.verifyTwoBtn {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -1288,209 +1273,240 @@ color: #475467;
 }
 .verifyTwoBtn.active {
   background: #0e53df !important;
- 
+
   cursor: pointer;
   border: 1px solid #0e53df;
   color: #ffffff;
 }
 
-#placeOrderContent{
+#placeOrderContent {
   display: none;
 }
-.placeOrderContent{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-/* identical to box height, or 122% */
+.placeOrderContent {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
 
-letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-/* Gray/900 */
+  /* Gray/900 */
 
-color: #101828;
+  color: #101828;
 }
-.placeOrderContentPara{
+.placeOrderContentPara {
   width: 617px;
-height: 144px;
+  height: 144px;
 
-/* Text md/Regular */
+  /* Text md/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
+  /* Gray/600 */
 
-/* Gray/600 */
-
-color: #475467
+  color: #475467;
 }
-.placeOrderGetStart{
+.placeOrderGetStart {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 14px;
-gap: 8px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 8px;
 
-/* width: 109px; */
-height: 36px;
+  /* width: 109px; */
+  height: 36px;
 
-/* Primary/600 */
+  /* Primary/600 */
 
-background: #155EEF;
-/* Primary/600 */
+  background: #155eef;
+  /* Primary/600 */
 
-border: 1px solid #155EEF;
-/* Shadow/xs */
+  border: 1px solid #155eef;
+  /* Shadow/xs */
 
-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-border-radius: 8px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
+  /* Base/White */
 
-/* Base/White */
-
-color: #FFFFFF;
+  color: #ffffff;
 }
-.talkToOurSpecialist{
+.talkToOurSpecialist {
   box-sizing: border-box;
 
-/* Auto layout */
+  /* Auto layout */
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 14px;
-gap: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  gap: 8px;
 
-/* width: 178px; */
-height: 36px;
+  /* width: 178px; */
+  height: 36px;
 
-/* Base/White */
+  /* Base/White */
 
-background: #FFFFFF;
-/* Gray/300 */
+  background: #ffffff;
+  /* Gray/300 */
 
-border: 1px solid #D0D5DD;
-/* Shadow/xs */
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
 
-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-border-radius: 8px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
+  /* Gray/700 */
 
-/* Gray/700 */
-
-color: #344054;
+  color: #344054;
 }
-.howAppWorks{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+.howAppWorks {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-
-/* Primary/700 */
-cursor: pointer;
-color: #004EEB;
+  /* Primary/700 */
+  cursor: pointer;
+  color: #004eeb;
 }
-.howAppWorks:hover{
-  color: #0040C1;
+.howAppWorks:hover {
+  color: #0040c1;
 }
 /* Custom Order */
-.customOrderHeading{
+.customOrderHeading {
   width: 352px;
-height: 132px;
+  height: 132px;
 
-/* Display md/Bold */
+  /* Display md/Bold */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-/* or 122% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* or 122% */
 
-letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-/* Gray/900 */
+  /* Gray/900 */
 
-color: #101828;
+  color: #101828;
 }
-.customOrderPara{
+.customOrderPara {
   width: 352px;
-height: 256px;
+  height: 256px;
 
-/* Text md/Regular */
+  /* Text md/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
+  /* Gray/600 */
 
-/* Gray/600 */
-
-color: #475467;
+  color: #475467;
 }
-.customWorks{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+.customWorks {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
+  /* Primary/700 */
 
-/* Primary/700 */
-
-color: #004EEB;
+  color: #004eeb;
 }
-.customWorks:hover{
-  color: #0040C1;
+.customWorks:hover {
+  color: #0040c1;
 }
 
-
-.handIcon{
+.handIcon {
   width: 40px;
 }
-#customOrderContent{
+#customOrderContent {
   display: none;
 }
 
-.imgHover:hover{
-
-
-border: 2px solid #155EEF;
-/* Shadow/md */
-transition: 0.2s;
-box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
-border-radius: 8px
+.imgHover:hover {
+  border: 2px solid #155eef;
+  /* Shadow/md */
+  transition: 0.2s;
+  box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
+    0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
 }
 
-.tryUsFreeButton{
-  
+.tryUsFreeButton {
 }
-/* #getButtonContainer:hover{
-  background-image: url(./home4k/H_S/logos/Stock.svg);
-} */
+
+/* Pricing Start */
+.pricingContainer {
+  height: 1184px;
+  background-size: cover;
+  background: #f6f5fe;
+}
+.pricingHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  padding-top: 100px;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+.pricingPara {
+  width: 805px;
+  height: 56px;
+  display: block;
+  margin: 16px auto;
+  /* Text lg/Regular */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  text-align: center;
+
+  /* Gray/600 */
+
+  color: #475467;
+}
+/* Pricing Ends */
