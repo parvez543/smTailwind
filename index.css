@@ -1515,7 +1515,7 @@ input {
   background: #155eef;
   /* Primary/600 */
 
-  border: 1px solid #155eef;
+  /* border: 1px solid #155eef; */
   color: white;
   padding: 10px 16px;
   /* Shadow/xs */
@@ -1524,6 +1524,73 @@ input {
   border-radius: 8px;
 }
 .retouchBg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+
+  /* width: 186px; */
+  height: 40px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.ghostBg{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+
+  /* width: 186px; */
+  height: 40px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.maskingBg{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+
+  /* width: 186px; */
+  height: 40px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Gray/300 */
+
+  border: 1px solid #d0d5dd;
+  /* Shadow/xs */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.otherBg{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1560,10 +1627,60 @@ input {
   /* Background blur / xl */
 
   backdrop-filter: blur(20px);
- display: block;
- margin: auto;
+  display: block;
+  margin: auto;
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 24px;
+}
+.basicButton{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 8px;
+/* Primary/600 */
+
+background: #155EEF;
+/* Primary/600 */
+
+border: 1px solid #155EEF;
+/* Shadow/xs */
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+color: white;
+}
+.button{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.buttonContainer{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 8px;
+margin-left: 23px;
+margin-top: -25px;
+width: 616px;
+height: 52px;
+
+background: #FFFFFF;
+/* Base/White */
+
+border: 1px solid #FFFFFF;
+border-radius: 0px;
 }
 /* Pricing Ends */
