@@ -927,6 +927,8 @@ document.getElementById('ghostMannequinRightMark').style.display = 'none'
 document.getElementById('maskingRightMark').style.display = 'none'
 document.getElementById('otherBgRightMark').style.display = 'none'
 
+// Hidding All The Other Service of Clipping Path Service
+
 // Functionality for Clipping Path Service
 const clippingPath = document.getElementById('clippingPath')
 
@@ -936,6 +938,12 @@ clippingPath.addEventListener('click', () => {
   document.getElementById('clippingPathRightMark').style.display = 'block'
   document.querySelector('.clippingBg').style.background = "#155EEF"
   document.querySelector('.clippingBg').style.color = "#FFFFFF"
+
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
+
 
   // Deactiving The Other Service Button 
   document.getElementById('retouchRightMark').style.display = 'none'
@@ -973,6 +981,13 @@ retouch.addEventListener('click', () => {
   document.getElementById('retouchCircle').style.display = 'none'
   document.querySelector('.retouchBg').style.background = '#155EEF'
   document.querySelector('.retouchBg').style.color = '#FFFFFF'
+
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+
+
 
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
@@ -1417,7 +1432,8 @@ document.getElementById('retouchComplexTwo').style.display = "none"
 document.getElementById('retouchComplexThree').style.display = "none"
 document.getElementById('retouchComplexFour').style.display = "none"
 
-// Complexity One 
+
+// Complex One
 const retouchComplexOne = document.getElementById('retouchComplexOneButton')
 retouchComplexOne.addEventListener('click', () => {
   document.getElementById('retouchComplexOne').style.display = "none"
@@ -1462,7 +1478,6 @@ retouchComplexOne.addEventListener('click', () => {
   document.getElementById('retouchComplexFiveButton').style.border = "0px"
   document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
 })
-
 
 // Complexity Two
 const retouchComplexTwo = document.getElementById('retouchComplexTwoButton')
@@ -1509,7 +1524,6 @@ retouchComplexTwo.addEventListener('click', () => {
   document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
 })
 
-
 // Complexity Three
 const retouchComplexThree = document.getElementById('retouchComplexThreeButton')
 retouchComplexThree.addEventListener('click', () => {
@@ -1555,7 +1569,6 @@ retouchComplexThree.addEventListener('click', () => {
   document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
 
 })
-
 
 // Complexity Four
 const retouchComplexityFour = document.getElementById('retouchComplexFourButton')
