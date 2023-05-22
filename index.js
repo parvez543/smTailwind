@@ -951,6 +951,7 @@ clippingPath.addEventListener('click', () => {
   document.getElementById('multiClippingFlat').style.display = "none"
   document.getElementById('multiClippingMedium').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
 
 
   // Deactiving The Other Service Button 
@@ -1002,6 +1003,7 @@ retouch.addEventListener('click', () => {
   document.getElementById('multiClippingFlat').style.display = "none"
   document.getElementById('multiClippingMedium').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
 
 
   // Deactiving The Other Service Button 
@@ -1053,6 +1055,7 @@ ghostMannequin.addEventListener('click', () => {
   document.getElementById('multiClippingFlat').style.display = "none"
   document.getElementById('multiClippingMedium').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
 
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
@@ -2007,6 +2010,7 @@ multiClippingBasic.addEventListener('click',()=> {
   document.getElementById('multiImage').style.display = "block"
   document.getElementById('multiClippingMedium').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
 
    // Changing Button color
    document.getElementById('multiClippingBasicImage').style.background = "#155EEF"
@@ -2036,6 +2040,13 @@ multiClippingBasic.addEventListener('click',()=> {
    document.getElementById('multiClippingComplexImage').style.border = "0px"
    document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
 
+   document.getElementById('multiClippingSuperComplexImage').style.padding = "0"
+ document.getElementById('multiClippingSuperComplexImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.background = "none"
+ document.getElementById('multiClippingSuperComplexImage').style.color = "#475467"
+ document.getElementById('multiClippingSuperComplexImage').style.border = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.boxShadow = "0px"
+
 })
 
 
@@ -2046,6 +2057,7 @@ multiClippingFlat.addEventListener('click', ()=> {
   document.getElementById('multiImage').style.display = "none"
   document.getElementById('multiClippingMedium').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
 
    // Changing Button color
    document.getElementById('multiClippingFlatImage').style.background = "#155EEF"
@@ -2073,6 +2085,13 @@ multiClippingFlat.addEventListener('click', ()=> {
    document.getElementById('multiClippingComplexImage').style.color = "#475467"
    document.getElementById('multiClippingComplexImage').style.border = "0px"
    document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingSuperComplexImage').style.padding = "0"
+ document.getElementById('multiClippingSuperComplexImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.background = "none"
+ document.getElementById('multiClippingSuperComplexImage').style.color = "#475467"
+ document.getElementById('multiClippingSuperComplexImage').style.border = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.boxShadow = "0px"
 })
 
 // Medium MultiClipping Path
@@ -2082,6 +2101,7 @@ mediummultiClippingPath.addEventListener('click', () =>{
   document.getElementById('multiClippingMedium').style.display = "block"
   document.getElementById('multiImage').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
 
    // Changing Button color
    document.getElementById('multiClippingMediumImage').style.background = "#155EEF"
@@ -2111,6 +2131,13 @@ mediummultiClippingPath.addEventListener('click', () =>{
    document.getElementById('multiClippingComplexImage').style.border = "0px"
    document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
 
+   document.getElementById('multiClippingSuperComplexImage').style.padding = "0"
+ document.getElementById('multiClippingSuperComplexImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.background = "none"
+ document.getElementById('multiClippingSuperComplexImage').style.color = "#475467"
+ document.getElementById('multiClippingSuperComplexImage').style.border = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.boxShadow = "0px"
+
 })
 
 // MultiClipping Complex Image
@@ -2120,6 +2147,7 @@ multiClippingComplexImage.addEventListener('click', () =>{
 document.getElementById('multiClippingMedium').style.display = "none"
 document.getElementById('multiClippingComplex').style.display = "block"
 document.getElementById('multiImage').style.display = "none"
+document.getElementById('multiClippingSuperComplex').style.display = "none"
 
  // Changing Button color
  document.getElementById('multiClippingComplexImage').style.background = "#155EEF"
@@ -2148,4 +2176,58 @@ document.getElementById('multiImage').style.display = "none"
  document.getElementById('multiClippingMediumImage').style.border = "0px"
  document.getElementById('multiClippingMediumImage').style.boxShadow = "0px"
 
+ document.getElementById('multiClippingSuperComplexImage').style.padding = "0"
+ document.getElementById('multiClippingSuperComplexImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.background = "none"
+ document.getElementById('multiClippingSuperComplexImage').style.color = "#475467"
+ document.getElementById('multiClippingSuperComplexImage').style.border = "0px"
+ document.getElementById('multiClippingSuperComplexImage').style.boxShadow = "0px"
+
+})
+
+// MultiClipping Super Complex Image
+document.getElementById('multiClippingSuperComplex').style.display = "none"
+
+const multiClippingSuperComplex = document.getElementById('multiClippingSuperComplexImage')
+multiClippingSuperComplex.addEventListener('click', () =>{
+  document.getElementById('multiClippingSuperComplex').style.display = "block"
+  document.getElementById('multiClippingFlat').style.display = "none"
+document.getElementById('multiClippingMedium').style.display = "none"
+document.getElementById('multiClippingComplex').style.display = "none"
+document.getElementById('multiImage').style.display = "none"
+
+// Changing Button Color
+document.getElementById('multiClippingSuperComplexImage').style.background = "#155EEF"
+ document.getElementById('multiClippingSuperComplexImage').style.padding = "10px 14px"
+ document.getElementById('multiClippingSuperComplexImage').style.borderRadius = "8px"
+ document.getElementById('multiClippingSuperComplexImage').style.color = "#ffffff"
+
+ document.getElementById('multiClippingBasicImage').style.padding = "0"
+ document.getElementById('multiClippingBasicImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingBasicImage').style.background = "none"
+ document.getElementById('multiClippingBasicImage').style.color = "#475467"
+ document.getElementById('multiClippingBasicImage').style.border = "0px"
+ document.getElementById('multiClippingBasicImage').style.boxShadow = "0px"
+
+ document.getElementById('multiClippingFlatImage').style.padding = "0"
+ document.getElementById('multiClippingFlatImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingFlatImage').style.background = "none"
+ document.getElementById('multiClippingFlatImage').style.color = "#475467"
+ document.getElementById('multiClippingFlatImage').style.border = "0px"
+ document.getElementById('multiClippingFlatImage').style.boxShadow = "0px"
+
+ document.getElementById('multiClippingMediumImage').style.padding = "0"
+ document.getElementById('multiClippingMediumImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingMediumImage').style.background = "none"
+ document.getElementById('multiClippingMediumImage').style.color = "#475467"
+ document.getElementById('multiClippingMediumImage').style.border = "0px"
+ document.getElementById('multiClippingMediumImage').style.boxShadow = "0px"
+
+
+ document.getElementById('multiClippingComplexImage').style.padding = "0"
+ document.getElementById('multiClippingComplexImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingComplexImage').style.background = "none"
+ document.getElementById('multiClippingComplexImage').style.color = "#475467"
+ document.getElementById('multiClippingComplexImage').style.border = "0px"
+ document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
 })
