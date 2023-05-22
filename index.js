@@ -1107,3 +1107,101 @@ otherService.addEventListener('click',()=>{
   document.querySelector('.maskingBg').style.color = '#344054'
   document.querySelector('.maskingBg').style.border = '1px solid #d0d5dd;'
 })
+
+// Change Service On Button Click
+
+// By Default Hidding Other Service
+document.getElementById('photoRetouchingImage').style.display = 'none'
+document.getElementById('RetouchingBasicImage').style.display = 'none'
+document.getElementById('GhostImage').style.display = 'none'
+document.getElementById('GhostBasicImage').style.display = 'none'
+document.getElementById('multiImage').style.display = 'none'
+document.getElementById('multiImageButton').style.display = 'none'
+document.getElementById('maskingImage').style.display = 'none'
+document.getElementById('maskingImageButton').style.display = 'none'
+  
+
+// Clipping Path Button Functionality on Pricing Section
+const clippingPathPricing = document.getElementById('clippingPath')
+clippingPathPricing.addEventListener('click', () =>{
+  document.getElementById('clippingPathImage').style.display = 'block'
+  document.getElementById('clippingPathBasicImage').style.display = 'flex'
+
+  // Hide Other Services When Clipping Path is Active
+  document.getElementById('photoRetouchingImage').style.display = 'none'
+  document.getElementById('RetouchingBasicImage').style.display = 'none'
+  document.getElementById('GhostImage').style.display = 'none'
+document.getElementById('GhostBasicImage').style.display = 'none'
+document.getElementById('multiImage').style.display = 'none'
+document.getElementById('multiImageButton').style.display = 'none'
+document.getElementById('maskingImage').style.display = 'none'
+document.getElementById('maskingImageButton').style.display = 'none'
+}) 
+
+// PhotoRetouching Button Functionaity on Pricing Section
+
+const retouching = document.getElementById('retouching')
+retouching.addEventListener('click', () =>{
+  document.getElementById('photoRetouchingImage').style.display = 'block'
+  document.getElementById('RetouchingBasicImage').style.display = 'flex'
+
+   // Hide Other Services When Photo Retouching is Active
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('clippingPathBasicImage').style.display = 'none'
+  document.getElementById('GhostImage').style.display = 'none'
+document.getElementById('GhostBasicImage').style.display = 'none'
+document.getElementById('multiImage').style.display = 'none'
+document.getElementById('multiImageButton').style.display = 'none'
+document.getElementById('maskingImage').style.display = 'none'
+document.getElementById('maskingImageButton').style.display = 'none'
+})
+
+
+const ghostMannequine = document.getElementById('ghostMannequin')
+ghostMannequine.addEventListener('click', () =>{
+  document.getElementById('GhostImage').style.display = 'block'
+document.getElementById('GhostBasicImage').style.display = 'flex'
+
+// Hide Other Services When Ghost Mannequine is Active
+  document.getElementById('photoRetouchingImage').style.display = 'none'
+  document.getElementById('RetouchingBasicImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('clippingPathBasicImage').style.display = 'none'
+  document.getElementById('multiImage').style.display = 'none'
+document.getElementById('multiImageButton').style.display = 'none'
+document.getElementById('maskingImage').style.display = 'none'
+document.getElementById('maskingImageButton').style.display = 'none'
+})
+
+// MultiClipping Path
+const  multiClippingPath = document.getElementById('masking')
+multiClippingPath.addEventListener('click', () =>{
+  document.getElementById('multiImage').style.display = 'block'
+document.getElementById('multiImageButton').style.display = 'flex'
+
+// Hide Other Services When MultiClipping is Active
+document.getElementById('photoRetouchingImage').style.display = 'none'
+document.getElementById('RetouchingBasicImage').style.display = 'none'
+document.getElementById('clippingPathImage').style.display = 'none'
+document.getElementById('clippingPathBasicImage').style.display = 'none'
+document.getElementById('GhostImage').style.display = 'none'
+document.getElementById('GhostBasicImage').style.display = 'none'
+document.getElementById('maskingImage').style.display = 'none'
+document.getElementById('maskingImageButton').style.display = 'none'
+
+})
+
+const imageMaskingService = document.getElementById('otherServiceBg')
+imageMaskingService.addEventListener('click',()=> {
+document.getElementById('maskingImage').style.display = 'block'
+document.getElementById('maskingImageButton').style.display = 'flex'
+
+// Hide Other Services When MultiClipping is Active
+document.getElementById('photoRetouchingImage').style.display = 'none'
+document.getElementById('RetouchingBasicImage').style.display = 'none'
+document.getElementById('clippingPathImage').style.display = 'none'
+document.getElementById('clippingPathBasicImage').style.display = 'none'
+document.getElementById('GhostImage').style.display = 'none'
+document.getElementById('multiImage').style.display = 'none'
+document.getElementById('multiImageButton').style.display = 'none'
+})
