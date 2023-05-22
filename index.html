@@ -3795,26 +3795,43 @@
                                 <figure class="p-[24px]" id="maskingImage">
                                     <img src="./home4k/H_S/masking.jpg" alt="Studio MetroDesk T-shirt Picture" />
                                 </figure>
+                                <!-- Flat Image -->
+                                <figure class="p-[24px]" id="flatImage">
+                                    <img src="./home4k/H_S/masking.jpg" alt="Studio MetroDesk T-shirt Picture" />
+                                </figure>
+                                <!-- Clipping Medium -->
+                                <figure class="p-[24px]" id="mediumImage">
+                                    <img src="./home4k/H_S/medium.png" alt="Studio MetroDesk T-shirt Picture" />
+                                </figure>
+                                <!-- Clipping Complex -->
+                                <figure class="p-[24px]" id="complexImage">
+                                    <img src="./home4k/H_S/complex.png" alt="Studio MetroDesk T-shirt Picture" />
+                                </figure>
+                                <!-- Clipping Super Complex -->
+                                <figure class="p-[24px]" id="superComplexImage">
+                                    <img src="./home4k/H_S/super.png" alt="Studio MetroDesk T-shirt Picture" />
+                                </figure>
 
+                                
 
                                 <!-- Button Section -->
 
                                 <div class="buttonContainer">
                                     <!-- Clipping -->
                                   <div id="clippingPathBasicImage" class="flex items-center justify-center gap-[32px]">
-                                    <button class="basicButton">Basic</button>
-                                    <button class="button">Flat Rate</button>
-                                    <button class="button">Medium</button>
-                                    <button class="button">Complex</button>
-                                    <button class="button">Super Complex</button>
+                                    <button class="basicButton" id="clippingBasic">Basic</button>
+                                    <button class="button" id="clippingFlatRate">Flat Rate</button>
+                                    <button class="button" id="clippingMedium">Medium</button>
+                                    <button class="button" id="clippingComplex">Complex</button>
+                                    <button class="button" id="clippingSuperComplex">Super Complex</button>
                                   </div>
                                   <!-- Retouching -->
                                     <div id="RetouchingBasicImage" class="flex items-center justify-center gap-[32px]">
-                                        <button class="basicButton">Basic</button>
-                                        <button class="button">Flat Rate</button>
-                                        <button class="button">Medium</button>
-                                        <button class="button">Complex</button>
-                                        <button class="button">Super Complex</button>
+                                        <button class="basicButton">Complex 1</button>
+                                        <button class="button">Complex 2</button>
+                                        <button class="button">Complex 3</button>
+                                        <button class="button">Complex 4</button>
+                                        <button class="button">Complex 5</button>
                                     </div>
                                     <!-- Ghost Mannequine -->
                                     <div id="GhostBasicImage" class="flex items-center justify-center gap-[32px]">
@@ -3834,11 +3851,11 @@
                                     </div>
                                     <!-- Masking Image -->
                                     <div id="maskingImageButton" class="flex items-center justify-center gap-[32px]">
-                                        <button class="basicButton">Basic</button>
-                                        <button class="button">Flat Rate</button>
-                                        <button class="button">Medium</button>
-                                        <button class="button">Complex</button>
-                                        <button class="button">Super Complex</button>
+                                        <button class="basicButton">Complex 1</button>
+                                        <button class="button">Complex 2</button>
+                                        <button class="button">Complex 3</button>
+                                        <button class="button">Complex 4</button>
+                                        <button class="button">Complex 5</button>
                                     </div>
                                 </div>
                             </div>
@@ -3979,7 +3996,7 @@
                         </div>
                         <!-- Pricing Calculator -->
                         <div class="pricingCalculator">
-                            <div class="serviceNameContainer">
+                            <div class="serviceNameContainer" id="priceContainer">
                                 <p class="serviceName">Clipping Path</p>
                                 <p class="pricing -mt-[15px]">$3.00/img</p>
                                 <p class="-mt-[20px] serviceName">Complexity- <span class="font-bold">Basic</span></p>

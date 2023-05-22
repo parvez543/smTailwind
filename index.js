@@ -1205,3 +1205,206 @@ document.getElementById('GhostImage').style.display = 'none'
 document.getElementById('multiImage').style.display = 'none'
 document.getElementById('multiImageButton').style.display = 'none'
 })
+
+
+// Button Functionality of Clipping Path Service
+
+document.getElementById('flatImage').style.display = 'none'
+document.getElementById('mediumImage').style.display = 'none'
+document.getElementById('complexImage').style.display = 'none'
+document.getElementById("superComplexImage").style.display = 'none'
+
+// Clipping Path Basic
+const clippingBasic = document.getElementById('clippingBasic')
+clippingBasic.addEventListener('click', () =>{
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'block'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById("superComplexImage").style.display = 'none'
+
+  // Changing Button Color
+  document.getElementById('clippingBasic').style.background =  "#155EEF"
+  document.getElementById('clippingBasic').style.padding =  "10px 14px"
+  document.getElementById('clippingBasic').style.borderRadius =  "8px"
+  document.getElementById('clippingBasic').style.color =  "#ffffff"
+
+   // Deactiving Current Button
+   document.getElementById('clippingFlatRate').style.padding =  "0"
+   document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
+   document.getElementById('clippingFlatRate').style.background =  "none"
+   document.getElementById('clippingFlatRate').style.color =  "#475467"
+   document.getElementById('clippingFlatRate').style.border =  "0px"
+   document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+
+   document.getElementById('clippingSuperComplex').style.background =  "none"
+  document.getElementById('clippingSuperComplex').style.padding =  "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
+  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+
+})
+
+// Clipping Path Flat
+const flatImage = document.getElementById('clippingFlatRate')
+flatImage.addEventListener('click', () =>{
+  document.getElementById('flatImage').style.display = 'block'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById("superComplexImage").style.display = 'none'
+
+  // Changing Button Color
+  document.getElementById('clippingFlatRate').style.background =  "#155EEF"
+  document.getElementById('clippingFlatRate').style.padding =  "10px 14px"
+  document.getElementById('clippingFlatRate').style.borderRadius =  "8px"
+  document.getElementById('clippingFlatRate').style.color =  "#ffffff"
+
+  // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding =  "0"
+  document.getElementById('clippingBasic').style.borderRadius =  "0px"
+  document.getElementById('clippingBasic').style.background =  "none"
+  document.getElementById('clippingBasic').style.color =  "#475467"
+  document.getElementById('clippingBasic').style.border =  "0px"
+  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+
+  document.getElementById('clippingMedium').style.background =  "none"
+  document.getElementById('clippingMedium').style.padding =  "0px"
+  document.getElementById('clippingMedium').style.borderRadius =  "0px"
+  document.getElementById('clippingMedium').style.color =  "#475467"
+
+  document.getElementById('clippingSuperComplex').style.background =  "none"
+  document.getElementById('clippingSuperComplex').style.padding =  "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
+  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+  
+})
+
+// Clipping Path Medium
+const clippingMedium = document.getElementById('clippingMedium')
+clippingMedium.addEventListener('click', () =>{
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'block'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById("superComplexImage").style.display = 'none'
+
+   // Changing Button Color
+   document.getElementById('clippingMedium').style.background =  "#155EEF"
+   document.getElementById('clippingMedium').style.padding =  "10px 14px"
+   document.getElementById('clippingMedium').style.borderRadius =  "8px"
+   document.getElementById('clippingMedium').style.color =  "#ffffff"
+
+    // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding =  "0"
+  document.getElementById('clippingBasic').style.borderRadius =  "0px"
+  document.getElementById('clippingBasic').style.background =  "none"
+  document.getElementById('clippingBasic').style.color =  "#475467"
+  document.getElementById('clippingBasic').style.border =  "0px"
+  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+
+  document.getElementById('clippingFlatRate').style.padding =  "0"
+  document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
+  document.getElementById('clippingFlatRate').style.background =  "none"
+  document.getElementById('clippingFlatRate').style.color =  "#475467"
+  document.getElementById('clippingFlatRate').style.border =  "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+
+  document.getElementById('clippingComplex').style.padding =  "0"
+  document.getElementById('clippingComplex').style.borderRadius =  "0px"
+  document.getElementById('clippingComplex').style.background =  "none"
+  document.getElementById('clippingComplex').style.color =  "#475467"
+  document.getElementById('clippingComplex').style.border =  "0px"
+  document.getElementById('clippingComplex').style.boxShadow =  "0px"
+  
+  document.getElementById('clippingSuperComplex').style.background =  "none"
+  document.getElementById('clippingSuperComplex').style.padding =  "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
+  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+
+})
+
+// Clipping Path Complex
+const clippingPathComplex = document.getElementById('clippingComplex')
+clippingPathComplex.addEventListener('click', () =>{
+  document.getElementById('complexImage').style.display = 'block'
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById("superComplexImage").style.display = 'none'
+
+
+  // Changing Button Color
+  document.getElementById('clippingComplex').style.background =  "#155EEF"
+  document.getElementById('clippingComplex').style.padding =  "10px 14px"
+  document.getElementById('clippingComplex').style.borderRadius =  "8px"
+  document.getElementById('clippingComplex').style.color =  "#ffffff"
+
+   // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding =  "0"
+  document.getElementById('clippingBasic').style.borderRadius =  "0px"
+  document.getElementById('clippingBasic').style.background =  "none"
+  document.getElementById('clippingBasic').style.color =  "#475467"
+  document.getElementById('clippingBasic').style.border =  "0px"
+  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+
+  document.getElementById('clippingFlatRate').style.padding =  "0"
+  document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
+  document.getElementById('clippingFlatRate').style.background =  "none"
+  document.getElementById('clippingFlatRate').style.color =  "#475467"
+  document.getElementById('clippingFlatRate').style.border =  "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+
+  document.getElementById('clippingMedium').style.background =  "none"
+  document.getElementById('clippingMedium').style.padding =  "0px"
+  document.getElementById('clippingMedium').style.borderRadius =  "0px"
+  document.getElementById('clippingMedium').style.color =  "#475467"
+
+  document.getElementById('clippingSuperComplex').style.background =  "none"
+  document.getElementById('clippingSuperComplex').style.padding =  "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
+  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+})
+
+// Clipping Super Complex
+const clippingSuperComplex = document.getElementById('clippingSuperComplex')
+clippingSuperComplex.addEventListener('click', () =>{
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById("superComplexImage").style.display = 'block'
+
+
+    // Changing Button Color
+    document.getElementById('clippingSuperComplex').style.background =  "#155EEF"
+    document.getElementById('clippingSuperComplex').style.padding =  "10px 14px"
+    document.getElementById('clippingSuperComplex').style.borderRadius =  "8px"
+    document.getElementById('clippingSuperComplex').style.color =  "#ffffff"
+
+       // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding =  "0"
+  document.getElementById('clippingBasic').style.borderRadius =  "0px"
+  document.getElementById('clippingBasic').style.background =  "none"
+  document.getElementById('clippingBasic').style.color =  "#475467"
+  document.getElementById('clippingBasic').style.border =  "0px"
+  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+
+  document.getElementById('clippingFlatRate').style.padding =  "0"
+  document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
+  document.getElementById('clippingFlatRate').style.background =  "none"
+  document.getElementById('clippingFlatRate').style.color =  "#475467"
+  document.getElementById('clippingFlatRate').style.border =  "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+
+  document.getElementById('clippingMedium').style.background =  "none"
+  document.getElementById('clippingMedium').style.padding =  "0px"
+  document.getElementById('clippingMedium').style.borderRadius =  "0px"
+  document.getElementById('clippingMedium').style.color =  "#475467"
+
+  document.getElementById('clippingComplex').style.padding =  "0"
+  document.getElementById('clippingComplex').style.borderRadius =  "0px"
+  document.getElementById('clippingComplex').style.background =  "none"
+  document.getElementById('clippingComplex').style.color =  "#475467"
+  document.getElementById('clippingComplex').style.border =  "0px"
+  document.getElementById('clippingComplex').style.boxShadow =  "0px"
+})
