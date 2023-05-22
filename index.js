@@ -1,33 +1,33 @@
 // Preventing Default Loading Behavior of Try Us Free Form 
 const form = document.getElementById('my-form');
-form.addEventListener('submit', function(event){
-    event.preventDefault();
-   
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
 
 })
 // Preventing Default Loading Behavior verification of Try Us Free Form 
 const validateForm = document.getElementById('validateForm')
-validateForm.addEventListener('submit', function(event){
+validateForm.addEventListener('submit', function (event) {
   event.preventDefault();
 })
 
 // Preventing Default Loading Behavior Get A Quote Section
 const getForm = document.getElementById('getFormText')
-getForm.addEventListener('submit', function(event){
+getForm.addEventListener('submit', function (event) {
   event.preventDefault()
 })
 
 // Preventing Default Loading Behavior Get A Quote Section Form Part
 const formTwo = document.getElementById('myFormTwo')
-formTwo.addEventListener('submit', function(event){
+formTwo.addEventListener('submit', function (event) {
   event.preventDefault()
 })
 
 // Preventing Default Loading Behavior of Custom Order Form
 const customForm = document.getElementById('validateThreeForm')
-customForm.addEventListener('submit', function(event){
+customForm.addEventListener('submit', function (event) {
   event.preventDefault()
-}) 
+})
 
 // Hidding Content of Transfering File and Congratulations Text of Try Us Free Section
 document.getElementById('stepThree').style.display = 'none';
@@ -49,18 +49,18 @@ loginButtonTwo.disabled = true
 // Getting User Data from Try Us Free Form Section
 form.addEventListener("input", () => {
 
- 
+
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const service = document.getElementById("service").value;
   const instruction = document.getElementById("instruction").value;
-  const countryCode = (document.getElementById("select").value) 
+  const countryCode = (document.getElementById("select").value)
   const phoneNumber = document.getElementById("tel").value;
 
   const fulNumber = countryCode + phoneNumber
   console.log(phoneNumber);
 
-  
+
   if (name && email && service && instruction && Number(phoneNumber)) {
     // Enable loginButton if all fields have a value
     loginButton.disabled = false;
@@ -78,19 +78,19 @@ form.addEventListener("input", () => {
 
 // Getting All The Required Data from Get A Quote Form Section
 formTwo.addEventListener("input", () => {
-  
- 
+
+
   const name = document.getElementById("names").value;
   const email = document.getElementById("emails").value;
   const service = document.getElementById("services").value;
   const instruction = document.getElementById("instructions").value;
-  const countryCode = document.getElementById("selects").value 
+  const countryCode = document.getElementById("selects").value
   const phoneNumber = document.getElementById("tels").value;
 
   const fullNUmber = countryCode + phoneNumber
 
   // console.log(name, email, service, instruction)
-  
+
   if (name && email && service && instruction && phoneNumber) {
     // Enable loginButton if all fields have a value
     loginButtonTwo.disabled = false;
@@ -109,23 +109,23 @@ formTwo.addEventListener("input", () => {
 const registerButton = document.getElementById("registerButton");
 
 // Flipping the Try Us Free Form to Verification form if a user has all the require data
-loginButton.addEventListener("click", function(){
-	document.querySelector("#flipper").classList.toggle("flip");
- 
+loginButton.addEventListener("click", function () {
+  document.querySelector("#flipper").classList.toggle("flip");
+
 })
 
 // Coming back to try us free form  from verification form  
-registerButton.addEventListener("click", function(){
+registerButton.addEventListener("click", function () {
   document.querySelector("#flipper").classList.toggle("flip");
 })
 
 // Hidding try Us free form and section when a user is going back to verification section TRY US FREE
-loginButton.addEventListener("click", function(){
+loginButton.addEventListener("click", function () {
   document.getElementById('formText').style.display = "none";
 })
 
 // Showing try us free form and section when a user is coming back to form section from verification section of TRY US FREE
-registerButton.addEventListener("click", function(){
+registerButton.addEventListener("click", function () {
   document.getElementById('formText').style.display = "block";
 })
 
@@ -137,37 +137,37 @@ const verifyBox = document.querySelector('.verifyBox');
 const verifyMail = document.getElementById('verifyMail');
 
 // Adding functionaliy of Verification process of try us free section
-verifyBox.addEventListener('input', function() {
-  
+verifyBox.addEventListener('input', function () {
+
   if (Number(verifyBox.value.length >= 5)) {
-    verifyMail.disabled = false; 
-    verifyMail.classList.remove('disabled'); 
-    verifyMail.classList.add('active'); 
+    verifyMail.disabled = false;
+    verifyMail.classList.remove('disabled');
+    verifyMail.classList.add('active');
   } else {
-    
-    verifyMail.disabled = true; 
-    verifyMail.classList.add('disabled'); 
-    verifyMail.classList.remove('active'); 
+
+    verifyMail.disabled = true;
+    verifyMail.classList.add('disabled');
+    verifyMail.classList.remove('active');
   }
 });
 
 
-verifyMail.addEventListener("click", function() {
+verifyMail.addEventListener("click", function () {
   document.querySelector("#flipper").classList.toggle("flip");
   document.getElementById('stepThree').style.display = "block"
   document.getElementById("my-form").style.display = 'none'
 
-  setTimeout(function() {
+  setTimeout(function () {
     document.getElementById("stepThree").style.display = "none";
     document.getElementById("stepFour").style.display = "block"
   }, 5000);
-  
+
 });
- 
+
 
 // Hidding the content of Get a Quote, Place order and Custom Order section when a user clicks on try us free button of try us free section
 const tryFree = document.getElementById("tryFreeContainer")
-tryFree.addEventListener('click', () =>{
+tryFree.addEventListener('click', () => {
   document.getElementById('tryUs').style.display = 'block'
   document.querySelector('.howItWorksContainer').style.display = 'block'
   document.getElementById('getFormText').style.display = 'none'
@@ -177,16 +177,16 @@ tryFree.addEventListener('click', () =>{
 })
 
 // Changing the Background Color and Container Color of Try Us Free Section When A User clicks on The Try Us Free Button
-tryFree.addEventListener('click', function(){
+tryFree.addEventListener('click', function () {
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-BG1.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/Mesh-1.svg')";
   // document.getElementById('tryFreeContainer').style.backgroundImage.transform= 'scaleX(-1)'
- 
+
   document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.8)"
   document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.3)"
   document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
   document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
-  
+
 })
 
 
@@ -202,10 +202,10 @@ getButton.addEventListener('click', () => {
 })
 
 // Changing the Background Color and Container Color of get a quote Section When A User clicks on The Get A Quote Button
-getButton.addEventListener('click', function(){
+getButton.addEventListener('click', function () {
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/getStart.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/getQuoteBg.svg')";
-  
+
   document.getElementById('getQuote').style.background = "rgba(255, 255, 255, 0.8)"
   document.getElementById('placeOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
   document.getElementById('customOrder').style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
@@ -220,7 +220,7 @@ placeOrder.addEventListener('click', () => {
 })
 
 // Changing the Background Color and Container Color of Place Order Section When A User clicks on The Place Order Button
-placeOrder.addEventListener('click', function(){
+placeOrder.addEventListener('click', function () {
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/customOrder.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/customOrderBg.svg')";
   document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.3)"
@@ -233,7 +233,7 @@ placeOrder.addEventListener('click', function(){
 
 // Changing the Background Color and Container Color of Custom Order Section When A User clicks on The Custom Order Button
 const customOrder = document.getElementById('customOrder')
-customOrder.addEventListener('click', function(){
+customOrder.addEventListener('click', function () {
   document.querySelector('.howItWorksContainer').style.backgroundImage = "url('./home4k/H_S/placeOrderBg.svg')";
   document.querySelector('.processContainer').style.backgroundImage = "url('./home4k/H_S/placeOrderBack.svg')";
   document.getElementById('tryFreeContainer').style.background = "rgba(255, 255, 255, 0.3)"
@@ -261,13 +261,13 @@ document.querySelector('.rightMark').style.display = "none"
 const serviceOne = document.getElementById('serviceOne')
 
 // Border, Text Change and Selection icon change of Clipping Path Service of Get A Quote Service Section
-serviceOne.addEventListener('click', () =>{
+serviceOne.addEventListener('click', () => {
   document.querySelector('.radioMark').style.display = "none"
   document.querySelector('.rightMark').style.display = "block"
   document.querySelector('.servicePara').style.color = "#155EEF"
   document.querySelector('.imgHover').style.border = "2px solid rgba(21, 94, 239, 1)"
 
-   // Leaving All Other Service Default of Get A Quote Section When A User selecting Clipping Path Service
+  // Leaving All Other Service Default of Get A Quote Section When A User selecting Clipping Path Service
   document.getElementById('radioMarkTwo').style.display = "block"
   document.getElementById('rightMarkTwo').style.display = "none"
   document.getElementById('serviceParaTwo').style.color = "#344054"
@@ -289,12 +289,12 @@ serviceOne.addEventListener('click', () =>{
   document.querySelector('.imgHoverSix').style.border = "0px"
 
   // Taking User to Get A Quote Form Part after Selection Clipping Path Service from Get A Quote
-   setTimeout(function() {
+  setTimeout(function () {
     front.style.display = 'none';
-  document.getElementById('backPartTwo').style.display = "block"
-  document.getElementById('frontPartTwo').style.display = 'none'
-  back.style.display = 'block';
-   }, 1000)
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
+    back.style.display = 'block';
+  }, 1000)
 
 })
 
@@ -303,7 +303,7 @@ document.getElementById('rightMarkTwo').style.display = "none"
 
 const serviceTwo = document.getElementById('serviceTwo')
 // Border, Text Change and Selection icon change of Multi-Clipping Path Service of Get A Quote Service Section
-serviceTwo.addEventListener('click', () =>{
+serviceTwo.addEventListener('click', () => {
   document.getElementById('radioMarkTwo').style.display = "none"
   document.getElementById('rightMarkTwo').style.display = "block"
   document.getElementById('serviceParaTwo').style.color = "#155EEF"
@@ -336,12 +336,12 @@ serviceTwo.addEventListener('click', () =>{
   document.querySelector('.imgHoverSix').style.border = "0px"
 
   // Taking User to Get A Quote Form Part after Selection Multi-Clipping Path Service from Get A Quote
-   setTimeout(function() {
+  setTimeout(function () {
     front.style.display = 'none';
-  document.getElementById('backPartTwo').style.display = "block"
-  document.getElementById('frontPartTwo').style.display = 'none'
-  back.style.display = 'block';
-   }, 1000)
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
+    back.style.display = 'block';
+  }, 1000)
 
 })
 
@@ -351,7 +351,7 @@ document.getElementById('rightMarkThree').style.display = 'none'
 const serviceThree = document.getElementById('serviceThree')
 
 // Border, Text Change and Selection icon change of HighEnd Retouching Service of Get A Quote Service Section
-serviceThree.addEventListener('click', () =>{
+serviceThree.addEventListener('click', () => {
   document.getElementById('radioMarkThree').style.display = "none"
   document.getElementById('rightMarkThree').style.display = "block"
   document.getElementById('serviceParaThree').style.color = "#155EEF"
@@ -385,13 +385,13 @@ serviceThree.addEventListener('click', () =>{
   document.getElementById('serviceParaSix').style.color = "#344054"
   document.querySelector('.imgHoverSix').style.border = "0px"
 
-   // Taking User to Get A Quote Form Part after Selection HighEnd Retouching Service from Get A Quote
-   setTimeout(function() {
+  // Taking User to Get A Quote Form Part after Selection HighEnd Retouching Service from Get A Quote
+  setTimeout(function () {
     front.style.display = 'none';
-  document.getElementById('backPartTwo').style.display = "block"
-  document.getElementById('frontPartTwo').style.display = 'none'
-  back.style.display = 'block';
-   }, 1000)
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
+    back.style.display = 'block';
+  }, 1000)
 
 })
 
@@ -400,7 +400,7 @@ document.getElementById('rightMarkFour').style.display = 'none'
 
 const serviceFour = document.getElementById('serviceFour')
 // Border, Text Change and Selection icon change of Raster to Vector Service of Get A Quote Service Section
-serviceFour.addEventListener('click', () =>{
+serviceFour.addEventListener('click', () => {
   document.getElementById('radioMarkFour').style.display = "none"
   document.getElementById('rightMarkFour').style.display = "block"
   document.getElementById('serviceParaFour').style.color = "#155EEF"
@@ -432,13 +432,13 @@ serviceFour.addEventListener('click', () =>{
   document.getElementById('serviceParaSix').style.color = "#344054"
   document.querySelector('.imgHoverSix').style.border = "0px"
 
-   // Taking User to Get A Quote Form Part after Selection Raster to Vector Service from Get A Quote
-  setTimeout(function() {
+  // Taking User to Get A Quote Form Part after Selection Raster to Vector Service from Get A Quote
+  setTimeout(function () {
     front.style.display = 'none';
-  document.getElementById('backPartTwo').style.display = "block"
-  document.getElementById('frontPartTwo').style.display = 'none'
-  back.style.display = 'block';
-   }, 1000)
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
+    back.style.display = 'block';
+  }, 1000)
 })
 
 // Getting Embriodery Digitize Service Right Mark Sign
@@ -447,7 +447,7 @@ document.getElementById('rightMarkFive').style.display = 'none'
 const serviceFive = document.getElementById('serviceFive')
 
 // Border, Text Change and Selection icon change of Embriodery Digitize Service of Get A Quote Service Section
-serviceFive.addEventListener('click', () =>{
+serviceFive.addEventListener('click', () => {
   document.getElementById('radioMarkFive').style.display = "none"
   document.getElementById('rightMarkFive').style.display = "block"
   document.getElementById('serviceParaFive').style.color = "#155EEF"
@@ -480,12 +480,12 @@ serviceFive.addEventListener('click', () =>{
   document.querySelector('.imgHoverSix').style.border = "0px"
 
   // Taking User to Get A Quote Form Part after Selection Embriodery Digitize Service from Get A Quote
-  setTimeout(function() {
+  setTimeout(function () {
     front.style.display = 'none';
-  document.getElementById('backPartTwo').style.display = "block"
-  document.getElementById('frontPartTwo').style.display = 'none'
-  back.style.display = 'block';
-   }, 1000)
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
+    back.style.display = 'block';
+  }, 1000)
 })
 
 // Getting Model Hair Masking Service Right Mark Sign
@@ -494,13 +494,13 @@ document.getElementById('rightMarkSix').style.display = 'none'
 const serviceSix = document.getElementById('serviceSix')
 
 // Border, Text Change and Selection icon change of Model Hair Masking Service of Get A Quote Service Section
-serviceSix.addEventListener('click', () =>{
+serviceSix.addEventListener('click', () => {
   document.getElementById('radioMarkSix').style.display = "none"
   document.getElementById('rightMarkSix').style.display = "block"
   document.getElementById('serviceParaSix').style.color = "#155EEF"
   document.querySelector('.imgHoverSix').style.border = "2px solid rgba(21, 94, 239, 1)"
 
-// Leaving All Other Service Default of Get A Quote Section When A User selecting Model Hair Masking Service
+  // Leaving All Other Service Default of Get A Quote Section When A User selecting Model Hair Masking Service
   document.getElementById('radioMarkFive').style.display = "block"
   document.getElementById('rightMarkFive').style.display = "none"
   document.getElementById('serviceParaFive').style.color = "#344054"
@@ -527,13 +527,13 @@ serviceSix.addEventListener('click', () =>{
   document.getElementById('serviceParaThree').style.color = "#344054"
   document.querySelector('.imgHoverThree').style.border = "0px"
 
-// Taking User to Get A Quote Form Part after Selection Embriodery Digitize Service from Get A Quote
-  setTimeout(function() {
+  // Taking User to Get A Quote Form Part after Selection Embriodery Digitize Service from Get A Quote
+  setTimeout(function () {
     front.style.display = 'none';
-  document.getElementById('backPartTwo').style.display = "block"
-  document.getElementById('frontPartTwo').style.display = 'none'
-  back.style.display = 'block';
-   }, 1000)
+    document.getElementById('backPartTwo').style.display = "block"
+    document.getElementById('frontPartTwo').style.display = 'none'
+    back.style.display = 'block';
+  }, 1000)
 })
 
 // Form Section of Get A Quote Section after a user selecting a service from service section
@@ -552,11 +552,11 @@ transferButton.addEventListener('click', function (event) {
   // Prevent the default form submission behavior
   event.preventDefault();
 
-  
+
   formTwoTransfer.style.display = 'none';
   twoContent.style.display = 'none'
 
-  
+
   helloMessage.style.display = 'block';
 });
 
@@ -566,18 +566,18 @@ const verifyBtn = document.getElementById('verifyMailTwo');
 
 // adding functionality of verify of Get A Quote Section
 
-verifyTwoBox.addEventListener('input', function() {
+verifyTwoBox.addEventListener('input', function () {
   // const value = parseInt(verifyBox.value);
-  
+
   if (Number(verifyTwoBox.value.length >= 5)) {
-    verifyBtn.disabled = false; 
-    verifyBtn.classList.remove('disabled'); 
-    verifyBtn.classList.add('active'); 
+    verifyBtn.disabled = false;
+    verifyBtn.classList.remove('disabled');
+    verifyBtn.classList.add('active');
   } else {
-    
-    verifyBtn.disabled = true; 
-    verifyBtn.classList.add('disabled'); 
-    verifyBtn.classList.remove('active'); 
+
+    verifyBtn.disabled = true;
+    verifyBtn.classList.add('disabled');
+    verifyBtn.classList.remove('active');
   }
 });
 
@@ -586,12 +586,12 @@ verifyTwoBox.addEventListener('input', function() {
 const registerTwoButton = document.getElementById('registerTwoButton')
 
 // Functionality of showing first form and hide the verify form of get a quote section when a user clicks back button of verify code section
-registerTwoButton.addEventListener("click", function(){
+registerTwoButton.addEventListener("click", function () {
   // document.querySelector("#flipperTwo").classList.toggle("flip");
   document.getElementById('formTwoContent').style.display = 'block'
   document.getElementById('myFormTwo').style.display = 'block'
   document.getElementById('formTwoStepThree').style.display = 'none'
-  
+
 
 })
 
@@ -600,12 +600,12 @@ document.getElementById('formTwoStepFour').style.display = 'none'
 document.getElementById('formTwoStepFive').style.display = 'none'
 
 // Showing Transfering file  after completing verification of get a quote section
-verifyBtn.addEventListener('click', function() {
+verifyBtn.addEventListener('click', function () {
   document.getElementById('validateTwoForm').style.display = 'none'
   document.getElementById('formTwoStepFour').style.display = 'block'
 
-// Taking user to congratulations page after completing file upload of get a quote section
-  setTimeout(function() {
+  // Taking user to congratulations page after completing file upload of get a quote section
+  setTimeout(function () {
     document.getElementById("formTwoStepFour").style.display = "none";
     document.getElementById("formTwoStepFive").style.display = "block"
   }, 5000);
@@ -618,7 +618,7 @@ verifyBtn.addEventListener('click', function() {
 const placeOrderStep = document.getElementById('placeOrder')
 
 //functionality of Showing content place order section content when a user clicks on place order section
-placeOrderStep.addEventListener('click', function() {
+placeOrderStep.addEventListener('click', function () {
   document.getElementById('placeOrderContent').style.display = 'block'
   document.getElementById('customOrderContent').style.display = 'none'
 
@@ -628,7 +628,7 @@ placeOrderStep.addEventListener('click', function() {
 document.getElementById('customOrderContent').style.display = 'none'
 
 //functionality of Showing content of custom order section content when a user clicks on place order section
-customOrder.addEventListener('click', function(){
+customOrder.addEventListener('click', function () {
   document.getElementById('tryUs').style.display = 'none'
   document.getElementById('getQuoteContent').style.display = 'none'
   document.getElementById('placeOrderContent').style.display = 'none'
@@ -639,7 +639,7 @@ customOrder.addEventListener('click', function(){
 
 // Preventing default behavior of Custom order form of custom order section
 const formThree = document.getElementById('myFormThree')
-formThree.addEventListener('submit', function(event){
+formThree.addEventListener('submit', function (event) {
   event.preventDefault()
 });
 
@@ -649,19 +649,19 @@ const customOrderStepTwo = document.getElementById('customOrderStepTwo');
 
 // Checking all user information of form section of custom order section
 formThree.addEventListener("input", () => {
-  
- 
+
+
   const name = document.getElementById("nameCustom").value;
   const email = document.getElementById("emailCustom").value;
   const service = document.getElementById("serviceCustom").value;
   const instruction = document.getElementById("instructionCustom").value;
-  
-  const countryCode = document.getElementById("selectCustom").value 
-  const phoneNumber =  document.getElementById("telCustom").value;
+
+  const countryCode = document.getElementById("selectCustom").value
+  const phoneNumber = document.getElementById("telCustom").value;
 
   const fullNumber = countryCode + phoneNumber
 
-  
+
   if (name && email && service && instruction && phoneNumber) {
     // Enable TransferButton if all fields have a value
     loginButtonThree.disabled = false;
@@ -694,14 +694,14 @@ const verifyMailThree = document.getElementById('verifyMailThree')
 // Checking the verification code length 
 inputBox.addEventListener('input', () => {
 
-  if(Number(inputBox.value.length >= 5)){
-    verifyMailThree.disabled = false; 
-    verifyMailThree.classList.remove('disabled'); 
-    verifyMailThree.classList.add('active'); 
+  if (Number(inputBox.value.length >= 5)) {
+    verifyMailThree.disabled = false;
+    verifyMailThree.classList.remove('disabled');
+    verifyMailThree.classList.add('active');
   } else {
-    verifyMailThree.disabled = true; 
-    verifyMailThree.classList.add('disabled'); 
-    verifyMailThree.classList.remove('active'); 
+    verifyMailThree.disabled = true;
+    verifyMailThree.classList.add('disabled');
+    verifyMailThree.classList.remove('active');
   }
 })
 
@@ -716,7 +716,7 @@ verifyMailThree.addEventListener('click', () => {
   document.getElementById('validateThreeForm').style.display = 'none'
 
   // Taking them to congratulation text after completing the transfer file of custom order section
-  setTimeout(function() {
+  setTimeout(function () {
     document.getElementById("transferFile").style.display = "none";
     document.getElementById("transferLast").style.display = "block"
   }, 5000);
@@ -724,8 +724,8 @@ verifyMailThree.addEventListener('click', () => {
 
 // Taking user to the first form of custom order section from verifaction step of custom order section
 
-const  backButton = document.getElementById('backButtonTwoContainer')
-backButton.addEventListener('click', ()=> {
+const backButton = document.getElementById('backButtonTwoContainer')
+backButton.addEventListener('click', () => {
   document.getElementById('customContent').style.display = "block"
   document.getElementById('customOrderStepTwo').style.display = 'none'
 })
@@ -733,7 +733,7 @@ backButton.addEventListener('click', ()=> {
 
 const registerThreeButton = document.getElementById('registerBackButtonTwo')
 
-registerThreeButton.addEventListener('click', ()=> {
+registerThreeButton.addEventListener('click', () => {
   document.getElementById('backPartTwo').style.display = "none"
   document.getElementById('frontPartTwo').style.display = 'block'
 })
@@ -751,11 +751,11 @@ document.getElementById('customOrderColor').style.display = 'none'
 // Id of the try us free container
 const tryFreeIcon = document.getElementById('tryFreeContainer')
 
-tryFreeIcon.addEventListener('click', () =>{
+tryFreeIcon.addEventListener('click', () => {
   // Making enable only of the colorful icon of try us free section if a user clicks on the try us free button
   document.getElementById('handIconColor').style.display = "block"
   document.getElementById('handIconBlack').style.display = "none"
-  
+
   // Hiding colorful icon of rest of the section
   document.getElementById('getAQuoteBlack').style.display = 'block'
   document.getElementById('getAQuoteColor').style.display = 'none'
@@ -763,14 +763,14 @@ tryFreeIcon.addEventListener('click', () =>{
   document.getElementById('placeOrderColor').style.display = 'none'
   document.getElementById('customOrderBlack').style.display = 'block'
   document.getElementById('customOrderColor').style.display = 'none'
- 
 
-  
+
+
 })
 // Id of the Get A Quote container
 const getQuoteContainer = document.getElementById('getQuote')
 
-getQuoteContainer.addEventListener('click', () =>{
+getQuoteContainer.addEventListener('click', () => {
   // Making enable only of the colorful icon of Get A Quote section if a user clicks on the get a quote button
   document.getElementById('getAQuoteBlack').style.display = 'none'
   document.getElementById('getAQuoteColor').style.display = 'block'
@@ -787,12 +787,12 @@ getQuoteContainer.addEventListener('click', () =>{
 // Id of the Place Order container
 const placeOrderImage = document.getElementById('placeOrder')
 
-placeOrderImage.addEventListener('click', () =>{
-    // Making enable only of the colorful icon of Place Order section if a user clicks on the place order button
+placeOrderImage.addEventListener('click', () => {
+  // Making enable only of the colorful icon of Place Order section if a user clicks on the place order button
   document.getElementById('placeOrderBlack').style.display = 'none'
   document.getElementById('placeOrderColor').style.display = 'block'
 
-   // Hiding colorful icon of rest of the section
+  // Hiding colorful icon of rest of the section
   document.getElementById('handIconColor').style.display = "none"
   document.getElementById('handIconBlack').style.display = "block"
   document.getElementById('getAQuoteBlack').style.display = 'block'
@@ -803,13 +803,13 @@ placeOrderImage.addEventListener('click', () =>{
 
 // Id of the Custom Order container
 const customOrderIcon = document.getElementById('customOrder')
-customOrderIcon.addEventListener('click', () =>{
+customOrderIcon.addEventListener('click', () => {
 
   // Making enable only of the colorful icon of Custom Order section if a user clicks on the custom order button
   document.getElementById('customOrderBlack').style.display = 'none'
   document.getElementById('customOrderColor').style.display = 'block'
-  
-   // Hiding colorful icon of rest of the section
+
+  // Hiding colorful icon of rest of the section
   document.getElementById('placeOrderBlack').style.display = 'block'
   document.getElementById('placeOrderColor').style.display = 'none'
   document.getElementById('handIconColor').style.display = "none"
@@ -823,7 +823,7 @@ customOrderIcon.addEventListener('click', () =>{
 
 // Giving Try Us Free by Default Colorful Border
 const firstStep = document.getElementById('tryFreeContainer')
-firstStep.addEventListener('click', ()=> {
+firstStep.addEventListener('click', () => {
   document.querySelector(".tryUsFreeButton").style.backgroundImage = "1px solid url('./home4k/H_S/logos/Stock.svg')"
 });
 
@@ -833,14 +833,14 @@ document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'url("./ho
 document.querySelector(".getQuoteContainer").style.borderWidth = '1px 1px'
 document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
 document.querySelector(".placeOrderContainer").style.borderWidth = '1px 1px'
-  document.querySelector('.placeOrderContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
-  document.querySelector(".customContainer").style.borderWidth = '1px 1px'
-  document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+document.querySelector('.placeOrderContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
+document.querySelector(".customContainer").style.borderWidth = '1px 1px'
+document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
 
 
 // Getting id's Try Us Free Container 
 const tryUsFreeContentOne = document.getElementById('tryFreeContentOne')
-tryUsFreeContentOne.addEventListener('click', () =>{
+tryUsFreeContentOne.addEventListener('click', () => {
 
   // Colorful Border section code of try Us Free Section
   document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'url("./home4k/H_S/logos/Stock.svg")';
@@ -851,18 +851,18 @@ tryUsFreeContentOne.addEventListener('click', () =>{
   document.querySelector(".getQuoteContainer").style.borderWidth = '1px 1px'
   document.querySelector('.getQuoteContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
   document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
-  
-  
+
+
   document.querySelector('.customContainer').style.backgroundImage = 'none'
   document.querySelector(".customContainer").style.borderWidth = '1px 1px'
   document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
-  
+
 })
 
 // Getting id's Get A Quote Container 
 const getQuoteBorder = document.getElementById('getButtonContainer')
 
-getQuoteBorder.addEventListener('click', () =>{
+getQuoteBorder.addEventListener('click', () => {
   // Colorful Border section code of get a quote Section
   document.querySelector(".getQuoteContainer").style.backgroundImage = 'url("./home4k/H_S/get_quote.svg")';
   document.querySelector(".getQuoteContainer").style.borderWidth = '0px 0px'
@@ -874,13 +874,13 @@ getQuoteBorder.addEventListener('click', () =>{
   document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
   document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
   document.querySelector('.customContainer').style.backgroundImage = 'none'
- 
+
 })
 
 // Getting id's Place Order Container 
 const placeOrderContent = document.getElementById('placeOrderContentStep')
 
-placeOrderContent.addEventListener('click', () =>{
+placeOrderContent.addEventListener('click', () => {
 
   // Colorful Border section code of Place Order Section
   document.querySelector('.placeOrderContainer').style.backgroundImage = 'url("./home4k/H_S/get_quote.svg")'
@@ -900,16 +900,16 @@ placeOrderContent.addEventListener('click', () =>{
 // Getting id's Custom Order Container 
 const customOrderContentStep = document.getElementById('customOrderContentStep')
 
-customOrderContentStep.addEventListener('click', ()=> {
+customOrderContentStep.addEventListener('click', () => {
 
   // Colorful Border section code of Custom Order Section
   document.querySelector('.customContainer').style.backgroundImage = 'url("./home4k/H_S/last.svg")'
   document.querySelector(".customContainer").style.borderWidth = '0px 0px'
   document.querySelector('.customContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
 
-   // Default Border of rest of the section 
-   document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'none';
-   document.querySelector(".tryUsFreeContainer").style.borderWidth = '1px 1px'
+  // Default Border of rest of the section 
+  document.querySelector('.tryUsFreeContainer').style.backgroundImage = 'none';
+  document.querySelector(".tryUsFreeContainer").style.borderWidth = '1px 1px'
   document.querySelector('.tryUsFreeContainer').style.borderColor = 'rgba(255, 255, 255, 0.5)'
   document.querySelector(".getQuoteContainer").style.backgroundImage = 'none';
   document.querySelector('.placeOrderContainer').style.backgroundImage = 'none'
@@ -930,13 +930,13 @@ document.getElementById('otherBgRightMark').style.display = 'none'
 // Functionality for Clipping Path Service
 const clippingPath = document.getElementById('clippingPath')
 
-clippingPath.addEventListener('click',()=> {
+clippingPath.addEventListener('click', () => {
   // Changing Background of Clipping Path Service When Any One Click on That
   document.getElementById('clippingPathCircle').style.display = 'none'
   document.getElementById('clippingPathRightMark').style.display = 'block'
   document.querySelector('.clippingBg').style.background = "#155EEF"
   document.querySelector('.clippingBg').style.color = "#FFFFFF"
- 
+
   // Deactiving The Other Service Button 
   document.getElementById('retouchRightMark').style.display = 'none'
   document.getElementById('retouchCircle').style.display = 'block'
@@ -945,13 +945,13 @@ clippingPath.addEventListener('click',()=> {
   document.querySelector('.retouchBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('ghostMannequinRightMark').style.display = 'none'
-  document.getElementById('ghostMannequinRadio').style.display= 'block'
+  document.getElementById('ghostMannequinRadio').style.display = 'block'
   document.querySelector('.ghostBg').style.background = '#ffffff'
   document.querySelector('.ghostBg').style.color = '#344054'
   document.querySelector('.ghostBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('maskingRightMark').style.display = 'none'
-  document.getElementById('maskingCircle').style.display= 'block'
+  document.getElementById('maskingCircle').style.display = 'block'
   document.querySelector('.maskingBg').style.background = '#ffffff'
   document.querySelector('.maskingBg').style.color = '#344054'
   document.querySelector('.maskingBg').style.border = '1px solid #d0d5dd;'
@@ -966,7 +966,7 @@ clippingPath.addEventListener('click',()=> {
 
 // Functionality for Retouching Service
 const retouch = document.getElementById('retouching')
-retouch.addEventListener('click',()=> {
+retouch.addEventListener('click', () => {
 
   // Changing Background of Retouching Service When Any One Click on That
   document.getElementById('retouchRightMark').style.display = 'block'
@@ -982,13 +982,13 @@ retouch.addEventListener('click',()=> {
   document.querySelector('.clippingBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('ghostMannequinRightMark').style.display = 'none'
-  document.getElementById('ghostMannequinRadio').style.display= 'block'
+  document.getElementById('ghostMannequinRadio').style.display = 'block'
   document.querySelector('.ghostBg').style.background = '#ffffff'
   document.querySelector('.ghostBg').style.color = '#344054'
   document.querySelector('.ghostBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('maskingRightMark').style.display = 'none'
-  document.getElementById('maskingCircle').style.display= 'block'
+  document.getElementById('maskingCircle').style.display = 'block'
   document.querySelector('.maskingBg').style.background = '#ffffff'
   document.querySelector('.maskingBg').style.color = '#344054'
   document.querySelector('.maskingBg').style.border = '1px solid #d0d5dd;'
@@ -1002,15 +1002,15 @@ retouch.addEventListener('click',()=> {
 
 // Functionality For Ghost Mannequine Service
 const ghostMannequin = document.getElementById('ghostMannequin')
-ghostMannequin.addEventListener('click',()=> {
+ghostMannequin.addEventListener('click', () => {
 
   // Changing Background of Ghost Mannequin When Any One Click on That
   document.getElementById('ghostMannequinRightMark').style.display = 'block'
-  document.getElementById('ghostMannequinRadio').style.display= 'none'
+  document.getElementById('ghostMannequinRadio').style.display = 'none'
   document.querySelector('.ghostBg').style.background = '#155EEF'
   document.querySelector('.ghostBg').style.color = '#FFFFFF'
 
-// Deactiving The Other Service Button 
+  // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
   document.getElementById('clippingPathRightMark').style.display = 'none'
   document.querySelector('.clippingBg').style.background = "#ffffff"
@@ -1024,7 +1024,7 @@ ghostMannequin.addEventListener('click',()=> {
   document.querySelector('.retouchBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('maskingRightMark').style.display = 'none'
-  document.getElementById('maskingCircle').style.display= 'block'
+  document.getElementById('maskingCircle').style.display = 'block'
   document.querySelector('.maskingBg').style.background = '#ffffff'
   document.querySelector('.maskingBg').style.color = '#344054'
   document.querySelector('.maskingBg').style.border = '1px solid #d0d5dd;'
@@ -1041,13 +1041,13 @@ ghostMannequin.addEventListener('click',()=> {
 const imageMasking = document.getElementById('masking')
 
 // Changing Background of Image Masaking When Any One Click on That
-imageMasking.addEventListener('click', () =>{
+imageMasking.addEventListener('click', () => {
   document.getElementById('maskingRightMark').style.display = 'block'
-  document.getElementById('maskingCircle').style.display= 'none'
+  document.getElementById('maskingCircle').style.display = 'none'
   document.querySelector('.maskingBg').style.background = '#155EEF'
   document.querySelector('.maskingBg').style.color = '#FFFFFF'
 
-// Deactiving The Other Service Button 
+  // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
   document.getElementById('clippingPathRightMark').style.display = 'none'
   document.querySelector('.clippingBg').style.background = "#ffffff"
@@ -1061,7 +1061,7 @@ imageMasking.addEventListener('click', () =>{
   document.querySelector('.retouchBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('ghostMannequinRightMark').style.display = 'none'
-  document.getElementById('ghostMannequinRadio').style.display= 'block'
+  document.getElementById('ghostMannequinRadio').style.display = 'block'
   document.querySelector('.ghostBg').style.background = '#ffffff'
   document.querySelector('.ghostBg').style.color = '#344054'
   document.querySelector('.ghostBg').style.border = '1px solid #d0d5dd;'
@@ -1076,7 +1076,7 @@ imageMasking.addEventListener('click', () =>{
 // Functionality for Other Service
 const otherService = document.getElementById('otherServiceBg')
 // Changing Background of Other Service When Any One Click on That
-otherService.addEventListener('click',()=>{
+otherService.addEventListener('click', () => {
   document.getElementById('otherBgRightMark').style.display = 'block'
   document.getElementById('otherBgRadio').style.display = "none"
   document.querySelector('.otherBg').style.background = '#155EEF'
@@ -1096,13 +1096,13 @@ otherService.addEventListener('click',()=>{
   document.querySelector('.retouchBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('ghostMannequinRightMark').style.display = 'none'
-  document.getElementById('ghostMannequinRadio').style.display= 'block'
+  document.getElementById('ghostMannequinRadio').style.display = 'block'
   document.querySelector('.ghostBg').style.background = '#ffffff'
   document.querySelector('.ghostBg').style.color = '#344054'
   document.querySelector('.ghostBg').style.border = '1px solid #d0d5dd;'
 
   document.getElementById('maskingRightMark').style.display = 'none'
-  document.getElementById('maskingCircle').style.display= 'block'
+  document.getElementById('maskingCircle').style.display = 'block'
   document.querySelector('.maskingBg').style.background = '#ffffff'
   document.querySelector('.maskingBg').style.color = '#344054'
   document.querySelector('.maskingBg').style.border = '1px solid #d0d5dd;'
@@ -1119,11 +1119,11 @@ document.getElementById('multiImage').style.display = 'none'
 document.getElementById('multiImageButton').style.display = 'none'
 document.getElementById('maskingImage').style.display = 'none'
 document.getElementById('maskingImageButton').style.display = 'none'
-  
+
 
 // Clipping Path Button Functionality on Pricing Section
 const clippingPathPricing = document.getElementById('clippingPath')
-clippingPathPricing.addEventListener('click', () =>{
+clippingPathPricing.addEventListener('click', () => {
   document.getElementById('clippingPathImage').style.display = 'block'
   document.getElementById('clippingPathBasicImage').style.display = 'flex'
 
@@ -1131,79 +1131,79 @@ clippingPathPricing.addEventListener('click', () =>{
   document.getElementById('photoRetouchingImage').style.display = 'none'
   document.getElementById('RetouchingBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
-document.getElementById('GhostBasicImage').style.display = 'none'
-document.getElementById('multiImage').style.display = 'none'
-document.getElementById('multiImageButton').style.display = 'none'
-document.getElementById('maskingImage').style.display = 'none'
-document.getElementById('maskingImageButton').style.display = 'none'
-}) 
+  document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('multiImage').style.display = 'none'
+  document.getElementById('multiImageButton').style.display = 'none'
+  document.getElementById('maskingImage').style.display = 'none'
+  document.getElementById('maskingImageButton').style.display = 'none'
+})
 
 // PhotoRetouching Button Functionaity on Pricing Section
 
 const retouching = document.getElementById('retouching')
-retouching.addEventListener('click', () =>{
+retouching.addEventListener('click', () => {
   document.getElementById('photoRetouchingImage').style.display = 'block'
   document.getElementById('RetouchingBasicImage').style.display = 'flex'
 
-   // Hide Other Services When Photo Retouching is Active
+  // Hide Other Services When Photo Retouching is Active
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('clippingPathBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
-document.getElementById('GhostBasicImage').style.display = 'none'
-document.getElementById('multiImage').style.display = 'none'
-document.getElementById('multiImageButton').style.display = 'none'
-document.getElementById('maskingImage').style.display = 'none'
-document.getElementById('maskingImageButton').style.display = 'none'
+  document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('multiImage').style.display = 'none'
+  document.getElementById('multiImageButton').style.display = 'none'
+  document.getElementById('maskingImage').style.display = 'none'
+  document.getElementById('maskingImageButton').style.display = 'none'
 })
 
 
 const ghostMannequine = document.getElementById('ghostMannequin')
-ghostMannequine.addEventListener('click', () =>{
+ghostMannequine.addEventListener('click', () => {
   document.getElementById('GhostImage').style.display = 'block'
-document.getElementById('GhostBasicImage').style.display = 'flex'
+  document.getElementById('GhostBasicImage').style.display = 'flex'
 
-// Hide Other Services When Ghost Mannequine is Active
+  // Hide Other Services When Ghost Mannequine is Active
   document.getElementById('photoRetouchingImage').style.display = 'none'
   document.getElementById('RetouchingBasicImage').style.display = 'none'
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('clippingPathBasicImage').style.display = 'none'
   document.getElementById('multiImage').style.display = 'none'
-document.getElementById('multiImageButton').style.display = 'none'
-document.getElementById('maskingImage').style.display = 'none'
-document.getElementById('maskingImageButton').style.display = 'none'
+  document.getElementById('multiImageButton').style.display = 'none'
+  document.getElementById('maskingImage').style.display = 'none'
+  document.getElementById('maskingImageButton').style.display = 'none'
 })
 
 // MultiClipping Path
-const  multiClippingPath = document.getElementById('masking')
-multiClippingPath.addEventListener('click', () =>{
+const multiClippingPath = document.getElementById('masking')
+multiClippingPath.addEventListener('click', () => {
   document.getElementById('multiImage').style.display = 'block'
-document.getElementById('multiImageButton').style.display = 'flex'
+  document.getElementById('multiImageButton').style.display = 'flex'
 
-// Hide Other Services When MultiClipping is Active
-document.getElementById('photoRetouchingImage').style.display = 'none'
-document.getElementById('RetouchingBasicImage').style.display = 'none'
-document.getElementById('clippingPathImage').style.display = 'none'
-document.getElementById('clippingPathBasicImage').style.display = 'none'
-document.getElementById('GhostImage').style.display = 'none'
-document.getElementById('GhostBasicImage').style.display = 'none'
-document.getElementById('maskingImage').style.display = 'none'
-document.getElementById('maskingImageButton').style.display = 'none'
+  // Hide Other Services When MultiClipping is Active
+  document.getElementById('photoRetouchingImage').style.display = 'none'
+  document.getElementById('RetouchingBasicImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('clippingPathBasicImage').style.display = 'none'
+  document.getElementById('GhostImage').style.display = 'none'
+  document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('maskingImage').style.display = 'none'
+  document.getElementById('maskingImageButton').style.display = 'none'
 
 })
 
 const imageMaskingService = document.getElementById('otherServiceBg')
-imageMaskingService.addEventListener('click',()=> {
-document.getElementById('maskingImage').style.display = 'block'
-document.getElementById('maskingImageButton').style.display = 'flex'
+imageMaskingService.addEventListener('click', () => {
+  document.getElementById('maskingImage').style.display = 'block'
+  document.getElementById('maskingImageButton').style.display = 'flex'
 
-// Hide Other Services When MultiClipping is Active
-document.getElementById('photoRetouchingImage').style.display = 'none'
-document.getElementById('RetouchingBasicImage').style.display = 'none'
-document.getElementById('clippingPathImage').style.display = 'none'
-document.getElementById('clippingPathBasicImage').style.display = 'none'
-document.getElementById('GhostImage').style.display = 'none'
-document.getElementById('multiImage').style.display = 'none'
-document.getElementById('multiImageButton').style.display = 'none'
+  // Hide Other Services When MultiClipping is Active
+  document.getElementById('photoRetouchingImage').style.display = 'none'
+  document.getElementById('RetouchingBasicImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('clippingPathBasicImage').style.display = 'none'
+  document.getElementById('GhostImage').style.display = 'none'
+  document.getElementById('multiImage').style.display = 'none'
+  document.getElementById('multiImageButton').style.display = 'none'
 })
 
 
@@ -1216,7 +1216,7 @@ document.getElementById("superComplexImage").style.display = 'none'
 
 // Clipping Path Basic
 const clippingBasic = document.getElementById('clippingBasic')
-clippingBasic.addEventListener('click', () =>{
+clippingBasic.addEventListener('click', () => {
   document.getElementById('flatImage').style.display = 'none'
   document.getElementById('clippingPathImage').style.display = 'block'
   document.getElementById('mediumImage').style.display = 'none'
@@ -1224,29 +1224,29 @@ clippingBasic.addEventListener('click', () =>{
   document.getElementById("superComplexImage").style.display = 'none'
 
   // Changing Button Color
-  document.getElementById('clippingBasic').style.background =  "#155EEF"
-  document.getElementById('clippingBasic').style.padding =  "10px 14px"
-  document.getElementById('clippingBasic').style.borderRadius =  "8px"
-  document.getElementById('clippingBasic').style.color =  "#ffffff"
+  document.getElementById('clippingBasic').style.background = "#155EEF"
+  document.getElementById('clippingBasic').style.padding = "10px 14px"
+  document.getElementById('clippingBasic').style.borderRadius = "8px"
+  document.getElementById('clippingBasic').style.color = "#ffffff"
 
-   // Deactiving Current Button
-   document.getElementById('clippingFlatRate').style.padding =  "0"
-   document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
-   document.getElementById('clippingFlatRate').style.background =  "none"
-   document.getElementById('clippingFlatRate').style.color =  "#475467"
-   document.getElementById('clippingFlatRate').style.border =  "0px"
-   document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+  // Deactiving Current Button
+  document.getElementById('clippingFlatRate').style.padding = "0"
+  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
+  document.getElementById('clippingFlatRate').style.background = "none"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
+  document.getElementById('clippingFlatRate').style.border = "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
 
-   document.getElementById('clippingSuperComplex').style.background =  "none"
-  document.getElementById('clippingSuperComplex').style.padding =  "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
-  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+  document.getElementById('clippingSuperComplex').style.background = "none"
+  document.getElementById('clippingSuperComplex').style.padding = "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.color = "#475467"
 
 })
 
 // Clipping Path Flat
 const flatImage = document.getElementById('clippingFlatRate')
-flatImage.addEventListener('click', () =>{
+flatImage.addEventListener('click', () => {
   document.getElementById('flatImage').style.display = 'block'
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('mediumImage').style.display = 'none'
@@ -1254,78 +1254,78 @@ flatImage.addEventListener('click', () =>{
   document.getElementById("superComplexImage").style.display = 'none'
 
   // Changing Button Color
-  document.getElementById('clippingFlatRate').style.background =  "#155EEF"
-  document.getElementById('clippingFlatRate').style.padding =  "10px 14px"
-  document.getElementById('clippingFlatRate').style.borderRadius =  "8px"
-  document.getElementById('clippingFlatRate').style.color =  "#ffffff"
+  document.getElementById('clippingFlatRate').style.background = "#155EEF"
+  document.getElementById('clippingFlatRate').style.padding = "10px 14px"
+  document.getElementById('clippingFlatRate').style.borderRadius = "8px"
+  document.getElementById('clippingFlatRate').style.color = "#ffffff"
 
   // Deactiving Current Button
-  document.getElementById('clippingBasic').style.padding =  "0"
-  document.getElementById('clippingBasic').style.borderRadius =  "0px"
-  document.getElementById('clippingBasic').style.background =  "none"
-  document.getElementById('clippingBasic').style.color =  "#475467"
-  document.getElementById('clippingBasic').style.border =  "0px"
-  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+  document.getElementById('clippingBasic').style.padding = "0"
+  document.getElementById('clippingBasic').style.borderRadius = "0px"
+  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.color = "#475467"
+  document.getElementById('clippingBasic').style.border = "0px"
+  document.getElementById('clippingBasic').style.boxShadow = "0px"
 
-  document.getElementById('clippingMedium').style.background =  "none"
-  document.getElementById('clippingMedium').style.padding =  "0px"
-  document.getElementById('clippingMedium').style.borderRadius =  "0px"
-  document.getElementById('clippingMedium').style.color =  "#475467"
+  document.getElementById('clippingMedium').style.background = "none"
+  document.getElementById('clippingMedium').style.padding = "0px"
+  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.color = "#475467"
 
-  document.getElementById('clippingSuperComplex').style.background =  "none"
-  document.getElementById('clippingSuperComplex').style.padding =  "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
-  document.getElementById('clippingSuperComplex').style.color =  "#475467"
-  
+  document.getElementById('clippingSuperComplex').style.background = "none"
+  document.getElementById('clippingSuperComplex').style.padding = "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.color = "#475467"
+
 })
 
 // Clipping Path Medium
 const clippingMedium = document.getElementById('clippingMedium')
-clippingMedium.addEventListener('click', () =>{
+clippingMedium.addEventListener('click', () => {
   document.getElementById('flatImage').style.display = 'none'
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('mediumImage').style.display = 'block'
   document.getElementById('complexImage').style.display = 'none'
   document.getElementById("superComplexImage").style.display = 'none'
 
-   // Changing Button Color
-   document.getElementById('clippingMedium').style.background =  "#155EEF"
-   document.getElementById('clippingMedium').style.padding =  "10px 14px"
-   document.getElementById('clippingMedium').style.borderRadius =  "8px"
-   document.getElementById('clippingMedium').style.color =  "#ffffff"
+  // Changing Button Color
+  document.getElementById('clippingMedium').style.background = "#155EEF"
+  document.getElementById('clippingMedium').style.padding = "10px 14px"
+  document.getElementById('clippingMedium').style.borderRadius = "8px"
+  document.getElementById('clippingMedium').style.color = "#ffffff"
 
-    // Deactiving Current Button
-  document.getElementById('clippingBasic').style.padding =  "0"
-  document.getElementById('clippingBasic').style.borderRadius =  "0px"
-  document.getElementById('clippingBasic').style.background =  "none"
-  document.getElementById('clippingBasic').style.color =  "#475467"
-  document.getElementById('clippingBasic').style.border =  "0px"
-  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+  // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding = "0"
+  document.getElementById('clippingBasic').style.borderRadius = "0px"
+  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.color = "#475467"
+  document.getElementById('clippingBasic').style.border = "0px"
+  document.getElementById('clippingBasic').style.boxShadow = "0px"
 
-  document.getElementById('clippingFlatRate').style.padding =  "0"
-  document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
-  document.getElementById('clippingFlatRate').style.background =  "none"
-  document.getElementById('clippingFlatRate').style.color =  "#475467"
-  document.getElementById('clippingFlatRate').style.border =  "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+  document.getElementById('clippingFlatRate').style.padding = "0"
+  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
+  document.getElementById('clippingFlatRate').style.background = "none"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
+  document.getElementById('clippingFlatRate').style.border = "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
 
-  document.getElementById('clippingComplex').style.padding =  "0"
-  document.getElementById('clippingComplex').style.borderRadius =  "0px"
-  document.getElementById('clippingComplex').style.background =  "none"
-  document.getElementById('clippingComplex').style.color =  "#475467"
-  document.getElementById('clippingComplex').style.border =  "0px"
-  document.getElementById('clippingComplex').style.boxShadow =  "0px"
-  
-  document.getElementById('clippingSuperComplex').style.background =  "none"
-  document.getElementById('clippingSuperComplex').style.padding =  "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
-  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+  document.getElementById('clippingComplex').style.padding = "0"
+  document.getElementById('clippingComplex').style.borderRadius = "0px"
+  document.getElementById('clippingComplex').style.background = "none"
+  document.getElementById('clippingComplex').style.color = "#475467"
+  document.getElementById('clippingComplex').style.border = "0px"
+  document.getElementById('clippingComplex').style.boxShadow = "0px"
+
+  document.getElementById('clippingSuperComplex').style.background = "none"
+  document.getElementById('clippingSuperComplex').style.padding = "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.color = "#475467"
 
 })
 
 // Clipping Path Complex
 const clippingPathComplex = document.getElementById('clippingComplex')
-clippingPathComplex.addEventListener('click', () =>{
+clippingPathComplex.addEventListener('click', () => {
   document.getElementById('complexImage').style.display = 'block'
   document.getElementById('flatImage').style.display = 'none'
   document.getElementById('clippingPathImage').style.display = 'none'
@@ -1334,40 +1334,40 @@ clippingPathComplex.addEventListener('click', () =>{
 
 
   // Changing Button Color
-  document.getElementById('clippingComplex').style.background =  "#155EEF"
-  document.getElementById('clippingComplex').style.padding =  "10px 14px"
-  document.getElementById('clippingComplex').style.borderRadius =  "8px"
-  document.getElementById('clippingComplex').style.color =  "#ffffff"
+  document.getElementById('clippingComplex').style.background = "#155EEF"
+  document.getElementById('clippingComplex').style.padding = "10px 14px"
+  document.getElementById('clippingComplex').style.borderRadius = "8px"
+  document.getElementById('clippingComplex').style.color = "#ffffff"
 
-   // Deactiving Current Button
-  document.getElementById('clippingBasic').style.padding =  "0"
-  document.getElementById('clippingBasic').style.borderRadius =  "0px"
-  document.getElementById('clippingBasic').style.background =  "none"
-  document.getElementById('clippingBasic').style.color =  "#475467"
-  document.getElementById('clippingBasic').style.border =  "0px"
-  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+  // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding = "0"
+  document.getElementById('clippingBasic').style.borderRadius = "0px"
+  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.color = "#475467"
+  document.getElementById('clippingBasic').style.border = "0px"
+  document.getElementById('clippingBasic').style.boxShadow = "0px"
 
-  document.getElementById('clippingFlatRate').style.padding =  "0"
-  document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
-  document.getElementById('clippingFlatRate').style.background =  "none"
-  document.getElementById('clippingFlatRate').style.color =  "#475467"
-  document.getElementById('clippingFlatRate').style.border =  "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+  document.getElementById('clippingFlatRate').style.padding = "0"
+  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
+  document.getElementById('clippingFlatRate').style.background = "none"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
+  document.getElementById('clippingFlatRate').style.border = "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
 
-  document.getElementById('clippingMedium').style.background =  "none"
-  document.getElementById('clippingMedium').style.padding =  "0px"
-  document.getElementById('clippingMedium').style.borderRadius =  "0px"
-  document.getElementById('clippingMedium').style.color =  "#475467"
+  document.getElementById('clippingMedium').style.background = "none"
+  document.getElementById('clippingMedium').style.padding = "0px"
+  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.color = "#475467"
 
-  document.getElementById('clippingSuperComplex').style.background =  "none"
-  document.getElementById('clippingSuperComplex').style.padding =  "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius =  "0px"
-  document.getElementById('clippingSuperComplex').style.color =  "#475467"
+  document.getElementById('clippingSuperComplex').style.background = "none"
+  document.getElementById('clippingSuperComplex').style.padding = "0px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.color = "#475467"
 })
 
 // Clipping Super Complex
 const clippingSuperComplex = document.getElementById('clippingSuperComplex')
-clippingSuperComplex.addEventListener('click', () =>{
+clippingSuperComplex.addEventListener('click', () => {
   document.getElementById('complexImage').style.display = 'none'
   document.getElementById('flatImage').style.display = 'none'
   document.getElementById('clippingPathImage').style.display = 'none'
@@ -1375,36 +1375,279 @@ clippingSuperComplex.addEventListener('click', () =>{
   document.getElementById("superComplexImage").style.display = 'block'
 
 
-    // Changing Button Color
-    document.getElementById('clippingSuperComplex').style.background =  "#155EEF"
-    document.getElementById('clippingSuperComplex').style.padding =  "10px 14px"
-    document.getElementById('clippingSuperComplex').style.borderRadius =  "8px"
-    document.getElementById('clippingSuperComplex').style.color =  "#ffffff"
+  // Changing Button Color
+  document.getElementById('clippingSuperComplex').style.background = "#155EEF"
+  document.getElementById('clippingSuperComplex').style.padding = "10px 14px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "8px"
+  document.getElementById('clippingSuperComplex').style.color = "#ffffff"
 
-       // Deactiving Current Button
-  document.getElementById('clippingBasic').style.padding =  "0"
-  document.getElementById('clippingBasic').style.borderRadius =  "0px"
-  document.getElementById('clippingBasic').style.background =  "none"
-  document.getElementById('clippingBasic').style.color =  "#475467"
-  document.getElementById('clippingBasic').style.border =  "0px"
-  document.getElementById('clippingBasic').style.boxShadow =  "0px"
+  // Deactiving Current Button
+  document.getElementById('clippingBasic').style.padding = "0"
+  document.getElementById('clippingBasic').style.borderRadius = "0px"
+  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.color = "#475467"
+  document.getElementById('clippingBasic').style.border = "0px"
+  document.getElementById('clippingBasic').style.boxShadow = "0px"
 
-  document.getElementById('clippingFlatRate').style.padding =  "0"
-  document.getElementById('clippingFlatRate').style.borderRadius =  "0px"
-  document.getElementById('clippingFlatRate').style.background =  "none"
-  document.getElementById('clippingFlatRate').style.color =  "#475467"
-  document.getElementById('clippingFlatRate').style.border =  "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow =  "0px"
+  document.getElementById('clippingFlatRate').style.padding = "0"
+  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
+  document.getElementById('clippingFlatRate').style.background = "none"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
+  document.getElementById('clippingFlatRate').style.border = "0px"
+  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
 
-  document.getElementById('clippingMedium').style.background =  "none"
-  document.getElementById('clippingMedium').style.padding =  "0px"
-  document.getElementById('clippingMedium').style.borderRadius =  "0px"
-  document.getElementById('clippingMedium').style.color =  "#475467"
+  document.getElementById('clippingMedium').style.background = "none"
+  document.getElementById('clippingMedium').style.padding = "0px"
+  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.color = "#475467"
 
-  document.getElementById('clippingComplex').style.padding =  "0"
-  document.getElementById('clippingComplex').style.borderRadius =  "0px"
-  document.getElementById('clippingComplex').style.background =  "none"
-  document.getElementById('clippingComplex').style.color =  "#475467"
-  document.getElementById('clippingComplex').style.border =  "0px"
-  document.getElementById('clippingComplex').style.boxShadow =  "0px"
+  document.getElementById('clippingComplex').style.padding = "0"
+  document.getElementById('clippingComplex').style.borderRadius = "0px"
+  document.getElementById('clippingComplex').style.background = "none"
+  document.getElementById('clippingComplex').style.color = "#475467"
+  document.getElementById('clippingComplex').style.border = "0px"
+  document.getElementById('clippingComplex').style.boxShadow = "0px"
 })
+
+
+// Button Functionality for Photo Retouching Service Starts
+document.getElementById('retouchComplexOne').style.display = "none"
+document.getElementById('retouchComplexTwo').style.display = "none"
+document.getElementById('retouchComplexTwo').style.display = "none"
+document.getElementById('retouchComplexThree').style.display = "none"
+document.getElementById('retouchComplexFour').style.display = "none"
+
+// Complexity One 
+const retouchComplexOne = document.getElementById('retouchComplexOneButton')
+retouchComplexOne.addEventListener('click', () => {
+  document.getElementById('retouchComplexOne').style.display = "none"
+  document.getElementById('photoRetouchingImage').style.display = "block"
+  document.getElementById('retouchComplexTwo').style.display = "none"
+  document.getElementById('retouchComplexThree').style.display = "none"
+  document.getElementById('retouchComplexFour').style.display = "none"
+
+
+  // Changing Button color
+  document.getElementById('retouchComplexOneButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
+  document.getElementById('retouchComplexOneButton').style.color = "#ffffff"
+
+  // Deactiving Current Button
+  document.getElementById('retouchComplexTwoButton').style.padding = "0"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexTwoButton').style.background = "none"
+  document.getElementById('retouchComplexTwoButton').style.color = "#475467"
+  document.getElementById('retouchComplexTwoButton').style.border = "0px"
+  document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexThreeButton').style.padding = "0"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexThreeButton').style.background = "none"
+  document.getElementById('retouchComplexThreeButton').style.color = "#475467"
+  document.getElementById('retouchComplexThreeButton').style.border = "0px"
+  document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexFourButton').style.padding = "0"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexFourButton').style.background = "none"
+  document.getElementById('retouchComplexFourButton').style.color = "#475467"
+  document.getElementById('retouchComplexFourButton').style.border = "0px"
+  document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexFiveButton').style.padding = "0"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexFiveButton').style.background = "none"
+  document.getElementById('retouchComplexFiveButton').style.color = "#475467"
+  document.getElementById('retouchComplexFiveButton').style.border = "0px"
+  document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
+})
+
+
+// Complexity Two
+const retouchComplexTwo = document.getElementById('retouchComplexTwoButton')
+retouchComplexTwo.addEventListener('click', () => {
+  document.getElementById('retouchComplexOne').style.display = "block"
+  document.getElementById('photoRetouchingImage').style.display = "none"
+  document.getElementById('retouchComplexTwo').style.display = "none"
+  document.getElementById('retouchComplexThree').style.display = "none"
+  document.getElementById('retouchComplexFour').style.display = "none"
+
+  // Changing Button color
+  document.getElementById('retouchComplexTwoButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
+  document.getElementById('retouchComplexTwoButton').style.color = "#ffffff"
+
+  // Deactiving Current Button
+  document.getElementById('retouchComplexOneButton').style.padding = "0"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexOneButton').style.background = "none"
+  document.getElementById('retouchComplexOneButton').style.color = "#475467"
+  document.getElementById('retouchComplexOneButton').style.border = "0px"
+  document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexThreeButton').style.padding = "0"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexThreeButton').style.background = "none"
+  document.getElementById('retouchComplexThreeButton').style.color = "#475467"
+  document.getElementById('retouchComplexThreeButton').style.border = "0px"
+  document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexFourButton').style.padding = "0"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexFourButton').style.background = "none"
+  document.getElementById('retouchComplexFourButton').style.color = "#475467"
+  document.getElementById('retouchComplexFourButton').style.border = "0px"
+  document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexFiveButton').style.padding = "0"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexFiveButton').style.background = "none"
+  document.getElementById('retouchComplexFiveButton').style.color = "#475467"
+  document.getElementById('retouchComplexFiveButton').style.border = "0px"
+  document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
+})
+
+
+// Complexity Three
+const retouchComplexThree = document.getElementById('retouchComplexThreeButton')
+retouchComplexThree.addEventListener('click', () => {
+  document.getElementById('retouchComplexTwo').style.display = "block"
+  document.getElementById('retouchComplexOne').style.display = "none"
+  document.getElementById('photoRetouchingImage').style.display = "none"
+  document.getElementById('retouchComplexThree').style.display = "none"
+  document.getElementById('retouchComplexFour').style.display = "none"
+
+  // Changing Button color
+  document.getElementById('retouchComplexThreeButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
+  document.getElementById('retouchComplexThreeButton').style.color = "#ffffff"
+
+  // Deactiving Current Button
+  document.getElementById('retouchComplexOneButton').style.padding = "0"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexOneButton').style.background = "none"
+  document.getElementById('retouchComplexOneButton').style.color = "#475467"
+  document.getElementById('retouchComplexOneButton').style.border = "0px"
+  document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexTwoButton').style.padding = "0"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexTwoButton').style.background = "none"
+  document.getElementById('retouchComplexTwoButton').style.color = "#475467"
+  document.getElementById('retouchComplexTwoButton').style.border = "0px"
+  document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexFourButton').style.padding = "0"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexFourButton').style.background = "none"
+  document.getElementById('retouchComplexFourButton').style.color = "#475467"
+  document.getElementById('retouchComplexFourButton').style.border = "0px"
+  document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
+  
+  document.getElementById('retouchComplexFiveButton').style.padding = "0"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexFiveButton').style.background = "none"
+  document.getElementById('retouchComplexFiveButton').style.color = "#475467"
+  document.getElementById('retouchComplexFiveButton').style.border = "0px"
+  document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
+
+})
+
+
+// Complexity Four
+const retouchComplexityFour = document.getElementById('retouchComplexFourButton')
+retouchComplexityFour.addEventListener('click', () => {
+  document.getElementById('retouchComplexTwo').style.display = "none"
+  document.getElementById('retouchComplexOne').style.display = "none"
+  document.getElementById('photoRetouchingImage').style.display = "none"
+  document.getElementById('retouchComplexThree').style.display = "block"
+  document.getElementById('retouchComplexFour').style.display = "none"
+
+  // Changing Button color
+  document.getElementById('retouchComplexFourButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
+  document.getElementById('retouchComplexFourButton').style.color = "#ffffff"
+
+
+
+  // Deactiving Current Button
+  document.getElementById('retouchComplexOneButton').style.padding = "0"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexOneButton').style.background = "none"
+  document.getElementById('retouchComplexOneButton').style.color = "#475467"
+  document.getElementById('retouchComplexOneButton').style.border = "0px"
+  document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexTwoButton').style.padding = "0"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexTwoButton').style.background = "none"
+  document.getElementById('retouchComplexTwoButton').style.color = "#475467"
+  document.getElementById('retouchComplexTwoButton').style.border = "0px"
+  document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexThreeButton').style.padding = "0"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
+  document.getElementById('retouchComplexThreeButton').style.background = "none"
+  document.getElementById('retouchComplexThreeButton').style.color = "#475467"
+  document.getElementById('retouchComplexThreeButton').style.border = "0px"
+  document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
+
+  document.getElementById('retouchComplexFiveButton').style.padding = "0"
+    document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
+    document.getElementById('retouchComplexFiveButton').style.background = "none"
+    document.getElementById('retouchComplexFiveButton').style.color = "#475467"
+    document.getElementById('retouchComplexFiveButton').style.border = "0px"
+    document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
+
+})
+
+// Complexity Five
+const retouchComplexityFive = document.getElementById('retouchComplexFiveButton')
+retouchComplexityFive.addEventListener('click', () =>{
+  document.getElementById('retouchComplexOne').style.display = "none"
+  document.getElementById('photoRetouchingImage').style.display = "none"
+  document.getElementById('retouchComplexTwo').style.display = "none"
+  document.getElementById('retouchComplexThree').style.display = "none"
+  document.getElementById('retouchComplexFour').style.display = "block"
+
+  // Changing Button color
+  document.getElementById('retouchComplexFiveButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
+  document.getElementById('retouchComplexFiveButton').style.color = "#ffffff"
+
+    // Deactiving Current Button
+    document.getElementById('retouchComplexOneButton').style.padding = "0"
+    document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
+    document.getElementById('retouchComplexOneButton').style.background = "none"
+    document.getElementById('retouchComplexOneButton').style.color = "#475467"
+    document.getElementById('retouchComplexOneButton').style.border = "0px"
+    document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+  
+    document.getElementById('retouchComplexTwoButton').style.padding = "0"
+    document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
+    document.getElementById('retouchComplexTwoButton').style.background = "none"
+    document.getElementById('retouchComplexTwoButton').style.color = "#475467"
+    document.getElementById('retouchComplexTwoButton').style.border = "0px"
+    document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
+  
+    document.getElementById('retouchComplexThreeButton').style.padding = "0"
+    document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
+    document.getElementById('retouchComplexThreeButton').style.background = "none"
+    document.getElementById('retouchComplexThreeButton').style.color = "#475467"
+    document.getElementById('retouchComplexThreeButton').style.border = "0px"
+    document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
+    
+    document.getElementById('retouchComplexFourButton').style.padding = "0"
+    document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
+    document.getElementById('retouchComplexFourButton').style.background = "none"
+    document.getElementById('retouchComplexFourButton').style.color = "#475467"
+    document.getElementById('retouchComplexFourButton').style.border = "0px"
+    document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
+})
+
+// Button Functionality for Photo Retouching Service Ends
