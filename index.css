@@ -2035,3 +2035,6 @@ border-radius: 8px;
 color: white;
 }
 /* Pricing Ends */
+#ghostComplexButton{
+  padding: 10px 14px !important;
+}

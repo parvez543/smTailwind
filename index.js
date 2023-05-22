@@ -946,6 +946,11 @@ clippingPath.addEventListener('click', () => {
 
   document.getElementById('ghostFlatImage').style.display = 'none'
   document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+  document.getElementById('multiClippingFlat').style.display = "none"
+  document.getElementById('multiClippingMedium').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
 
 
   // Deactiving The Other Service Button 
@@ -992,6 +997,11 @@ retouch.addEventListener('click', () => {
 
   document.getElementById('ghostFlatImage').style.display = 'none'
   document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+  document.getElementById('multiClippingFlat').style.display = "none"
+  document.getElementById('multiClippingMedium').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
 
 
   // Deactiving The Other Service Button 
@@ -1040,6 +1050,10 @@ ghostMannequin.addEventListener('click', () => {
   document.getElementById('retouchComplexThree').style.display = 'none'
   document.getElementById('retouchComplexFour').style.display = 'none'
 
+  document.getElementById('multiClippingFlat').style.display = "none"
+  document.getElementById('multiClippingMedium').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
+
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
   document.getElementById('clippingPathRightMark').style.display = 'none'
@@ -1072,6 +1086,25 @@ const imageMasking = document.getElementById('masking')
 
 // Changing Background of Image Masaking When Any One Click on That
 imageMasking.addEventListener('click', () => {
+
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
+
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostComplexImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+  
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+
+
+
   document.getElementById('maskingRightMark').style.display = 'block'
   document.getElementById('maskingCircle').style.display = 'none'
   document.querySelector('.maskingBg').style.background = '#155EEF'
@@ -1111,6 +1144,9 @@ otherService.addEventListener('click', () => {
   document.getElementById('otherBgRadio').style.display = "none"
   document.querySelector('.otherBg').style.background = '#155EEF'
   document.querySelector('.otherBg').style.color = '#FFFFFF'
+
+
+
 
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
@@ -1161,6 +1197,7 @@ clippingPathPricing.addEventListener('click', () => {
   document.getElementById('photoRetouchingImage').style.display = 'none'
   document.getElementById('RetouchingBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
+  document.getElementById('ghostComplexImage').style.display = 'none'
   document.getElementById('GhostBasicImage').style.display = 'none'
   document.getElementById('multiImage').style.display = 'none'
   document.getElementById('multiImageButton').style.display = 'none'
@@ -1181,10 +1218,12 @@ retouching.addEventListener('click', () => {
   document.getElementById('clippingPathBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
   document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('ghostComplexImage').style.display = 'none'
   document.getElementById('multiImage').style.display = 'none'
   document.getElementById('multiImageButton').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
+
 })
 
 
@@ -1198,6 +1237,16 @@ ghostMannequine.addEventListener('click', () => {
   document.getElementById('RetouchingBasicImage').style.display = 'none'
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('clippingPathBasicImage').style.display = 'none'
+  document.getElementById('multiImage').style.display = 'none'
+  document.getElementById('multiImageButton').style.display = 'none'
+  document.getElementById('maskingImage').style.display = 'none'
+  document.getElementById('maskingImageButton').style.display = 'none'
+
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+
   document.getElementById('multiImage').style.display = 'none'
   document.getElementById('multiImageButton').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
@@ -1220,6 +1269,22 @@ multiClippingPath.addEventListener('click', () => {
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
 
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
+
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+  
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+  
+  
+
 })
 
 const imageMaskingService = document.getElementById('otherServiceBg')
@@ -1235,6 +1300,21 @@ imageMaskingService.addEventListener('click', () => {
   document.getElementById('GhostImage').style.display = 'none'
   document.getElementById('multiImage').style.display = 'none'
   document.getElementById('multiImageButton').style.display = 'none'
+
+
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
+
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+  
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
 })
 
 
@@ -1303,10 +1383,17 @@ flatImage.addEventListener('click', () => {
   document.getElementById('clippingMedium').style.borderRadius = "0px"
   document.getElementById('clippingMedium').style.color = "#475467"
 
+  document.getElementById('clippingComplex').style.background = "none"
+  document.getElementById('clippingComplex').style.padding = "0px"
+  document.getElementById('clippingComplex').style.borderRadius = "0px"
+  document.getElementById('clippingComplex').style.color = "#475467"
+
   document.getElementById('clippingSuperComplex').style.background = "none"
   document.getElementById('clippingSuperComplex').style.padding = "0px"
   document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
   document.getElementById('clippingSuperComplex').style.color = "#475467"
+
+  
 
 })
 
@@ -1689,6 +1776,36 @@ ghostBasicButton.addEventListener('click', () =>{
   document.getElementById('GhostImage').style.display = "block"
   document.getElementById('ghostFlatImage').style.display = "none"
   document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostComplexImage').style.display = 'none'
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+   // Changing Button color
+   document.getElementById('ghostBasicButton').style.background = "#155EEF"
+   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
+   document.getElementById('ghostBasicButton').style.color = "#ffffff"
+
+
+      // Deactiving Current Button
+      document.getElementById('ghostMediumButton').style.padding = "0"
+      document.getElementById('ghostMediumButton').style.borderRadius = "0px"
+      document.getElementById('ghostMediumButton').style.background = "none"
+      document.getElementById('ghostMediumButton').style.color = "#475467"
+      document.getElementById('ghostMediumButton').style.border = "0px"
+      document.getElementById('ghostMediumButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostFlatButton').style.padding = "0"
+      document.getElementById('ghostFlatButton').style.borderRadius = "0px"
+      document.getElementById('ghostFlatButton').style.background = "none"
+      document.getElementById('ghostFlatButton').style.color = "#475467"
+      document.getElementById('ghostFlatButton').style.border = "0px"
+      document.getElementById('ghostFlatButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostSuperComplexButton').style.borderRadius = "0px"
+      document.getElementById('ghostSuperComplexButton').style.background = "none"
+      document.getElementById('ghostSuperComplexButton').style.color = "#475467"
+      document.getElementById('ghostSuperComplexButton').style.border = "0px"
+      document.getElementById('ghostSuperComplexButton').style.boxShadow = "0px"
 })
 
 
@@ -1698,6 +1815,42 @@ ghostFlatButton.addEventListener('click', () =>{
   document.getElementById('GhostImage').style.display = "none"
   document.getElementById('ghostFlatImage').style.display = "block"
   document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostComplexImage').style.display = 'none'
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+  // Changing Button color
+  document.getElementById('ghostFlatButton').style.background = "#155EEF"
+  document.getElementById('ghostFlatButton').style.padding = "10px 14px"
+  document.getElementById('ghostFlatButton').style.borderRadius = "8px"
+  document.getElementById('ghostFlatButton').style.color = "#ffffff"
+
+  
+  document.getElementById('ghostMediumButton').style.padding = "0"
+  document.getElementById('ghostMediumButton').style.borderRadius = "0px"
+  document.getElementById('ghostMediumButton').style.background = "none"
+  document.getElementById('ghostMediumButton').style.color = "#475467"
+  document.getElementById('ghostMediumButton').style.border = "0px"
+  document.getElementById('ghostMediumButton').style.boxShadow = "0px"
+
+  document.getElementById('ghostBasicButton').style.padding = "0"
+  document.getElementById('ghostBasicButton').style.borderRadius = "0px"
+  document.getElementById('ghostBasicButton').style.background = "none"
+  document.getElementById('ghostBasicButton').style.color = "#475467"
+  document.getElementById('ghostBasicButton').style.border = "0px"
+  document.getElementById('ghostBasicButton').style.boxShadow = "0px"
+
+  document.getElementById('ghostComplexButton').style.padding = "0"
+  document.getElementById('ghostComplexButton').style.borderRadius = "0px"
+  document.getElementById('ghostComplexButton').style.background = "none"
+  document.getElementById('ghostComplexButton').style.color = "#475467"
+  document.getElementById('ghostComplexButton').style.border = "0px"
+  document.getElementById('ghostComplexButton').style.boxShadow = "0px"
+
+  document.getElementById('ghostSuperComplexButton').style.borderRadius = "0px"
+  document.getElementById('ghostSuperComplexButton').style.background = "none"
+  document.getElementById('ghostSuperComplexButton').style.color = "#475467"
+  document.getElementById('ghostSuperComplexButton').style.border = "0px"
+  document.getElementById('ghostSuperComplexButton').style.boxShadow = "0px"
 })
 
 
@@ -1707,4 +1860,292 @@ ghostMediumButton.addEventListener('click',() => {
   document.getElementById('GhostImage').style.display = "none"
   document.getElementById('ghostFlatImage').style.display = "none"
   document.getElementById('ghostMediumImage').style.display = "block"
+  document.getElementById('ghostComplexImage').style.display = 'none'
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+  // Changing Button color
+  document.getElementById('ghostMediumButton').style.background = "#155EEF"
+  document.getElementById('ghostMediumButton').style.padding = "10px 14px"
+  document.getElementById('ghostMediumButton').style.borderRadius = "8px"
+  document.getElementById('ghostMediumButton').style.color = "#ffffff"
+
+      // Deactiving Current Button
+      document.getElementById('ghostFlatButton').style.padding = "0"
+      document.getElementById('ghostFlatButton').style.borderRadius = "0px"
+      document.getElementById('ghostFlatButton').style.background = "none"
+      document.getElementById('ghostFlatButton').style.color = "#475467"
+      document.getElementById('ghostFlatButton').style.border = "0px"
+      document.getElementById('ghostFlatButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostBasicButton').style.padding = "0"
+      document.getElementById('ghostBasicButton').style.borderRadius = "0px"
+      document.getElementById('ghostBasicButton').style.background = "none"
+      document.getElementById('ghostBasicButton').style.color = "#475467"
+      document.getElementById('ghostBasicButton').style.border = "0px"
+      document.getElementById('ghostBasicButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostComplexButton').style.padding = "0"
+      document.getElementById('ghostComplexButton').style.borderRadius = "0px"
+      document.getElementById('ghostComplexButton').style.background = "none"
+      document.getElementById('ghostComplexButton').style.color = "#475467"
+      document.getElementById('ghostComplexButton').style.border = "0px"
+      document.getElementById('ghostComplexButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostSuperComplexButton').style.borderRadius = "0px"
+      document.getElementById('ghostSuperComplexButton').style.background = "none"
+      document.getElementById('ghostSuperComplexButton').style.color = "#475467"
+      document.getElementById('ghostSuperComplexButton').style.border = "0px"
+      document.getElementById('ghostSuperComplexButton').style.boxShadow = "0px"
+
+})
+
+// Ghost Mannequine Complex Button
+
+document.getElementById('ghostComplexImage').style.display = 'none'
+
+const ghostComplexButton = document.getElementById('ghostComplexButton')
+ghostComplexButton.addEventListener('click', ()=> {
+  document.getElementById('ghostComplexImage').style.display = 'block'
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('ghostFlatImage').style.display = "none"
+  document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+    // Changing Button color
+    document.getElementById('ghostComplexButton').style.background = "#155EEF"
+  //  document.getElementById('ghostComplexButton').style.padding = "10px 14px"
+   document.getElementById('ghostComplexButton').style.borderRadius = "8px"
+   document.getElementById('ghostComplexButton').style.color = "#ffffff"
+
+      document.getElementById('ghostFlatButton').style.padding = "0"
+      document.getElementById('ghostFlatButton').style.borderRadius = "0px"
+      document.getElementById('ghostFlatButton').style.background = "none"
+      document.getElementById('ghostFlatButton').style.color = "#475467"
+      document.getElementById('ghostFlatButton').style.border = "0px"
+      document.getElementById('ghostFlatButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostBasicButton').style.padding = "0"
+      document.getElementById('ghostBasicButton').style.borderRadius = "0px"
+      document.getElementById('ghostBasicButton').style.background = "none"
+      document.getElementById('ghostBasicButton').style.color = "#475467"
+      document.getElementById('ghostBasicButton').style.border = "0px"
+      document.getElementById('ghostBasicButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostMediumButton').style.padding = "0"
+      document.getElementById('ghostMediumButton').style.borderRadius = "0px"
+      document.getElementById('ghostMediumButton').style.background = "none"
+      document.getElementById('ghostMediumButton').style.color = "#475467"
+      document.getElementById('ghostMediumButton').style.border = "0px"
+      document.getElementById('ghostMediumButton').style.boxShadow = "0px"
+      document.getElementById('ghostComplexButton').style.padding = "0"
+
+   document.getElementById('ghostSuperComplexButton').style.borderRadius = "0px"
+   document.getElementById('ghostSuperComplexButton').style.background = "none"
+   document.getElementById('ghostSuperComplexButton').style.color = "#475467"
+   document.getElementById('ghostSuperComplexButton').style.border = "0px"
+   document.getElementById('ghostSuperComplexButton').style.boxShadow = "0px"
+})
+
+// Ghost Super Complex Button
+document.getElementById('ghostSuperComplexImage').style.display = "none"
+
+const ghostSuperComplexButton = document.getElementById('ghostSuperComplexButton')
+ghostSuperComplexButton.addEventListener('click', ()=> {
+  document.getElementById('ghostSuperComplexImage').style.display = "block"
+  document.getElementById('ghostComplexImage').style.display = 'none'
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('ghostFlatImage').style.display = "none"
+  document.getElementById('ghostMediumImage').style.display = "none"
+
+   // Changing Button color
+   document.getElementById('ghostSuperComplexButton').style.background = "#155EEF"
+   document.getElementById('ghostSuperComplexButton').style.padding = "10px 14px"
+   document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
+   document.getElementById('ghostSuperComplexButton').style.color = "#ffffff"
+
+
+   document.getElementById('ghostFlatButton').style.padding = "0"
+   document.getElementById('ghostFlatButton').style.borderRadius = "0px"
+   document.getElementById('ghostFlatButton').style.background = "none"
+   document.getElementById('ghostFlatButton').style.color = "#475467"
+   document.getElementById('ghostFlatButton').style.border = "0px"
+   document.getElementById('ghostFlatButton').style.boxShadow = "0px"
+
+   document.getElementById('ghostBasicButton').style.padding = "0"
+   document.getElementById('ghostBasicButton').style.borderRadius = "0px"
+   document.getElementById('ghostBasicButton').style.background = "none"
+   document.getElementById('ghostBasicButton').style.color = "#475467"
+   document.getElementById('ghostBasicButton').style.border = "0px"
+   document.getElementById('ghostBasicButton').style.boxShadow = "0px"
+
+   document.getElementById('ghostMediumButton').style.padding = "0"
+   document.getElementById('ghostMediumButton').style.borderRadius = "0px"
+   document.getElementById('ghostMediumButton').style.background = "none"
+   document.getElementById('ghostMediumButton').style.color = "#475467"
+   document.getElementById('ghostMediumButton').style.border = "0px"
+   document.getElementById('ghostMediumButton').style.boxShadow = "0px"
+
+   document.getElementById('ghostComplexButton').style.padding = "0"
+   document.getElementById('ghostComplexButton').style.borderRadius = "0px"
+   document.getElementById('ghostComplexButton').style.background = "none"
+   document.getElementById('ghostComplexButton').style.color = "#475467"
+   document.getElementById('ghostComplexButton').style.border = "0px"
+   document.getElementById('ghostComplexButton').style.boxShadow = "0px"
+
+})
+
+// MultiClipping Path Image Service
+document.getElementById('multiClippingFlat').style.display = "none"
+document.getElementById('multiClippingMedium').style.display = "none"
+document.getElementById('multiClippingComplex').style.display = "none"
+
+
+// Basic MultiClipping Path
+const multiClippingBasic = document.getElementById('multiClippingBasicImage')
+multiClippingBasic.addEventListener('click',()=> {
+  document.getElementById('multiClippingFlat').style.display = "none"
+  document.getElementById('multiImage').style.display = "block"
+  document.getElementById('multiClippingMedium').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
+
+   // Changing Button color
+   document.getElementById('multiClippingBasicImage').style.background = "#155EEF"
+   document.getElementById('multiClippingBasicImage').style.padding = "10px 14px"
+   document.getElementById('multiClippingBasicImage').style.borderRadius = "8px"
+   document.getElementById('multiClippingBasicImage').style.color = "#ffffff"
+
+  
+   document.getElementById('multiClippingFlatImage').style.padding = "0"
+   document.getElementById('multiClippingFlatImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingFlatImage').style.background = "none"
+   document.getElementById('multiClippingFlatImage').style.color = "#475467"
+   document.getElementById('multiClippingFlatImage').style.border = "0px"
+   document.getElementById('multiClippingFlatImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingMediumImage').style.padding = "0"
+   document.getElementById('multiClippingMediumImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingMediumImage').style.background = "none"
+   document.getElementById('multiClippingMediumImage').style.color = "#475467"
+   document.getElementById('multiClippingMediumImage').style.border = "0px"
+   document.getElementById('multiClippingMediumImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingComplexImage').style.padding = "0"
+   document.getElementById('multiClippingComplexImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingComplexImage').style.background = "none"
+   document.getElementById('multiClippingComplexImage').style.color = "#475467"
+   document.getElementById('multiClippingComplexImage').style.border = "0px"
+   document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
+
+})
+
+
+// Flat MultiClipping Path
+const multiClippingFlat = document.getElementById('multiClippingFlatImage')
+multiClippingFlat.addEventListener('click', ()=> {
+  document.getElementById('multiClippingFlat').style.display = "block"
+  document.getElementById('multiImage').style.display = "none"
+  document.getElementById('multiClippingMedium').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
+
+   // Changing Button color
+   document.getElementById('multiClippingFlatImage').style.background = "#155EEF"
+   document.getElementById('multiClippingFlatImage').style.padding = "10px 14px"
+   document.getElementById('multiClippingFlatImage').style.borderRadius = "8px"
+   document.getElementById('multiClippingFlatImage').style.color = "#ffffff"
+
+   document.getElementById('multiClippingBasicImage').style.padding = "0"
+   document.getElementById('multiClippingBasicImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingBasicImage').style.background = "none"
+   document.getElementById('multiClippingBasicImage').style.color = "#475467"
+   document.getElementById('multiClippingBasicImage').style.border = "0px"
+   document.getElementById('multiClippingBasicImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingMediumImage').style.padding = "0"
+   document.getElementById('multiClippingMediumImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingMediumImage').style.background = "none"
+   document.getElementById('multiClippingMediumImage').style.color = "#475467"
+   document.getElementById('multiClippingMediumImage').style.border = "0px"
+   document.getElementById('multiClippingMediumImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingComplexImage').style.padding = "0"
+   document.getElementById('multiClippingComplexImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingComplexImage').style.background = "none"
+   document.getElementById('multiClippingComplexImage').style.color = "#475467"
+   document.getElementById('multiClippingComplexImage').style.border = "0px"
+   document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
+})
+
+// Medium MultiClipping Path
+const mediummultiClippingPath = document.getElementById('multiClippingMediumImage')
+mediummultiClippingPath.addEventListener('click', () =>{
+  document.getElementById('multiClippingFlat').style.display = "none"
+  document.getElementById('multiClippingMedium').style.display = "block"
+  document.getElementById('multiImage').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
+
+   // Changing Button color
+   document.getElementById('multiClippingMediumImage').style.background = "#155EEF"
+   document.getElementById('multiClippingMediumImage').style.padding = "10px 14px"
+   document.getElementById('multiClippingMediumImage').style.borderRadius = "8px"
+   document.getElementById('multiClippingMediumImage').style.color = "#ffffff"
+
+  
+   document.getElementById('multiClippingBasicImage').style.padding = "0"
+   document.getElementById('multiClippingBasicImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingBasicImage').style.background = "none"
+   document.getElementById('multiClippingBasicImage').style.color = "#475467"
+   document.getElementById('multiClippingBasicImage').style.border = "0px"
+   document.getElementById('multiClippingBasicImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingFlatImage').style.padding = "0"
+   document.getElementById('multiClippingFlatImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingFlatImage').style.background = "none"
+   document.getElementById('multiClippingFlatImage').style.color = "#475467"
+   document.getElementById('multiClippingFlatImage').style.border = "0px"
+   document.getElementById('multiClippingFlatImage').style.boxShadow = "0px"
+
+   document.getElementById('multiClippingComplexImage').style.padding = "0"
+   document.getElementById('multiClippingComplexImage').style.borderRadius = "0px"
+   document.getElementById('multiClippingComplexImage').style.background = "none"
+   document.getElementById('multiClippingComplexImage').style.color = "#475467"
+   document.getElementById('multiClippingComplexImage').style.border = "0px"
+   document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
+
+})
+
+// MultiClipping Complex Image
+const multiClippingComplexImage = document.getElementById('multiClippingComplexImage')
+multiClippingComplexImage.addEventListener('click', () =>{
+  document.getElementById('multiClippingFlat').style.display = "none"
+document.getElementById('multiClippingMedium').style.display = "none"
+document.getElementById('multiClippingComplex').style.display = "block"
+document.getElementById('multiImage').style.display = "none"
+
+ // Changing Button color
+ document.getElementById('multiClippingComplexImage').style.background = "#155EEF"
+ document.getElementById('multiClippingComplexImage').style.padding = "10px 14px"
+ document.getElementById('multiClippingComplexImage').style.borderRadius = "8px"
+ document.getElementById('multiClippingComplexImage').style.color = "#ffffff"
+
+ document.getElementById('multiClippingBasicImage').style.padding = "0"
+ document.getElementById('multiClippingBasicImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingBasicImage').style.background = "none"
+ document.getElementById('multiClippingBasicImage').style.color = "#475467"
+ document.getElementById('multiClippingBasicImage').style.border = "0px"
+ document.getElementById('multiClippingBasicImage').style.boxShadow = "0px"
+
+ document.getElementById('multiClippingFlatImage').style.padding = "0"
+ document.getElementById('multiClippingFlatImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingFlatImage').style.background = "none"
+ document.getElementById('multiClippingFlatImage').style.color = "#475467"
+ document.getElementById('multiClippingFlatImage').style.border = "0px"
+ document.getElementById('multiClippingFlatImage').style.boxShadow = "0px"
+
+ document.getElementById('multiClippingMediumImage').style.padding = "0"
+ document.getElementById('multiClippingMediumImage').style.borderRadius = "0px"
+ document.getElementById('multiClippingMediumImage').style.background = "none"
+ document.getElementById('multiClippingMediumImage').style.color = "#475467"
+ document.getElementById('multiClippingMediumImage').style.border = "0px"
+ document.getElementById('multiClippingMediumImage').style.boxShadow = "0px"
+
 })
