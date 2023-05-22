@@ -944,6 +944,9 @@ clippingPath.addEventListener('click', () => {
   document.getElementById('retouchComplexThree').style.display = 'none'
   document.getElementById('retouchComplexFour').style.display = 'none'
 
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
+
 
   // Deactiving The Other Service Button 
   document.getElementById('retouchRightMark').style.display = 'none'
@@ -987,6 +990,8 @@ retouch.addEventListener('click', () => {
   document.getElementById('complexImage').style.display = 'none'
   document.getElementById('superComplexImage').style.display = 'none'
 
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
 
 
   // Deactiving The Other Service Button 
@@ -1024,6 +1029,16 @@ ghostMannequin.addEventListener('click', () => {
   document.getElementById('ghostMannequinRadio').style.display = 'none'
   document.querySelector('.ghostBg').style.background = '#155EEF'
   document.querySelector('.ghostBg').style.color = '#FFFFFF'
+
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
 
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
@@ -1151,6 +1166,7 @@ clippingPathPricing.addEventListener('click', () => {
   document.getElementById('multiImageButton').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
+  
 })
 
 // PhotoRetouching Button Functionaity on Pricing Section
@@ -1664,3 +1680,31 @@ retouchComplexityFive.addEventListener('click', () =>{
 })
 
 // Button Functionality for Photo Retouching Service Ends
+
+document.getElementById('ghostFlatImage').style.display = "none"
+document.getElementById('ghostMediumImage').style.display = "none"
+
+const ghostBasicButton = document.getElementById('ghostBasicButton')
+ghostBasicButton.addEventListener('click', () =>{
+  document.getElementById('GhostImage').style.display = "block"
+  document.getElementById('ghostFlatImage').style.display = "none"
+  document.getElementById('ghostMediumImage').style.display = "none"
+})
+
+
+// Ghost Mannequine Flat Button
+const ghostFlatButton = document.getElementById('ghostFlatButton')
+ghostFlatButton.addEventListener('click', () =>{
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('ghostFlatImage').style.display = "block"
+  document.getElementById('ghostMediumImage').style.display = "none"
+})
+
+
+// Ghost Mannequine Medium Button
+const ghostMediumButton = document.getElementById('ghostMediumButton')
+ghostMediumButton.addEventListener('click',() => {
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('ghostFlatImage').style.display = "none"
+  document.getElementById('ghostMediumImage').style.display = "block"
+})
