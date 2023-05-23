@@ -1903,7 +1903,7 @@ ghostFlatButton.addEventListener('click', () =>{
   document.getElementById('ghostMediumButton').style.color = "#475467"
 
   document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-  document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+  document.getElementById('ghostBasicButton').style.padding = "12px 14px"
   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
   document.getElementById('ghostBasicButton').style.color = "#475467"
   document.getElementById('ghostBasicButton').style.border = "none"
@@ -1937,7 +1937,7 @@ ghostMediumButton.addEventListener('click',() => {
 
       // Deactiving Current Button
       document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-  document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+  document.getElementById('ghostBasicButton').style.padding = "12px 14px"
   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
   document.getElementById('ghostBasicButton').style.color = "#475467"
   document.getElementById('ghostBasicButton').style.border = "none"
@@ -1981,7 +1981,7 @@ ghostComplexButton.addEventListener('click', ()=> {
    document.getElementById('ghostComplexButton').style.color = "#ffffff"
 
    document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "12px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#475467"
    document.getElementById('ghostBasicButton').style.border = "none"
@@ -2026,7 +2026,7 @@ ghostSuperComplexButton.addEventListener('click', ()=> {
 
 
    document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "12px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#475467"
    document.getElementById('ghostBasicButton').style.border = "none"
