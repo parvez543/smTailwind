@@ -2583,3 +2583,53 @@ document.getElementById('maskingComplexFourButton').style.color = "#475467"
 document.getElementById('maskingComplexFourButton').style.border = "0px"
 document.getElementById('maskingComplexFourButton').style.boxShadow = "0px"
 })
+
+
+// Showing Service Name On The Top Of Price Calculator
+// Get all the buttons
+const buttons = document.querySelectorAll('button');
+
+// Get the serviceName element
+const serviceNameElement = document.querySelector('.serviceName');
+
+// Add click event listener to each button
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    // Get the button name
+    const buttonName = this.textContent.trim();
+
+    // Update the serviceName element with the button name
+    serviceNameElement.textContent = buttonName;
+  });
+});
+
+// Changing Price Based On Service
+
+// Get all the buttons
+const serviceButton = document.querySelectorAll('button');
+
+// Get the price container element
+const priceContainer = document.getElementById('priceContainer');
+
+// Define the price values for each service
+const prices = {
+  clippingPath: '$3.00/img',
+  retouching: '$5.00/img',
+  ghostMannequin: '$4.50/img',
+  masking: '$2.50/img',
+  otherServiceBg: '$1.50/img',
+};
+
+// Add click event listeners to each button
+serviceButton.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the service name from the button text
+    const serviceName = button.textContent.trim();
+
+    // Update the price and service name in the price container
+    priceContainer.querySelector('.serviceName').textContent = serviceName;
+    priceContainer.querySelector('.pricing').textContent = prices[button.id];
+  });
+});
+
+// Setting Complexity on Button Click
