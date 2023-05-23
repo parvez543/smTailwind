@@ -1435,23 +1435,31 @@ clippingBasic.addEventListener('click', () => {
   document.getElementById('clippingBasic').style.padding = "10px 14px"
   document.getElementById('clippingBasic').style.borderRadius = "8px"
   document.getElementById('clippingBasic').style.color = "#ffffff"
+   document.getElementById('clippingBasic').style.padding = "10px 14px"
 
   // Deactiving Current Button
   document.getElementById('clippingFlatRate').style.padding = "0"
-  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
-  document.getElementById('clippingFlatRate').style.background = "none"
+  document.getElementById('clippingFlatRate').style.borderRadius = "8px"
+  document.getElementById('clippingFlatRate').style.background = "#EAECF0"
   document.getElementById('clippingFlatRate').style.color = "#475467"
-  document.getElementById('clippingFlatRate').style.border = "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
+  document.getElementById('clippingFlatRate').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingFlatRate').style.padding = "10px 14px"
 
-  document.getElementById('clippingSuperComplex').style.background = "none"
-  document.getElementById('clippingSuperComplex').style.padding = "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingComplex').style.padding = "0"
+  document.getElementById('clippingComplex').style.borderRadius = "8px"
+  document.getElementById('clippingComplex').style.background = "#EAECF0"
+  document.getElementById('clippingComplex').style.color = "#475467"
+  document.getElementById('clippingComplex').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingComplex').style.padding = "10px 14px"
+
+  document.getElementById('clippingSuperComplex').style.background = "#EAECF0"
+  document.getElementById('clippingSuperComplex').style.padding = "10px 14px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "8px"
   document.getElementById('clippingSuperComplex').style.color = "#475467"
   
-  document.getElementById('clippingMedium').style.background = "none"
-  document.getElementById('clippingMedium').style.padding = "0px"
-  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.background = "#EAECF0"
+  document.getElementById('clippingMedium').style.padding = "10px 14px"
+  document.getElementById('clippingMedium').style.borderRadius = "8px"
   document.getElementById('clippingMedium').style.color = "#475467"
 
 })
@@ -1473,26 +1481,28 @@ flatImage.addEventListener('click', () => {
 
   // Deactiving Current Button
   document.getElementById('clippingBasic').style.padding = "0"
-  document.getElementById('clippingBasic').style.borderRadius = "0px"
-  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.borderRadius = "8px"
+  document.getElementById('clippingBasic').style.background = "#EAECF0"
   document.getElementById('clippingBasic').style.color = "#475467"
-  document.getElementById('clippingBasic').style.border = "0px"
-  document.getElementById('clippingBasic').style.boxShadow = "0px"
+  document.getElementById('clippingBasic').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingBasic').style.padding = "10px 14px"
 
-  document.getElementById('clippingMedium').style.background = "none"
-  document.getElementById('clippingMedium').style.padding = "0px"
-  document.getElementById('clippingMedium').style.borderRadius = "0px"
-  document.getElementById('clippingMedium').style.color = "#475467"
-
-  document.getElementById('clippingComplex').style.background = "none"
-  document.getElementById('clippingComplex').style.padding = "0px"
-  document.getElementById('clippingComplex').style.borderRadius = "0px"
+  document.getElementById('clippingComplex').style.padding = "0"
+  document.getElementById('clippingComplex').style.borderRadius = "8px"
+  document.getElementById('clippingComplex').style.background = "#EAECF0"
   document.getElementById('clippingComplex').style.color = "#475467"
+  document.getElementById('clippingComplex').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingComplex').style.padding = "10px 14px"
 
-  document.getElementById('clippingSuperComplex').style.background = "none"
-  document.getElementById('clippingSuperComplex').style.padding = "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.background = "#EAECF0"
+  document.getElementById('clippingSuperComplex').style.padding = "10px 14px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "8px"
   document.getElementById('clippingSuperComplex').style.color = "#475467"
+  
+  document.getElementById('clippingMedium').style.background = "#EAECF0"
+  document.getElementById('clippingMedium').style.padding = "10px 14px"
+  document.getElementById('clippingMedium').style.borderRadius = "8px"
+  document.getElementById('clippingMedium').style.color = "#475467"
 
   
 
@@ -1515,30 +1525,28 @@ clippingMedium.addEventListener('click', () => {
 
   // Deactiving Current Button
   document.getElementById('clippingBasic').style.padding = "0"
-  document.getElementById('clippingBasic').style.borderRadius = "0px"
-  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.borderRadius = "8px"
+  document.getElementById('clippingBasic').style.background = "#EAECF0"
   document.getElementById('clippingBasic').style.color = "#475467"
-  document.getElementById('clippingBasic').style.border = "0px"
-  document.getElementById('clippingBasic').style.boxShadow = "0px"
-
-  document.getElementById('clippingFlatRate').style.padding = "0"
-  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
-  document.getElementById('clippingFlatRate').style.background = "none"
-  document.getElementById('clippingFlatRate').style.color = "#475467"
-  document.getElementById('clippingFlatRate').style.border = "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
+  document.getElementById('clippingBasic').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingBasic').style.padding = "10px 14px"
 
   document.getElementById('clippingComplex').style.padding = "0"
-  document.getElementById('clippingComplex').style.borderRadius = "0px"
-  document.getElementById('clippingComplex').style.background = "none"
+  document.getElementById('clippingComplex').style.borderRadius = "8px"
+  document.getElementById('clippingComplex').style.background = "#EAECF0"
   document.getElementById('clippingComplex').style.color = "#475467"
-  document.getElementById('clippingComplex').style.border = "0px"
-  document.getElementById('clippingComplex').style.boxShadow = "0px"
+  document.getElementById('clippingComplex').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingComplex').style.padding = "10px 14px"
 
-  document.getElementById('clippingSuperComplex').style.background = "none"
-  document.getElementById('clippingSuperComplex').style.padding = "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.background = "#EAECF0"
+  document.getElementById('clippingSuperComplex').style.padding = "10px 14px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "8px"
   document.getElementById('clippingSuperComplex').style.color = "#475467"
+  
+  document.getElementById('clippingFlatRate').style.background = "#EAECF0"
+  document.getElementById('clippingFlatRate').style.padding = "10px 14px"
+  document.getElementById('clippingFlatRate').style.borderRadius = "8px"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
 
 })
 
@@ -1560,28 +1568,28 @@ clippingPathComplex.addEventListener('click', () => {
 
   // Deactiving Current Button
   document.getElementById('clippingBasic').style.padding = "0"
-  document.getElementById('clippingBasic').style.borderRadius = "0px"
-  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.borderRadius = "8px"
+  document.getElementById('clippingBasic').style.background = "#EAECF0"
   document.getElementById('clippingBasic').style.color = "#475467"
-  document.getElementById('clippingBasic').style.border = "0px"
-  document.getElementById('clippingBasic').style.boxShadow = "0px"
+  document.getElementById('clippingBasic').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingBasic').style.padding = "10px 14px"
 
-  document.getElementById('clippingFlatRate').style.padding = "0"
-  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
-  document.getElementById('clippingFlatRate').style.background = "none"
-  document.getElementById('clippingFlatRate').style.color = "#475467"
-  document.getElementById('clippingFlatRate').style.border = "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
-
-  document.getElementById('clippingMedium').style.background = "none"
-  document.getElementById('clippingMedium').style.padding = "0px"
-  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.padding = "0"
+  document.getElementById('clippingMedium').style.borderRadius = "8px"
+  document.getElementById('clippingMedium').style.background = "#EAECF0"
   document.getElementById('clippingMedium').style.color = "#475467"
+  document.getElementById('clippingMedium').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingMedium').style.padding = "10px 14px"
 
-  document.getElementById('clippingSuperComplex').style.background = "none"
-  document.getElementById('clippingSuperComplex').style.padding = "0px"
-  document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
+  document.getElementById('clippingSuperComplex').style.background = "#EAECF0"
+  document.getElementById('clippingSuperComplex').style.padding = "10px 14px"
+  document.getElementById('clippingSuperComplex').style.borderRadius = "8px"
   document.getElementById('clippingSuperComplex').style.color = "#475467"
+  
+  document.getElementById('clippingFlatRate').style.background = "#EAECF0"
+  document.getElementById('clippingFlatRate').style.padding = "10px 14px"
+  document.getElementById('clippingFlatRate').style.borderRadius = "8px"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
 })
 
 // Clipping Super Complex
@@ -1602,30 +1610,28 @@ clippingSuperComplex.addEventListener('click', () => {
 
   // Deactiving Current Button
   document.getElementById('clippingBasic').style.padding = "0"
-  document.getElementById('clippingBasic').style.borderRadius = "0px"
-  document.getElementById('clippingBasic').style.background = "none"
+  document.getElementById('clippingBasic').style.borderRadius = "8px"
+  document.getElementById('clippingBasic').style.background = "#EAECF0"
   document.getElementById('clippingBasic').style.color = "#475467"
-  document.getElementById('clippingBasic').style.border = "0px"
-  document.getElementById('clippingBasic').style.boxShadow = "0px"
+  document.getElementById('clippingBasic').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingBasic').style.padding = "10px 14px"
 
-  document.getElementById('clippingFlatRate').style.padding = "0"
-  document.getElementById('clippingFlatRate').style.borderRadius = "0px"
-  document.getElementById('clippingFlatRate').style.background = "none"
-  document.getElementById('clippingFlatRate').style.color = "#475467"
-  document.getElementById('clippingFlatRate').style.border = "0px"
-  document.getElementById('clippingFlatRate').style.boxShadow = "0px"
-
-  document.getElementById('clippingMedium').style.background = "none"
-  document.getElementById('clippingMedium').style.padding = "0px"
-  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.padding = "0"
+  document.getElementById('clippingMedium').style.borderRadius = "8px"
+  document.getElementById('clippingMedium').style.background = "#EAECF0"
   document.getElementById('clippingMedium').style.color = "#475467"
+  document.getElementById('clippingMedium').style.border = "1px solid #EAECF0"
+  document.getElementById('clippingMedium').style.padding = "10px 14px"
 
-  document.getElementById('clippingComplex').style.padding = "0"
-  document.getElementById('clippingComplex').style.borderRadius = "0px"
-  document.getElementById('clippingComplex').style.background = "none"
+  document.getElementById('clippingComplex').style.background = "#EAECF0"
+  document.getElementById('clippingComplex').style.padding = "10px 14px"
+  document.getElementById('clippingComplex').style.borderRadius = "8px"
   document.getElementById('clippingComplex').style.color = "#475467"
-  document.getElementById('clippingComplex').style.border = "0px"
-  document.getElementById('clippingComplex').style.boxShadow = "0px"
+  
+  document.getElementById('clippingFlatRate').style.background = "#EAECF0"
+  document.getElementById('clippingFlatRate').style.padding = "10px 14px"
+  document.getElementById('clippingFlatRate').style.borderRadius = "8px"
+  document.getElementById('clippingFlatRate').style.color = "#475467"
 })
 
 
@@ -2871,4 +2877,81 @@ multiClipSuperComplex.addEventListener('click', () => {
 
   // Update the pricing
   pricing.textContent = '$15.00/img'; // Update with the desired price for Photo Retouching
+});
+
+
+// Image Masking
+const imageMaskingServiceOne = document.getElementById("otherServiceBg")
+const complexLevelOne = document.getElementById('maskingComplexOneButton')
+const complexLevelTwo = document.getElementById('maskingComplexTwoButton')
+const complexLevelThree = document.getElementById('maskingComplexThreeButton')
+const complexLevelFour = document.getElementById('maskingComplexFourButton')
+const complexLevelFive = document.getElementById('maskingComplexFiveButton')
+
+
+
+imageMaskingServiceOne.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Image Masking';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 1';
+
+  // Update the pricing
+  pricing.textContent = '$2.00/img'; // Update with the desired price for Photo Retouching
+});
+
+complexLevelOne.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 1';
+
+  // Update the pricing
+  pricing.textContent = '$2.00/img'; // Update with the desired price for Photo Retouching
+});
+
+complexLevelTwo.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 2';
+
+  // Update the pricing
+  pricing.textContent = '$3.00/img'; // Update with the desired price for Photo Retouching
+});
+
+complexLevelThree.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 3';
+
+  // Update the pricing
+  pricing.textContent = '$4.00/img'; // Update with the desired price for Photo Retouching
+});
+
+complexLevelFour.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 4';
+
+  // Update the pricing
+  pricing.textContent = '$5.00/img'; // Update with the desired price for Photo Retouching
+});
+
+complexLevelFive.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 5';
+
+  // Update the pricing
+  pricing.textContent = '$8.00/img'; // Update with the desired price for Photo Retouching
 });
