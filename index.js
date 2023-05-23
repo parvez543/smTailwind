@@ -2937,3 +2937,77 @@ buttons.forEach(button => {
     totalServicePrice.textContent = `$${totalPrice.toFixed(2)}`;
   });
 });
+
+// Get references to the necessary elements
+const dropShadowContainer = document.getElementById("dropShadowContainer");
+const customShadowContainer = document.getElementById("customShadowContainer");
+const buttonName = document.querySelector(".dropShadow");
+const buttonPrice = document.querySelector(".servicePrice");
+const subtotalImage = document.querySelector(".totalImage");
+const subtotalPrice = document.querySelector(".subtotalPrice");
+
+// Initialize the prices and subtotal variables
+let dropShadowPrice = 0.5;
+let customShadowPrice = 0.5;
+let subtotal = 1.0;
+
+// Event listener for the drop shadow button
+dropShadowContainer.addEventListener("click", () => {
+  if (!dropShadowContainer.classList.contains("active")) {
+    dropShadowContainer.classList.add("active");
+    buttonName.textContent = "Drop Shadow";
+    buttonPrice.textContent = "$" + customShadowPrice.toFixed(2) + "";
+    subtotal += dropShadowPrice;
+    updateSubtotal();
+  } else {
+    dropShadowContainer.classList.remove("active");
+    buttonName.textContent = "";
+    buttonPrice.textContent = "";
+    subtotal -= dropShadowPrice;
+    updateSubtotal();
+  }
+});
+
+// Event listener for the custom shadow button
+customShadowContainer.addEventListener("click", () => {
+  if (!customShadowContainer.classList.contains("active")) {
+    customShadowContainer.classList.add("active");
+    buttonName.textContent = "Custom Shadow";
+    buttonPrice.textContent = "$" + customShadowPrice.toFixed(2) + "";
+    subtotal += customShadowPrice;
+    updateSubtotal();
+  } else {
+    customShadowContainer.classList.remove("active");
+    buttonName.textContent = "";
+    buttonPrice.textContent = "";
+    subtotal -= customShadowPrice;
+    updateSubtotal();
+  }
+});
+
+// Function to update the subtotal
+function updateSubtotal() {
+  subtotalPrice.textContent = "$" + subtotal.toFixed(2);
+}
+
+// Double-click event listener for the drop shadow button
+dropShadowContainer.addEventListener("dblclick", () => {
+  dropShadowContainer.classList.remove("active");
+  buttonName.textContent = "";
+  buttonPrice.textContent = "";
+  subtotal -= dropShadowPrice;
+  updateSubtotal();
+});
+
+// Double-click event listener for the custom shadow button
+customShadowContainer.addEventListener("dblclick", () => {
+  customShadowContainer.classList.remove("active");
+  buttonName.textContent = "";
+  buttonPrice.textContent = "";
+  subtotal -= customShadowPrice;
+  updateSubtotal();
+});
+
+// Initialize the subtotal
+updateSubtotal();
+
