@@ -3956,21 +3956,25 @@
                                 <p class="pl-[24px] mt-[24px] pricingServicePara">Select any of four the shadows</p>
 
                                 <div class="pl-[24px] flex gap-[24px]">
-                                    <div class="mt-[12px] serviceContainer">
+                                    <button class="mt-[12px] serviceContainer" id="dropShadowContainer">
                                         <div class="flex items-center gap-[8px]">
-                                            <figure>
+                                            <figure >
                                                 <img src="./home4k/H_S/DropShadow.svg" />
                                             </figure>
+                                            
                                             <div>
-                                                <h6 class="serviceHeading">Drop Shadow</h6>
+                                                <h6 class="serviceHeading -ml-[30px]">Drop Shadow</h6>
                                                 <p class="serviceDetail mt-[6px]">(+$0.5 per image)</p>
                                             </div>
                                         </div>
-                                        <figure class="ml-[40px]">
+                                        <figure class="ml-[40px]" id="dropShadowRound">
                                             <img src="./home4k/H_S/_Checkbox base.svg" />
                                         </figure>
-                                    </div>
-                                    <div class="mt-[12px] serviceContainer">
+                                        <figure class="ml-[40px]" id="dropShadowCheck">
+                                            <img src="./home4k/H_S//check.svg" />
+                                        </figure>
+                                    </button>
+                                    <button class="mt-[12px] serviceContainer" id="customShadowContainer">
                                         <div class="flex items-center gap-[8px]">
                                             <figure>
                                                 <img src="./home4k/H_S/customShadow.svg" />
@@ -3980,13 +3984,16 @@
                                                 <p class="serviceDetail mt-[6px]">(+$0.5 per image)</p>
                                             </div>
                                         </div>
-                                        <figure class="ml-[40px]">
+                                        <figure class="ml-[40px]" id="customShadowRound">
                                             <img src="./home4k/H_S/_Checkbox base.svg" />
                                         </figure>
-                                    </div>
+                                        <figure class="ml-[40px]" id="customShadowCheck">
+                                            <img src="./home4k/H_S//check.svg" />
+                                        </figure>
+                                    </button>
                                 </div>
                                 <div class="pl-[24px] flex gap-[24px]">
-                                    <div class="mt-[8px] serviceContainer">
+                                    <button class="mt-[8px] serviceContainer" id="reflactionContainer">
                                         <div class="flex items-center gap-[8px]">
                                             <figure>
                                                 <img src="./home4k/H_S/reflectionShadow.svg" />
@@ -3996,24 +4003,30 @@
                                                 <p class="serviceDetail mt-[6px]">(+$0.5 per image)</p>
                                             </div>
                                         </div>
-                                        <figure class="ml-[40px]">
+                                        <figure class="ml-[40px]" id="reflactionRound">
                                             <img src="./home4k/H_S/_Checkbox base.svg" />
                                         </figure>
-                                    </div>
-                                    <div class="mt-[8px] serviceContainer">
+                                        <figure class="ml-[40px]" id="reflactionCheck">
+                                            <img src="./home4k/H_S//check.svg" />
+                                        </figure>
+                                    </button>
+                                    <button class="mt-[8px] serviceContainer" id="keepShadowContainer">
                                         <div class="flex items-center gap-[8px]">
                                             <figure>
                                                 <img src="./home4k/H_S/keepShadow.svg" />
                                             </figure>
                                             <div>
-                                                <h6 class="serviceHeading">Keep Shadow</h6>
+                                                <h6 class="serviceHeading -ml-[30px]">Keep Shadow</h6>
                                                 <p class="serviceDetail mt-[6px]">(+$0.5 per image)</p>
                                             </div>
                                         </div>
-                                        <figure class="ml-[40px]">
+                                        <figure class="ml-[40px]" id="keepShadowRound">
                                             <img src="./home4k/H_S/_Checkbox base.svg" />
                                         </figure>
-                                    </div>
+                                        <figure class="ml-[40px]" id="keepShadowCheck">
+                                            <img src="./home4k/H_S//check.svg" />
+                                        </figure>
+                                    </button>
                                 </div>
                             </div>
                             <!-- All Service Select Section -->
@@ -4087,30 +4100,16 @@
                                 <p class="serviceName">Clipping Path</p>
                                 <p class="pricing -mt-[15px]">$1.00/img</p>
                                 <p class="-mt-[20px] serviceName">Complexity- <span class="font-bold">Basic</span></p>
-                                <div class="flex gap-[152px]">
-                                    <p class="dropShadow">Drop Shadow</p>
+                                <div class="flex">
+                                    <p class="dropShadow w-[230px]">Drop Shadow</p>
                                     <p class="servicePrice">$0.50</p>
                                 </div>
                                 <div class="border -mt-[10px]"></div>
 
-                                <div class="-mt-[10px] flex gap-[145px]">
-                                    <p class="dropShadow">Margin / Crop</p>
-                                    <p class="servicePrice">$0.50</p>
-                                </div>
-                                <div class="border -mt-[10px]"></div>
-
-                                <div class="-mt-[10px] flex gap-[160px]">
-                                    <p class="dropShadow">Adjustment</p>
-                                    <p class="servicePrice">$0.50</p>
-                                </div>
-                                <div class="border -mt-[10px]"></div>
-                                <div class="-mt-[10px] flex gap-[185px]">
-                                    <p class="dropShadow">Retouch</p>
-                                    <p class="servicePrice">$0.50</p>
-                                </div>
-                                <div class="border -mt-[10px]"></div>
-                                <div class="-mt-[12px] flex gap-[102px]">
-                                    <p class="totalImage">Per Image SubTotal</p>
+                                
+                               
+                                <div class="-mt-[12px] flex">
+                                    <p class="totalImage w-[230px]">Per Image SubTotal</p>
                                     <p class="totalServicePrice">$3.00</p>
                                 </div>
                                 <div class="imageCalculator mt-[14px]">
