@@ -1853,7 +1853,7 @@ ghostBasicButton.addEventListener('click', () =>{
 
    // Changing Button color
    document.getElementById('ghostBasicButton').style.background = "#155EEF"
-   document.getElementById('ghostBasicButton').style.padding = "8px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#ffffff"
 
