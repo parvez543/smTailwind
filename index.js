@@ -1660,33 +1660,25 @@ retouchComplexOne.addEventListener('click', () => {
   document.getElementById('retouchComplexOneButton').style.color = "#ffffff"
 
   // Deactiving Current Button
-  document.getElementById('retouchComplexTwoButton').style.padding = "0"
-  document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexTwoButton').style.background = "none"
+  document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#475467"
-  document.getElementById('retouchComplexTwoButton').style.border = "0px"
-  document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexThreeButton').style.padding = "0"
-  document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexThreeButton').style.background = "none"
+  document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#475467"
-  document.getElementById('retouchComplexThreeButton').style.border = "0px"
-  document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexFourButton').style.padding = "0"
-  document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexFourButton').style.background = "none"
+  document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#475467"
-  document.getElementById('retouchComplexFourButton').style.border = "0px"
-  document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexFiveButton').style.padding = "0"
-  document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexFiveButton').style.background = "none"
+  document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
-  document.getElementById('retouchComplexFiveButton').style.border = "0px"
-  document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
 })
 
 // Complexity Two
@@ -1705,33 +1697,27 @@ retouchComplexTwo.addEventListener('click', () => {
   document.getElementById('retouchComplexTwoButton').style.color = "#ffffff"
 
   // Deactiving Current Button
-  document.getElementById('retouchComplexOneButton').style.padding = "0"
-  document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexOneButton').style.background = "none"
+
+  document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#475467"
-  document.getElementById('retouchComplexOneButton').style.border = "0px"
-  document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+  document.getElementById('retouchComplexOneButton').style.border = "none"
 
-  document.getElementById('retouchComplexThreeButton').style.padding = "0"
-  document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexThreeButton').style.background = "none"
+  document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#475467"
-  document.getElementById('retouchComplexThreeButton').style.border = "0px"
-  document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexFourButton').style.padding = "0"
-  document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexFourButton').style.background = "none"
+  document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#475467"
-  document.getElementById('retouchComplexFourButton').style.border = "0px"
-  document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexFiveButton').style.padding = "0"
-  document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexFiveButton').style.background = "none"
+  document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
-  document.getElementById('retouchComplexFiveButton').style.border = "0px"
-  document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
 })
 
 // Complexity Three
@@ -1750,33 +1736,26 @@ retouchComplexThree.addEventListener('click', () => {
   document.getElementById('retouchComplexThreeButton').style.color = "#ffffff"
 
   // Deactiving Current Button
-  document.getElementById('retouchComplexOneButton').style.padding = "0"
-  document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexOneButton').style.background = "none"
+  document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#475467"
-  document.getElementById('retouchComplexOneButton').style.border = "0px"
-  document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+  document.getElementById('retouchComplexOneButton').style.border = "none"
 
-  document.getElementById('retouchComplexTwoButton').style.padding = "0"
-  document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexTwoButton').style.background = "none"
+  document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#475467"
-  document.getElementById('retouchComplexTwoButton').style.border = "0px"
-  document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexFourButton').style.padding = "0"
-  document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexFourButton').style.background = "none"
+  document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#475467"
-  document.getElementById('retouchComplexFourButton').style.border = "0px"
-  document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
-  
-  document.getElementById('retouchComplexFiveButton').style.padding = "0"
-  document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexFiveButton').style.background = "none"
+
+  document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
-  document.getElementById('retouchComplexFiveButton').style.border = "0px"
-  document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
 
 })
 
@@ -1798,34 +1777,26 @@ retouchComplexityFour.addEventListener('click', () => {
 
 
   // Deactiving Current Button
-  document.getElementById('retouchComplexOneButton').style.padding = "0"
-  document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexOneButton').style.background = "none"
+  document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#475467"
-  document.getElementById('retouchComplexOneButton').style.border = "0px"
-  document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+  document.getElementById('retouchComplexOneButton').style.border = "none"
 
-  document.getElementById('retouchComplexTwoButton').style.padding = "0"
-  document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexTwoButton').style.background = "none"
+  document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#475467"
-  document.getElementById('retouchComplexTwoButton').style.border = "0px"
-  document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
-
-  document.getElementById('retouchComplexThreeButton').style.padding = "0"
-  document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
-  document.getElementById('retouchComplexThreeButton').style.background = "none"
+  
+  document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#475467"
-  document.getElementById('retouchComplexThreeButton').style.border = "0px"
-  document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
 
-  document.getElementById('retouchComplexFiveButton').style.padding = "0"
-    document.getElementById('retouchComplexFiveButton').style.borderRadius = "0px"
-    document.getElementById('retouchComplexFiveButton').style.background = "none"
-    document.getElementById('retouchComplexFiveButton').style.color = "#475467"
-    document.getElementById('retouchComplexFiveButton').style.border = "0px"
-    document.getElementById('retouchComplexFiveButton').style.boxShadow = "0px"
-
+  document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
+  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
+  document.getElementById('retouchComplexFiveButton').style.color = "#475467"
 })
 
 // Complexity Five
@@ -1845,32 +1816,26 @@ retouchComplexityFive.addEventListener('click', () =>{
 
     // Deactiving Current Button
     document.getElementById('retouchComplexOneButton').style.padding = "0"
-    document.getElementById('retouchComplexOneButton').style.borderRadius = "0px"
-    document.getElementById('retouchComplexOneButton').style.background = "none"
+    document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
+    document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexOneButton').style.color = "#475467"
-    document.getElementById('retouchComplexOneButton').style.border = "0px"
-    document.getElementById('retouchComplexOneButton').style.boxShadow = "0px"
+    document.getElementById('retouchComplexOneButton').style.border = "none"
   
-    document.getElementById('retouchComplexTwoButton').style.padding = "0"
-    document.getElementById('retouchComplexTwoButton').style.borderRadius = "0px"
-    document.getElementById('retouchComplexTwoButton').style.background = "none"
+    document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
+    document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexTwoButton').style.color = "#475467"
-    document.getElementById('retouchComplexTwoButton').style.border = "0px"
-    document.getElementById('retouchComplexTwoButton').style.boxShadow = "0px"
-  
-    document.getElementById('retouchComplexThreeButton').style.padding = "0"
-    document.getElementById('retouchComplexThreeButton').style.borderRadius = "0px"
-    document.getElementById('retouchComplexThreeButton').style.background = "none"
-    document.getElementById('retouchComplexThreeButton').style.color = "#475467"
-    document.getElementById('retouchComplexThreeButton').style.border = "0px"
-    document.getElementById('retouchComplexThreeButton').style.boxShadow = "0px"
     
-    document.getElementById('retouchComplexFourButton').style.padding = "0"
-    document.getElementById('retouchComplexFourButton').style.borderRadius = "0px"
-    document.getElementById('retouchComplexFourButton').style.background = "none"
+    document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
+    document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
+    document.getElementById('retouchComplexThreeButton').style.color = "#475467"
+
+    document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
+    document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexFourButton').style.color = "#475467"
-    document.getElementById('retouchComplexFourButton').style.border = "0px"
-    document.getElementById('retouchComplexFourButton').style.boxShadow = "0px"
 })
 
 // Button Functionality for Photo Retouching Service Ends
