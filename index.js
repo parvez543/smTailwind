@@ -1448,6 +1448,11 @@ clippingBasic.addEventListener('click', () => {
   document.getElementById('clippingSuperComplex').style.padding = "0px"
   document.getElementById('clippingSuperComplex').style.borderRadius = "0px"
   document.getElementById('clippingSuperComplex').style.color = "#475467"
+  
+  document.getElementById('clippingMedium').style.background = "none"
+  document.getElementById('clippingMedium').style.padding = "0px"
+  document.getElementById('clippingMedium').style.borderRadius = "0px"
+  document.getElementById('clippingMedium').style.color = "#475467"
 
 })
 
@@ -2587,49 +2592,144 @@ document.getElementById('maskingComplexFourButton').style.boxShadow = "0px"
 
 // Showing Service Name On The Top Of Price Calculator
 // Get all the buttons
-const buttons = document.querySelectorAll('button');
+// Get the necessary elements
+const clippingPathButton = document.getElementById('clippingPath');
+const retouchingButton = document.getElementById('retouching');
+const clippingBasicButton = document.getElementById('clippingBasic');
+const clippingFlatRateButton = document.getElementById('clippingFlatRate');
+const clippingComplexButton = document.getElementById('clippingComplex');
+const clippingMediumButton = document.getElementById('clippingMedium')
+const clippingSuperComplexButton = document.getElementById('clippingSuperComplex')
 
-// Get the serviceName element
-const serviceNameElement = document.querySelector('.serviceName');
 
-// Add click event listener to each button
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    // Get the button name
-    const buttonName = this.textContent.trim();
 
-    // Update the serviceName element with the button name
-    serviceNameElement.textContent = buttonName;
-  });
+
+const pricing = document.querySelector('.pricing');
+const complexity = document.querySelector('.serviceName span');
+
+// Add event listeners to the buttons
+clippingPathButton.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Clipping Path';
+
+  // Update the complexity to default
+  complexity.textContent = 'Basic';
+
+  // Update the pricing
+  pricing.textContent = '$1.00/img';
 });
 
-// Changing Price Based On Service
+clippingBasicButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Basic';
 
-// Get all the buttons
-const serviceButton = document.querySelectorAll('button');
-
-// Get the price container element
-const priceContainer = document.getElementById('priceContainer');
-
-// Define the price values for each service
-const prices = {
-  clippingPath: '$3.00/img',
-  retouching: '$5.00/img',
-  ghostMannequin: '$4.50/img',
-  masking: '$2.50/img',
-  otherServiceBg: '$1.50/img',
-};
-
-// Add click event listeners to each button
-serviceButton.forEach(button => {
-  button.addEventListener('click', () => {
-    // Get the service name from the button text
-    const serviceName = button.textContent.trim();
-
-    // Update the price and service name in the price container
-    priceContainer.querySelector('.serviceName').textContent = serviceName;
-    priceContainer.querySelector('.pricing').textContent = prices[button.id];
-  });
+  // Update the pricing
+  pricing.textContent = '$1.00/img';
 });
 
-// Setting Complexity on Button Click
+clippingFlatRateButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Flat Rate';
+
+  // Update the pricing
+  pricing.textContent = '$2.50/img'; // Update with the desired price for Flat Rate
+});
+
+clippingMediumButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Medium';
+
+  // Update the pricing
+  pricing.textContent = '$5.00/img'; // Update with the desired price for Flat Rate
+});
+
+clippingComplexButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex';
+
+  // Update the pricing
+  pricing.textContent = '$10.00/img'; // Update with the desired price for Complex
+});
+
+clippingSuperComplexButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Super Complex';
+
+  // Update the pricing
+  pricing.textContent = '$16.00/img'; // Update with the desired price for Complex
+});
+
+
+// Photo Retouching
+const photoRetouchComplexOne = document.getElementById('retouchComplexOneButton')
+const photRetouchComplexTwo = document.getElementById('retouchComplexTwoButton')
+const photoRetouchComplexThree = document.getElementById('retouchComplexThreeButton')
+const photoRetouchComplexFour = document.getElementById('retouchComplexFourButton')
+const photoRetouchComplexFive = document.getElementById('retouchComplexFiveButton')
+
+retouchingButton.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Photo Retouching';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 1';
+
+  // Update the pricing
+  pricing.textContent = '$5.00/img'; // Update with the desired price for Photo Retouching
+});
+
+
+photoRetouchComplexOne.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Photo Retouching';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex 1';
+
+  // Update the pricing
+  pricing.textContent = '$5.00/img'; // Update with the desired price for Photo Retouching
+});
+
+// Photo retouching
+photRetouchComplexTwo.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex 1';
+
+  // Update the pricing
+  pricing.textContent = '$5.00/img'; // Update with the desired price for Complex
+});
+
+
+photRetouchComplexTwo.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex 2';
+
+  // Update the pricing
+  pricing.textContent = '$7.00/img'; // Update with the desired price for Complex
+});
+
+photoRetouchComplexThree.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex 3';
+
+  // Update the pricing
+  pricing.textContent = '$8.00/img'; // Update with the desired price for Complex
+});
+
+photoRetouchComplexFour.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex 4';
+
+  // Update the pricing
+  pricing.textContent = '$10.00/img'; // Update with the desired price for Complex
+});
+
+photoRetouchComplexFive.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex 5';
+
+  // Update the pricing
+  pricing.textContent = '$12.00/img'; // Update with the desired price for Complex
+});
+
+
