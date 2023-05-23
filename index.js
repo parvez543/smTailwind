@@ -1699,7 +1699,7 @@ retouchComplexTwo.addEventListener('click', () => {
   // Deactiving Current Button
 
   document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#475467"
   document.getElementById('retouchComplexOneButton').style.border = "none"
@@ -1737,7 +1737,7 @@ retouchComplexThree.addEventListener('click', () => {
 
   // Deactiving Current Button
   document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#475467"
   document.getElementById('retouchComplexOneButton').style.border = "none"
@@ -1778,7 +1778,7 @@ retouchComplexityFour.addEventListener('click', () => {
 
   // Deactiving Current Button
   document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#475467"
   document.getElementById('retouchComplexOneButton').style.border = "none"
@@ -1817,7 +1817,7 @@ retouchComplexityFive.addEventListener('click', () =>{
     // Deactiving Current Button
     document.getElementById('retouchComplexOneButton').style.padding = "0"
     document.getElementById('retouchComplexOneButton').style.background = "#EAECF0"
-    document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexOneButton').style.padding = "8px 14px"
     document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexOneButton').style.color = "#475467"
     document.getElementById('retouchComplexOneButton').style.border = "none"
@@ -1903,7 +1903,7 @@ ghostFlatButton.addEventListener('click', () =>{
   document.getElementById('ghostMediumButton').style.color = "#475467"
 
   document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-  document.getElementById('ghostBasicButton').style.padding = "8px 14px"
+  document.getElementById('ghostBasicButton').style.padding = "10px 14px"
   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
   document.getElementById('ghostBasicButton').style.color = "#475467"
   document.getElementById('ghostBasicButton').style.border = "none"
@@ -1937,7 +1937,7 @@ ghostMediumButton.addEventListener('click',() => {
 
       // Deactiving Current Button
       document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-  document.getElementById('ghostBasicButton').style.padding = "8px 14px"
+  document.getElementById('ghostBasicButton').style.padding = "10px 14px"
   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
   document.getElementById('ghostBasicButton').style.color = "#475467"
   document.getElementById('ghostBasicButton').style.border = "none"
@@ -1981,7 +1981,7 @@ ghostComplexButton.addEventListener('click', ()=> {
    document.getElementById('ghostComplexButton').style.color = "#ffffff"
 
    document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-   document.getElementById('ghostBasicButton').style.padding = "8px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#475467"
    document.getElementById('ghostBasicButton').style.border = "none"
@@ -2026,7 +2026,7 @@ ghostSuperComplexButton.addEventListener('click', ()=> {
 
 
    document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-   document.getElementById('ghostBasicButton').style.padding = "8px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#475467"
    document.getElementById('ghostBasicButton').style.border = "none"
