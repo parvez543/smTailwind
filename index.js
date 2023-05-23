@@ -1907,6 +1907,12 @@ ghostBasicButton.addEventListener('click', () =>{
       document.getElementById('ghostSuperComplexButton').style.color = "#475467"
       document.getElementById('ghostSuperComplexButton').style.border = "0px"
       document.getElementById('ghostSuperComplexButton').style.boxShadow = "0px"
+
+      document.getElementById('ghostComplexButton').style.borderRadius = "0px"
+      document.getElementById('ghostComplexButton').style.background = "none"
+      document.getElementById('ghostComplexButton').style.color = "#475467"
+      document.getElementById('ghostComplexButton').style.border = "0px"
+      document.getElementById('ghostComplexButton').style.boxShadow = "0px"
 })
 
 
@@ -2733,3 +2739,136 @@ photoRetouchComplexFive.addEventListener('click', () => {
 });
 
 
+// Ghost Mannequine
+const ghostBasicServiceButton = document.getElementById('ghostBasicButton')
+const ghostFlatServiceButton = document.getElementById('ghostFlatButton')
+const ghostMediumServiceButton = document.getElementById('ghostMediumButton') 
+const ghostComplexServiceButton = document.getElementById('ghostComplexButton')
+const ghostSuperComplexServiceButton = document.getElementById('ghostSuperComplexButton')
+
+
+ghostMannequin.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Basic';
+
+  // Update the pricing
+  pricing.textContent = '$1.50/img'; // Update with the desired price for Photo Retouching
+});
+
+ghostBasicServiceButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Basic';
+
+  // Update the pricing
+  pricing.textContent = '$1.50/img'; // Update with the desired price for Complex
+});
+
+ghostFlatServiceButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Flat';
+
+  // Update the pricing
+  pricing.textContent = '$2.00/img'; // Update with the desired price for Complex
+});
+
+ghostMediumServiceButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Medium';
+
+  // Update the pricing
+  pricing.textContent = '$2.50/img'; // Update with the desired price for Complex
+});
+
+ghostComplexServiceButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Complex';
+
+  // Update the pricing
+  pricing.textContent = '$3.00/img'; // Update with the desired price for Complex
+});
+
+ghostSuperComplexServiceButton.addEventListener('click', () => {
+  // Update the complexity
+  complexity.textContent = 'Super Complex';
+
+  // Update the pricing
+  pricing.textContent = '$5.00/img'; // Update with the desired price for Complex
+});
+
+
+// MultiClipping
+const multiClippingService = document.getElementById("masking")
+const multiClipBasic = document.getElementById('multiClippingBasicImage')
+const multiClipFlat = document.getElementById('multiClippingFlatImage')
+const multiClipMedium = document.getElementById('multiClippingMediumImage')
+const multiClipComplex = document.getElementById('multiClippingComplexImage')
+const multiClipSuperComplex = document.getElementById('multiClippingSuperComplexImage')
+
+multiClippingService.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Basic';
+
+  // Update the pricing
+  pricing.textContent = '$2.00/img'; // Update with the desired price for Photo Retouching
+});
+
+multiClipBasic.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Basic';
+
+  // Update the pricing
+  pricing.textContent = '$2.00/img'; // Update with the desired price for Photo Retouching
+});
+
+multiClipFlat.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Flat';
+
+  // Update the pricing
+  pricing.textContent = '$4.00/img'; // Update with the desired price for Photo Retouching
+});
+
+multiClipMedium.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Medium';
+
+  // Update the pricing
+  pricing.textContent = '$7.00/img'; // Update with the desired price for Photo Retouching
+});
+
+multiClipComplex.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex';
+
+  // Update the pricing
+  pricing.textContent = '$10.00/img'; // Update with the desired price for Photo Retouching
+});
+
+multiClipSuperComplex.addEventListener('click', () => {
+  // Update the service name
+  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+
+  // Update the complexity to default
+  complexity.textContent = 'Complex';
+
+  // Update the pricing
+  pricing.textContent = '$15.00/img'; // Update with the desired price for Photo Retouching
+});
