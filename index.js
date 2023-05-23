@@ -1655,28 +1655,28 @@ retouchComplexOne.addEventListener('click', () => {
 
   // Changing Button color
   document.getElementById('retouchComplexOneButton').style.background = "#155EEF"
-  document.getElementById('retouchComplexOneButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexOneButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#ffffff"
 
   // Deactiving Current Button
   document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#475467"
 
   document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
 })
@@ -1692,7 +1692,7 @@ retouchComplexTwo.addEventListener('click', () => {
 
   // Changing Button color
   document.getElementById('retouchComplexTwoButton').style.background = "#155EEF"
-  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#ffffff"
 
@@ -1705,17 +1705,17 @@ retouchComplexTwo.addEventListener('click', () => {
   document.getElementById('retouchComplexOneButton').style.border = "none"
 
   document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
 })
@@ -1731,7 +1731,7 @@ retouchComplexThree.addEventListener('click', () => {
 
   // Changing Button color
   document.getElementById('retouchComplexThreeButton').style.background = "#155EEF"
-  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#ffffff"
 
@@ -1743,17 +1743,17 @@ retouchComplexThree.addEventListener('click', () => {
   document.getElementById('retouchComplexOneButton').style.border = "none"
 
   document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
 
@@ -1770,7 +1770,7 @@ retouchComplexityFour.addEventListener('click', () => {
 
   // Changing Button color
   document.getElementById('retouchComplexFourButton').style.background = "#155EEF"
-  document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFourButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#ffffff"
 
@@ -1784,17 +1784,17 @@ retouchComplexityFour.addEventListener('click', () => {
   document.getElementById('retouchComplexOneButton').style.border = "none"
 
   document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexTwoButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#475467"
   
   document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexThreeButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#475467"
 
   document.getElementById('retouchComplexFiveButton').style.background = "#EAECF0"
-  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#475467"
 })
@@ -1810,7 +1810,7 @@ retouchComplexityFive.addEventListener('click', () =>{
 
   // Changing Button color
   document.getElementById('retouchComplexFiveButton').style.background = "#155EEF"
-  document.getElementById('retouchComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('retouchComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#ffffff"
 
@@ -1823,17 +1823,17 @@ retouchComplexityFive.addEventListener('click', () =>{
     document.getElementById('retouchComplexOneButton').style.border = "none"
   
     document.getElementById('retouchComplexTwoButton').style.background = "#EAECF0"
-    document.getElementById('retouchComplexTwoButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexTwoButton').style.padding = "8px 14px"
     document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexTwoButton').style.color = "#475467"
     
     document.getElementById('retouchComplexThreeButton').style.background = "#EAECF0"
-    document.getElementById('retouchComplexThreeButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexThreeButton').style.padding = "8px 14px"
     document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexThreeButton').style.color = "#475467"
 
     document.getElementById('retouchComplexFourButton').style.background = "#EAECF0"
-    document.getElementById('retouchComplexFourButton').style.padding = "10px 14px"
+    document.getElementById('retouchComplexFourButton').style.padding = "8px 14px"
     document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
     document.getElementById('retouchComplexFourButton').style.color = "#475467"
 })
@@ -1853,29 +1853,29 @@ ghostBasicButton.addEventListener('click', () =>{
 
    // Changing Button color
    document.getElementById('ghostBasicButton').style.background = "#155EEF"
-   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "8px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#ffffff"
 
 
       // Deactiving Current Button
       document.getElementById('ghostMediumButton').style.background = "#EAECF0"
-      document.getElementById('ghostMediumButton').style.padding = "12px 14px"
+      document.getElementById('ghostMediumButton').style.padding = "8px 14px"
       document.getElementById('ghostMediumButton').style.borderRadius = "8px"
       document.getElementById('ghostMediumButton').style.color = "#475467"
 
       document.getElementById('ghostFlatButton').style.background = "#EAECF0"
-      document.getElementById('ghostFlatButton').style.padding = "12px 14px"
+      document.getElementById('ghostFlatButton').style.padding = "8px 14px"
       document.getElementById('ghostFlatButton').style.borderRadius = "8px"
       document.getElementById('ghostFlatButton').style.color = "#475467"
 
       document.getElementById('ghostSuperComplexButton').style.background = "#EAECF0"
-      document.getElementById('ghostSuperComplexButton').style.padding = "12px 14px"
+      document.getElementById('ghostSuperComplexButton').style.padding = "8px 14px"
       document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
       document.getElementById('ghostSuperComplexButton').style.color = "#475467"
 
       document.getElementById('ghostComplexButton').style.background = "#EAECF0"
-      document.getElementById('ghostComplexButton').style.padding = "12px 14px"
+      document.getElementById('ghostComplexButton').style.padding = "8px 14px"
       document.getElementById('ghostComplexButton').style.borderRadius = "8px"
       document.getElementById('ghostComplexButton').style.color = "#475467"
 })
@@ -1892,29 +1892,29 @@ ghostFlatButton.addEventListener('click', () =>{
 
   // Changing Button color
   document.getElementById('ghostFlatButton').style.background = "#155EEF"
-  document.getElementById('ghostFlatButton').style.padding = "12px 14px"
+  document.getElementById('ghostFlatButton').style.padding = "8px 14px"
   document.getElementById('ghostFlatButton').style.borderRadius = "8px"
   document.getElementById('ghostFlatButton').style.color = "#ffffff"
 
   
   document.getElementById('ghostMediumButton').style.background = "#EAECF0"
-  document.getElementById('ghostMediumButton').style.padding = "12px 14px"
+  document.getElementById('ghostMediumButton').style.padding = "8px 14px"
   document.getElementById('ghostMediumButton').style.borderRadius = "8px"
   document.getElementById('ghostMediumButton').style.color = "#475467"
 
   document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-  document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+  document.getElementById('ghostBasicButton').style.padding = "8px 14px"
   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
   document.getElementById('ghostBasicButton').style.color = "#475467"
   document.getElementById('ghostBasicButton').style.border = "none"
 
   document.getElementById('ghostSuperComplexButton').style.background = "#EAECF0"
-  document.getElementById('ghostSuperComplexButton').style.padding = "12px 14px"
+  document.getElementById('ghostSuperComplexButton').style.padding = "8px 14px"
   document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
   document.getElementById('ghostSuperComplexButton').style.color = "#475467"
 
   document.getElementById('ghostComplexButton').style.background = "#EAECF0"
-  document.getElementById('ghostComplexButton').style.padding = "12px 14px"
+  document.getElementById('ghostComplexButton').style.padding = "8px 14px"
   document.getElementById('ghostComplexButton').style.borderRadius = "8px"
   document.getElementById('ghostComplexButton').style.color = "#475467"
 })
@@ -1931,7 +1931,7 @@ ghostMediumButton.addEventListener('click',() => {
 
   // Changing Button color
   document.getElementById('ghostMediumButton').style.background = "#155EEF"
-  document.getElementById('ghostMediumButton').style.padding = "12px 14px"
+  document.getElementById('ghostMediumButton').style.padding = "8px 14px"
   document.getElementById('ghostMediumButton').style.borderRadius = "8px"
   document.getElementById('ghostMediumButton').style.color = "#ffffff"
 
@@ -1943,18 +1943,18 @@ ghostMediumButton.addEventListener('click',() => {
   document.getElementById('ghostBasicButton').style.border = "none"
 
   document.getElementById('ghostFlatButton').style.background = "#EAECF0"
-  document.getElementById('ghostFlatButton').style.padding = "12px 14px"
+  document.getElementById('ghostFlatButton').style.padding = "8px 14px"
   document.getElementById('ghostFlatButton').style.borderRadius = "8px"
   document.getElementById('ghostFlatButton').style.color = "#475467"
   document.getElementById('ghostFlatButton').style.border = "none"
 
   document.getElementById('ghostSuperComplexButton').style.background = "#EAECF0"
-  document.getElementById('ghostSuperComplexButton').style.padding = "12px 14px"
+  document.getElementById('ghostSuperComplexButton').style.padding = "8px 14px"
   document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
   document.getElementById('ghostSuperComplexButton').style.color = "#475467"
 
   document.getElementById('ghostComplexButton').style.background = "#EAECF0"
-  document.getElementById('ghostComplexButton').style.padding = "12px 14px"
+  document.getElementById('ghostComplexButton').style.padding = "8px 14px"
   document.getElementById('ghostComplexButton').style.borderRadius = "8px"
   document.getElementById('ghostComplexButton').style.color = "#475467"
 
@@ -1976,7 +1976,7 @@ ghostComplexButton.addEventListener('click', ()=> {
 
     // Changing Button color
     document.getElementById('ghostComplexButton').style.background = "#155EEF"
-   document.getElementById('ghostComplexButton').style.padding = "12px 14px"
+   document.getElementById('ghostComplexButton').style.padding = "8px 14px"
    document.getElementById('ghostComplexButton').style.borderRadius = "8px"
    document.getElementById('ghostComplexButton').style.color = "#ffffff"
 
@@ -1987,19 +1987,19 @@ ghostComplexButton.addEventListener('click', ()=> {
    document.getElementById('ghostBasicButton').style.border = "none"
  
    document.getElementById('ghostFlatButton').style.background = "#EAECF0"
-   document.getElementById('ghostFlatButton').style.padding = "12px 14px"
+   document.getElementById('ghostFlatButton').style.padding = "8px 14px"
    document.getElementById('ghostFlatButton').style.borderRadius = "8px"
    document.getElementById('ghostFlatButton').style.color = "#475467"
    document.getElementById('ghostFlatButton').style.border = "none"
 
    document.getElementById('ghostMediumButton').style.background = "#EAECF0"
-   document.getElementById('ghostMediumButton').style.padding = "12px 14px"
+   document.getElementById('ghostMediumButton').style.padding = "8px 14px"
    document.getElementById('ghostMediumButton').style.borderRadius = "8px"
    document.getElementById('ghostMediumButton').style.color = "#475467"
    document.getElementById('ghostMediumButton').style.border = "none"
 
    document.getElementById('ghostSuperComplexButton').style.background = "#EAECF0"
-   document.getElementById('ghostSuperComplexButton').style.padding = "12px 14px"
+   document.getElementById('ghostSuperComplexButton').style.padding = "8px 14px"
    document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
    document.getElementById('ghostSuperComplexButton').style.color = "#475467"
    document.getElementById('ghostSuperComplexButton').style.border = "none"
@@ -2020,7 +2020,7 @@ ghostSuperComplexButton.addEventListener('click', ()=> {
 
    // Changing Button color
    document.getElementById('ghostSuperComplexButton').style.background = "#155EEF"
-   document.getElementById('ghostSuperComplexButton').style.padding = "12px 14px"
+   document.getElementById('ghostSuperComplexButton').style.padding = "8px 14px"
    document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
    document.getElementById('ghostSuperComplexButton').style.color = "#ffffff"
 
@@ -2032,19 +2032,19 @@ ghostSuperComplexButton.addEventListener('click', ()=> {
    document.getElementById('ghostBasicButton').style.border = "none"
  
    document.getElementById('ghostFlatButton').style.background = "#EAECF0"
-   document.getElementById('ghostFlatButton').style.padding = "12px 14px"
+   document.getElementById('ghostFlatButton').style.padding = "8px 14px"
    document.getElementById('ghostFlatButton').style.borderRadius = "8px"
    document.getElementById('ghostFlatButton').style.color = "#475467"
    document.getElementById('ghostFlatButton').style.border = "none"
 
    document.getElementById('ghostMediumButton').style.background = "#EAECF0"
-   document.getElementById('ghostMediumButton').style.padding = "12px 14px"
+   document.getElementById('ghostMediumButton').style.padding = "8px 14px"
    document.getElementById('ghostMediumButton').style.borderRadius = "8px"
    document.getElementById('ghostMediumButton').style.color = "#475467"
    document.getElementById('ghostMediumButton').style.border = "none"
 
    document.getElementById('ghostComplexButton').style.background = "#EAECF0"
-   document.getElementById('ghostComplexButton').style.padding = "12px 14px"
+   document.getElementById('ghostComplexButton').style.padding = "8px 14px"
    document.getElementById('ghostComplexButton').style.borderRadius = "8px"
    document.getElementById('ghostComplexButton').style.color = "#475467"
    document.getElementById('ghostComplexButton').style.border = "none"
