@@ -1860,7 +1860,7 @@ ghostBasicButton.addEventListener('click', () =>{
 
       // Deactiving Current Button
       document.getElementById('ghostMediumButton').style.background = "#EAECF0"
-      document.getElementById('ghostMediumButton').style.padding = "10px 14px"
+      document.getElementById('ghostMediumButton').style.padding = "12px 14px"
       document.getElementById('ghostMediumButton').style.borderRadius = "8px"
       document.getElementById('ghostMediumButton').style.color = "#475467"
 
@@ -1870,12 +1870,12 @@ ghostBasicButton.addEventListener('click', () =>{
       document.getElementById('ghostFlatButton').style.color = "#475467"
 
       document.getElementById('ghostSuperComplexButton').style.background = "#EAECF0"
-      document.getElementById('ghostSuperComplexButton').style.padding = "10px 14px"
+      document.getElementById('ghostSuperComplexButton').style.padding = "12px 14px"
       document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
       document.getElementById('ghostSuperComplexButton').style.color = "#475467"
 
       document.getElementById('ghostComplexButton').style.background = "#EAECF0"
-      document.getElementById('ghostComplexButton').style.padding = "10px 14px"
+      document.getElementById('ghostComplexButton').style.padding = "12px 14px"
       document.getElementById('ghostComplexButton').style.borderRadius = "8px"
       document.getElementById('ghostComplexButton').style.color = "#475467"
 })
@@ -1903,7 +1903,7 @@ ghostFlatButton.addEventListener('click', () =>{
   document.getElementById('ghostMediumButton').style.color = "#475467"
 
   document.getElementById('ghostBasicButton').style.background = "#EAECF0"
-  document.getElementById('ghostBasicButton').style.padding = "12px 14px"
+  document.getElementById('ghostBasicButton').style.padding = "10px 14px"
   document.getElementById('ghostBasicButton').style.borderRadius = "8px"
   document.getElementById('ghostBasicButton').style.color = "#475467"
   document.getElementById('ghostBasicButton').style.border = "none"
