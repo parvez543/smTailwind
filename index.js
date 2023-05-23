@@ -953,6 +953,13 @@ clippingPath.addEventListener('click', () => {
   document.getElementById('multiClippingComplex').style.display = "none"
   document.getElementById('multiClippingSuperComplex').style.display = "none"
 
+  document.getElementById('GhostImage').style.display = "none"
+
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
+
 
   // Deactiving The Other Service Button 
   document.getElementById('retouchRightMark').style.display = 'none'
@@ -1004,6 +1011,12 @@ retouch.addEventListener('click', () => {
   document.getElementById('multiClippingMedium').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
   document.getElementById('multiClippingSuperComplex').style.display = "none"
+
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
 
   // Deactiving The Other Service Button 
@@ -1060,6 +1073,12 @@ ghostMannequin.addEventListener('click', () => {
   document.getElementById('maskingComplexOne').style.display = "none"
   document.getElementById('maskingImage').style.display ='none'
 
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
+
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
   document.getElementById('clippingPathRightMark').style.display = 'none'
@@ -1108,6 +1127,12 @@ imageMasking.addEventListener('click', () => {
   document.getElementById('mediumImage').style.display = 'none'
   document.getElementById('complexImage').style.display = 'none'
   document.getElementById('superComplexImage').style.display = 'none'
+
+  document.getElementById('GhostImage').style.display = "none"
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
 
 
@@ -1171,6 +1196,10 @@ otherService.addEventListener('click', () => {
   document.getElementById('ghostComplexImage').style.display = "none"
   document.getElementById('ghostSuperComplexImage').style.display = "none"
   document.getElementById("GhostImage").style.display = "none"
+
+  // document.getElementById('GhostImage').style.display = "none"
+  // document.getElementById('maskingComplexOne').style.display = "none"
+  // document.getElementById('maskingComplexTwo').style.display = "none"
 
 
 
@@ -2271,6 +2300,8 @@ multiClippingSuperComplex.addEventListener('click', () =>{
 document.getElementById('multiClippingMedium').style.display = "none"
 document.getElementById('multiClippingComplex').style.display = "none"
 document.getElementById('multiImage').style.display = "none"
+document.getElementById('imagemaskingComplexFour').style.display = 'none'
+
 
 document.getElementById('maskingComplexOne').style.display = "none"
 
@@ -2317,6 +2348,9 @@ const imageMaskingComplexityOne = document.getElementById('maskingComplexOneButt
 imageMaskingComplexityOne.addEventListener('click', () =>{
   document.getElementById('maskingComplexOne').style.display = "none"
   document.getElementById('maskingImage').style.display ='block'
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
   // Changing Button Color
 document.getElementById('maskingComplexOneButton').style.background = "#155EEF"
@@ -2324,6 +2358,7 @@ document.getElementById('maskingComplexOneButton').style.padding = "10px 14px"
 document.getElementById('maskingComplexOneButton').style.borderRadius = "8px"
 document.getElementById('maskingComplexOneButton').style.color = "#ffffff"
 
+// Deactivation Other Active Button
 document.getElementById('maskingComplexTwoButton').style.padding = "0"
 document.getElementById('maskingComplexTwoButton').style.borderRadius = "0px"
 document.getElementById('maskingComplexTwoButton').style.background = "none"
@@ -2331,18 +2366,43 @@ document.getElementById('maskingComplexTwoButton').style.color = "#475467"
 document.getElementById('maskingComplexTwoButton').style.border = "0px"
 document.getElementById('maskingComplexTwoButton').style.boxShadow = "0px"
 
+document.getElementById('maskingComplexThreeButton').style.padding = "0"
+document.getElementById('maskingComplexThreeButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexThreeButton').style.background = "none"
+document.getElementById('maskingComplexThreeButton').style.color = "#475467"
+document.getElementById('maskingComplexThreeButton').style.border = "0px"
+document.getElementById('maskingComplexThreeButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFourButton').style.padding = "0"
+document.getElementById('maskingComplexFourButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFourButton').style.background = "none"
+document.getElementById('maskingComplexFourButton').style.color = "#475467"
+document.getElementById('maskingComplexFourButton').style.border = "0px"
+document.getElementById('maskingComplexFourButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFiveButton').style.padding = "0"
+document.getElementById('maskingComplexFiveButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFiveButton').style.background = "none"
+document.getElementById('maskingComplexFiveButton').style.color = "#475467"
+document.getElementById('maskingComplexFiveButton').style.border = "0px"
+document.getElementById('maskingComplexFiveButton').style.boxShadow = "0px"
+
 })
 
 const imageMaskingComplexityTwo = document.getElementById('maskingComplexTwoButton')
 imageMaskingComplexityTwo.addEventListener('click', () =>{
   document.getElementById('maskingComplexOne').style.display = "block"
   document.getElementById('maskingImage').style.display ='none'
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
   document.getElementById('GhostImage').style.display = 'none'
   document.getElementById('ghostFlatImage').style.direction = 'none'
   document.getElementById('ghostMediumImage').style.display = 'none'
   document.getElementById('ghostComplexImage').style.display = 'none'
   document.getElementById('ghostSuperComplexImage').style.display = 'none'
+  
 
   
 
@@ -2351,6 +2411,7 @@ document.getElementById('maskingComplexTwoButton').style.padding = "10px 14px"
 document.getElementById('maskingComplexTwoButton').style.borderRadius = "8px"
 document.getElementById('maskingComplexTwoButton').style.color = "#ffffff"
 
+// Deactivation Other Active Button
 document.getElementById('maskingComplexOneButton').style.padding = "0"
 document.getElementById('maskingComplexOneButton').style.borderRadius = "0px"
 document.getElementById('maskingComplexOneButton').style.background = "none"
@@ -2358,5 +2419,167 @@ document.getElementById('maskingComplexOneButton').style.color = "#475467"
 document.getElementById('maskingComplexOneButton').style.border = "0px"
 document.getElementById('maskingComplexOneButton').style.boxShadow = "0px"
 
+document.getElementById('maskingComplexThreeButton').style.padding = "0"
+document.getElementById('maskingComplexThreeButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexThreeButton').style.background = "none"
+document.getElementById('maskingComplexThreeButton').style.color = "#475467"
+document.getElementById('maskingComplexThreeButton').style.border = "0px"
+document.getElementById('maskingComplexThreeButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFourButton').style.padding = "0"
+document.getElementById('maskingComplexFourButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFourButton').style.background = "none"
+document.getElementById('maskingComplexFourButton').style.color = "#475467"
+document.getElementById('maskingComplexFourButton').style.border = "0px"
+document.getElementById('maskingComplexFourButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFiveButton').style.padding = "0"
+document.getElementById('maskingComplexFiveButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFiveButton').style.background = "none"
+document.getElementById('maskingComplexFiveButton').style.color = "#475467"
+document.getElementById('maskingComplexFiveButton').style.border = "0px"
+document.getElementById('maskingComplexFiveButton').style.boxShadow = "0px"
   
+})
+
+// Image Complex Three of Image Masking
+document.getElementById('maskingComplexTwo').style.display = "none"
+
+const imageMaskingComplexThree = document.getElementById('maskingComplexThreeButton')
+imageMaskingComplexThree.addEventListener('click', () =>{
+  document.getElementById('maskingComplexTwo').style.display = "block"
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingImage').style.display ='none'
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
+
+  // Changing Color Button
+  document.getElementById('maskingComplexThreeButton').style.background = "#155EEF"
+document.getElementById('maskingComplexThreeButton').style.padding = "10px 14px"
+document.getElementById('maskingComplexThreeButton').style.borderRadius = "8px"
+document.getElementById('maskingComplexThreeButton').style.color = "#ffffff"
+
+// Deactivation Other Active Button
+document.getElementById('maskingComplexOneButton').style.padding = "0"
+document.getElementById('maskingComplexOneButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexOneButton').style.background = "none"
+document.getElementById('maskingComplexOneButton').style.color = "#475467"
+document.getElementById('maskingComplexOneButton').style.border = "0px"
+document.getElementById('maskingComplexOneButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexTwoButton').style.padding = "0"
+document.getElementById('maskingComplexTwoButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexTwoButton').style.background = "none"
+document.getElementById('maskingComplexTwoButton').style.color = "#475467"
+document.getElementById('maskingComplexTwoButton').style.border = "0px"
+document.getElementById('maskingComplexTwoButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFourButton').style.padding = "0"
+document.getElementById('maskingComplexFourButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFourButton').style.background = "none"
+document.getElementById('maskingComplexFourButton').style.color = "#475467"
+document.getElementById('maskingComplexFourButton').style.border = "0px"
+document.getElementById('maskingComplexFourButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFiveButton').style.padding = "0"
+document.getElementById('maskingComplexFiveButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFiveButton').style.background = "none"
+document.getElementById('maskingComplexFiveButton').style.color = "#475467"
+document.getElementById('maskingComplexFiveButton').style.border = "0px"
+document.getElementById('maskingComplexFiveButton').style.boxShadow = "0px"
+})
+
+// Image Complex Four of Image Masking
+document.getElementById('imagemaskingComplexThree').style.display = "none"
+
+const imageMaskingComplexFour = document.getElementById('maskingComplexFourButton')
+imageMaskingComplexFour.addEventListener('click', () =>{
+  document.getElementById('imagemaskingComplexThree').style.display = "block"
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingImage').style.display ='none'
+  document.getElementById('imagemaskingComplexFour').style.display = 'none'
+
+  // Changing Button Color
+  document.getElementById('maskingComplexFourButton').style.background = "#155EEF"
+  document.getElementById('maskingComplexFourButton').style.padding = "10px 14px"
+  document.getElementById('maskingComplexFourButton').style.borderRadius = "8px"
+  document.getElementById('maskingComplexFourButton').style.color = "#ffffff"
+
+  // Deactivation Other Active Button
+document.getElementById('maskingComplexOneButton').style.padding = "0"
+document.getElementById('maskingComplexOneButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexOneButton').style.background = "none"
+document.getElementById('maskingComplexOneButton').style.color = "#475467"
+document.getElementById('maskingComplexOneButton').style.border = "0px"
+document.getElementById('maskingComplexOneButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexTwoButton').style.padding = "0"
+document.getElementById('maskingComplexTwoButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexTwoButton').style.background = "none"
+document.getElementById('maskingComplexTwoButton').style.color = "#475467"
+document.getElementById('maskingComplexTwoButton').style.border = "0px"
+document.getElementById('maskingComplexTwoButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexThreeButton').style.padding = "0"
+document.getElementById('maskingComplexThreeButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexThreeButton').style.background = "none"
+document.getElementById('maskingComplexThreeButton').style.color = "#475467"
+document.getElementById('maskingComplexThreeButton').style.border = "0px"
+document.getElementById('maskingComplexThreeButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFiveButton').style.padding = "0"
+document.getElementById('maskingComplexFiveButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFiveButton').style.background = "none"
+document.getElementById('maskingComplexFiveButton').style.color = "#475467"
+document.getElementById('maskingComplexFiveButton').style.border = "0px"
+document.getElementById('maskingComplexFiveButton').style.boxShadow = "0px"
+
+})
+
+// Image Masking Complexity Five
+document.getElementById('imagemaskingComplexFour').style.display = 'none' 
+
+const imageMaskingComplexityFive = document.getElementById('maskingComplexFiveButton')
+imageMaskingComplexityFive.addEventListener('click', function(){
+  document.getElementById('imagemaskingComplexFour').style.display = 'block'
+  document.getElementById('imagemaskingComplexThree').style.display = "none"
+  document.getElementById('maskingComplexTwo').style.display = "none"
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingImage').style.display ='none' 
+
+  // Changing Button color
+  document.getElementById('maskingComplexFiveButton').style.background = "#155EEF"
+  document.getElementById('maskingComplexFiveButton').style.padding = "10px 14px"
+  document.getElementById('maskingComplexFiveButton').style.borderRadius = "8px"
+  document.getElementById('maskingComplexFiveButton').style.color = "#ffffff"
+
+  // Deactiving Active Button Color
+  document.getElementById('maskingComplexOneButton').style.padding = "0"
+document.getElementById('maskingComplexOneButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexOneButton').style.background = "none"
+document.getElementById('maskingComplexOneButton').style.color = "#475467"
+document.getElementById('maskingComplexOneButton').style.border = "0px"
+document.getElementById('maskingComplexOneButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexTwoButton').style.padding = "0"
+document.getElementById('maskingComplexTwoButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexTwoButton').style.background = "none"
+document.getElementById('maskingComplexTwoButton').style.color = "#475467"
+document.getElementById('maskingComplexTwoButton').style.border = "0px"
+document.getElementById('maskingComplexTwoButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexThreeButton').style.padding = "0"
+document.getElementById('maskingComplexThreeButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexThreeButton').style.background = "none"
+document.getElementById('maskingComplexThreeButton').style.color = "#475467"
+document.getElementById('maskingComplexThreeButton').style.border = "0px"
+document.getElementById('maskingComplexThreeButton').style.boxShadow = "0px"
+
+document.getElementById('maskingComplexFourButton').style.padding = "0"
+document.getElementById('maskingComplexFourButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexFourButton').style.background = "none"
+document.getElementById('maskingComplexFourButton').style.color = "#475467"
+document.getElementById('maskingComplexFourButton').style.border = "0px"
+document.getElementById('maskingComplexFourButton').style.boxShadow = "0px"
 })
