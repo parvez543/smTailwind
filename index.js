@@ -1853,7 +1853,7 @@ ghostBasicButton.addEventListener('click', () =>{
 
    // Changing Button color
    document.getElementById('ghostBasicButton').style.background = "#155EEF"
-   document.getElementById('ghostBasicButton').style.padding = "10px 14px"
+   document.getElementById('ghostBasicButton').style.padding = "12px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#ffffff"
 
@@ -1865,7 +1865,7 @@ ghostBasicButton.addEventListener('click', () =>{
       document.getElementById('ghostMediumButton').style.color = "#475467"
 
       document.getElementById('ghostFlatButton').style.background = "#EAECF0"
-      document.getElementById('ghostFlatButton').style.padding = "12px 14px"
+      document.getElementById('ghostFlatButton').style.padding = "10px 14px"
       document.getElementById('ghostFlatButton').style.borderRadius = "8px"
       document.getElementById('ghostFlatButton').style.color = "#475467"
 
