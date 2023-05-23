@@ -1057,6 +1057,9 @@ ghostMannequin.addEventListener('click', () => {
   document.getElementById('multiClippingComplex').style.display = "none"
   document.getElementById('multiClippingSuperComplex').style.display = "none"
 
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingImage').style.display ='none'
+
   // Deactiving The Other Service Button 
   document.getElementById('clippingPathCircle').style.display = 'block'
   document.getElementById('clippingPathRightMark').style.display = 'none'
@@ -1148,6 +1151,26 @@ otherService.addEventListener('click', () => {
   document.querySelector('.otherBg').style.background = '#155EEF'
   document.querySelector('.otherBg').style.color = '#FFFFFF'
 
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
+
+  document.getElementById('multiClippingFlat').style.display = "none"
+  document.getElementById('multiClippingMedium').style.display = "none"
+  document.getElementById('multiClippingComplex').style.display = "none"
+  document.getElementById('multiClippingSuperComplex').style.display = "none"
+
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostComplexImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+  document.getElementById("GhostImage").style.display = "none"
 
 
 
@@ -1183,7 +1206,7 @@ otherService.addEventListener('click', () => {
 document.getElementById('photoRetouchingImage').style.display = 'none'
 document.getElementById('RetouchingBasicImage').style.display = 'none'
 document.getElementById('GhostImage').style.display = 'none'
-document.getElementById('GhostBasicImage').style.display = 'none'
+document.getElementById('ghostBasicImage').style.display = 'none'
 document.getElementById('multiImage').style.display = 'none'
 document.getElementById('multiImageButton').style.display = 'none'
 document.getElementById('maskingImage').style.display = 'none'
@@ -1201,11 +1224,13 @@ clippingPathPricing.addEventListener('click', () => {
   document.getElementById('RetouchingBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
   document.getElementById('ghostComplexImage').style.display = 'none'
-  document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('ghostBasicImage').style.display = 'none'
   document.getElementById('multiImage').style.display = 'none'
   document.getElementById('multiImageButton').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
+
+  document.getElementById('maskingComplexOne').style.display = "none"
   
 })
 
@@ -1220,12 +1245,14 @@ retouching.addEventListener('click', () => {
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('clippingPathBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
-  document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('ghostBasicImage').style.display = 'none'
   document.getElementById('ghostComplexImage').style.display = 'none'
   document.getElementById('multiImage').style.display = 'none'
   document.getElementById('multiImageButton').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
+
+  document.getElementById('maskingComplexOne').style.display = "none"
 
 })
 
@@ -1233,7 +1260,7 @@ retouching.addEventListener('click', () => {
 const ghostMannequine = document.getElementById('ghostMannequin')
 ghostMannequine.addEventListener('click', () => {
   document.getElementById('GhostImage').style.display = 'block'
-  document.getElementById('GhostBasicImage').style.display = 'flex'
+  document.getElementById('ghostBasicImage').style.display = 'flex'
 
   // Hide Other Services When Ghost Mannequine is Active
   document.getElementById('photoRetouchingImage').style.display = 'none'
@@ -1254,6 +1281,8 @@ ghostMannequine.addEventListener('click', () => {
   document.getElementById('multiImageButton').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
+
+  document.getElementById('maskingComplexOne').style.display = "none"
 })
 
 // MultiClipping Path
@@ -1268,7 +1297,7 @@ multiClippingPath.addEventListener('click', () => {
   document.getElementById('clippingPathImage').style.display = 'none'
   document.getElementById('clippingPathBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
-  document.getElementById('GhostBasicImage').style.display = 'none'
+  document.getElementById('ghostBasicImage').style.display = 'none'
   document.getElementById('maskingImage').style.display = 'none'
   document.getElementById('maskingImageButton').style.display = 'none'
 
@@ -1285,6 +1314,8 @@ multiClippingPath.addEventListener('click', () => {
   document.getElementById('mediumImage').style.display = 'none'
   document.getElementById('complexImage').style.display = 'none'
   document.getElementById('superComplexImage').style.display = 'none'
+
+  document.getElementById('maskingComplexOne').style.display = "none"
   
   
 
@@ -1318,6 +1349,39 @@ imageMaskingService.addEventListener('click', () => {
   document.getElementById('mediumImage').style.display = 'none'
   document.getElementById('complexImage').style.display = 'none'
   document.getElementById('superComplexImage').style.display = 'none'
+
+  document.getElementById('maskingComplexOne').style.display = "none"
+})
+
+// Image Masking Service Button Functionality
+const otherPricingService = document.getElementById('otherServiceBg')
+otherPricingService.addEventListener('click', () => {
+  document.getElementById('photoRetouchingImage').style.display = 'none'
+  document.getElementById('RetouchingBasicImage').style.display = 'none'
+  document.getElementById('clippingPathImage').style.display = 'none'
+  document.getElementById('clippingPathBasicImage').style.display = 'none'
+  document.getElementById('multiImage').style.display = 'none'
+  document.getElementById('multiImageButton').style.display = 'none'
+  
+  
+  document.getElementById('retouchComplexOne').style.display = 'none'
+  document.getElementById('retouchComplexTwo').style.display = 'none'
+  document.getElementById('retouchComplexThree').style.display = 'none'
+  document.getElementById('retouchComplexFour').style.display = 'none'
+  
+  document.getElementById('GhostImage').style.display = 'none'
+  document.getElementById('ghostBasicImage').style.display = 'none'
+  document.getElementById('ghostFlatImage').style.display = 'none'
+  document.getElementById('ghostMediumImage').style.display = "none"
+  document.getElementById('ghostComplexImage').style.display = "none"
+  document.getElementById('ghostSuperComplexImage').style.display = "none"
+  
+  document.getElementById('flatImage').style.display = 'none'
+  document.getElementById('mediumImage').style.display = 'none'
+  document.getElementById('complexImage').style.display = 'none'
+  document.getElementById('superComplexImage').style.display = 'none'
+
+  document.getElementById('maskingComplexOne').style.display = "none"
 })
 
 
@@ -1914,6 +1978,8 @@ ghostComplexButton.addEventListener('click', ()=> {
   document.getElementById('ghostMediumImage').style.display = "none"
   document.getElementById('ghostSuperComplexImage').style.display = "none"
 
+  document.getElementById('maskingComplexOne').style.display = "none"
+
     // Changing Button color
     document.getElementById('ghostComplexButton').style.background = "#155EEF"
   //  document.getElementById('ghostComplexButton').style.padding = "10px 14px"
@@ -1959,6 +2025,8 @@ ghostSuperComplexButton.addEventListener('click', ()=> {
   document.getElementById('GhostImage').style.display = "none"
   document.getElementById('ghostFlatImage').style.display = "none"
   document.getElementById('ghostMediumImage').style.display = "none"
+
+  document.getElementById('maskingComplexOne').style.display = "none"
 
    // Changing Button color
    document.getElementById('ghostSuperComplexButton').style.background = "#155EEF"
@@ -2012,6 +2080,8 @@ multiClippingBasic.addEventListener('click',()=> {
   document.getElementById('multiClippingComplex').style.display = "none"
   document.getElementById('multiClippingSuperComplex').style.display = "none"
 
+  document.getElementById('maskingComplexOne').style.display = "none"
+
    // Changing Button color
    document.getElementById('multiClippingBasicImage').style.background = "#155EEF"
    document.getElementById('multiClippingBasicImage').style.padding = "10px 14px"
@@ -2059,6 +2129,8 @@ multiClippingFlat.addEventListener('click', ()=> {
   document.getElementById('multiClippingComplex').style.display = "none"
   document.getElementById('multiClippingSuperComplex').style.display = "none"
 
+  document.getElementById('maskingComplexOne').style.display = "none"
+
    // Changing Button color
    document.getElementById('multiClippingFlatImage').style.background = "#155EEF"
    document.getElementById('multiClippingFlatImage').style.padding = "10px 14px"
@@ -2102,6 +2174,8 @@ mediummultiClippingPath.addEventListener('click', () =>{
   document.getElementById('multiImage').style.display = "none"
   document.getElementById('multiClippingComplex').style.display = "none"
   document.getElementById('multiClippingSuperComplex').style.display = "none"
+
+  document.getElementById('maskingComplexOne').style.display = "none"
 
    // Changing Button color
    document.getElementById('multiClippingMediumImage').style.background = "#155EEF"
@@ -2148,6 +2222,8 @@ document.getElementById('multiClippingMedium').style.display = "none"
 document.getElementById('multiClippingComplex').style.display = "block"
 document.getElementById('multiImage').style.display = "none"
 document.getElementById('multiClippingSuperComplex').style.display = "none"
+
+document.getElementById('maskingComplexOne').style.display = "none"
 
  // Changing Button color
  document.getElementById('multiClippingComplexImage').style.background = "#155EEF"
@@ -2196,6 +2272,8 @@ document.getElementById('multiClippingMedium').style.display = "none"
 document.getElementById('multiClippingComplex').style.display = "none"
 document.getElementById('multiImage').style.display = "none"
 
+document.getElementById('maskingComplexOne').style.display = "none"
+
 // Changing Button Color
 document.getElementById('multiClippingSuperComplexImage').style.background = "#155EEF"
  document.getElementById('multiClippingSuperComplexImage').style.padding = "10px 14px"
@@ -2230,4 +2308,55 @@ document.getElementById('multiClippingSuperComplexImage').style.background = "#1
  document.getElementById('multiClippingComplexImage').style.color = "#475467"
  document.getElementById('multiClippingComplexImage').style.border = "0px"
  document.getElementById('multiClippingComplexImage').style.boxShadow = "0px"
+})
+
+// Image Masking Complex One
+document.getElementById('maskingComplexOne').style.display = "none"
+
+const imageMaskingComplexityOne = document.getElementById('maskingComplexOneButton')
+imageMaskingComplexityOne.addEventListener('click', () =>{
+  document.getElementById('maskingComplexOne').style.display = "none"
+  document.getElementById('maskingImage').style.display ='block'
+
+  // Changing Button Color
+document.getElementById('maskingComplexOneButton').style.background = "#155EEF"
+document.getElementById('maskingComplexOneButton').style.padding = "10px 14px"
+document.getElementById('maskingComplexOneButton').style.borderRadius = "8px"
+document.getElementById('maskingComplexOneButton').style.color = "#ffffff"
+
+document.getElementById('maskingComplexTwoButton').style.padding = "0"
+document.getElementById('maskingComplexTwoButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexTwoButton').style.background = "none"
+document.getElementById('maskingComplexTwoButton').style.color = "#475467"
+document.getElementById('maskingComplexTwoButton').style.border = "0px"
+document.getElementById('maskingComplexTwoButton').style.boxShadow = "0px"
+
+})
+
+const imageMaskingComplexityTwo = document.getElementById('maskingComplexTwoButton')
+imageMaskingComplexityTwo.addEventListener('click', () =>{
+  document.getElementById('maskingComplexOne').style.display = "block"
+  document.getElementById('maskingImage').style.display ='none'
+
+  document.getElementById('GhostImage').style.display = 'none'
+  document.getElementById('ghostFlatImage').style.direction = 'none'
+  document.getElementById('ghostMediumImage').style.display = 'none'
+  document.getElementById('ghostComplexImage').style.display = 'none'
+  document.getElementById('ghostSuperComplexImage').style.display = 'none'
+
+  
+
+  document.getElementById('maskingComplexTwoButton').style.background = "#155EEF"
+document.getElementById('maskingComplexTwoButton').style.padding = "10px 14px"
+document.getElementById('maskingComplexTwoButton').style.borderRadius = "8px"
+document.getElementById('maskingComplexTwoButton').style.color = "#ffffff"
+
+document.getElementById('maskingComplexOneButton').style.padding = "0"
+document.getElementById('maskingComplexOneButton').style.borderRadius = "0px"
+document.getElementById('maskingComplexOneButton').style.background = "none"
+document.getElementById('maskingComplexOneButton').style.color = "#475467"
+document.getElementById('maskingComplexOneButton').style.border = "0px"
+document.getElementById('maskingComplexOneButton').style.boxShadow = "0px"
+
+  
 })
