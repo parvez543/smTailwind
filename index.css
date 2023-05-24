@@ -2015,6 +2015,20 @@ line-height: 32px;
 
 color: #155EEF;
 }
+.totalPricing{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  
+  
+  /* Primary/600 */
+  
+  color: #155EEF;
+}
+
 .pricingStart{
   display: flex;
 flex-direction: row;
@@ -2065,6 +2079,36 @@ border-radius: 8px;
 }
 
 .serviceHeading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+
+.servicePrice{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+
+
+
+.priceHeading{
   font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;

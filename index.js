@@ -2800,7 +2800,7 @@ imageMaskingServiceOne.addEventListener('click', () => {
 
 complexLevelOne.addEventListener('click', () => {
   // Update the service name
-  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+  document.querySelector('.serviceName').textContent = 'Image Masking';
 
   // Update the complexity to default
   complexity.textContent = 'Complex 1';
@@ -2811,7 +2811,7 @@ complexLevelOne.addEventListener('click', () => {
 
 complexLevelTwo.addEventListener('click', () => {
   // Update the service name
-  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+  document.querySelector('.serviceName').textContent = 'Image Masking';
 
   // Update the complexity to default
   complexity.textContent = 'Complex 2';
@@ -2822,7 +2822,7 @@ complexLevelTwo.addEventListener('click', () => {
 
 complexLevelThree.addEventListener('click', () => {
   // Update the service name
-  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+  document.querySelector('.serviceName').textContent = 'Image Masking';
 
   // Update the complexity to default
   complexity.textContent = 'Complex 3';
@@ -2833,7 +2833,7 @@ complexLevelThree.addEventListener('click', () => {
 
 complexLevelFour.addEventListener('click', () => {
   // Update the service name
-  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+  document.querySelector('.serviceName').textContent = 'Image Masking';
 
   // Update the complexity to default
   complexity.textContent = 'Complex 4';
@@ -2844,7 +2844,7 @@ complexLevelFour.addEventListener('click', () => {
 
 complexLevelFive.addEventListener('click', () => {
   // Update the service name
-  document.querySelector('.serviceName').textContent = 'Ghost Mannequine';
+  document.querySelector('.serviceName').textContent = 'Image Masking';
 
   // Update the complexity to default
   complexity.textContent = 'Complex 5';
@@ -2932,13 +2932,13 @@ function handleClick(event) {
   if (buttonId.includes('clippingBasic')) {
     price = 1.00;
   } else if (buttonId.includes('clippingFlatRate')) {
-    price = 5.00;
+    price = 2.50;
   } else if (buttonId.includes('clippingMedium')) {
-    price = 10.00; // Set your desired price for medium
+    price = 5.00; // Set your desired price for medium
   } else if (buttonId.includes('clippingComplex')) {
-    price = 15.00; // Set your desired price for complex
+    price = 10.00; // Set your desired price for complex
   } else if (buttonId.includes('clippingSuperComplex')) {
-    price = 16.00; // Set your desired price for super complex
+    price = 5.00; // Set your desired price for super complex
   } else if (
     buttonId.includes('RetouchingBasicImage') ||
     buttonId.includes('ghostBasicImage') ||
@@ -2956,11 +2956,47 @@ function handleClick(event) {
     price = 10.00; // Set your desired price for retouching complex 2
   } else if (buttonId.includes('retouchComplexFiveButton')) {
     price = 12.00; // Set your desired price for retouching complex 2
+  } else if (buttonId.includes('retouchComplexOneButton')) {
+    price = 5.00; // Set your desired price for retouching complex 1
+  } else if(buttonId.includes('ghostBasicButton')){
+    price = 1.50;
+  }  else if(buttonId.includes('ghostFlatButton')){
+    price = 2.00;
+  }  else if(buttonId.includes('ghostMediumButton')){
+    price = 2.50;
+  }  else if(buttonId.includes('ghostComplexButton')){
+    price = 3.00;
+  }  else if(buttonId.includes('ghostSuperComplexButton')){
+    price = 5.00;
+  }  else if(buttonId.includes('multiClippingBasicImage')){
+    price = 2.00;
+  }  else if(buttonId.includes('multiClippingFlatImage')){
+    price = 4.00;
+  }  else if(buttonId.includes('multiClippingMediumImage')){
+    price = 7.00;
+  }  else if(buttonId.includes('multiClippingComplexImage')){
+    price = 10.00;
+  }  else if(buttonId.includes('multiClippingSuperComplexImage')){
+    price = 15.00;
+  }  else if(buttonId.includes('maskingComplexOneButton')){
+    price = 2.00;
+  } else if(buttonId.includes('maskingComplexTwoButton')){
+    price = 3.00;
+  } else if(buttonId.includes('maskingComplexThreeButton')){
+    price = 4.00;
+  } else if(buttonId.includes('maskingComplexFourButton')){
+    price = 5.00;
+  } else if(buttonId.includes('maskingComplexFiveButton')){
+    price = 8.00;
   } 
+
 
   // Update the price display
   const totalServicePrice = document.querySelector('.totalServicePrice');
   totalServicePrice.textContent = '$' + price.toFixed(2);
+
+  const finalTotal = document.querySelector('.totalPricing')
+  finalTotal.textContent = '$' + price.toFixed(2);
 }
 
 // Add click event listeners to the buttons
@@ -2968,4 +3004,120 @@ buttons.forEach(button => {
   button.addEventListener('click', handleClick);
 });
 
+// Get references to the buttons and the target elements
+const dropShadowButton = document.getElementById('dropShadowContainer');
+const customShadowButton = document.getElementById('customShadowContainer');
+const reflactionShadowButton = document.getElementById('reflactionContainer')
+const keepShadowButton = document.getElementById('keepShadowContainer')
+const serviceHeading = document.querySelector('#imgPrice h6.serviceHeading');
+const serviceDetail = document.querySelector('#imgPrice p');
 
+// Add click event listeners to the buttons
+dropShadowButton.addEventListener('click', () => {
+  // Update the text content of the target elements
+  serviceHeading.textContent = 'Drop Shadow';
+  serviceDetail.textContent = '$0.5';
+  
+  // Update the styling of the buttons (optional)
+  dropShadowButton.classList.add('active');
+  customShadowButton.classList.remove('active');
+  reflactionShadowButton.classList.remove('active');
+  keepShadowButton.classList.remove('active')
+});
+
+customShadowButton.addEventListener('click', () => {
+  // Update the text content of the target elements
+  serviceHeading.textContent = 'Custom Shadow';
+  serviceDetail.textContent = '$0.5';
+  
+  // Update the styling of the buttons (optional)
+  customShadowButton.classList.add('active');
+  dropShadowButton.classList.remove('active');
+  reflactionShadowButton.classList.remove('active');
+  keepShadowButton.classList.remove('active')
+});
+
+reflactionShadowButton.addEventListener('click', function(){
+  serviceHeading.textContent = 'Reflection Shadow';
+  serviceDetail.textContent = '$0.5';
+  
+  // Update the styling of the buttons (optional)
+  reflactionShadowButton.classList.add('active');
+  dropShadowButton.classList.remove('active');
+  customShadowButton.classList.remove('active');
+  keepShadowButton.classList.remove('active')
+})
+
+keepShadowButton.addEventListener('click', ()=> {
+  serviceHeading.textContent = 'keep Shadow';
+  serviceDetail.textContent = '$0.5';
+
+  reflactionShadowButton.classList.remove('active');
+  dropShadowButton.classList.remove('active');
+  customShadowButton.classList.remove('active');
+  keepShadowButton.classList.add('active')
+})
+
+
+
+
+// Add One Or All Service
+
+// webSize
+document.getElementById('webSizeCheckBox').style.display = 'none'
+
+ const webSize = document.getElementById('webSizeContainer')
+ webSize.addEventListener('click', () =>{
+  document.getElementById('webSizeCheckBox').style.display = 'block'
+  document.getElementById('webSizeNullBox').style.display = 'none'
+ })
+
+//  Margin
+document.getElementById('marginCheckBox').style.display = 'none'
+
+const margineSize = document.getElementById('marginContainer')
+
+margineSize.addEventListener('click', () =>{
+  document.getElementById('marginCheckBox').style.display = 'block'
+  document.getElementById('marginNullBox').style.display = 'none'
+})
+
+
+// Adjustment 
+document.getElementById('adjustmentCheckBox').style.display = 'none'
+document.getElementById('adjustmentNullBox').style.display = 'block'
+
+const adjustmentContainer = document.getElementById('adjustmentContainer')
+
+adjustmentContainer.addEventListener('click', () =>{
+  document.getElementById('adjustmentCheckBox').style.display = 'block'
+document.getElementById('adjustmentNullBox').style.display = 'none'
+})
+
+// retouch
+
+// document.getElementById('retouchNullBox').style.display = 'none'
+document.getElementById('retouchCheckBox').style.display = 'none'
+// document.getElementById('retouchNullBox').style.display = 'none'
+
+
+const retouchService = document.getElementById('retouchServiceContainer')
+retouchService.addEventListener('click', ()=> {
+  document.getElementById('retouchCheckBox').style.display = 'block'
+document.getElementById('retouchNullBox').style.display = 'none'
+})
+
+
+
+document.getElementById("dropShadowContainer").addEventListener("click", function() {
+  let serviceOneHeading = document.getElementById("serviceOneHeading").innerText;
+  let serviceOnePara = document.getElementById("serviceOnePara").innerText;
+  
+  let price = serviceOnePara.match(/\$([\d.]+)/);
+  let extractedPrice = price ? price[1] : '';
+
+  document.getElementById("shadowHeading").innerText = serviceOneHeading;
+  document.getElementById("shadowPara").innerText = `$ ${ extractedPrice}`;
+
+  
+});
