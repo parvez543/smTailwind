@@ -2870,6 +2870,9 @@ dropShadow.addEventListener('click', ()=> {
   document.getElementById('reflactionRound').style.display = 'block';
   document.getElementById('keepShadowCheck').style.display = 'none';
   document.getElementById('keepShadowRound').style.display = 'block';
+
+
+
 })
 
 const customShadow = document.getElementById('customShadowContainer')
@@ -2913,101 +2916,56 @@ document.getElementById('dropShadowCheck').style.display = 'none';
 
 // Get all the service buttons
 // Get references to the necessary elements
-const buttons = document.querySelectorAll('.serviceContainer');
-const serviceHeading = document.querySelector('.dropShadow');
-const servicePrice = document.querySelector('.servicePrice');
-const totalServicePrice = document.querySelector('.totalServicePrice');
+// Get all the buttons within the button container
+// Get all the buttons within the button container
+const buttons = document.querySelectorAll('.buttonContainer button');
 
-// Initialize the total price
-let totalPrice = 0;
+// Set the initial price for clipping service
+let price = 1.00;
+
+// Function to handle button click event
+function handleClick(event) {
+  // Get the clicked button's id
+  const buttonId = event.target.id;
+
+  // Update the price based on the button clicked
+  if (buttonId.includes('clippingBasic')) {
+    price = 1.00;
+  } else if (buttonId.includes('clippingFlatRate')) {
+    price = 5.00;
+  } else if (buttonId.includes('clippingMedium')) {
+    price = 10.00; // Set your desired price for medium
+  } else if (buttonId.includes('clippingComplex')) {
+    price = 15.00; // Set your desired price for complex
+  } else if (buttonId.includes('clippingSuperComplex')) {
+    price = 16.00; // Set your desired price for super complex
+  } else if (
+    buttonId.includes('RetouchingBasicImage') ||
+    buttonId.includes('ghostBasicImage') ||
+    buttonId.includes('multiImageButton') ||
+    buttonId.includes('maskingImageButton')
+  ) {
+    price = 5.00; // Set the default price for photo retouching
+  } else if (buttonId.includes('retouchComplexOneButton')) {
+    price = 5.00; // Set your desired price for retouching complex 1
+  } else if (buttonId.includes('retouchComplexTwoButton')) {
+    price = 7.00; // Set your desired price for retouching complex 2
+  } else if (buttonId.includes('retouchComplexThreeButton')) {
+    price = 8.00; // Set your desired price for retouching complex 2
+  } else if (buttonId.includes('retouchComplexFourButton')) {
+    price = 10.00; // Set your desired price for retouching complex 2
+  } else if (buttonId.includes('retouchComplexFiveButton')) {
+    price = 12.00; // Set your desired price for retouching complex 2
+  } 
+
+  // Update the price display
+  const totalServicePrice = document.querySelector('.totalServicePrice');
+  totalServicePrice.textContent = '$' + price.toFixed(2);
+}
 
 // Add click event listeners to the buttons
 buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Get the button name and price
-    const buttonName = button.querySelector('.serviceHeading').textContent;
-    const buttonPrice = parseFloat(button.querySelector('.serviceDetail').textContent.replace(/[^\d.]/g, ''));
-
-    // Update the button name and price in the designated section
-    serviceHeading.textContent = buttonName;
-    servicePrice.textContent = `$${buttonPrice.toFixed(2)}`;
-
-    // Calculate the updated total service price
-    totalPrice = buttonPrice;
-    totalServicePrice.textContent = `$${totalPrice.toFixed(2)}`;
-  });
+  button.addEventListener('click', handleClick);
 });
 
-// Get references to the necessary elements
-const dropShadowContainer = document.getElementById("dropShadowContainer");
-const customShadowContainer = document.getElementById("customShadowContainer");
-const buttonName = document.querySelector(".dropShadow");
-const buttonPrice = document.querySelector(".servicePrice");
-const subtotalImage = document.querySelector(".totalImage");
-const subtotalPrice = document.querySelector(".subtotalPrice");
-
-// Initialize the prices and subtotal variables
-let dropShadowPrice = 0.5;
-let customShadowPrice = 0.5;
-let subtotal = 1.0;
-
-// Event listener for the drop shadow button
-dropShadowContainer.addEventListener("click", () => {
-  if (!dropShadowContainer.classList.contains("active")) {
-    dropShadowContainer.classList.add("active");
-    buttonName.textContent = "Drop Shadow";
-    buttonPrice.textContent = "$" + customShadowPrice.toFixed(2) + "";
-    subtotal += dropShadowPrice;
-    updateSubtotal();
-  } else {
-    dropShadowContainer.classList.remove("active");
-    buttonName.textContent = "";
-    buttonPrice.textContent = "";
-    subtotal -= dropShadowPrice;
-    updateSubtotal();
-  }
-});
-
-// Event listener for the custom shadow button
-customShadowContainer.addEventListener("click", () => {
-  if (!customShadowContainer.classList.contains("active")) {
-    customShadowContainer.classList.add("active");
-    buttonName.textContent = "Custom Shadow";
-    buttonPrice.textContent = "$" + customShadowPrice.toFixed(2) + "";
-    subtotal += customShadowPrice;
-    updateSubtotal();
-  } else {
-    customShadowContainer.classList.remove("active");
-    buttonName.textContent = "";
-    buttonPrice.textContent = "";
-    subtotal -= customShadowPrice;
-    updateSubtotal();
-  }
-});
-
-// Function to update the subtotal
-function updateSubtotal() {
-  subtotalPrice.textContent = "$" + subtotal.toFixed(2);
-}
-
-// Double-click event listener for the drop shadow button
-dropShadowContainer.addEventListener("dblclick", () => {
-  dropShadowContainer.classList.remove("active");
-  buttonName.textContent = "";
-  buttonPrice.textContent = "";
-  subtotal -= dropShadowPrice;
-  updateSubtotal();
-});
-
-// Double-click event listener for the custom shadow button
-customShadowContainer.addEventListener("dblclick", () => {
-  customShadowContainer.classList.remove("active");
-  buttonName.textContent = "";
-  buttonPrice.textContent = "";
-  subtotal -= customShadowPrice;
-  updateSubtotal();
-});
-
-// Initialize the subtotal
-updateSubtotal();
 
