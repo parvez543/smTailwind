@@ -142,22 +142,22 @@
     <!-- Our Introduction -->
     <section >
         <!-- Image One -->
-       <div class="">
-        <div class="introContainer mt-[100px]">
-            <h1>Hello</h1>
-            <!-- <div class="flex justify-center items-center gap-[32px]">
-                <div class="introOneContainer">
-                    <figure class="w-[464px] h-[261px]">
-                        <img src="./home4k/H_S/homeIntro.png"/>
-                    </figure>
-                </div>
-                <div class="introOneContainer">
-                    <figure class="w-[464px] h-[261px]">
-                        <img src="./home4k/H_S/homeIntro.png"/>
-                    </figure>
-                </div>
-            </div> -->
-        </div>
+       <div class="mt-[100px]">
+            <div class="introContainer">
+                
+                <!-- <div class="flex justify-center items-center gap-[32px]">
+                    <div class="introOneContainer">
+                        <figure class="w-[464px] h-[261px]">
+                            <img src="./home4k/H_S/homeIntro.png"/>
+                        </figure>
+                    </div>
+                    <div class="introOneContainer">
+                        <figure class="w-[464px] h-[261px]">
+                            <img src="./home4k/H_S/homeIntro.png"/>
+                        </figure>
+                    </div>
+                </div> -->
+            </div>
        </div>
     </section>
     
@@ -2232,11 +2232,22 @@
                                                                             placeholder="Phone Number*" />
                                                                         <!-- <div id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</div> -->
                                                                     </div>
-                                                                    <p
-                                                                        class="receiveCall flex justify-end items-center gap-[18px] -mt-[12px] ml-[25px]">
-                                                                        I want to receive a call <input type="radio"
-                                                                            id="radio" name="radio"
-                                                                            class="w-[16px] h-[16px]"></p>
+                                                                    <div class="flex items-center gap-[18px]">
+                                                                        <p
+                                                                        class="receiveCall -mt-[12px]">
+                                                                        I want to receive a call 
+                                                                        </p>
+                                                                        <button id="toggleenableContainerGetQuote">
+                                                                            <figure class="-mt-[12px]" id="toogleDisabledGetQuote">
+                                                                                <img src="./home4k/H_S/_Togglebase.svg"/>
+                                                                            </figure>
+                                                                        </button>
+                                                                        <button id="toggleDisableGetContainer" class="-ml-[20px]">
+                                                                            <figure class="-mt-[12px]" id="toogleenableGetQuote">
+                                                                                <img src="./home4k/H_S/toggleenable.svg"/>
+                                                                            </figure>
+                                                                        </button>
+                                                                   </div>
                                                                     <select class="selectService" id="services">
                                                                         <option value="" disabled selected hidden>Select
                                                                             Service</option>
@@ -3521,10 +3532,22 @@
                                                             class="phoneInput" placeholder="Phone Number*" />
                                                         <!-- <div id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</div> -->
                                                     </div>
-                                                    <p
-                                                        class="receiveCall flex justify-end items-center gap-[18px] -mt-[12px] ml-[25px]">
-                                                        I want to receive a call <input type="radio" id="radio"
-                                                            name="radio" class="w-[16px] h-[16px]"></p>
+                                                    <div class="flex items-center gap-[18px]">
+                                                        <p
+                                                        class="receiveCall -mt-[12px]">
+                                                        I want to receive a call 
+                                                        </p>
+                                                        <button id="toggleenableContainerCustomQuote">
+                                                            <figure class="-mt-[12px]" id="toogleDisabledCustomQuote">
+                                                                <img src="./home4k/H_S/_Togglebase.svg"/>
+                                                            </figure>
+                                                        </button>
+                                                        <button id="toggleDisableCustomContainer" class="-ml-[20px]">
+                                                            <figure class="-mt-[12px]" id="toogleenableCustomQuote">
+                                                                <img src="./home4k/H_S/toggleenable.svg"/>
+                                                            </figure>
+                                                        </button>
+                                                   </div>
                                                     <select class="selectService" id="serviceCustom">
                                                         <option value="" disabled selected hidden>Select
                                                             Service</option>
@@ -4161,8 +4184,8 @@
                                 <p class="pricing -mt-[15px]">$1.00/img</p>
                                 <p class="-mt-[20px] serviceName">Complexity- <span class="font-bold">Basic</span></p>
                                 <div class="flex">
-                                    <p class="dropShadow w-[230px]" id="shadowHeading"></p>
-                                    <p class="servicePrice" id="shadowPara"></p>
+                                    <p class="dropShadow w-[230px]" id="shadowHeading">Drop Shadow</p>
+                                    <p class="servicePrice" id="shadowPara">$0.5</p>
                                 </div>
                                
 

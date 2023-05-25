@@ -3005,58 +3005,7 @@ buttons.forEach(button => {
 });
 
 // Get references to the buttons and the target elements
-const dropShadowButton = document.getElementById('dropShadowContainer');
-const customShadowButton = document.getElementById('customShadowContainer');
-const reflactionShadowButton = document.getElementById('reflactionContainer')
-const keepShadowButton = document.getElementById('keepShadowContainer')
-const serviceHeading = document.querySelector('#imgPrice h6.serviceHeading');
-const serviceDetail = document.querySelector('#imgPrice p');
 
-// Add click event listeners to the buttons
-dropShadowButton.addEventListener('click', () => {
-  // Update the text content of the target elements
-  serviceHeading.textContent = 'Drop Shadow';
-  serviceDetail.textContent = '$0.5';
-  
-  // Update the styling of the buttons (optional)
-  dropShadowButton.classList.add('active');
-  customShadowButton.classList.remove('active');
-  reflactionShadowButton.classList.remove('active');
-  keepShadowButton.classList.remove('active')
-});
-
-customShadowButton.addEventListener('click', () => {
-  // Update the text content of the target elements
-  serviceHeading.textContent = 'Custom Shadow';
-  serviceDetail.textContent = '$0.5';
-  
-  // Update the styling of the buttons (optional)
-  customShadowButton.classList.add('active');
-  dropShadowButton.classList.remove('active');
-  reflactionShadowButton.classList.remove('active');
-  keepShadowButton.classList.remove('active')
-});
-
-reflactionShadowButton.addEventListener('click', function(){
-  serviceHeading.textContent = 'Reflection Shadow';
-  serviceDetail.textContent = '$0.5';
-  
-  // Update the styling of the buttons (optional)
-  reflactionShadowButton.classList.add('active');
-  dropShadowButton.classList.remove('active');
-  customShadowButton.classList.remove('active');
-  keepShadowButton.classList.remove('active')
-})
-
-keepShadowButton.addEventListener('click', ()=> {
-  serviceHeading.textContent = 'keep Shadow';
-  serviceDetail.textContent = '$0.5';
-
-  reflactionShadowButton.classList.remove('active');
-  dropShadowButton.classList.remove('active');
-  customShadowButton.classList.remove('active');
-  keepShadowButton.classList.add('active')
-})
 
 
 
@@ -3122,10 +3071,138 @@ document.getElementById("dropShadowContainer").addEventListener("click", functio
   
 });
 
+// Deselction Add Ones of Pricing Section
+// Get the button elements
+const button1 = document.getElementById('dropShadowContainer');
+const button2 = document.getElementById('customShadowContainer');
+const button3 = document.getElementById('reflactionContainer');
+const button4 = document.getElementById('keepShadowContainer');
+
+// Get the check and round elements
+const check1 = document.getElementById('dropShadowCheck');
+const round1 = document.getElementById('dropShadowRound');
+const check2 = document.getElementById('customShadowCheck');
+const round2 = document.getElementById('customShadowRound');
+const check3 = document.getElementById('reflactionCheck');
+const round3 = document.getElementById('reflactionRound');
+const check4 = document.getElementById('keepShadowCheck');
+const round4 = document.getElementById('keepShadowRound');
+
+// Variables to track button states
+let clicked1 = true;
+let clicked2 = true;
+let clicked3 = true;
+let clicked4 = true;
+
+// Add click event listeners to the buttons
+button1.addEventListener('click', () => {
+  clicked1 = !clicked1;
+  if (clicked1) {
+    round1.style.display = 'block';
+    check1.style.display = 'none';
+  } else {
+    round1.style.display = 'none';
+    check1.style.display = 'block';
+  }
+});
+
+button2.addEventListener('click', () => {
+  clicked2 = !clicked2;
+  if (clicked2) {
+    round2.style.display = 'block';
+    check2.style.display = 'none';
+  } else {
+    round2.style.display = 'none';
+    check2.style.display = 'block';
+  }
+});
+
+button3.addEventListener('click', () => {
+  clicked3 = !clicked3;
+  if (clicked3) {
+    round3.style.display = 'block';
+    check3.style.display = 'none';
+  } else {
+    round3.style.display = 'none';
+    check3.style.display = 'block';
+  }
+});
+
+button4.addEventListener('click', () => {
+  clicked4 = !clicked4;
+  if (clicked4) {
+    round4.style.display = 'block';
+    check4.style.display = 'none';
+  } else {
+    round4.style.display = 'none';
+    check4.style.display = 'block';
+  }
+});
+
+
+
+
+// Get references to the buttons and checkboxes
+const webSizeButton = document.getElementById("webSizeContainer");
+const webSizeCheckBox = document.getElementById("webSizeCheckBox");
+const webSizeNullBox = document.getElementById("webSizeNullBox");
+
+const marginButton = document.getElementById("marginContainer");
+const marginCheckBox = document.getElementById("marginCheckBox");
+const marginNullBox = document.getElementById("marginNullBox");
+
+const adjustmentButton = document.getElementById("adjustmentContainer");
+const adjustmentCheckBox = document.getElementById("adjustmentCheckBox");
+const adjustmentNullBox = document.getElementById("adjustmentNullBox");
+
+const retouchButton = document.getElementById("retouchServiceContainer");
+const retouchCheckBox = document.getElementById("retouchCheckBox");
+const retouchNullBox = document.getElementById("retouchNullBox");
+
+// Set initial states
+let webSizeEnabled = false;
+let marginEnabled = false;
+let adjustmentEnabled = false;
+let retouchEnabled = false;
+
+// Add event listeners to the buttons
+webSizeButton.addEventListener("click", toggleWebSizeCheckbox);
+marginButton.addEventListener("click", toggleMarginCheckbox);
+adjustmentButton.addEventListener("click", toggleAdjustmentCheckbox);
+retouchButton.addEventListener("click", toggleRetouchCheckbox);
+
+// Define event handler functions
+function toggleWebSizeCheckbox() {
+  webSizeEnabled = !webSizeEnabled;
+  webSizeCheckBox.style.display = webSizeEnabled ? "inline-block" : "none";
+  webSizeNullBox.style.display = webSizeEnabled ? "none" : "inline-block";
+}
+
+function toggleMarginCheckbox() {
+  marginEnabled = !marginEnabled;
+  marginCheckBox.style.display = marginEnabled ? "inline-block" : "none";
+  marginNullBox.style.display = marginEnabled ? "none" : "inline-block";
+}
+
+function toggleAdjustmentCheckbox() {
+  adjustmentEnabled = !adjustmentEnabled;
+  adjustmentCheckBox.style.display = adjustmentEnabled ? "inline-block" : "none";
+  adjustmentNullBox.style.display = adjustmentEnabled ? "none" : "inline-block";
+}
+
+function toggleRetouchCheckbox() {
+  retouchEnabled = !retouchEnabled;
+  retouchCheckBox.style.display = retouchEnabled ? "inline-block" : "none";
+  retouchNullBox.style.display = retouchEnabled ? "none" : "inline-block";
+}
+
 
 // Enable And Disable Toggle Button Of I Want to Receive A Call of How It Works Try Us Free Section
 
 document.getElementById('toogleenable').style.display = 'none';
+document.getElementById('toogleenableGetQuote').style.display = 'none';
+document.getElementById('toogleenableCustomQuote').style.display = 'none';
+
 
 const toggleEnable = document.getElementById('toggleenableContainer')
 
@@ -3142,4 +3219,32 @@ toggleDisable.addEventListener('click', () =>{
   document.getElementById('toogleenable').style.display = 'none';
   document.getElementById('toogleDisabled').style.display = 'block';
 
+})
+
+
+const toggleenableContainerGetQuote = document.getElementById('toggleenableContainerGetQuote')
+toggleenableContainerGetQuote.addEventListener('click', ()=>{
+  document.getElementById('toogleenableGetQuote').style.display = 'block';
+  document.getElementById('toogleDisabledGetQuote').style.display = 'none';
+
+})
+
+const toggleDisableContainer = document.getElementById('toggleDisableGetContainer')
+toggleDisableContainer.addEventListener('click', () =>{
+  document.getElementById('toogleenableGetQuote').style.display = 'none';
+  document.getElementById('toogleDisabledGetQuote').style.display = 'block';
+})
+
+
+
+const toggleenableContainerCustomQuote = document.getElementById('toggleenableContainerCustomQuote')
+toggleenableContainerCustomQuote.addEventListener('click', ()=> {
+  document.getElementById('toogleenableCustomQuote').style.display = 'block';
+  document.getElementById('toogleDisabledCustomQuote').style.display = 'none';
+})
+
+const toggleDisableCustomContainer = document.getElementById('toggleDisableCustomContainer')
+toggleDisableCustomContainer.addEventListener('click', () =>{
+  document.getElementById('toogleenableCustomQuote').style.display = 'none';
+  document.getElementById('toogleDisabledCustomQuote').style.display = 'block';
 })
