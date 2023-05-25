@@ -101,6 +101,7 @@ body {
   background-image: url(./home4k/H_S/Vector_1.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* position: relative; */
   /* height: 716px; */
   /* margin-top: 32px; */
 }
@@ -2121,3 +2122,31 @@ line-height: 20px;
 
 color: #475467;
 }
+
+/* Home Section Second */
+.introContainer {
+  position: relative;
+  height: 577.48px;
+  /* overflow: hidden; */
+  
+}
+
+.introContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  background: linear-gradient(rgba(219, 183, 255, 0.6), rgba(18, 240, 67, 0.6));
+  filter: blur(84px);
+  transform: matrix(1, -0.06, -0.06, -1, 0, 0);
+  z-index: -1;
+ 
+}
+
+.introOneContainer {
+  position: relative;
+  z-index: 1;
+}
+
