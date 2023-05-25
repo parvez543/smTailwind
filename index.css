@@ -2124,29 +2124,54 @@ color: #475467;
 }
 
 /* Home Section Second */
-.introContainer {
+.backGroundSection{
   position: relative;
+  margin-top: 100px;
   height: 577.48px;
-  /* overflow: hidden; */
-  
-}
-
-.introContainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 100%;
   background: linear-gradient(rgba(219, 183, 255, 0.6), rgba(18, 240, 67, 0.6));
   filter: blur(84px);
-  transform: matrix(1, -0.06, -0.06, -1, 0, 0);
-  z-index: -1;
- 
+ transform: matrix(1, -0.06, -0.06, 0.9, 0, 0); 
+ width: 95%;
 }
-
-.introOneContainer {
+.introContainer{
   position: relative;
   z-index: 1;
 }
 
+
+/* Trusted By Us */
+.trustedCompany{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+/* identical to box height, or 127% */
+
+text-align: center;
+
+/* Gray/900 */
+
+color: #101828;
+
+}
+.clientNumber{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 38px;
+/* identical to box height, or 127% */
+
+text-align: center;
+
+/* Primary/600 */
+
+color: #155EEF;
+position: relative;
+}
+.underLine{
+  margin-left: 840px;
+  margin-top: -5px;
+  
+}
