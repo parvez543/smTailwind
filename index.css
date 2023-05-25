@@ -132,6 +132,7 @@ body {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  font-weight: 600
 }
 .getBtn {
   display: flex;
@@ -141,6 +142,7 @@ body {
 
   gap: 24px;
   height: 60px;
+  font-weight: 600;
 
   /* Base/White */
 
@@ -2134,8 +2136,11 @@ color: #475467;
   top: 0; left: 0;
   width: 1884.33px;
 height: 577.48px;
-  background: url(./home4k/H_S/Vector__1.svg);
-  filter: blur(84px);
+margin-top: 120px;
+  background: linear-gradient(rgba(219, 183, 255, 1),rgba(18, 240, 67, 1));
+  opacity: 0.6;
+filter: blur(84px);
+transform: matrix(1, -0.06, -0.06, -1, 0, 0);
 }
 .introContainer {
   /* This will make it stack on top of the ::before */
