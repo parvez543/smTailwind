@@ -885,10 +885,22 @@
                                                         class="phoneInput" placeholder="Phone Number*" />
                                                     <!-- <div id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</div> -->
                                                 </div>
-                                                <p
-                                                    class="receiveCall flex justify-end items-center gap-[18px] -mt-[12px] ml-[25px]">
-                                                    I want to receive a call <input type="radio" id="radio" name="radio"
-                                                        class="w-[16px] h-[16px]"></p>
+                                               <div class="flex items-center gap-[18px]">
+                                                    <p
+                                                    class="receiveCall -mt-[12px]" id="receiveCallWant">
+                                                    I want to receive a call 
+                                                    </p>
+                                                    <button id="toggleenableContainer">
+                                                        <figure class="-mt-[12px]" id="toogleDisabled">
+                                                            <img src="./home4k/H_S/_Togglebase.svg"/>
+                                                        </figure>
+                                                    </button>
+                                                    <button id="toggleDisableContainer" class="-ml-[20px]">
+                                                        <figure class="-mt-[12px]" id="toogleenable">
+                                                            <img src="./home4k/H_S/toggleenable.svg"/>
+                                                        </figure>
+                                                    </button>
+                                               </div>
                                                 <select class="selectService" id="service">
                                                     <option value="" disabled selected hidden>Select Service</option>
                                                     <option value="clippingpath">Clipping Path</option>

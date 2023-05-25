@@ -3121,3 +3121,25 @@ document.getElementById("dropShadowContainer").addEventListener("click", functio
 
   
 });
+
+
+// Enable And Disable Toggle Button Of I Want to Receive A Call of How It Works Try Us Free Section
+
+document.getElementById('toogleenable').style.display = 'none';
+
+const toggleEnable = document.getElementById('toggleenableContainer')
+
+toggleEnable.addEventListener('click', () =>{
+  document.getElementById('toogleenable').style.display = 'block';
+  document.getElementById('toogleDisabled').style.display = 'none';
+  
+
+})
+
+const toggleDisable = document.getElementById('toggleDisableContainer')
+
+toggleDisable.addEventListener('click', () =>{
+  document.getElementById('toogleenable').style.display = 'none';
+  document.getElementById('toogleDisabled').style.display = 'block';
+
+})
