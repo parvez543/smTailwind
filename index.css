@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 .navContent {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -2126,19 +2127,133 @@ color: #475467;
 /* Home Section Second */
 .backGroundSection{
   position: relative;
-  margin-top: 100px;
-  height: 577.48px;
-  background: linear-gradient(rgba(219, 183, 255, 0.6), rgba(18, 240, 67, 0.6));
+}
+.backGroundSection::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 1884.33px;
+height: 577.48px;
+  background: url(./home4k/H_S/Vector__1.svg);
   filter: blur(84px);
- transform: matrix(1, -0.06, -0.06, 0.9, 0, 0); 
- width: 95%;
+}
+.introContainer {
+  /* This will make it stack on top of the ::before */
+  position: relative;
 }
 .introContainer{
   position: relative;
-  z-index: 1;
+  z-index: 1000;
+}
+.introOneContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  isolation: isolate;
+  
+  width: 512px;
+  height: 505px;
+  
+  background: linear-gradient(158.35deg, rgba(254, 254, 254, 0.3) 9.87%, rgba(255, 255, 255, 0.6) 108.8%);
+  /* Base/White */
+  
+  border: 2px solid #FFFFFF;
+  /* Background blur / xl */
+  
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 16px;
 }
 
+.introHead{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height, or 122% */
 
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+
+.introPara{
+  margin-top: 16px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.review{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 8px;
+
+position: absolute;
+width: 190px;
+height: 98px;
+left: -41px;
+top: calc(50% - 98px/2 - 161.5px);
+
+background: linear-gradient(102deg, rgba(255, 255, 255, 0.72) 6.98%, rgba(255, 255, 255, 0.63) 99.18%);
+/* Primary/25 */
+
+border: 1px solid #F5F8FF;
+/* Background blur / lg */
+
+backdrop-filter: blur(12px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 10px;
+}
+.reviewPara{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+text-align: center;
+letter-spacing: -0.04em;
+
+/* Gray/800 */
+
+color: #1D2939;
+}
+
+.teamBtn{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Primary/700 */
+
+color: #004EEB;
+}
 /* Trusted By Us Start*/
 .trustedCompany{
   font-family: 'Poppins';
@@ -2276,3 +2391,146 @@ border-radius: 8px;
 color: white;
 }
 /* For Whom We Work Ends */
+
+/* Photo Editing Service Start */
+.photoEditingHeading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+.photoEditingPara{
+  width: 604px;
+height: 56px;
+
+/* Text lg/Regular */
+display: block;
+margin: 16px auto;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+text-align: center;
+
+/* Gray/600 */
+
+color: #475467;
+}
+
+.clippingPathContainer{
+  position: relative;
+  overflow: hidden;
+}
+.clippingPathContainer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  margin-top: 250px;
+  width: 100%;
+  height: 267.2px;
+  background: linear-gradient(rgba(183, 193, 255, 1),rgba(18, 240, 134, 1));
+  filter: blur(90px);
+  /* overflow-x: hidden; */
+}
+.clippingImageOne {
+  /* width: 1170px; */
+height: 781px;
+  position: relative;
+  border-radius: 8px;
+}
+.clipHeading{
+  width: 240px;
+/* height: 88px; */
+
+/* Display md/Bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* or 122% */
+
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+.clipOne{
+  border-radius: 12px;
+}
+.clipPara{
+  margin-top: 16px;
+  width: 241px;
+height: 168px;
+position: relative;
+  z-index: 1; 
+/* Text md/Regular */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+
+.multiClipPara{
+
+}
+
+.learnMore{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Primary/700 */
+
+color: #004EEB;
+}
+.learnMoreContainer{
+  position: relative;
+  z-index: 1; 
+}
+
+
+.multiClippingPathContainer{
+  position: relative;
+  overflow: hidden;
+}
+.multiClippingPathContainer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  margin-top: 250px;
+  width: 100%;
+  height: 267.2px;
+  background: linear-gradient(rgba(18, 240, 134, 1), rgba(183, 193, 255, 1));
+  filter: blur(90px);
+  transform: matrix(1, -0.06, -0.06, -1, 0, 0);
+  /* transform: rotate(-360deg); */
+  /* overflow-x: hidden; */
+}
+/* Photo Editing Service Ends */
