@@ -3253,7 +3253,7 @@ toggleDisableCustomContainer.addEventListener('click', () =>{
 // Faq Section Start
 
 document.getElementById('plusICon').style.display = 'none';
-document.getElementById('faqParaOne').style.marginLeft = "-28px";
+document.getElementById('faqParaOne').style.marginLeft = "-10px";
 
 const faqOne = document.getElementById('faqOne');
 const minusIcon = document.getElementById('minusICon');
@@ -3269,7 +3269,7 @@ faqOne.addEventListener('click', function(){
   faqOne.classList.add('btnContainer')
   document.getElementById('plusICon').style.display = 'none';
   document.getElementById('minusICon').style.display = 'block';
-  document.getElementById('faqParaOne').style.marginLeft = "-28px";
+  document.getElementById('faqParaOne').style.marginLeft = "-10px";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
