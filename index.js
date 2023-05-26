@@ -3248,3 +3248,97 @@ toggleDisableCustomContainer.addEventListener('click', () =>{
   document.getElementById('toogleenableCustomQuote').style.display = 'none';
   document.getElementById('toogleDisabledCustomQuote').style.display = 'block';
 })
+
+
+// Faq Section Start
+
+document.getElementById('minusICon').style.display = 'none';
+
+const faqOne = document.getElementById('faqOne');
+const minusIcon = document.getElementById('minusICon');
+const plusIcon = document.getElementById('plusICon');
+const faqPara = document.getElementById('faqPara');
+
+faqOne.classList.add('btnContainer');
+
+let isFaqOpen = true;
+
+faqOne.addEventListener('click', () => {
+  if (isFaqOpen) {
+    minusIcon.style.display = 'block';
+    plusIcon.style.display = 'none';
+    faqPara.style.display = 'none';
+    faqOne.classList.remove('btnContainer');
+  } else {
+    minusIcon.style.display = 'block';
+    plusIcon.style.display = 'none';
+    faqPara.style.display = 'block';
+    faqOne.classList.add('btnContainer');
+  }
+
+  isFaqOpen = !isFaqOpen;
+});
+
+faqOne.addEventListener('click', function(){
+
+  document.getElementById('faqPara').style.display = 'block';
+  faqOne.classList.add('btnContainer')
+  document.getElementById('plusICon').style.display = 'none';
+  document.getElementById('minusICon').style.display = 'block';
+
+  document.getElementById('faqTwoPara').style.display = 'none';
+  faqTwo.classList.remove('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+})
+
+
+// FAQ Two
+document.getElementById('plusTwoICon').style.display = 'none';
+
+document.getElementById('faqTwoPara').style.display = 'none';
+document.getElementById('minusTwoICon').style.display = 'none';
+document.getElementById('plusTwoICon').style.display = 'block';
+
+
+const faqTwo = document.getElementById('faqTwo');
+const minusTwoIcon = document.getElementById('minusTwoICon');
+const plusTwoIcon = document.getElementById('plusTwoICon');
+const faqTwoPara = document.getElementById('faqTwoPara');
+
+faqTwo.classList.remove('btnContainer');
+
+let isTwoFaqOpen = true;
+
+faqTwo.addEventListener('click', () => {
+
+  if (isTwoFaqOpen) {
+    minusTwoIcon.style.display = 'none';
+    plusTwoIcon.style.display = 'block';
+    faqTwoPara.style.display = 'none';
+    faqTwo.classList.remove('btnContainer');
+  } else {
+    minusTwoIcon.style.display = 'block';
+    plusTwoIcon.style.display = 'none';
+    faqTwoPara.style.display = 'block';
+    faqTwo.classList.add('btnContainer');
+  }
+
+  
+
+  isTwoFaqOpen = !isTwoFaqOpen;
+  
+});
+
+faqTwo.addEventListener('click', function(){
+  document.getElementById('faqTwoPara').style.display = 'block';
+  faqTwo.classList.add('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+
+
+  document.getElementById('faqPara').style.display = 'none';
+  faqOne.classList.remove('btnContainer')
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
+})
