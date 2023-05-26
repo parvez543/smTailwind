@@ -3253,6 +3253,7 @@ toggleDisableCustomContainer.addEventListener('click', () =>{
 // Faq Section Start
 
 document.getElementById('plusICon').style.display = 'none';
+document.getElementById('faqParaOne').style.marginLeft = "-28px";
 
 const faqOne = document.getElementById('faqOne');
 const minusIcon = document.getElementById('minusICon');
@@ -3266,9 +3267,9 @@ faqOne.addEventListener('click', function(){
 
   document.getElementById('faqPara').style.display = 'block';
   faqOne.classList.add('btnContainer')
-  document.getElementById('plusICon').style.display = 'block';
-  document.getElementById('minusICon').style.display = 'none';
-  
+  document.getElementById('plusICon').style.display = 'none';
+  document.getElementById('minusICon').style.display = 'block';
+  document.getElementById('faqParaOne').style.marginLeft = "-28px";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
@@ -3330,6 +3331,7 @@ faqTwo.addEventListener('click', function(){
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+  document.getElementById('faqParaOne').style.marginLeft = "0";
 
   document.getElementById('minusThreeICon').style.display = 'none';
   document.getElementById('faqThreePara').style.display = 'none';
@@ -3376,6 +3378,7 @@ document.getElementById('faqPara').style.display = 'none';
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+  document.getElementById('faqParaOne').style.marginLeft = "0";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
@@ -3424,6 +3427,7 @@ faqFour.addEventListener('click', () =>{
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+  document.getElementById('faqParaOne').style.marginLeft = "0";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
@@ -3473,6 +3477,7 @@ faqFive.addEventListener('click', () =>{
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+  document.getElementById('faqParaOne').style.marginLeft = "0";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
@@ -3523,6 +3528,7 @@ faqSix.addEventListener('click', () =>{
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+  document.getElementById('faqParaOne').style.marginLeft = "0";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
@@ -3571,6 +3577,7 @@ faqSeven.addEventListener('click', () =>{
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+  document.getElementById('faqParaOne').style.marginLeft = "0";
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
