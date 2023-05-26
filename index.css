@@ -2702,6 +2702,8 @@ input {
   /* overflow-x: hidden; */
 }
 .testimonialHeading {
+  position: relative;
+  z-index: 1;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -2884,7 +2886,7 @@ input {
 /* FAQ Section Start */
 .faqContainer {
   background: url(./home4k/H_S/FaQ.svg);
-  height: 1314px;
+  /* height: 1314px; */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 112px;
@@ -2997,6 +2999,221 @@ color: #004EEB;
 }
 /* FAQ Section Ends */
 
+/* Speak With Lutfor Rahman Starts */
+.speakContainer {
+background: url(./home4k/H_S/s.svg);
+height: 850px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.speakWith{
+  /* Display lg/Bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height, or 125% */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+
+.speakWithPara{
+  display: block;
+  margin: 16px auto;
+  width: 402px;
+height: 56px;
+
+/* Text lg/Regular */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+text-align: center;
+
+/* Gray/600 */
+
+color: #475467;
+}
+.speakContainerContent{
+  display: block;
+  margin:60px auto;
+  width: 1056px;
+  height: 576px;
+  
+  background: radial-gradient(257.24% 146.48% at 35.74% -7.32%, rgba(88, 199, 255, 0.4) 0%, rgba(200, 237, 255, 0.1) 75.34%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+  /* Shadow/3xl */
+  
+  box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+  border-radius: 24px;
+  padding-left: 72px;
+  padding-top: 72px;
+}
+.speakerName{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+
+/* Gray/900 */
+
+color: #101828;
+}
+.speakDesignation{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.speakPhoneNumber{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height, or 122% */
+
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+.supportMail{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+
+/* Primary/700 */
+
+color: #004EEB;
+}
+.speakImage{
+  border-radius: 24px;
+}
+/* Speak With Lutfor Rahman Ends */
+
+/* Start Free Trial */
+.startFreeTrial{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 38px;
+width: 747px;
+/* identical to box height, or 127% */
+
+
+/* Gray/900 */
+
+color: #101828;
+}
+.startFreeTrialPara{
+  font-family: 'Poppins';
+  width: 747px;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.btnLearnMore{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+width: 133px;
+height: 48px;
+
+/* Base/White */
+
+background: #FFFFFF;
+/* Gray/300 */
+
+border: 1px solid #D0D5DD;
+/* Shadow/xs */
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Gray/700 */
+
+color: #344054;
+}
+.btnGetStarted{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 20px;
+gap: 8px;
+
+/* width: 132px; */
+height: 48px;
+
+/* Primary/600 */
+
+background: #155EEF;
+/* Primary/600 */
+
+border: 1px solid #155EEF;
+/* Shadow/xs */
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+border-radius: 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Base/White */
+
+color: #FFFFFF;
+}
+/* Start Free Trial Ends */
+
 /* Footer Start */
 .footerContainer {
   position: relative;
@@ -3050,5 +3267,69 @@ color: #004EEB;
 }
 li {
   text-decoration: none;
+}
+.logoContainer{
+  /* Auto layout */
+
+display: block;
+margin-left: 150px;
+margin-top: 56px;
+padding: 24px 16px;
+gap: 24px;
+
+width: 1056px;
+height: 142.1px;
+
+background: linear-gradient(89.64deg, rgba(255, 255, 255, 0.32) -8.53%, rgba(255, 255, 255, 0.48) 100.19%);
+/* Base/White */
+
+border: 1px solid #FFFFFF;
+/* Background blur / xl */
+
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+}
+.logoPara{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/700 */
+
+color: #344054;
+}
+.copyWrite{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin-left: 263px;
+width: 729px;
+/* identical to box height, or 150% */
+
+
+/* Gray/500 */
+
+color: #667085;
+}
+.terms{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Gray/500 */
+
+color: #667085;
 }
 /* Footer Ends */
