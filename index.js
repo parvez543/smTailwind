@@ -3261,23 +3261,6 @@ const faqPara = document.getElementById('faqPara');
 
 faqOne.classList.add('btnContainer');
 
-let isFaqOpen = true;
-
-faqOne.addEventListener('click', () => {
-  if (isFaqOpen) {
-    minusIcon.style.display = 'block';
-    plusIcon.style.display = 'none';
-    faqPara.style.display = 'none';
-    faqOne.classList.remove('btnContainer');
-  } else {
-    minusIcon.style.display = 'block';
-    plusIcon.style.display = 'none';
-    faqPara.style.display = 'block';
-    faqOne.classList.add('btnContainer');
-  }
-
-  isFaqOpen = !isFaqOpen;
-});
 
 faqOne.addEventListener('click', function(){
 
@@ -3285,11 +3268,39 @@ faqOne.addEventListener('click', function(){
   faqOne.classList.add('btnContainer')
   document.getElementById('plusICon').style.display = 'none';
   document.getElementById('minusICon').style.display = 'block';
+  
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
   document.getElementById('plusTwoICon').style.display = 'block';
   document.getElementById('minusTwoICon').style.display = 'none';
+
+  document.getElementById('minusThreeICon').style.display = 'none';
+document.getElementById('faqThreePara').style.display = 'none';
+document.getElementById('plusThreeICon').style.display = 'block';
+faqThree.classList.remove('btnContainer')
+
+document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('faqFourPara').style.display = 'none';
+  document.getElementById('plusFourICon').style.display = 'block';
+  faqFour.classList.remove('btnContainer')
+
+  document.getElementById('minusFiveICon').style.display = 'none';
+  document.getElementById('faqFivePara').style.display = 'none';
+  document.getElementById('plusFiveICon').style.display = 'block';
+  faqFive.classList.remove('btnContainer')
+
+  document.getElementById('minusSixICon').style.display = 'none';
+  document.getElementById('faqSixPara').style.display = 'none';
+  document.getElementById('plusSixICon').style.display = 'block';
+  faqSix.classList.remove('btnContainer')
+
+  document.getElementById('minusSevenICon').style.display = 'none';
+  document.getElementById('faqSevenPara').style.display = 'none';
+  document.getElementById('plusSevenICon').style.display = 'block';
+  faqSeven.classList.remove('btnContainer')
+
+
 })
 
 
@@ -3308,28 +3319,6 @@ const faqTwoPara = document.getElementById('faqTwoPara');
 
 faqTwo.classList.remove('btnContainer');
 
-let isTwoFaqOpen = true;
-
-faqTwo.addEventListener('click', () => {
-
-  if (isTwoFaqOpen) {
-    minusTwoIcon.style.display = 'none';
-    plusTwoIcon.style.display = 'block';
-    faqTwoPara.style.display = 'none';
-    faqTwo.classList.remove('btnContainer');
-  } else {
-    minusTwoIcon.style.display = 'block';
-    plusTwoIcon.style.display = 'none';
-    faqTwoPara.style.display = 'block';
-    faqTwo.classList.add('btnContainer');
-  }
-
-  
-
-  isTwoFaqOpen = !isTwoFaqOpen;
-  
-});
-
 faqTwo.addEventListener('click', function(){
   document.getElementById('faqTwoPara').style.display = 'block';
   faqTwo.classList.add('btnContainer')
@@ -3341,4 +3330,271 @@ faqTwo.addEventListener('click', function(){
   faqOne.classList.remove('btnContainer')
   document.getElementById('plusICon').style.display = 'block';
   document.getElementById('minusICon').style.display = 'none';
+
+  document.getElementById('minusThreeICon').style.display = 'none';
+  document.getElementById('faqThreePara').style.display = 'none';
+  document.getElementById('plusThreeICon').style.display = 'block';
+  faqThree.classList.remove('btnContainer')
+
+  document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('faqFourPara').style.display = 'none';
+  document.getElementById('plusFourICon').style.display = 'block';
+  faqFour.classList.remove('btnContainer')
+
+  document.getElementById('minusFiveICon').style.display = 'none';
+  document.getElementById('faqFivePara').style.display = 'none';
+  document.getElementById('plusFiveICon').style.display = 'block';
+  faqFive.classList.remove('btnContainer')
+
+  document.getElementById('minusSixICon').style.display = 'none';
+  document.getElementById('faqSixPara').style.display = 'none';
+  document.getElementById('plusSixICon').style.display = 'block';
+  faqSix.classList.remove('btnContainer')
+
+  document.getElementById('minusSevenICon').style.display = 'none';
+  document.getElementById('faqSevenPara').style.display = 'none';
+  document.getElementById('plusSevenICon').style.display = 'block';
+  faqSeven.classList.remove('btnContainer')
+
+
+})
+
+// Faq Three
+document.getElementById('minusThreeICon').style.display = 'none';
+document.getElementById('faqThreePara').style.display = 'none';
+
+const faqThree = document.getElementById('faqThree')
+faqThree.classList.remove('btnContainer')
+
+faqThree.addEventListener('click', () =>{
+  document.getElementById('minusThreeICon').style.display = 'block';
+document.getElementById('faqThreePara').style.display = 'block';
+document.getElementById('plusThreeICon').style.display = 'none';
+faqThree.classList.add('btnContainer')
+
+document.getElementById('faqPara').style.display = 'none';
+  faqOne.classList.remove('btnContainer')
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
+
+  document.getElementById('faqTwoPara').style.display = 'none';
+  faqTwo.classList.remove('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+
+  document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('faqFourPara').style.display = 'none';
+  document.getElementById('plusFourICon').style.display = 'block';
+  faqFour.classList.remove('btnContainer')
+
+  document.getElementById('minusFiveICon').style.display = 'none';
+  document.getElementById('faqFivePara').style.display = 'none';
+  document.getElementById('plusFiveICon').style.display = 'block';
+  faqFive.classList.remove('btnContainer')
+
+  document.getElementById('minusSixICon').style.display = 'none';
+  document.getElementById('faqSixPara').style.display = 'none';
+  document.getElementById('plusSixICon').style.display = 'block';
+  faqSix.classList.remove('btnContainer')
+
+  document.getElementById('minusSevenICon').style.display = 'none';
+  document.getElementById('faqSevenPara').style.display = 'none';
+  document.getElementById('plusSevenICon').style.display = 'block';
+  faqSeven.classList.remove('btnContainer')
+
+
+})
+
+// Faq Four
+document.getElementById('minusFourICon').style.display = 'none';
+document.getElementById('faqFourPara').style.display = 'none';
+
+const faqFour = document.getElementById('faqFour')
+faqFour.classList.remove('btnContainer')
+
+faqFour.addEventListener('click', () =>{
+  document.getElementById('minusFourICon').style.display = 'block';
+  document.getElementById('faqFourPara').style.display = 'block';
+  document.getElementById('plusFourICon').style.display = 'none';
+  faqFour.classList.add('btnContainer')
+
+
+
+  document.getElementById('faqPara').style.display = 'none';
+  faqOne.classList.remove('btnContainer')
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
+
+  document.getElementById('faqTwoPara').style.display = 'none';
+  faqTwo.classList.remove('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+
+  document.getElementById('minusThreeICon').style.display = 'none';
+  document.getElementById('faqThreePara').style.display = 'none';
+  document.getElementById('plusThreeICon').style.display = 'block';
+  faqThree.classList.remove('btnContainer')
+
+  document.getElementById('minusFiveICon').style.display = 'none';
+  document.getElementById('faqFivePara').style.display = 'none';
+  document.getElementById('plusFiveICon').style.display = 'block';
+  faqFive.classList.remove('btnContainer')
+
+  document.getElementById('minusSixICon').style.display = 'none';
+  document.getElementById('faqSixPara').style.display = 'none';
+  document.getElementById('plusSixICon').style.display = 'block';
+  faqSix.classList.remove('btnContainer')
+
+  document.getElementById('minusSevenICon').style.display = 'none';
+  document.getElementById('faqSevenPara').style.display = 'none';
+  document.getElementById('plusSevenICon').style.display = 'block';
+  faqSeven.classList.remove('btnContainer')
+
+
+})
+
+// FAQ Five
+document.getElementById('minusFiveICon').style.display = 'none';
+document.getElementById('faqFivePara').style.display = 'none';
+
+const faqFive = document.getElementById('faqFive')
+faqFive.classList.remove('btnContainer')
+
+
+faqFive.addEventListener('click', () =>{
+  document.getElementById('minusFiveICon').style.display = 'block';
+  document.getElementById('faqFivePara').style.display = 'block';
+  document.getElementById('plusFiveICon').style.display = 'none';
+  faqFive.classList.add('btnContainer')
+
+
+
+  document.getElementById('faqPara').style.display = 'none';
+  faqOne.classList.remove('btnContainer')
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
+
+  document.getElementById('faqTwoPara').style.display = 'none';
+  faqTwo.classList.remove('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+
+  document.getElementById('minusThreeICon').style.display = 'none';
+  document.getElementById('faqThreePara').style.display = 'none';
+  document.getElementById('plusThreeICon').style.display = 'block';
+  faqThree.classList.remove('btnContainer')
+
+  document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('faqFourPara').style.display = 'none';
+  document.getElementById('plusFourICon').style.display = 'block';
+  faqFour.classList.remove('btnContainer')
+
+
+  document.getElementById('minusSixICon').style.display = 'none';
+  document.getElementById('faqSixPara').style.display = 'none';
+  document.getElementById('plusSixICon').style.display = 'block';
+  faqSix.classList.remove('btnContainer')
+
+  document.getElementById('minusSevenICon').style.display = 'none';
+  document.getElementById('faqSevenPara').style.display = 'none';
+  document.getElementById('plusSevenICon').style.display = 'block';
+  faqSeven.classList.remove('btnContainer')
+
+})
+
+// FAQ Six
+document.getElementById('minusSixICon').style.display = 'none';
+document.getElementById('faqSixPara').style.display = 'none';
+
+const faqSix = document.getElementById('faqSix')
+faqSix.classList.remove('btnContainer')
+
+
+faqSix.addEventListener('click', () =>{
+  document.getElementById('minusSixICon').style.display = 'block';
+  document.getElementById('faqSixPara').style.display = 'block';
+  document.getElementById('plusSixICon').style.display = 'none';
+
+  faqSix.classList.add('btnContainer')
+
+
+
+  document.getElementById('faqPara').style.display = 'none';
+  faqOne.classList.remove('btnContainer')
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
+
+  document.getElementById('faqTwoPara').style.display = 'none';
+  faqTwo.classList.remove('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+
+  document.getElementById('minusThreeICon').style.display = 'none';
+  document.getElementById('faqThreePara').style.display = 'none';
+  document.getElementById('plusThreeICon').style.display = 'block';
+  faqThree.classList.remove('btnContainer')
+
+  document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('faqFourPara').style.display = 'none';
+  document.getElementById('plusFourICon').style.display = 'block';
+  faqFour.classList.remove('btnContainer')
+
+  document.getElementById('minusFiveICon').style.display = 'none';
+  document.getElementById('faqFivePara').style.display = 'none';
+  document.getElementById('plusFiveICon').style.display = 'block';
+  faqFive.classList.remove('btnContainer')
+
+  document.getElementById('minusSevenICon').style.display = 'none';
+  document.getElementById('faqSevenPara').style.display = 'none';
+  document.getElementById('plusSevenICon').style.display = 'block';
+  faqSeven.classList.remove('btnContainer')
+
+})
+
+// FAQ Seven
+document.getElementById('minusSevenICon').style.display = 'none';
+document.getElementById('faqSevenPara').style.display = 'none';
+
+const faqSeven = document.getElementById('faqSeven')
+faqSeven.classList.remove('btnContainer')
+
+faqSeven.addEventListener('click', () =>{
+  document.getElementById('minusSevenICon').style.display = 'block';
+  document.getElementById('faqSevenPara').style.display = 'block';
+  document.getElementById('plusSevenICon').style.display = 'none';
+
+  faqSeven.classList.add('btnContainer')
+
+
+
+  document.getElementById('faqPara').style.display = 'none';
+  faqOne.classList.remove('btnContainer')
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
+
+  document.getElementById('faqTwoPara').style.display = 'none';
+  faqTwo.classList.remove('btnContainer')
+  document.getElementById('plusTwoICon').style.display = 'block';
+  document.getElementById('minusTwoICon').style.display = 'none';
+
+  document.getElementById('minusThreeICon').style.display = 'none';
+  document.getElementById('faqThreePara').style.display = 'none';
+  document.getElementById('plusThreeICon').style.display = 'block';
+  faqThree.classList.remove('btnContainer')
+
+  document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('faqFourPara').style.display = 'none';
+  document.getElementById('plusFourICon').style.display = 'block';
+  faqFour.classList.remove('btnContainer')
+
+  document.getElementById('minusFiveICon').style.display = 'none';
+  document.getElementById('faqFivePara').style.display = 'none';
+  document.getElementById('plusFiveICon').style.display = 'block';
+  faqFive.classList.remove('btnContainer')
+
+  document.getElementById('minusSixICon').style.display = 'none';
+  document.getElementById('faqSixPara').style.display = 'none';
+  document.getElementById('plusSixICon').style.display = 'block';
+  faqSix.classList.remove('btnContainer')
+
 })
