@@ -3252,7 +3252,7 @@ toggleDisableCustomContainer.addEventListener('click', () =>{
 
 // Faq Section Start
 
-document.getElementById('minusICon').style.display = 'none';
+document.getElementById('plusICon').style.display = 'none';
 
 const faqOne = document.getElementById('faqOne');
 const minusIcon = document.getElementById('minusICon');
@@ -3266,8 +3266,8 @@ faqOne.addEventListener('click', function(){
 
   document.getElementById('faqPara').style.display = 'block';
   faqOne.classList.add('btnContainer')
-  document.getElementById('plusICon').style.display = 'none';
-  document.getElementById('minusICon').style.display = 'block';
+  document.getElementById('plusICon').style.display = 'block';
+  document.getElementById('minusICon').style.display = 'none';
   
 
   document.getElementById('faqTwoPara').style.display = 'none';
@@ -3322,8 +3322,8 @@ faqTwo.classList.remove('btnContainer');
 faqTwo.addEventListener('click', function(){
   document.getElementById('faqTwoPara').style.display = 'block';
   faqTwo.classList.add('btnContainer')
-  document.getElementById('plusTwoICon').style.display = 'block';
-  document.getElementById('minusTwoICon').style.display = 'none';
+  document.getElementById('plusTwoICon').style.display = 'none';
+  document.getElementById('minusTwoICon').style.display = 'block';
 
 
   document.getElementById('faqPara').style.display = 'none';
