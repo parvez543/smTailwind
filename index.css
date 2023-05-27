@@ -2977,7 +2977,8 @@ line-height: 24px;
 color: #475467;
 }
 .faqLine{
-  border-bottom: 0.25px solid rgb(235, 234, 234);
+  border-bottom: 0.15px solid rgb(214, 214, 214);
+  opacity: 0.3;
   width: 646px;
   display: block;
   margin: auto;
