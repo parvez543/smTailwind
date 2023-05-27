@@ -2590,6 +2590,7 @@ input {
 
 .multiClippingPathContainer {
   position: relative;
+  padding-left: 112px;
 }
 .multiClippingPathContainer::before {
   content: "";
@@ -2599,6 +2600,7 @@ input {
   margin-top: 250px;
   width: 100%;
   height: 267.2px;
+  
   background: linear-gradient(rgb(148, 183, 253), rgb(153, 238, 197));
   /* opacity: 0.6; */
   filter: blur(90px);
