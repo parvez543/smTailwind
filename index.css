@@ -2545,7 +2545,7 @@ input {
   color: #101828;
 }
 .clipOne {
-  border-radius: 64px 0 0 64px;
+ 
   box-shadow: 2px 15px 50px 2px rgba(16, 24, 40, 0.14);
 }
 .clipPara {
@@ -2559,7 +2559,7 @@ input {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   /* or 150% */
 
