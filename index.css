@@ -31,6 +31,13 @@ body {
 .getStartedBtn {
   font-weight: 600;
 }
+.getStartedBtn:hover{
+  background: #F9FAFB;
+  color: #344054;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
 .loginBtn {
   box-sizing: border-box;
 
@@ -66,7 +73,14 @@ body {
   /* Gray/700 */
 
   color: #344054;
+  transition: 0.2s;
 }
+.loginBtn:hover{
+  background: rgba(21, 94, 239, 1);
+  color: #FFFFFF;
+}
+
+
 .startBtn {
   display: flex;
   flex-direction: row;
@@ -89,12 +103,16 @@ body {
   border-radius: 8px;
 
   /* Text sm/Semibold */
+  /* width: 113px; */
+  /* width: 81px; */
+/* height: 20px; */
 
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+/* Text sm/Semibold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
   /* identical to box height, or 143% */
 
   /* Base/White */
@@ -105,10 +123,25 @@ body {
 
 .startBtn:hover{
   background: rgba(0, 64, 193, 1);
+ 
 }
-.startBtn:focus{
-  background: #155eef;
-  border: 1px dashed #7B61FF;
+
+.getQuoteBtnNav{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Primary/700 */
+
+color: #004EEB !important;
+}
+.getQuoteBtnNav:hover{
+  background: #EFF4FF;
+  border-radius: 8px;
 }
 /* Header */
 .headContent {
