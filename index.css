@@ -2590,7 +2590,7 @@ input {
 
 .multiClippingPathContainer {
   position: relative;
-  padding-left: 112px;
+ 
 }
 .multiClippingPathContainer::before {
   content: "";
