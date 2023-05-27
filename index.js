@@ -3088,38 +3088,46 @@ const round3 = document.getElementById('reflactionRound');
 const check4 = document.getElementById('keepShadowCheck');
 const round4 = document.getElementById('keepShadowRound');
 
-// Variables to track button states
-let clicked1 = true;
-let clicked2 = true;
-let clicked3 = true;
-let clicked4 = true;
+let clickDropShadow = true
+let clickCustomShadow = true
+let clickreflactShadow = true
+let clickkeepShadow = true
 
-// Add click event listeners to the buttons
 button1.addEventListener('click', () => {
-  clicked1 = !clicked1;
-  if (clicked1) {
+  clickDropShadow = !clickDropShadow;
+  if (clickDropShadow) {
     round1.style.display = 'block';
     check1.style.display = 'none';
+    button1.style.border = 'none'
+    button2.style.border = 'none'
   } else {
     round1.style.display = 'none';
     check1.style.display = 'block';
+    button1.style.border = '1.5px solid #528BFF'
+    // button2.style.border = 'none'
+        
+    
   }
 });
 
 button2.addEventListener('click', () => {
-  clicked2 = !clicked2;
-  if (clicked2) {
+  clickCustomShadow = !clickCustomShadow;
+  if (clickCustomShadow ) {
     round2.style.display = 'block';
     check2.style.display = 'none';
+    button2.style.border = 'none'
+    button1.style.border = 'none'
   } else {
     round2.style.display = 'none';
     check2.style.display = 'block';
+    button2.style.border = '1.5px solid #528BFF'
+    // button1.style.border = 'none'
   }
 });
 
 button3.addEventListener('click', () => {
-  clicked3 = !clicked3;
-  if (clicked3) {
+  clickreflactShadow  = !clickreflactShadow ;
+  if (clickreflactShadow ) {
     round3.style.display = 'block';
     check3.style.display = 'none';
   } else {
@@ -3129,8 +3137,8 @@ button3.addEventListener('click', () => {
 });
 
 button4.addEventListener('click', () => {
-  clicked4 = !clicked4;
-  if (clicked4) {
+  clickkeepShadow = !clickkeepShadow;
+  if (clickkeepShadow) {
     round4.style.display = 'block';
     check4.style.display = 'none';
   } else {
@@ -3140,6 +3148,42 @@ button4.addEventListener('click', () => {
 });
 
 
+let clicked1 = false;
+let clicked2 = false;
+let clicked3 = false;
+let clicked4 = false;
+
+const buttonElements = [button1, button2, button3, button4];
+const clickedButtons = [clicked1, clicked2, clicked3, clicked4];
+
+buttonElements.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    clickedButtons[index] = !clickedButtons[index];
+
+    if (clickedButtons[index]) {
+      button.style.border = '1.5px solid #528BFF';
+    } else {
+      button.style.border = 'none';
+    }
+
+    buttonElements.forEach((otherButton, otherIndex) => {
+      if (otherIndex !== index) {
+        otherButton.style.border = 'none';
+        clickedButtons[otherIndex] = false;
+      }
+    });
+  });
+});
+
+
+
+
+
+
+// const dropShadowButton = document.getElementById('dropShadowContainer')
+// dropShadowButton.addEventListener('click', () =>{
+  
+// })
 
 
 // Get references to the buttons and checkboxes
@@ -3163,7 +3207,7 @@ const retouchNullBox = document.getElementById("retouchNullBox");
 let webSizeEnabled = false;
 let marginEnabled = false;
 let adjustmentEnabled = false;
-let retouchEnabled = false;
+let retouchEnabled = false
 
 // Add event listeners to the buttons
 webSizeButton.addEventListener("click", toggleWebSizeCheckbox);
@@ -3176,25 +3220,32 @@ function toggleWebSizeCheckbox() {
   webSizeEnabled = !webSizeEnabled;
   webSizeCheckBox.style.display = webSizeEnabled ? "inline-block" : "none";
   webSizeNullBox.style.display = webSizeEnabled ? "none" : "inline-block";
+  webSizeButton.style.border = webSizeEnabled ? "1.5px solid #528BFF" : "none";
 }
 
 function toggleMarginCheckbox() {
   marginEnabled = !marginEnabled;
   marginCheckBox.style.display = marginEnabled ? "inline-block" : "none";
   marginNullBox.style.display = marginEnabled ? "none" : "inline-block";
+  marginButton.style.border = marginEnabled ? "1.5px solid #528BFF" : "none";
 }
 
 function toggleAdjustmentCheckbox() {
   adjustmentEnabled = !adjustmentEnabled;
   adjustmentCheckBox.style.display = adjustmentEnabled ? "inline-block" : "none";
   adjustmentNullBox.style.display = adjustmentEnabled ? "none" : "inline-block";
+  adjustmentButton.style.border = adjustmentEnabled ? "1.5px solid #528BFF" : "none";
 }
 
 function toggleRetouchCheckbox() {
   retouchEnabled = !retouchEnabled;
   retouchCheckBox.style.display = retouchEnabled ? "inline-block" : "none";
   retouchNullBox.style.display = retouchEnabled ? "none" : "inline-block";
+  retouchButton.style.border = retouchEnabled ? "1.5px solid #528BFF" : "none";
 }
+
+// Set initial states
+
 
 
 // Enable And Disable Toggle Button Of I Want to Receive A Call of How It Works Try Us Free Section
@@ -3605,3 +3656,6 @@ faqSeven.addEventListener('click', () =>{
   faqSix.classList.remove('btnContainer')
 
 })
+
+
+

@@ -1812,6 +1812,10 @@ input {
 
   border-radius: 16px;
 }
+
+
+
+
 .serviceName {
   font-family: "Poppins";
   font-style: normal;
@@ -1999,8 +2003,7 @@ input {
   border-radius: 8px;
 }
 
-#GhostBasicImage {
-}
+
 .number {
   font-family: "Poppins";
   font-style: normal;
@@ -2138,11 +2141,11 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 1884.33px; */
+  width: 100%;
   height: 400px;
   margin-top: 120px;
   margin-bottom: 120px;
-  background: linear-gradient(rgb(227, 200, 255), rgb(220, 255, 229));
+  background: linear-gradient(rgb(196, 156, 238), rgb(159, 255, 183));
   opacity: 0.6;
   filter: blur(84px);
   transform: matrix(1, -0.06, -0.06, -1, 0, 0);
@@ -2302,7 +2305,7 @@ input {
   position: relative;
 }
 .underLine {
-  margin-left: 840px;
+  /* margin-left: 840px; */
   margin-top: -5px;
 }
 /* Trusted By Us Ends*/
@@ -3333,3 +3336,27 @@ line-height: 24px;
 color: #667085;
 }
 /* Footer Ends */
+
+
+/* Media Query */
+@media screen and(max-width:1280) {
+  .backGroundSection {
+    position: relative;
+  }
+  .backGroundSection::before {
+    overflow: hidden;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 400px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background: linear-gradient(rgb(211, 169, 255), rgb(131, 255, 162));
+    opacity: 0.6;
+    filter: blur(84px);
+    transform: matrix(1, -0.06, -0.06, -1, 0, 0);
+    /* filter: blur(84px); */
+  }
+}
