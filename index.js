@@ -3658,4 +3658,7 @@ faqSeven.addEventListener('click', () =>{
 })
 
 
-
+const minusThree = document.getElementById('minusThreeICon')
+minusThree.addEventListener('click', () =>{
+  document.getElementById('plusThreeICon').style.display = 'block'
+})

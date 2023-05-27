@@ -2959,7 +2959,7 @@ color: #101828;
 }
 .faqAnswer{
   width: 598px;
-height: 240px;
+height: 265px;
 text-align: left;
 
 /* Text md/Regular */
@@ -2967,7 +2967,7 @@ text-align: left;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 18px;
 line-height: 24px;
 /* or 150% */
 
@@ -2976,6 +2976,11 @@ line-height: 24px;
 
 color: #475467;
 }
+.faqCreateAcText{
+  color: rgba(21, 94, 239, 1);
+  border-bottom: 1px solid rgba(21, 94, 239, 1);
+}
+
 .faqLine{
   border-bottom: 0.15px solid rgb(214, 214, 214);
   opacity: 0.3;
@@ -3276,7 +3281,7 @@ li {
   /* Auto layout */
 
 display: block;
-margin-left: 150px;
+
 margin-top: 56px;
 padding: 24px 16px;
 gap: 24px;
@@ -3314,7 +3319,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-margin-left: 263px;
+/* margin-left: 263px; */
 width: 729px;
 /* identical to box height, or 150% */
 
