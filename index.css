@@ -100,8 +100,16 @@ body {
   /* Base/White */
 
   color: #ffffff;
+  transition: 0.2s;
 }
 
+.startBtn:hover{
+  background: rgba(0, 64, 193, 1);
+}
+.startBtn:focus{
+  background: #155eef;
+  border: 1px dashed #7B61FF;
+}
 /* Header */
 .headContent {
   background-image: url(./home4k/H_S/Vector_1.svg);
@@ -2588,11 +2596,11 @@ input {
   z-index: 1;
 }
 
-.multiClippingPathContainer {
+.homServiceSinglimg {
   position: relative;
  
 }
-.multiClippingPathContainer::before {
+.homServiceSinglimg::before {
   content: "";
   position: absolute;
   top: 0;
