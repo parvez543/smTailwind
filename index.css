@@ -3226,6 +3226,8 @@ color: #FFFFFF;
 /* Footer Start */
 .footerContainer {
   position: relative;
+ 
+ 
 }
 .footerContainer::before {
   content: "";
@@ -3245,6 +3247,10 @@ color: #FFFFFF;
   /* transform: matrix(1, -0.06, -0.06, -1, 0, 0); */
   /* transform: rotate(-360deg); */
   /* overflow-x: hidden; */
+}
+.footerContainerContent{
+   /* width: 2322.86px; */
+   
 }
 .footerLogo {
   width: 200px;
@@ -3286,7 +3292,7 @@ margin-top: 56px;
 padding: 24px 16px;
 gap: 24px;
 
-width: 1056px;
+/* width: 1056px; */
 height: 142.1px;
 
 background: linear-gradient(89.64deg, rgba(255, 255, 255, 0.32) -8.53%, rgba(255, 255, 255, 0.48) 100.19%);
