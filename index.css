@@ -1586,7 +1586,9 @@ input {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  transition: 0.2s;
 }
+
 .retouchBg {
   display: flex;
   flex-direction: row;
@@ -1608,8 +1610,11 @@ input {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  transition: 0.2s;
 }
-
+.retouchBg:hover{
+  background: #EFF4FF;
+}
 .ghostBg {
   display: flex;
   flex-direction: row;
@@ -1631,7 +1636,12 @@ input {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  transition: 0.2s;
 }
+.ghostBg:hover{
+  background: #EFF4FF;
+}
+
 .maskingBg {
   display: flex;
   flex-direction: row;
@@ -1653,6 +1663,10 @@ input {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  transition: 0.2s;
+}
+.maskingBg:hover{
+  background: #EFF4FF;
 }
 .otherBg {
   display: flex;
@@ -1675,7 +1689,12 @@ input {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  transition: 0.2s;
 }
+.otherBg:hover{
+  background: #EFF4FF;
+}
+
 .priceCalculatorSection {
   background: url(./home4k/H_S/Rectangle\ 12.svg);
   width: 1056px;
@@ -2517,6 +2536,10 @@ input {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
   color: white;
+  transition: 0.2s;
+}
+.getStartNowBtn:hover{
+  background: #0040C1;
 }
 /* For Whom We Work Ends */
 
@@ -2930,8 +2953,13 @@ input {
   /* Base/White */
 
   color: #ffffff;
+  transition: 0.2s;
+}
+.createAccount:hover{
+  background: #0040C1
 }
 .seeAllTestimonial {
+  /* width: 162px; */
   position: relative;
   z-index: 1;
   font-family: "Poppins";
@@ -2944,7 +2972,9 @@ input {
   /* Primary/700 */
 
   color: #004eeb;
+  transition: 0.2s;
 }
+
 /* Testimonial Section Ends */
 
 /* FAQ Section Start */
@@ -3202,6 +3232,9 @@ width: 747px;
 
 color: #101828;
 }
+.startFreeTrial:hover{
+ 
+}
 .startFreeTrialPara{
   font-family: 'Poppins';
   width: 747px;
@@ -3215,7 +3248,9 @@ line-height: 30px;
 /* Gray/600 */
 
 color: #475467;
+transition: 0.2s;
 }
+
 .btnLearnMore{
   display: flex;
 flex-direction: row;
@@ -3248,7 +3283,13 @@ line-height: 24px;
 /* Gray/700 */
 
 color: #344054;
+transition: 0.2s;
 }
+.btnLearnMore:hover{
+  background: #D1E0FF;
+  color: #0040C1;
+}
+
 .btnGetStarted{
   display: flex;
 flex-direction: row;
@@ -3281,6 +3322,10 @@ line-height: 24px;
 /* Base/White */
 
 color: #FFFFFF;
+transition: 0.2s;
+}
+.btnGetStarted:hover{
+  background: #0040C1;
 }
 /* Start Free Trial Ends */
 

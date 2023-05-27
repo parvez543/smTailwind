@@ -1249,7 +1249,7 @@ clippingPathPricing.addEventListener('click', () => {
   document.getElementById('clippingPathBasicImage').style.display = 'flex'
 
   // Hide Other Services When Clipping Path is Active
-  document.getElementById('photoRetouchingImage').style.display = 'none'
+ document.getElementById('photoRetouchingImage').style.display = 'none'
   document.getElementById('RetouchingBasicImage').style.display = 'none'
   document.getElementById('GhostImage').style.display = 'none'
   document.getElementById('ghostComplexImage').style.display = 'none'
@@ -1291,6 +1291,8 @@ ghostMannequine.addEventListener('click', () => {
   document.getElementById('GhostImage').style.display = 'block'
   document.getElementById('ghostBasicImage').style.display = 'flex'
 
+ 
+
   // Hide Other Services When Ghost Mannequine is Active
   document.getElementById('photoRetouchingImage').style.display = 'none'
   document.getElementById('RetouchingBasicImage').style.display = 'none'
@@ -1319,6 +1321,10 @@ const multiClippingPath = document.getElementById('masking')
 multiClippingPath.addEventListener('click', () => {
   document.getElementById('multiImage').style.display = 'block'
   document.getElementById('multiImageButton').style.display = 'flex'
+  document.getElementById('masking').style.background = '#155eef';
+  document.getElementById('masking').style.transition = 'background 0.3s';
+  
+  
 
   // Hide Other Services When MultiClipping is Active
   document.getElementById('photoRetouchingImage').style.display = 'none'
@@ -1354,6 +1360,10 @@ const imageMaskingService = document.getElementById('otherServiceBg')
 imageMaskingService.addEventListener('click', () => {
   document.getElementById('maskingImage').style.display = 'block'
   document.getElementById('maskingImageButton').style.display = 'flex'
+  document.getElementById('otherServiceBg').style.background = '#155eef';
+document.getElementById('otherServiceBg').style.transition = 'background 0.3s';
+
+
 
   // Hide Other Services When MultiClipping is Active
   document.getElementById('photoRetouchingImage').style.display = 'none'
