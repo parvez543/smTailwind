@@ -416,47 +416,33 @@ color: #004EEB !important;
   background: #ffffff;
   /* Gray/300 */
 
-  /* border: 1px solid #d0d5dd; */
+  border: 1px solid #d0d5dd;
   /* Shadow/xs */
 
-  /* box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05); */
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
 
   /* Inside auto layout */
 }
 
-.nameInput:focus {
-  background: #FFFFFF;
-/* Primary/300 */
 
-  border: 1px solid #84ADFF;
-/* Shadow/xs focused 4px primary-100 */
 
-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
-border-radius: 8px;
+.nameInput,
+.phoneInput,
+.selectService,
+.instructionBox,
+.countryCode {
+  transition: border-color 0.3s ease-in-out; /* Apply smooth transition */
 }
 
-
-.filled {
-  /* Updated CSS properties when filled */
-  border-color: rgba(208, 213, 221, 1)
+.nameInput:hover,
+.phoneInput:hover,
+.selectService:hover,
+.instructionBox:hover,
+.countryCode:hover {
+  border-color: rgb(2, 77, 226); /* Add the desired border color on hover */
 }
-.error {
-  font-family: 'Poppins';
-  font-style: normal;
-  text-align: left;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-/* identical to box height, or 143% */
 
-
-/* Error/500 */
-
-color: #F04438;
-/* border: 1px solid #FDA29B; */
-  display: none;
-}
 
 .phoneInput {
   box-sizing: border-box;
@@ -483,6 +469,17 @@ color: #F04438;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
 }
+
+.phoneInput::-webkit-outer-spin-button,
+.phoneInput::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Remove the default arrows for Chrome/Safari */
+  margin: 0; /* Optional: Remove any space between the arrows and the input */
+}
+
+.phoneInput {
+  -moz-appearance: textfield; /* Show a text input appearance for Firefox */
+}
+
 
 .selectFlag {
   width: 100px;
@@ -601,9 +598,15 @@ select option[disabled] {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  overflow: hidden;
+  /* position: absolute; */
+}
 
   /* Inside auto layout */
-}
+
+
+
+
 .fileBox {
   box-sizing: border-box;
 
