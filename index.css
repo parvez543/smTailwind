@@ -11,6 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .navContent {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -410,14 +411,42 @@ color: #004EEB !important;
   background: #ffffff;
   /* Gray/300 */
 
-  border: 1px solid #d0d5dd;
+  /* border: 1px solid #d0d5dd; */
   /* Shadow/xs */
 
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  /* box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05); */
   border-radius: 8px;
 
   /* Inside auto layout */
 }
+
+.nameInput:focus {
+  background: #FFFFFF;
+  border: 1px solid #84ADFF;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
+}
+
+
+.filled {
+  /* Updated CSS properties when filled */
+  border-color: rgba(208, 213, 221, 1)
+}
+.error {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Error/500 */
+
+color: #F04438;
+/* border: 1px solid #FDA29B; */
+  display: none;
+}
+
 .phoneInput {
   box-sizing: border-box;
 

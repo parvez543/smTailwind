@@ -3672,3 +3672,27 @@ const minusThree = document.getElementById('minusThreeICon')
 minusThree.addEventListener('click', () =>{
   document.getElementById('plusThreeICon').style.display = 'block'
 })
+
+
+// When A User fill Any Of The Input of how it works the style changes functionality
+
+const nameInput = document.getElementById('name');
+
+nameInput.addEventListener('input', function() {
+  if (nameInput.value.trim() !== '') {
+    nameInput.classList.add('filled');
+  } else {
+    nameInput.classList.remove('filled');
+  }
+});
+
+
+const nameError = document.getElementById('nameError');
+
+nameInput.addEventListener('input', function() {
+    if (nameInput.value.trim() === '') {
+        nameError.style.display = 'inline';
+    } else {
+        nameError.style.display = 'none';
+    }
+});
