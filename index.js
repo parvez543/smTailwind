@@ -3675,24 +3675,30 @@ minusThree.addEventListener('click', () =>{
 
 
 // When A User fill Any Of The Input of how it works the style changes functionality
-
 const nameInput = document.getElementById('name');
+const errorMessage = document.getElementById('errorMessage');
 
-nameInput.addEventListener('input', function() {
-  if (nameInput.value.trim() !== '') {
-    nameInput.classList.add('filled');
+nameInput.addEventListener('blur', function() {
+  if (nameInput.value.trim() === '') {
+    errorMessage.style.display = 'block'; // Show error message
+    nameInput.style.border = '1px solid #FDA29B'; // Apply error border color
   } else {
-    nameInput.classList.remove('filled');
+    errorMessage.style.display = 'none'; // Hide error message
+    nameInput.style.border = ''; // Remove error border color
   }
 });
 
-
-const nameError = document.getElementById('nameError');
-
 nameInput.addEventListener('input', function() {
-    if (nameInput.value.trim() === '') {
-        nameError.style.display = 'inline';
-    } else {
-        nameError.style.display = 'none';
-    }
+  if (nameInput.value.trim() !== '') {
+    errorMessage.style.display = 'none'; // Hide error message
+    nameInput.style.border = ''; // Remove error border color
+  }
 });
+
+nameInput.addEventListener('focus', function() {
+  errorMessage.style.display = 'none'; // Hide error message
+  nameInput.style.border = ''; // Remove error border color
+});
+
+
+
