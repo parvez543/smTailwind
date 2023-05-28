@@ -432,7 +432,7 @@ color: #004EEB !important;
 .selectService,
 .instructionBox,
 .countryCode {
-  transition: border-color 0.3s ease-in-out; /* Apply smooth transition */
+  transition: border-color border 0.1s ease-in-out; /* Apply smooth transition */
 }
 
 .nameInput:hover,
@@ -440,6 +440,7 @@ color: #004EEB !important;
 .selectService:hover,
 .instructionBox:hover,
 .countryCode:hover {
+  border: 2px solid rgb(2, 77, 226);
   border-color: rgb(2, 77, 226); /* Add the desired border color on hover */
 }
 
@@ -586,7 +587,7 @@ select option[disabled] {
   gap: 8px;
 
   width: 312px;
-  height: 80px;
+  height: auto; /* Remove fixed height */
 
   /* Base/White */
 
@@ -598,9 +599,9 @@ select option[disabled] {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
-  overflow: hidden;
-  /* position: absolute; */
+  overflow-y: auto; /* Add scrollbar in y-axis */
 }
+
 
   /* Inside auto layout */
 
