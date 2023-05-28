@@ -346,9 +346,11 @@
                                                     <img src="./home4k/H_S/Error.svg"/>
                                                 </figure> -->
                                                </div>
-                                               <p id="errorMessage" class="-mt-[15px] -ml-[130px]">Please enter a name.</p>
+                                               <p id="errorMessage" class="-mt-[15px] -ml-[170px]">Please enter a name.</p>
                                                 <input type="email" id="email" name="email" class="nameInput"
                                                     placeholder="Email*" />
+
+                                                    <p id="errorEmailMessage" class="-mt-[15px] -ml-[185px]">Please enter Email.</p>
                                                 <div class="flex">
                                                     <select class="selectFlag" id="select" name="countryCode">
                                                         <option data-countryCode="US" value="1">&#x1F1FA&#x1F1F8 (+1)
@@ -1006,10 +1008,9 @@
                                                         </option>
                                                     </select><input type="number" min="0" id="tel" name="tel"
                                                         class="phoneInput" placeholder="Phone Number*" />
-                                                    <!-- <div id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</div> -->
-                                                </div>
-                                                <div class="flex items-center gap-[18px]">
-                                                    <p class="receiveCall -mt-[12px]" id="receiveCallWant">
+                                                    </div>
+                                                    <div class="flex items-center gap-[18px]">
+                                                        <p class="receiveCall -mt-[12px]" id="receiveCallWant">
                                                         I want to receive a call
                                                     </p>
                                                     <button id="toggleenableContainer">
@@ -1023,6 +1024,7 @@
                                                         </figure>
                                                     </button>
                                                 </div>
+                                                <p id="errorPhoneMessage" class="-mt-[15px] -ml-[130px]">Please enter Phone Number.</p>
                                                 <select class="selectService" id="service">
                                                     <option value="" disabled selected hidden>Select Service</option>
                                                     <option value="clippingpath">Clipping Path</option>
@@ -1033,8 +1035,10 @@
                                                     <option value="emboriderydesigning">Emboridery Designing</option>
                                                     <option value="other">Other</option>
                                                 </select>
+                                                <p id="errorServiceMessage" class="-mt-[15px] -ml-[158px]">Please Select A Service.</p>
                                                 <textarea type="textarea" class="instructionBox" id="instruction"
                                                     name="instruction" placeholder="Instructions"></textarea>
+                                                <p id="errorInstructionMessage" class="-mt-[15px] -ml-[121px]">Please Enter Your Instructions.</p>
                                                 <div class="fileBox">
                                                     <div class="flex flex-col items-center justify-center">
                                                         <figure>

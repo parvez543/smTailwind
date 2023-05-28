@@ -444,8 +444,25 @@ color: #004EEB !important;
 #errorMessage {
   color: #F04438;; /* Error message color */
   display: none; /* Hide error message by default */
+  font-size: 12px;
 }
 
+#errorEmailMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+#errorPhoneMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorServiceMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
 
 .nameInput,
 .phoneInput,
@@ -532,7 +549,27 @@ color: #004EEB !important;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 0 8px 8px 0;
   z-index: 500;
+  outline: none;
+
+  /* Inside auto layout */
 }
+
+.phoneInput:focus {
+  background: #FFFFFF;
+  /* Primary/300 */
+  
+  border: 1px solid #84ADFF;
+  /* Shadow/xs focused 4px primary-100 */
+  
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
+  border-radius: 8px
+}
+
+.phoneInput:invalid {
+  border: 1px solid #FDA29B; /* Error border color */
+}
+
+
 .receiveCall {
   width: 260px !important;
   height: 18px !important;
@@ -591,7 +628,27 @@ color: #004EEB !important;
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  outline: none;
 }
+
+/* Inside auto layout */
+
+
+.selectService:focus {
+background: #FFFFFF;
+/* Primary/300 */
+
+border: 1px solid #84ADFF;
+/* Shadow/xs focused 4px primary-100 */
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
+border-radius: 8px
+}
+
+.selectService:invalid {
+border: 1px solid #FDA29B; /* Error border color */
+}
+
 select option[disabled] {
   color: #667085;
 }
@@ -621,9 +678,32 @@ select option[disabled] {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
   overflow-y: auto; /* Add scrollbar in y-axis */
+  outline: none;
 }
 
+/* Inside auto layout */
 
+
+.instructionBox:focus {
+background: #FFFFFF;
+/* Primary/300 */
+
+border: 1px solid #84ADFF;
+/* Shadow/xs focused 4px primary-100 */
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
+border-radius: 8px
+}
+
+.instructionBox:invalid {
+border: 1px solid #FDA29B; /* Error border color */
+}
+
+#errorInstructionMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
   /* Inside auto layout */
 
 

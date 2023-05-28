@@ -3675,6 +3675,8 @@ minusThree.addEventListener('click', () =>{
 
 
 // When A User fill Any Of The Input of how it works the style changes functionality
+
+// Try Us For Free
 const nameInput = document.getElementById('name');
 const errorMessage = document.getElementById('errorMessage');
 
@@ -3702,3 +3704,102 @@ nameInput.addEventListener('focus', function() {
 
 
 
+const emailInput = document.getElementById('email');
+const errorEmailMessage = document.getElementById('errorEmailMessage');
+
+emailInput.addEventListener('blur', function() {
+  if (emailInput.value.trim() === '') {
+    errorEmailMessage.style.display = 'block'; // Show error message
+    emailInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorEmailMessage.style.display = 'none'; // Hide error message
+    emailInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailInput.addEventListener('input', function() {
+  if (emailInput.value.trim() !== '') {
+    errorEmailMessage.style.display = 'none'; // Hide error message
+    emailInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailInput.addEventListener('focus', function() {
+  errorEmailMessage.style.display = 'none'; // Hide error message
+  emailInput.style.border = ''; // Remove error border color
+});
+
+const phoneInput = document.getElementById('tel');
+const errorPhoneMessage = document.getElementById('errorPhoneMessage');
+
+phoneInput.addEventListener('blur', function() {
+  if (phoneInput.value.trim() === '') {
+    errorPhoneMessage.style.display = 'block'; // Show error message
+    phoneInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorPhoneMessage.style.display = 'none'; // Hide error message
+    phoneInput.style.border = ''; // Remove error border color
+  }
+});
+
+phoneInput.addEventListener('input', function() {
+  if (phoneInput.value.trim() !== '') {
+    errorPhoneMessage.style.display = 'none'; // Hide error message
+    phoneInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailInput.addEventListener('focus', function() {
+  errorEmailMessage.style.display = 'none'; // Hide error message
+  emailInput.style.border = ''; // Remove error border color
+});
+
+const serviceInput = document.getElementById('service');
+const errorServiceMessage = document.getElementById('errorServiceMessage');
+
+serviceInput.addEventListener('blur', function() {
+  if (serviceInput.value.trim() === '') {
+    errorServiceMessage.style.display = 'block'; // Show error message
+    serviceInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorServiceMessage.style.display = 'none'; // Hide error message
+    serviceInput.style.border = ''; // Remove error border color
+  }
+});
+
+serviceInput.addEventListener('input', function() {
+  if (serviceInput.value.trim() !== '') {
+    errorServiceMessage.style.display = 'none'; // Hide error message
+    serviceInput.style.border = ''; // Remove error border color
+  }
+});
+
+serviceInput.addEventListener('focus', function() {
+  errorServiceMessage.style.display = 'none'; // Hide error message
+  serviceInput.style.border = ''; // Remove error border color
+});
+
+const instructionInput = document.getElementById('instruction');
+const errorInstructionMessage = document.getElementById('errorInstructionMessage');
+
+instructionInput.addEventListener('blur', function() {
+  if (instructionInput.value.trim() === '') {
+    errorInstructionMessage.style.display = 'block'; // Show error message
+    instructionInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorInstructionMessage.style.display = 'none'; // Hide error message
+    instructionInput.style.border = ''; // Remove error border color
+  }
+});
+
+instructionInput.addEventListener('input', function() {
+  if (instructionInput.value.trim() !== '') {
+    errorInstructionMessage.style.display = 'none'; // Hide error message
+    instructionInput.style.border = ''; // Remove error border color
+  }
+});
+
+serviceInput.addEventListener('focus', function() {
+  errorServiceMessage.style.display = 'none'; // Hide error message
+  serviceInput.style.border = ''; // Remove error border color
+});
