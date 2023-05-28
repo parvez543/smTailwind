@@ -665,7 +665,7 @@ select option[disabled] {
   gap: 8px;
 
   width: 312px;
-  height: auto; /* Remove fixed height */
+  height: 115px; /* Remove fixed height */
 
   /* Base/White */
 
