@@ -464,6 +464,18 @@ color: #004EEB !important;
   font-size: 12px;
 }
 
+#errorInstructionTwoMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorVerifyTwoMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
 .nameInput,
 .phoneInput,
 .selectService,
@@ -915,7 +927,7 @@ input {
 /* Validate Form Start */
 .validateFormContainer {
   width: 360px;
-  height: 470px;
+  height: 485px;
   right: 24px;
   top: 79px;
 
@@ -964,8 +976,56 @@ input {
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+  outline: none;
 }
 
+/* Inside auto layout */
+
+
+.verifyBox:focus {
+background: #FFFFFF;
+/* Primary/300 */
+
+border: 1px solid #84ADFF;
+/* Shadow/xs focused 4px primary-100 */
+
+box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
+border-radius: 8px
+}
+
+.verifyBox:invalid {
+border: 1px solid #FDA29B; /* Error border color */
+}
+
+#errorVerifyMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+  /* Inside auto layout */
+
+#errorNameTwoMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+#errorEmailTwoMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorPhoneTwoMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorServiceTwoMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
 .verifyBox::-webkit-outer-spin-button,
 .verifyBox::-webkit-inner-spin-button {
   -webkit-appearance: none; /* Remove the default arrows for Chrome/Safari */
@@ -3620,7 +3680,9 @@ color: #667085;
   border: 1.5px solid rgb(82, 139, 255);
 }
 
-
+.mailImage{
+  max-width: 330px !important;
+}
 
 
 

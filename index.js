@@ -3799,7 +3799,186 @@ instructionInput.addEventListener('input', function() {
   }
 });
 
-serviceInput.addEventListener('focus', function() {
-  errorServiceMessage.style.display = 'none'; // Hide error message
-  serviceInput.style.border = ''; // Remove error border color
+instructionInput.addEventListener('focus', function() {
+  errorInstructionMessage.style.display = 'none'; // Hide error message
+  instructionInput.style.border = ''; // Remove error border color
+});
+
+
+const verifyInput = document.getElementById('verifyBox');
+const errorVerifyMessage = document.getElementById('errorVerifyMessage');
+
+verifyInput.addEventListener('blur', function() {
+  if (verifyInput.value.trim() === '') {
+    errorVerifyMessage .style.display = 'block'; // Show error message
+    verifyInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorVerifyMessage .style.display = 'none'; // Hide error message
+    verifyInput.style.border = ''; // Remove error border color
+  }
+});
+
+verifyInput.addEventListener('input', function() {
+  if (verifyInput.value.trim() !== '') {
+    errorVerifyMessage.style.display = 'none'; // Hide error message
+    verifyInput.style.border = ''; // Remove error border color
+  }
+});
+
+verifyInput.addEventListener('focus', function() {
+  errorVerifyMessage.style.display = 'none'; // Hide error message
+  verifyInput.style.border = ''; // Remove error border color
+});
+
+// Get A Quote
+const nameTwoInput = document.getElementById('names');
+const errorTwoMessage = document.getElementById('errorNameTwoMessage');
+
+nameTwoInput.addEventListener('blur', function() {
+  if (nameTwoInput.value.trim() === '') {
+    errorTwoMessage.style.display = 'block'; // Show error message
+    nameTwoInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorTwoMessage.style.display = 'none'; // Hide error message
+    nameTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+nameTwoInput.addEventListener('input', function() {
+  if (nameTwoInput.value.trim() !== '') {
+    errorTwoMessage.style.display = 'none'; // Hide error message
+    nameTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+nameTwoInput.addEventListener('focus', function() {
+  errorTwoMessage.style.display = 'none'; // Hide error message
+  nameTwoInput.style.border = ''; // Remove error border color
+});
+
+const emailTwoInput = document.getElementById('emails');
+const errorEmailTwoMessage = document.getElementById('errorEmailTwoMessage');
+
+emailTwoInput.addEventListener('blur', function() {
+  if (emailTwoInput.value.trim() === '') {
+    errorEmailTwoMessage.style.display = 'block'; // Show error message
+    emailTwoInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorEmailTwoMessage.style.display = 'none'; // Hide error message
+    emailTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailTwoInput.addEventListener('input', function() {
+  if (emailTwoInput.value.trim() !== '') {
+    errorEmailTwoMessage.style.display = 'none'; // Hide error message
+    emailTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailTwoInput.addEventListener('focus', function() {
+  errorEmailTwoMessage.style.display = 'none'; // Hide error message
+  emailTwoInput.style.border = ''; // Remove error border color
+});
+
+
+const phoneTwoInput = document.getElementById('tels');
+const errorPhoneTwoMessage = document.getElementById('errorPhoneTwoMessage');
+
+phoneTwoInput.addEventListener('blur', function() {
+  if (phoneTwoInput.value.trim() === '') {
+    errorPhoneTwoMessage.style.display = 'block'; // Show error message
+    phoneTwoInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorPhoneTwoMessage.style.display = 'none'; // Hide error message
+    phoneTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+phoneTwoInput.addEventListener('input', function() {
+  if (phoneTwoInput.value.trim() !== '') {
+    errorPhoneTwoMessage.style.display = 'none'; // Hide error message
+    phoneTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+phoneTwoInput.addEventListener('focus', function() {
+  errorPhoneTwoMessage.style.display = 'none'; // Hide error message
+  phoneTwoInput.style.border = ''; // Remove error border color
+});
+
+const serviceTwoInput = document.getElementById('services');
+const errorServiceTwoMessage = document.getElementById('errorServiceTwoMessage');
+
+serviceTwoInput.addEventListener('blur', function() {
+  if (serviceTwoInput.value.trim() === '') {
+    errorServiceTwoMessage.style.display = 'block'; // Show error message
+    serviceTwoInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorServiceTwoMessage.style.display = 'none'; // Hide error message
+    serviceTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+serviceTwoInput.addEventListener('input', function() {
+  if (serviceTwoInput.value.trim() !== '') {
+    errorServiceTwoMessage.style.display = 'none'; // Hide error message
+    serviceTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+phoneTwoInput.addEventListener('focus', function() {
+  errorServiceTwoMessage.style.display = 'none'; // Hide error message
+  serviceTwoInput.style.border = ''; // Remove error border color
+});
+
+
+const instructionTwoInput = document.getElementById('instructions');
+const errorinstructionTwoMessage = document.getElementById('errorInstructionTwoMessage');
+
+instructionTwoInput.addEventListener('blur', function() {
+  if (instructionTwoInput.value.trim() === '') {
+    errorinstructionTwoMessage.style.display = 'block'; // Show error message
+    instructionTwoInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorinstructionTwoMessage.style.display = 'none'; // Hide error message
+    instructionTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+instructionTwoInput.addEventListener('input', function() {
+  if (instructionTwoInput.value.trim() !== '') {
+    errorinstructionTwoMessage.style.display = 'none'; // Hide error message
+    instructionTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+instructionTwoInput.addEventListener('focus', function() {
+  errorinstructionTwoMessage.style.display = 'none'; // Hide error message
+  instructionTwoInput.style.border = ''; // Remove error border color
+});
+
+const verifyTwoInput = document.getElementById('verifyTwoBox');
+const errorVerifyTwoMessage = document.getElementById('errorVerifyTwoMessage');
+
+verifyTwoInput.addEventListener('blur', function() {
+  if (verifyTwoInput.value.trim() === '') {
+    errorVerifyTwoMessage .style.display = 'block'; // Show error message
+    verifyTwoInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorVerifyTwoMessage .style.display = 'none'; // Hide error message
+    verifyTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+verifyTwoInput.addEventListener('input', function() {
+  if (verifyTwoInput.value.trim() !== '') {
+    errorVerifyTwoMessage.style.display = 'none'; // Hide error message
+    verifyTwoInput.style.border = ''; // Remove error border color
+  }
+});
+
+verifyTwoInput.addEventListener('focus', function() {
+  errorVerifyTwoMessage.style.display = 'none'; // Hide error message
+  verifyTwoInput.style.border = ''; // Remove error border color
 });

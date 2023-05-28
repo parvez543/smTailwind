@@ -69,15 +69,13 @@
 
     <!-- Header Start -->
     <header class="headContent">
-        <section class="pt-[10px]">
-            <h1 class="3xl:text-[60px] 8xl:text-[79.998px] 9xl:text-[120px] text-[#101828] text-center heading">Studio
-                Metrodesk</h1>
+        <section class="pt-[75px]">
+            <h1 class="3xl:text-[60px] 8xl:text-[79.998px] 9xl:text-[120px] text-[#101828] text-center heading">Experience Flawless</h1>
             <h1
                 class="3xl:text-[60px] 8xl:text-[79.998px] 9xl:text-[120px] text-[#101828] text-center mt-[-20px] heading">
-                We make <span class="text-[#004EEB]">retouching</span> easy!</h1>
+            <span class="text-[#004EEB]">Retouching</h1>
             <div class="mt-[16px] headPara">
-                <p class="text-[18px] text-[#475467] w-[642px] h-[56px] block mx-auto">Our 24/7 platform is designed to
-                    provide the best photo editing services with designated teams tailored to fit your needs</p>
+                <p class="text-[20px] text-[#475467] w-[812px] h-[56px] block mx-auto">Make your business stand out from the crowd. High-end photo editing solutions for Fashion, Apparel, E-commerce businesses, and pro-photographers.</p>
             </div>
             <div
                 class="flex justify-center 3xl:gap-[16px] 8xl:gap-[21.33px] 9xl:gap-[10px] 3xl:mt-[24px] 8xl:mt-[10px] 9xl:mt-[48px]">
@@ -1062,8 +1060,10 @@
                                     </div>
                                     <!-- form 2 Start -->
                                     <div class="back grid grid-cols-2 justify-end">
-                                        <div>
-                                            <!-- <h1>Hi</h1> -->
+                                        <div class="mt-[286px]">
+                                            <figure>
+                                                <img class="mailImage" src="./home4k/H_S/Group 1.svg" alt="Studio MetroDesk Mail ScreenShot"/>
+                                            </figure>
                                         </div>
                                         <div class="mt-[60px]">
                                             <form class="ml-[250px]" id="validateForm">
@@ -1078,6 +1078,7 @@
                                                     <div class="mt-[24px]"><input type="number" min="0"
                                                             placeholder="Enter Verification Code" class="verifyBox"
                                                             id="verifyBox" /></div>
+                                                    <p id="errorVerifyMessage" class="mt-[0px] ml-[30px]">Please Enter Verification Code.</p>
                                                     <p class="reviewEmail mt-[24px]">Didn't receive an email?</p>
                                                     <p class="addition mt-[24px]">We've sent a verification code to
                                                         <span class="email">sabbir98jr@gmail.com</span> to make sure
@@ -1468,8 +1469,10 @@
                                                                 <div class="formContainer">
                                                                     <input type="text" id="names" name="name"
                                                                         class="nameInput" placeholder="Name*" />
+                                                                    <p id="errorNameTwoMessage" class="-mt-[15px] -ml-[170px]">Please Enter Your Name.</p>
                                                                     <input type="email" id="emails" name="email"
                                                                         class="nameInput" placeholder="Email*" />
+                                                                        <p id="errorEmailTwoMessage" class="-mt-[15px] -ml-[170px]">Please Enter Your Email.</p>
                                                                     <div class="flex">
                                                                         <select class="selectFlag" id="selects"
                                                                             name="countryCode">
@@ -2355,28 +2358,28 @@
                                                                         </select><input type="number" min="0" id="tels"
                                                                             name="tel" class="phoneInput"
                                                                             placeholder="Phone Number*" />
-                                                                        <!-- <div id="phone-error" style="color: red; display: none;">Please enter a valid phone number.</div> -->
-                                                                    </div>
-                                                                    <div class="flex items-center gap-[18px]">
-                                                                        <p class="receiveCall -mt-[12px]">
-                                                                            I want to receive a call
-                                                                        </p>
-                                                                        <button id="toggleenableContainerGetQuote">
-                                                                            <figure class="-mt-[12px]"
+                                                                        </div>
+                                                                        <div class="flex items-center gap-[18px]">
+                                                                            <p class="receiveCall -mt-[12px]">
+                                                                                I want to receive a call
+                                                                            </p>
+                                                                            <button id="toggleenableContainerGetQuote">
+                                                                                <figure class="-mt-[12px]"
                                                                                 id="toogleDisabledGetQuote">
                                                                                 <img
-                                                                                    src="./home4k/H_S/_Togglebase.svg" />
+                                                                                src="./home4k/H_S/_Togglebase.svg" />
                                                                             </figure>
                                                                         </button>
                                                                         <button id="toggleDisableGetContainer"
-                                                                            class="-ml-[20px]">
-                                                                            <figure class="-mt-[12px]"
-                                                                                id="toogleenableGetQuote">
-                                                                                <img
-                                                                                    src="./home4k/H_S/toggleenable.svg" />
-                                                                            </figure>
-                                                                        </button>
-                                                                    </div>
+                                                                        class="-ml-[20px]">
+                                                                        <figure class="-mt-[12px]"
+                                                                        id="toogleenableGetQuote">
+                                                                        <img
+                                                                        src="./home4k/H_S/toggleenable.svg" />
+                                                                    </figure>
+                                                                </button>
+                                                            </div>
+                                                            <p id="errorPhoneTwoMessage" class="-mt-[15px] -ml-[99px]">Please Enter Your Phone Number.</p>
                                                                     <select class="selectService" id="services">
                                                                         <option value="" disabled selected hidden>Select
                                                                             Service</option>
@@ -2395,23 +2398,22 @@
                                                                             Designing</option>
                                                                         <option value="other">Other</option>
                                                                     </select>
-                                                                    <input type="text" class="instructionBox"
-                                                                        id="instructions" name="instruction"
-                                                                        placeholder="Instructions" />
-                                                                    <div class="fileBox">
-                                                                        <div
-                                                                            class="flex flex-col items-center justify-center">
-                                                                            <figure>
-                                                                                <img src="./home4k/H_S/Featured icon.svg"
-                                                                                    alt="Studio Metro Desk Circle" />
-                                                                            </figure>
-                                                                            <p class="text-center uploadFullText"><span
-                                                                                    class="uploadText">Click
-                                                                                    to
-                                                                                    upload</span> or
-                                                                                drag and drop</p>
+                                                                    <p id="errorServiceTwoMessage" class="-mt-[15px] -ml-[170px]">Please Select A Service.</p>
+                                                                    <textarea type="textarea" class="instructionBox" id="instructions"
+                                                                    name="instruction" placeholder="Instructions"></textarea>
+                                                                    <p id="errorInstructionTwoMessage" class="-mt-[15px] -ml-[121px]">Please Enter Your Instructions.</p>
+                                                                        <div class="fileBox w-[312px]">
+                                                                            <div class="flex items-center gap-[6px] justify-center">
+                                                                                <figure>
+                                                                                    <img src="./home4k/H_S/Featured icon.svg"
+                                                                                        alt="Studio Metro Desk Circle" />
+                                                                                </figure>
+                                                                                <p class="text-center uploadFullText"><span
+                                                                                        class="uploadText">Click
+                                                                                        to
+                                                                                        upload</span></p>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
                                                                     <div
                                                                         class="flex justify-center items-center mt-[24px] gap-[16px]">
                                                                         <div>
@@ -2435,6 +2437,7 @@
                                                         </div>
                                                         <!-- Form Part Three -->
                                                         <div id="formTwoStepThree">
+                                                            
                                                             <div class="-mt-[80px]">
                                                                 <form class="ml-[380px]" id="validateTwoForm">
                                                                     <div class="validateFormContainer">
@@ -2454,6 +2457,7 @@
                                                                                 placeholder="Enter Verification Code"
                                                                                 class="verifyBox" id="verifyTwoBox" />
                                                                         </div>
+                                                                        <p id="errorVerifyTwoMessage" class="mt-[0px] ml-[28px]">Please Enter Your Verification Code.</p>
                                                                         <p class="reviewEmail mt-[24px]">Didn't receive
                                                                             an
                                                                             email?</p>
