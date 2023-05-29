@@ -3313,24 +3313,37 @@ toggleDisableCustomContainer.addEventListener('click', () =>{
 
 // Faq Section Start
 
-document.getElementById('plusICon').style.display = 'none';
+document.getElementById('minusICon').style.display = 'none';
 document.getElementById('faqParaOne').style.marginLeft = "-10px";
+document.getElementById('faqPara').style.display = 'none';
 
 const faqOne = document.getElementById('faqOne');
 const minusIcon = document.getElementById('minusICon');
 const plusIcon = document.getElementById('plusICon');
 const faqPara = document.getElementById('faqPara');
 
-faqOne.classList.add('btnContainer');
+faqOne.classList.remove('btnContainer');
 
 
 faqOne.addEventListener('click', function(){
 
-  document.getElementById('faqPara').style.display = 'block';
-  faqOne.classList.add('btnContainer')
-  document.getElementById('plusICon').style.display = 'none';
-  document.getElementById('minusICon').style.display = 'block';
-  document.getElementById('faqParaOne').style.marginLeft = "-10px";
+  const faqPara = document.getElementById('faqPara');
+  const minusIcon = document.getElementById('minusICon');
+  const plusIcon = document.getElementById('plusICon');
+
+  if (faqPara.style.display === 'none') {
+    faqPara.style.display = 'block';
+    minusIcon.style.display = 'block';
+    minusIcon.style.marginLeft = "25px"
+    plusIcon.style.display = 'none';
+    faqOne.classList.add('btnContainer');
+  } else {
+    faqPara.style.display = 'none';
+    minusIcon.style.display = 'none';
+    plusIcon.style.display = 'block';
+    plusIcon.style.marginLeft = "25px"
+    faqOne.classList.remove('btnContainer');
+  }
 
   document.getElementById('faqTwoPara').style.display = 'none';
   faqTwo.classList.remove('btnContainer')
@@ -3338,11 +3351,11 @@ faqOne.addEventListener('click', function(){
   document.getElementById('minusTwoICon').style.display = 'none';
 
   document.getElementById('minusThreeICon').style.display = 'none';
-document.getElementById('faqThreePara').style.display = 'none';
-document.getElementById('plusThreeICon').style.display = 'block';
-faqThree.classList.remove('btnContainer')
+  document.getElementById('faqThreePara').style.display = 'none';
+  document.getElementById('plusThreeICon').style.display = 'block';
+  faqThree.classList.remove('btnContainer')
 
-document.getElementById('minusFourICon').style.display = 'none';
+  document.getElementById('minusFourICon').style.display = 'none';
   document.getElementById('faqFourPara').style.display = 'none';
   document.getElementById('plusFourICon').style.display = 'block';
   faqFour.classList.remove('btnContainer')
@@ -3382,10 +3395,17 @@ const faqTwoPara = document.getElementById('faqTwoPara');
 faqTwo.classList.remove('btnContainer');
 
 faqTwo.addEventListener('click', function(){
-  document.getElementById('faqTwoPara').style.display = 'block';
-  faqTwo.classList.add('btnContainer')
-  document.getElementById('plusTwoICon').style.display = 'none';
-  document.getElementById('minusTwoICon').style.display = 'block';
+  if (faqTwoPara.style.display === 'none') {
+    faqTwoPara.style.display = 'block';
+    faqTwo.classList.add('btnContainer');
+    minusTwoIcon.style.display = 'block';
+    plusTwoIcon.style.display = 'none';
+  } else {
+    faqTwoPara.style.display = 'none';
+    faqTwo.classList.remove('btnContainer');
+    minusTwoIcon.style.display = 'none';
+    plusTwoIcon.style.display = 'block';
+  }
 
 
   document.getElementById('faqPara').style.display = 'none';
@@ -3430,10 +3450,21 @@ const faqThree = document.getElementById('faqThree')
 faqThree.classList.remove('btnContainer')
 
 faqThree.addEventListener('click', () =>{
-  document.getElementById('minusThreeICon').style.display = 'block';
-document.getElementById('faqThreePara').style.display = 'block';
-document.getElementById('plusThreeICon').style.display = 'none';
-faqThree.classList.add('btnContainer')
+  const plusIcon = document.getElementById('plusThreeICon');
+  const minusIcon = document.getElementById('minusThreeICon');
+  const faqPara = document.getElementById('faqThreePara');
+
+  if (faqPara.style.display === 'none') {
+    plusIcon.style.display = 'none';
+    minusIcon.style.display = 'block';
+    faqPara.style.display = 'block';
+    faqThree.classList.add('btnContainer');
+  } else {
+    plusIcon.style.display = 'block';
+    minusIcon.style.display = 'none';
+    faqPara.style.display = 'none';
+    faqThree.classList.remove('btnContainer');
+  }
 
 document.getElementById('faqPara').style.display = 'none';
   faqOne.classList.remove('btnContainer')
@@ -3477,10 +3508,23 @@ const faqFour = document.getElementById('faqFour')
 faqFour.classList.remove('btnContainer')
 
 faqFour.addEventListener('click', () =>{
-  document.getElementById('minusFourICon').style.display = 'block';
-  document.getElementById('faqFourPara').style.display = 'block';
-  document.getElementById('plusFourICon').style.display = 'none';
-  faqFour.classList.add('btnContainer')
+  const minusFourICon = document.getElementById('minusFourICon');
+  const plusFourICon = document.getElementById('plusFourICon');
+  const faqFourPara = document.getElementById('faqFourPara');
+
+  if (minusFourICon.style.display === 'none') {
+    // Show minus icon, faqPara, and add btnContainer class
+    minusFourICon.style.display = 'block';
+    plusFourICon.style.display = 'none';
+    faqFourPara.style.display = 'block';
+    faqFour.classList.add('btnContainer');
+  } else {
+    // Show plus icon, hide faqPara, and remove btnContainer class
+    minusFourICon.style.display = 'none';
+    plusFourICon.style.display = 'block';
+    faqFourPara.style.display = 'none';
+    faqFour.classList.remove('btnContainer');
+  }
 
 
 
@@ -3527,11 +3571,23 @@ faqFive.classList.remove('btnContainer')
 
 
 faqFive.addEventListener('click', () =>{
-  document.getElementById('minusFiveICon').style.display = 'block';
-  document.getElementById('faqFivePara').style.display = 'block';
-  document.getElementById('plusFiveICon').style.display = 'none';
-  faqFive.classList.add('btnContainer')
+  const minusIcon = document.getElementById('minusFiveICon');
+  const plusIcon = document.getElementById('plusFiveICon');
+  const faqPara = document.getElementById('faqFivePara');
 
+  if (faqPara.style.display === 'none') {
+    // Show faqPara and switch icons
+    faqPara.style.display = 'block';
+    minusIcon.style.display = 'block';
+    plusIcon.style.display = 'none';
+    faqFive.classList.add('btnContainer');
+  } else {
+    // Hide faqPara and switch icons
+    faqPara.style.display = 'none';
+    minusIcon.style.display = 'none';
+    plusIcon.style.display = 'block';
+    faqFive.classList.remove('btnContainer');
+  }
 
 
   document.getElementById('faqPara').style.display = 'none';
@@ -3577,11 +3633,17 @@ faqSix.classList.remove('btnContainer')
 
 
 faqSix.addEventListener('click', () =>{
-  document.getElementById('minusSixICon').style.display = 'block';
-  document.getElementById('faqSixPara').style.display = 'block';
-  document.getElementById('plusSixICon').style.display = 'none';
-
-  faqSix.classList.add('btnContainer')
+  if (faqSixPara.style.display === 'none') {
+    faqSixPara.style.display = 'block';
+    plusSixIcon.style.display = 'none';
+    minusSixIcon.style.display = 'block';
+    faqSix.classList.add('btnContainer');
+  } else {
+    faqSixPara.style.display = 'none';
+    plusSixIcon.style.display = 'block';
+    minusSixIcon.style.display = 'none';
+    faqSix.classList.remove('btnContainer');
+  }
 
 
 
@@ -3626,11 +3688,21 @@ const faqSeven = document.getElementById('faqSeven')
 faqSeven.classList.remove('btnContainer')
 
 faqSeven.addEventListener('click', () =>{
-  document.getElementById('minusSevenICon').style.display = 'block';
-  document.getElementById('faqSevenPara').style.display = 'block';
-  document.getElementById('plusSevenICon').style.display = 'none';
+  const minusIcon = document.getElementById('minusSevenICon');
+  const plusIcon = document.getElementById('plusSevenICon');
+  const faqPara = document.getElementById('faqSevenPara');
 
-  faqSeven.classList.add('btnContainer')
+  if (minusIcon.style.display === 'none') {
+    minusIcon.style.display = 'block';
+    faqPara.style.display = 'block';
+    plusIcon.style.display = 'none';
+    faqSeven.classList.add('btnContainer');
+  } else {
+    minusIcon.style.display = 'none';
+    faqPara.style.display = 'none';
+    plusIcon.style.display = 'block';
+    faqSeven.classList.remove('btnContainer');
+  }
 
 
 
@@ -3668,10 +3740,8 @@ faqSeven.addEventListener('click', () =>{
 })
 
 
-const minusThree = document.getElementById('minusThreeICon')
-minusThree.addEventListener('click', () =>{
-  document.getElementById('plusThreeICon').style.display = 'block'
-})
+
+
 
 
 // When A User fill Any Of The Input of how it works the style changes functionality
