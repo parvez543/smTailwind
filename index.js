@@ -3982,3 +3982,157 @@ verifyTwoInput.addEventListener('focus', function() {
   errorVerifyTwoMessage.style.display = 'none'; // Hide error message
   verifyTwoInput.style.border = ''; // Remove error border color
 });
+
+// Custom Quote
+
+const nameCustomInput = document.getElementById('nameCustom');
+const errorCustomMessage = document.getElementById('errorCustomMessage');
+
+nameCustomInput.addEventListener('blur', function() {
+  if (nameCustomInput.value.trim() === '') {
+    errorCustomMessage.style.display = 'block'; // Show error message
+    nameCustomInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorCustomMessage.style.display = 'none'; // Hide error message
+    nameCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+nameCustomInput.addEventListener('input', function() {
+  if (nameCustomInput.value.trim() !== '') {
+    errorCustomMessage.style.display = 'none'; // Hide error message
+    nameCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+nameCustomInput.addEventListener('focus', function() {
+  errorCustomMessage.style.display = 'none'; // Hide error message
+  nameCustomInput.style.border = ''; // Remove error border color
+});
+
+const emailCustomInput = document.getElementById('emailCustom');
+const errorEmailCustomMessage = document.getElementById('errorEmailCustomMessage');
+
+emailCustomInput.addEventListener('blur', function() {
+  if (emailCustomInput.value.trim() === '') {
+    errorEmailCustomMessage.style.display = 'block'; // Show error message
+    emailCustomInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorEmailCustomMessage.style.display = 'none'; // Hide error message
+    emailCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailCustomInput.addEventListener('input', function() {
+  if (emailCustomInput.value.trim() !== '') {
+    errorEmailCustomMessage.style.display = 'none'; // Hide error message
+    emailCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+emailCustomInput.addEventListener('focus', function() {
+  errorEmailCustomMessage.style.display = 'none'; // Hide error message
+  emailCustomInput.style.border = ''; // Remove error border color
+});
+
+const phoneCustomInput = document.getElementById('telCustom');
+const errorPhoneCustomMessage = document.getElementById('errorPhoneCustomMessage');
+
+phoneCustomInput.addEventListener('blur', function() {
+  if (phoneCustomInput.value.trim() === '') {
+    errorPhoneCustomMessage.style.display = 'block'; // Show error message
+    phoneCustomInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorPhoneCustomMessage.style.display = 'none'; // Hide error message
+    phoneCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+phoneCustomInput.addEventListener('input', function() {
+  if (phoneCustomInput.value.trim() !== '') {
+    errorPhoneCustomMessage.style.display = 'none'; // Hide error message
+    phoneCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+phoneCustomInput.addEventListener('focus', function() {
+  errorPhoneCustomMessage.style.display = 'none'; // Hide error message
+  phoneCustomInput.style.border = ''; // Remove error border color
+});
+
+
+const serviceCustomInput = document.getElementById('serviceCustom');
+const errorServiceCustomMessage = document.getElementById('errorServiceCustomMessage');
+
+serviceCustomInput.addEventListener('blur', function() {
+  if (serviceCustomInput.value.trim() === '') {
+    errorServiceCustomMessage.style.display = 'block'; // Show error message
+    serviceCustomInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorServiceCustomMessage.style.display = 'none'; // Hide error message
+    serviceCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+serviceCustomInput.addEventListener('input', function() {
+  if (serviceCustomInput.value.trim() !== '') {
+    errorServiceCustomMessage.style.display = 'none'; // Hide error message
+    serviceCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+serviceCustomInput.addEventListener('focus', function() {
+  errorServiceCustomMessage.style.display = 'none'; // Hide error message
+  serviceCustomInput.style.border = ''; // Remove error border color
+});
+
+
+const instructionCustomInput = document.getElementById('instructionCustom');
+const errorInstructionCustomMessage = document.getElementById('errorInstructionCustomMessage');
+
+instructionCustomInput.addEventListener('blur', function() {
+  if (instructionCustomInput.value.trim() === '') {
+    errorInstructionCustomMessage.style.display = 'block'; // Show error message
+    instructionCustomInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorInstructionCustomMessage.style.display = 'none'; // Hide error message
+    instructionCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+instructionCustomInput.addEventListener('input', function() {
+  if (instructionCustomInput.value.trim() !== '') {
+    errorInstructionCustomMessage.style.display = 'none'; // Hide error message
+    instructionCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+instructionCustomInput.addEventListener('focus', function() {
+  errorInstructionCustomMessage.style.display = 'none'; // Hide error message
+  instructionCustomInput.style.border = ''; // Remove error border color
+});
+
+const verifyCustomInput = document.getElementById('verifyFourBox');
+const errorVerifyCustomMessage = document.getElementById('errorVerifyCustomMessage');
+
+verifyCustomInput.addEventListener('blur', function() {
+  if (verifyCustomInput.value.trim() === '') {
+    errorVerifyCustomMessage.style.display = 'block'; // Show error message
+    verifyCustomInput.style.border = '1px solid #FDA29B'; // Apply error border color
+  } else {
+    errorVerifyCustomMessage.style.display = 'none'; // Hide error message
+    verifyCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+verifyCustomInput.addEventListener('input', function() {
+  if (verifyCustomInput.value.trim() !== '') {
+    errorVerifyCustomMessage.style.display = 'none'; // Hide error message
+    verifyCustomInput.style.border = ''; // Remove error border color
+  }
+});
+
+verifyCustomInput.addEventListener('focus', function() {
+  errorVerifyCustomMessage.style.display = 'none'; // Hide error message
+  verifyCustomInput.style.border = ''; // Remove error border color
+});

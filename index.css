@@ -476,6 +476,35 @@ color: #004EEB !important;
   font-size: 12px;
 }
 
+#errorEmailCustomMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorPhoneCustomMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorServiceCustomMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+#errorInstructionCustomMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
+#errorVerifyCustomMessage{
+  color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
+
 .nameInput,
 .phoneInput,
 .selectService,
@@ -718,7 +747,11 @@ border: 1px solid #FDA29B; /* Error border color */
 }
   /* Inside auto layout */
 
-
+#errorCustomMessage{
+    color: #F04438;; /* Error message color */
+  display: none; /* Hide error message by default */
+  font-size: 12px;
+}
 
 
 .fileBox {
