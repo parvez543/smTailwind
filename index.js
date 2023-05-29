@@ -4210,3 +4210,18 @@ verifyCustomInput.addEventListener('focus', function() {
 function updateBackground(selectElement) {
   selectElement.classList.add("selectService");
 }
+
+
+// NavBar Open And Closing
+const menuContainer = document.querySelector('.menu-container');
+const megaMenu = document.querySelector('.mega-menu');
+
+menuContainer.addEventListener('mouseleave', () => {
+    megaMenu.style.display = 'none';
+    document.querySelector('.mega-menu').style.display = 'none'
+});
+
+menuContainer.addEventListener('mouseenter', () => {
+    megaMenu.style.display = 'block';
+    document.querySelector('.mega-menu').style.display = 'block'
+});

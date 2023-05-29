@@ -34,6 +34,140 @@ body {
 
   color: #475467;
 }
+.menu-item:hover{
+  color: rgba(0, 78, 235, 1)
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-item:hover + .mega-menu,
+.mega-menu:hover {
+  display: block;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  
+  position: absolute;
+  width: 1056px;
+  height: 523px;
+  left: calc(50% - 1056px/2);
+  top: 55px;
+  
+  background: #FFFFFF;
+  /* Base/White */
+  
+  border: 2px solid #FFFFFF;
+  /* Shadow/2xl */
+  
+  box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  border-radius: 0px 0px 16px 16px;
+
+}
+.clippingPathMegaMenu{
+  display: flex;
+flex-direction: column;
+/* align-items: center; */
+padding: 24px;
+gap: 12px;
+
+width: 352px;
+height: 520px;
+
+/* Primary/50 */
+
+background: #EFF4FF;
+border-radius: 0px 0px 0px 16px;
+
+}
+.retouchingText{
+  width: 316px;
+height: 20px;
+
+/* Text sm/Semibold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Primary/600 */
+
+color: #155EEF;
+}
+
+.clippingHeadingHeader{
+  width: 316px;
+height: 20px;
+display: block;
+
+/* Text sm/Semibold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.clippingPathService{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Gray/900 */
+
+color: #101828;
+}
+.clippingPathServicePara{
+  width: 256px;
+height: 40px;
+
+/* Text sm/Regular */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
+.mega-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-menu ul li {
+  /* padding: 18px 24px; */
+}
+
+
+
 .getStartedBtn {
   font-weight: 600;
 }
