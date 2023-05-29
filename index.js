@@ -4136,3 +4136,7 @@ verifyCustomInput.addEventListener('focus', function() {
   errorVerifyCustomMessage.style.display = 'none'; // Hide error message
   verifyCustomInput.style.border = ''; // Remove error border color
 });
+
+function updateBackground(selectElement) {
+  selectElement.classList.add("selectService");
+}

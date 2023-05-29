@@ -247,6 +247,71 @@
     </section>
     <!-- Logos Of Company Who Trust Us Ends-->
 
+    <!-- Don't Trust Us Start-->
+    <section class="mt-[140px]">
+        <div>
+            <h2 class="trustUsHeading">Don't trust us? Probably you should!</h2>
+            <p class="trustUsPara">For the past 15 years, we have been nurturing and training a group of the most skilled photo editors and serving 3000+ /27890 companies/people from all over the world. Our vision is to create a home for you where you, our most treasured photographers, product managers, …. get whatever you ask for. Be a part of our evolving community.</p>
+            <div class="trustUsContainerContent mt-[150px] mb-[150px]">
+               <div class="flex justify-center items-center gap-[32px]">
+                    <div class="trustOneContainer">
+                        <h4 class="oneNumber">85%</h4>
+                        <p class="onePara">of our clients say we improved their productivity and efficiency</p>
+                    </div>
+                    <div class="trustOneContainer">
+                        <h4 class="oneNumber">85%</h4>
+                        <p class="onePara">of our clients say we improved their productivity and efficiency</p>
+                    </div>
+                    <div class="trustOneContainer">
+                        <h4 class="oneNumber">85%</h4>
+                        <p class="onePara">of our clients say we improved their productivity and efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Don't Trust Us Ends -->
+
+    <!-- Go Up In Value of Time Starts -->
+    <section>
+        <!-- One -->
+        <div class="valueContainer flex justify-center items-center">
+            <div>
+                <h3 class="goUpHeading">Go Up in Value Over Time</h3>
+                <p class="goUpPara mt-[24px]">For both of us, time is invaluable, but so is value. With our high-functioning workaholic team, you can double down your value over time.</p>
+            </div>
+            <div>
+                <figure>
+                    <img src="./home4k/H_S/dashBorad.png" class="dashboard mt-[40px]" alt="Studio MetroDesk DashBoard Image"/>
+                </figure>
+            </div>
+        </div>
+        <!--  -->
+        <div class="valueContainerTwo flex justify-center items-center mt-[180px]">
+            <div>
+                <figure>
+                    <img src="./home4k/H_S/dashBoardTwo.png" class="dashboard mt-[40px] ml-[20px]" alt="Studio MetroDesk DashBoard Image"/>
+                </figure>
+            </div>
+            <div>
+                <h3 class="goUpHeading text-left">Reduce Effort with Advanced Dashboard</h3>
+                <p class="goUpPara mt-[24px]">Why have a team of in-house photo editing professionals when you have us? Why settle for less when you can create maximum impact with the least amount of effort?</p>
+            </div>
+        </div>
+        <div class="valueContainer flex justify-center items-center mt-[180px]" id="">
+            <div>
+                <h3 class="goUpHeading">Keep Costs Low with Preset Pricing</h3>
+                <p class="goUpPara mt-[24px]">With us, you are in the driving seat. You decide everything from price, packages, turnaround time to quality. Enjoy the drive!</p>
+            </div>
+            <div>
+                <figure>
+                    <img src="./home4k/H_S/dashBoardThree.png" class="dashboard mt-[40px]" alt="Studio MetroDesk DashBoard Image"/>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- Go Up In Value Of Time Ends -->
+
     <!-- For Whom We Work Section Start -->
     <section>
         <div class="workContainer mt-[120px]">
@@ -3720,22 +3785,24 @@
                                                         <p id="errorPhoneCustomMessage"
                                                         class="mt-[px] -ml-[97px]">Please Enter Your
                                                         Phone Number.</p>
-                                                    <select class="selectService" id="serviceCustom">
-                                                        <option value="" disabled selected hidden>Select
-                                                            Service</option>
-                                                        <option value="clippingpath">Clipping Path</option>
-                                                        <option value="multiclippingpath">Multi-Clipping
-                                                            Path</option>
-                                                        <option value="ghostmannequine">Ghost Mannequine
-                                                        </option>
-                                                        <option value="photoretouching">Photo Retouching
-                                                        </option>
-                                                        <option value="vectorconversion">Vector Conversion
-                                                        </option>
-                                                        <option value="emboriderydesigning">Emboridery
-                                                            Designing</option>
-                                                        <option value="other">Other</option>
-                                                    </select>
+                                                    <div class="custom-select">
+                                                        <select class="selectService" id="serviceCustom"  onchange="updateBackground(this)">
+                                                            <option value="" disabled selected hidden>Select
+                                                                Service</option>
+                                                            <option value="clippingpath">Clipping Path</option>
+                                                            <option value="multiclippingpath">Multi-Clipping
+                                                                Path</option>
+                                                            <option value="ghostmannequine">Ghost Mannequine
+                                                            </option>
+                                                            <option value="photoretouching">Photo Retouching
+                                                            </option>
+                                                            <option value="vectorconversion">Vector Conversion
+                                                            </option>
+                                                            <option value="emboriderydesigning">Emboridery
+                                                                Designing</option>
+                                                            <option value="other">Other</option>
+                                                        </select>
+                                                    </div>
                                                     <p id="errorServiceCustomMessage"
                                                         class="-mt-[15px] -ml-[200px]">Select A Service</p>
 
