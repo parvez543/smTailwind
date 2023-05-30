@@ -18,8 +18,19 @@ body {
   overflow-x: hidden;
   
 }
+
+nav{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  /* position: absolute; */
+ 
+}
 .navContent {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  z-index: 100;
 }
 
 .navItem {
@@ -329,6 +340,9 @@ color: #004EEB !important;
 }
 .heading {
   font-weight: 700;
+  /* width: 853px; */
+  display: block;
+  margin: auto;
 }
 .headPara {
   font-weight: 400;
@@ -2822,7 +2836,7 @@ border: 1px solid #FDA29B; /* Error border color */
 }
 .introContainer {
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 }
 .introOneContainer {
   display: flex;
@@ -3688,8 +3702,8 @@ color: #004EEB;
 
 /* Speak With Lutfor Rahman Starts */
 .speakContainer {
-background: url(./home4k/H_S/s.svg);
-height: 850px;
+/* background: url(./home4k/H_S/s.svg); */
+/* height: 850px; */
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -3807,17 +3821,19 @@ color: #004EEB;
 /* Start Free Trial */
 .startFreeTrial{
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 38px;
-width: 747px;
-/* identical to box height, or 127% */
-
-
-/* Gray/900 */
-
-color: #101828;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  width: 759px;
+height: 88px;
+  /* or 122% */
+  
+  letter-spacing: -0.02em;
+  
+  /* Gray/900 */
+  
+  color: #101828;
 }
 .startFreeTrial:hover{
  
@@ -3929,14 +3945,12 @@ transition: 0.2s;
   left: 0;
   margin-top: 250px;
   width: 100%;
-  height: 267.2px;
-  background: linear-gradient(
-    rgba(161, 161, 161, 0.8),
-    rgba(255, 255, 255, 0.6)
+  height: 419.26px;
+  background: linear-gradient(rgba(126, 255, 208, 0.8),rgba(186, 209, 255, 0.6)
   );
   opacity: 0.6;
   filter: blur(90px);
-  transform: matrix(1, 0.06, 0.06, 1, 0, 0);
+  transform: rotate(-4.73deg);
   /* transform: matrix(1, -0.06, -0.06, -1, 0, 0); */
   /* transform: rotate(-360deg); */
   /* overflow-x: hidden; */
@@ -3949,23 +3963,30 @@ transition: 0.2s;
   width: 200px;
 }
 .footerHeading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
 
-  /* Gray/900 */
 
-  color: #101828;
+/* Primary/600 */
+
+color: #155EEF;
 }
+
+.serviceContainer{
+  
+}
+
 .serviceLink a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-
+  position: relative;
+  z-index: 1;
   line-height: 20px;
   /* or 143% */
 
@@ -4049,8 +4070,130 @@ color: #667085;
 .mailImage{
   max-width: 330px !important;
 }
+.successContainer {
+  background: url(./home4k/H_S/footer.svg);
+  height: 577.48px;
+  background-repeat: no-repeat;
+}
+
+.successContainerContent {
+  position: relative;
+  /* overflow: hidden; */
+}
+.successContainerContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin-bottom: 140px; */
+  width: 100%;
+  height: 300.2px;
+  background: linear-gradient(to right, rgba(168, 255, 128, 0.4), rgba(130, 143, 252, 0.34));
+  filter: blur(84px);
+  /* transform: matrix(1, -0.06, -0.06, -1, 0, 0); */
+ 
+}
+
+.missionContainer{
+  width: 1216px;
+height: 463px;
+display: block;
+margin: auto;
+/* G/1 */
+padding: 76px;
+
+background: linear-gradient(90.38deg, #F6F9DB 0.04%, #F6F9DB 0.05%, #D9F9E8 99.39%);
+border-radius: 32px;
+}
+
+.missionAndValues{
+  width: 327px;
+height: 88px;
+
+/* Display md/Bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* or 122% */
+
+letter-spacing: -0.02em;
+
+/* Gray/900 */
+
+color: #101828;
+}
+.missionAndValuesPara{
+  width: 327px;
+height: 112px;
+
+/* Text lg/Regular */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
 
 
+/* Gray/600 */
+
+color: #475467;
+}
+.perksAndBenefits{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 16px;
+
+width: 338.5px;
+height: 311px;
+
+background: linear-gradient(126.7deg, rgba(255, 255, 255, 0.7) 13.47%, rgba(255, 255, 255, 0.5) 96.75%);
+/* Base/White */
+
+border: 2px solid #FFFFFF;
+/* Background blur / xl */
+
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 8px;
+}
+.perksHeading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 38px;
+/* identical to box height, or 127% */
+
+
+/* Gray/900 */
+
+color: #101828;
+}
+.perksPara{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+/* Gray/600 */
+
+color: #475467;
+}
 
 /* Media Query */
 @media screen and(max-width:1280) {
@@ -4067,10 +4210,10 @@ color: #667085;
     height: 400px;
     margin-top: 120px;
     margin-bottom: 120px;
-    background: linear-gradient(rgb(211, 169, 255), rgb(131, 255, 162));
+    background: linear-gradient(rgb(217, 182, 255), rgb(163, 255, 186));
     opacity: 0.6;
     filter: blur(84px);
-    transform: matrix(1, -0.06, -0.06, -1, 0, 0);
+    /* transform: matrix(1, -0.06, -0.06, -1, 0, 0); */
     /* filter: blur(84px); */
   }
 }
