@@ -4225,3 +4225,31 @@ menuContainer.addEventListener('mouseenter', () => {
     megaMenu.style.display = 'block';
     document.querySelector('.mega-menu').style.display = 'block'
 });
+
+
+// Pricing Calculator
+
+// Get the elements
+const upArrow = document.getElementById("upArrow");
+const downArrow = document.getElementById("downArrow");
+const numberElement = document.querySelector(".calculatorNumber");
+
+// Set the initial number value
+let number = 1;
+numberElement.textContent = number;
+
+// Add event listener for up arrow click
+upArrow.addEventListener("click", () => {
+  number++;
+  numberElement.textContent = number;
+});
+
+// Add event listener for down arrow click
+downArrow.addEventListener("click", () => {
+  if (number > 1) {
+    number--;
+    numberElement.textContent = number;
+  }
+});
+
+
