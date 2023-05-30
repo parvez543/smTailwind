@@ -82,6 +82,7 @@ nav{
   border-radius: 0px 0px 16px 16px;
 
 }
+
 .clippingPathMegaMenu{
   display: flex;
 flex-direction: column;
@@ -98,6 +99,29 @@ background: #EFF4FF;
 border-radius: 0px 0px 0px 16px;
 
 }
+
+.retouchNavContainer{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px;
+gap: 12px;
+
+width: 352px;
+height: 523px;
+
+/* Base/White */
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
 .retouchingText{
   width: 316px;
 height: 20px;
@@ -136,6 +160,51 @@ line-height: 20px;
 
 color: #475467;
 }
+.eyeWear{
+  width: 320px;
+height: 48px;
+}
+
+.furtinure{
+  width: 320px;
+  height: 48px;
+}
+
+.interior{
+  width: 320px;
+height: 48px;
+}
+.cosmetic{
+  width: 320px;
+height: 48px;
+}
+.jewellery{
+  width: 320px;
+height: 48px;
+}
+
+.automotiveContainer{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px;
+gap: 16px;
+
+width: 320px;
+height: 92px;
+margin-left: -15px;
+
+
+/* Primary/50 */
+
+background: #EFF4FF;
+border-radius: 8px;
+}
+.automotiveContainer h6 p{
+  color:#155EEF;
+}
+
+
 .clippingPathService{
   font-family: 'Poppins';
 font-style: normal;
@@ -167,6 +236,9 @@ line-height: 20px;
 
 color: #475467;
 }
+
+
+
 .mega-menu ul {
   list-style: none;
   padding: 0;
@@ -177,7 +249,24 @@ color: #475467;
   /* padding: 18px 24px; */
 }
 
+.retouchHeader{
+  width: 316px;
+height: 20px;
 
+/* Text sm/Semibold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Primary/600 */
+
+color: #155EEF;
+}
 
 .getStartedBtn {
   font-weight: 600;
