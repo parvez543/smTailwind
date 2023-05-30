@@ -4252,4 +4252,34 @@ downArrow.addEventListener("click", () => {
   }
 });
 
+// TypeWriter Effect
+
+const textToType = ["Multi Clipping Path", "Vector Conversion", "Ghost Mannequin", "Clipping Path", "High-End Photo Editing", "Retouching"]; // Array of text to type
+const delay = 100; // Delay between each character (in milliseconds)
+const elementDelay = 1500; // Delay between each array element (in milliseconds)
+let currentIndex = 0; // Current index in the textToType array
+let currentCharIndex = 0; // Current index of the character being typed
+
+function typeText() {
+    const element = document.getElementById("typewriter");
+    const currentText = textToType[currentIndex];
+    const existingText = element.innerText;
+
+    if (existingText !== currentText) {
+        const newText = currentText.slice(0, currentCharIndex + 1);
+        element.innerText = newText;
+        currentCharIndex++;
+
+        setTimeout(typeText, delay);
+    } else {
+        currentCharIndex = 0;
+        currentIndex = (currentIndex + 1) % textToType.length;
+        setTimeout(typeText, elementDelay); // Delay before typing the next text
+    }
+}
+
+// Start typing the text when the page loads
+window.addEventListener("load", typeText);
+
+
 
