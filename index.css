@@ -103,7 +103,7 @@ line-height: 24px;
 
 /* Gray/600 */
 
-color: #475467;
+color: #475467 !important;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {

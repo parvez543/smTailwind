@@ -264,7 +264,8 @@ const serviceOne = document.getElementById('serviceOne')
 serviceOne.addEventListener('click', () => {
   document.querySelector('.radioMark').style.display = "none"
   document.querySelector('.rightMark').style.display = "block"
-  document.querySelector('.servicePara').style.color = "#155EEF"
+  document.querySelector('.servicePara').style.color = "#475467"
+
   document.querySelector('.imgHover').style.border = "2px solid rgba(21, 94, 239, 1)"
 
   // Leaving All Other Service Default of Get A Quote Section When A User selecting Clipping Path Service
@@ -306,7 +307,8 @@ const serviceTwo = document.getElementById('serviceTwo')
 serviceTwo.addEventListener('click', () => {
   document.getElementById('radioMarkTwo').style.display = "none"
   document.getElementById('rightMarkTwo').style.display = "block"
-  document.getElementById('serviceParaTwo').style.color = "#155EEF"
+  document.getElementById('serviceParaTwo').style.color = "#475467"
+
   document.querySelector('.imgHoverTwo').style.border = "2px solid rgba(21, 94, 239, 1)"
 
   // Leaving All Other Service Default of Get A Quote Section When A User selecting Multi Clipping Path Service
@@ -354,7 +356,8 @@ const serviceThree = document.getElementById('serviceThree')
 serviceThree.addEventListener('click', () => {
   document.getElementById('radioMarkThree').style.display = "none"
   document.getElementById('rightMarkThree').style.display = "block"
-  document.getElementById('serviceParaThree').style.color = "#155EEF"
+  document.getElementById('serviceParaThree').style.color = "#475467"
+
   document.querySelector('.imgHoverThree').style.border = "2px solid rgba(21, 94, 239, 1)"
 
 
@@ -403,7 +406,8 @@ const serviceFour = document.getElementById('serviceFour')
 serviceFour.addEventListener('click', () => {
   document.getElementById('radioMarkFour').style.display = "none"
   document.getElementById('rightMarkFour').style.display = "block"
-  document.getElementById('serviceParaFour').style.color = "#155EEF"
+  document.getElementById('serviceParaFour').style.color = "#475467"
+
   document.querySelector('.imgHoverFour').style.border = "2px solid rgba(21, 94, 239, 1)"
 
   // Leaving All Other Service Default of Get A Quote Section When A User selecting Raster To Vector Service
@@ -450,7 +454,8 @@ const serviceFive = document.getElementById('serviceFive')
 serviceFive.addEventListener('click', () => {
   document.getElementById('radioMarkFive').style.display = "none"
   document.getElementById('rightMarkFive').style.display = "block"
-  document.getElementById('serviceParaFive').style.color = "#155EEF"
+  document.getElementById('serviceParaFive').style.color = "#475467"
+
   document.querySelector('.imgHoverFive').style.border = "2px solid rgba(21, 94, 239, 1)"
 
   // Leaving All Other Service Default of Get A Quote Section When A User selecting Embriodery Digitize Service
@@ -497,7 +502,8 @@ const serviceSix = document.getElementById('serviceSix')
 serviceSix.addEventListener('click', () => {
   document.getElementById('radioMarkSix').style.display = "none"
   document.getElementById('rightMarkSix').style.display = "block"
-  document.getElementById('serviceParaSix').style.color = "#155EEF"
+  document.getElementById('serviceParaSix').style.color = "#475467"
+
   document.querySelector('.imgHoverSix').style.border = "2px solid rgba(21, 94, 239, 1)"
 
   // Leaving All Other Service Default of Get A Quote Section When A User selecting Model Hair Masking Service
@@ -936,7 +942,8 @@ clippingPath.addEventListener('click', () => {
   // Changing Background of Clipping Path Service When Any One Click on That
   document.getElementById('clippingPathCircle').style.display = 'none'
   document.getElementById('clippingPathRightMark').style.display = 'block'
-  document.querySelector('.clippingBg').style.background = "#155EEF"
+  document.querySelector('.clippingBg').style.background = "#475467"
+
   document.querySelector('.clippingBg').style.color = "#FFFFFF"
 
   document.getElementById('retouchComplexOne').style.display = 'none'
@@ -1441,7 +1448,8 @@ clippingBasic.addEventListener('click', () => {
   document.getElementById("superComplexImage").style.display = 'none'
 
   // Changing Button Color
-  document.getElementById('clippingBasic').style.background = "#155EEF"
+  document.getElementById('clippingBasic').style.background = "#475467"
+
   document.getElementById('clippingBasic').style.padding = "10px 14px"
   document.getElementById('clippingBasic').style.borderRadius = "8px"
   document.getElementById('clippingBasic').style.color = "#ffffff"
@@ -1484,7 +1492,8 @@ flatImage.addEventListener('click', () => {
   document.getElementById("superComplexImage").style.display = 'none'
 
   // Changing Button Color
-  document.getElementById('clippingFlatRate').style.background = "#155EEF"
+  document.getElementById('clippingFlatRate').style.background = "#475467"
+
   document.getElementById('clippingFlatRate').style.padding = "10px 14px"
   document.getElementById('clippingFlatRate').style.borderRadius = "8px"
   document.getElementById('clippingFlatRate').style.color = "#ffffff"
@@ -1528,7 +1537,8 @@ clippingMedium.addEventListener('click', () => {
   document.getElementById("superComplexImage").style.display = 'none'
 
   // Changing Button Color
-  document.getElementById('clippingMedium').style.background = "#155EEF"
+  document.getElementById('clippingMedium').style.background = "#475467"
+
   document.getElementById('clippingMedium').style.padding = "10px 14px"
   document.getElementById('clippingMedium').style.borderRadius = "8px"
   document.getElementById('clippingMedium').style.color = "#ffffff"
@@ -1571,7 +1581,8 @@ clippingPathComplex.addEventListener('click', () => {
 
 
   // Changing Button Color
-  document.getElementById('clippingComplex').style.background = "#155EEF"
+  document.getElementById('clippingComplex').style.background = "#475467"
+
   document.getElementById('clippingComplex').style.padding = "10px 14px"
   document.getElementById('clippingComplex').style.borderRadius = "8px"
   document.getElementById('clippingComplex').style.color = "#ffffff"
@@ -1613,7 +1624,8 @@ clippingSuperComplex.addEventListener('click', () => {
 
 
   // Changing Button Color
-  document.getElementById('clippingSuperComplex').style.background = "#155EEF"
+  document.getElementById('clippingSuperComplex').style.background = "#475467"
+
   document.getElementById('clippingSuperComplex').style.padding = "10px 14px"
   document.getElementById('clippingSuperComplex').style.borderRadius = "8px"
   document.getElementById('clippingSuperComplex').style.color = "#ffffff"
@@ -1664,7 +1676,8 @@ retouchComplexOne.addEventListener('click', () => {
 
 
   // Changing Button color
-  document.getElementById('retouchComplexOneButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexOneButton').style.background = "#475467"
+
   document.getElementById('retouchComplexOneButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexOneButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexOneButton').style.color = "#ffffff"
@@ -1701,7 +1714,8 @@ retouchComplexTwo.addEventListener('click', () => {
   document.getElementById('retouchComplexFour').style.display = "none"
 
   // Changing Button color
-  document.getElementById('retouchComplexTwoButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexTwoButton').style.background = "#475467"
+
   document.getElementById('retouchComplexTwoButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexTwoButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexTwoButton').style.color = "#ffffff"
@@ -1740,7 +1754,8 @@ retouchComplexThree.addEventListener('click', () => {
   document.getElementById('retouchComplexFour').style.display = "none"
 
   // Changing Button color
-  document.getElementById('retouchComplexThreeButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexThreeButton').style.background = "#475467"
+
   document.getElementById('retouchComplexThreeButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexThreeButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexThreeButton').style.color = "#ffffff"
@@ -1779,7 +1794,8 @@ retouchComplexityFour.addEventListener('click', () => {
   document.getElementById('retouchComplexFour').style.display = "none"
 
   // Changing Button color
-  document.getElementById('retouchComplexFourButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexFourButton').style.background = "#475467"
+
   document.getElementById('retouchComplexFourButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFourButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFourButton').style.color = "#ffffff"
@@ -1819,7 +1835,8 @@ retouchComplexityFive.addEventListener('click', () =>{
   document.getElementById('retouchComplexFour').style.display = "block"
 
   // Changing Button color
-  document.getElementById('retouchComplexFiveButton').style.background = "#155EEF"
+  document.getElementById('retouchComplexFiveButton').style.background = "#475467"
+
   document.getElementById('retouchComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('retouchComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('retouchComplexFiveButton').style.color = "#ffffff"
@@ -1862,7 +1879,8 @@ ghostBasicButton.addEventListener('click', () =>{
   document.getElementById('ghostSuperComplexImage').style.display = "none"
 
    // Changing Button color
-   document.getElementById('ghostBasicButton').style.background = "#155EEF"
+   document.getElementById('ghostBasicButton').style.background = "#475467"
+
    document.getElementById('ghostBasicButton').style.padding = "8px 14px"
    document.getElementById('ghostBasicButton').style.borderRadius = "8px"
    document.getElementById('ghostBasicButton').style.color = "#ffffff"
@@ -1901,7 +1919,8 @@ ghostFlatButton.addEventListener('click', () =>{
   document.getElementById('ghostSuperComplexImage').style.display = "none"
 
   // Changing Button color
-  document.getElementById('ghostFlatButton').style.background = "#155EEF"
+  document.getElementById('ghostFlatButton').style.background = "#475467"
+
   document.getElementById('ghostFlatButton').style.padding = "8px 14px"
   document.getElementById('ghostFlatButton').style.borderRadius = "8px"
   document.getElementById('ghostFlatButton').style.color = "#ffffff"
@@ -1940,7 +1959,8 @@ ghostMediumButton.addEventListener('click',() => {
   document.getElementById('ghostSuperComplexImage').style.display = "none"
 
   // Changing Button color
-  document.getElementById('ghostMediumButton').style.background = "#155EEF"
+  document.getElementById('ghostMediumButton').style.background = "#475467"
+
   document.getElementById('ghostMediumButton').style.padding = "8px 14px"
   document.getElementById('ghostMediumButton').style.borderRadius = "8px"
   document.getElementById('ghostMediumButton').style.color = "#ffffff"
@@ -1985,7 +2005,8 @@ ghostComplexButton.addEventListener('click', ()=> {
   document.getElementById('maskingComplexOne').style.display = "none"
 
     // Changing Button color
-    document.getElementById('ghostComplexButton').style.background = "#155EEF"
+    document.getElementById('ghostComplexButton').style.background = "#475467"
+
    document.getElementById('ghostComplexButton').style.padding = "8px 14px"
    document.getElementById('ghostComplexButton').style.borderRadius = "8px"
    document.getElementById('ghostComplexButton').style.color = "#ffffff"
@@ -2029,7 +2050,8 @@ ghostSuperComplexButton.addEventListener('click', ()=> {
   document.getElementById('maskingComplexOne').style.display = "none"
 
    // Changing Button color
-   document.getElementById('ghostSuperComplexButton').style.background = "#155EEF"
+   document.getElementById('ghostSuperComplexButton').style.background = "#475467"
+
    document.getElementById('ghostSuperComplexButton').style.padding = "8px 14px"
    document.getElementById('ghostSuperComplexButton').style.borderRadius = "8px"
    document.getElementById('ghostSuperComplexButton').style.color = "#ffffff"
@@ -2079,7 +2101,8 @@ multiClippingBasic.addEventListener('click',()=> {
   document.getElementById('maskingComplexOne').style.display = "none"
 
    // Changing Button color
-   document.getElementById('multiClippingBasicImage').style.background = "#155EEF"
+   document.getElementById('multiClippingBasicImage').style.background = "#475467"
+
    document.getElementById('multiClippingBasicImage').style.padding = "8px 14px"
    document.getElementById('multiClippingBasicImage').style.borderRadius = "8px"
    document.getElementById('multiClippingBasicImage').style.color = "#ffffff"
@@ -2123,7 +2146,8 @@ multiClippingFlat.addEventListener('click', ()=> {
   document.getElementById('maskingComplexOne').style.display = "none"
 
    // Changing Button color
-   document.getElementById('multiClippingFlatImage').style.background = "#155EEF"
+   document.getElementById('multiClippingFlatImage').style.background = "#475467"
+
    document.getElementById('multiClippingFlatImage').style.padding = "8px 14px"
    document.getElementById('multiClippingFlatImage').style.borderRadius = "8px"
    document.getElementById('multiClippingFlatImage').style.color = "#ffffff"
@@ -2165,7 +2189,8 @@ mediummultiClippingPath.addEventListener('click', () =>{
   document.getElementById('maskingComplexOne').style.display = "none"
 
    // Changing Button color
-   document.getElementById('multiClippingMediumImage').style.background = "#155EEF"
+   document.getElementById('multiClippingMediumImage').style.background = "#475467"
+
    document.getElementById('multiClippingMediumImage').style.padding = "8px 14px"
    document.getElementById('multiClippingMediumImage').style.borderRadius = "8px"
    document.getElementById('multiClippingMediumImage').style.color = "#ffffff"
@@ -2209,7 +2234,8 @@ document.getElementById('multiClippingSuperComplex').style.display = "none"
 document.getElementById('maskingComplexOne').style.display = "none"
 
  // Changing Button color
- document.getElementById('multiClippingComplexImage').style.background = "#155EEF"
+ document.getElementById('multiClippingComplexImage').style.background = "#475467"
+
  document.getElementById('multiClippingComplexImage').style.padding = "8px 14px"
  document.getElementById('multiClippingComplexImage').style.borderRadius = "8px"
  document.getElementById('multiClippingComplexImage').style.color = "#ffffff"
@@ -2256,7 +2282,8 @@ document.getElementById('imagemaskingComplexFour').style.display = 'none'
 document.getElementById('maskingComplexOne').style.display = "none"
 
 // Changing Button Color
-document.getElementById('multiClippingSuperComplexImage').style.background = "#155EEF"
+document.getElementById('multiClippingSuperComplexImage').style.background = "#475467"
+
  document.getElementById('multiClippingSuperComplexImage').style.padding = "8px 14px"
  document.getElementById('multiClippingSuperComplexImage').style.borderRadius = "8px"
  document.getElementById('multiClippingSuperComplexImage').style.color = "#ffffff"
@@ -2298,7 +2325,8 @@ imageMaskingComplexityOne.addEventListener('click', () =>{
   document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
   // Changing Button Color
-document.getElementById('maskingComplexOneButton').style.background = "#155EEF"
+document.getElementById('maskingComplexOneButton').style.background = "#475467"
+
 document.getElementById('maskingComplexOneButton').style.padding = "8px 14px"
 document.getElementById('maskingComplexOneButton').style.borderRadius = "8px"
 document.getElementById('maskingComplexOneButton').style.color = "#ffffff"
@@ -2346,7 +2374,8 @@ imageMaskingComplexityTwo.addEventListener('click', () =>{
 
   
 
-  document.getElementById('maskingComplexTwoButton').style.background = "#155EEF"
+  document.getElementById('maskingComplexTwoButton').style.background = "#475467"
+
 document.getElementById('maskingComplexTwoButton').style.padding = "8px 14px"
 document.getElementById('maskingComplexTwoButton').style.borderRadius = "8px"
 document.getElementById('maskingComplexTwoButton').style.color = "#ffffff"
@@ -2390,7 +2419,8 @@ imageMaskingComplexThree.addEventListener('click', () =>{
   document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
   // Changing Color Button
-  document.getElementById('maskingComplexThreeButton').style.background = "#155EEF"
+  document.getElementById('maskingComplexThreeButton').style.background = "#475467"
+
 document.getElementById('maskingComplexThreeButton').style.padding = "8px 14px"
 document.getElementById('maskingComplexThreeButton').style.borderRadius = "8px"
 document.getElementById('maskingComplexThreeButton').style.color = "#ffffff"
@@ -2433,7 +2463,8 @@ imageMaskingComplexFour.addEventListener('click', () =>{
   document.getElementById('imagemaskingComplexFour').style.display = 'none'
 
   // Changing Button Color
-  document.getElementById('maskingComplexFourButton').style.background = "#155EEF"
+  document.getElementById('maskingComplexFourButton').style.background = "#475467"
+
   document.getElementById('maskingComplexFourButton').style.padding = "8px 14px"
   document.getElementById('maskingComplexFourButton').style.borderRadius = "8px"
   document.getElementById('maskingComplexFourButton').style.color = "#ffffff"
@@ -2477,7 +2508,8 @@ imageMaskingComplexityFive.addEventListener('click', function(){
   document.getElementById('maskingImage').style.display ='none' 
 
   // Changing Button color
-  document.getElementById('maskingComplexFiveButton').style.background = "#155EEF"
+  document.getElementById('maskingComplexFiveButton').style.background = "#475467"
+
   document.getElementById('maskingComplexFiveButton').style.padding = "8px 14px"
   document.getElementById('maskingComplexFiveButton').style.borderRadius = "8px"
   document.getElementById('maskingComplexFiveButton').style.color = "#ffffff"
@@ -4301,8 +4333,10 @@ const hiddenParagraph = container.querySelector('.eyeNavPara');
 
 container.addEventListener('mouseover', () => {
     hiddenParagraph.style.display = 'block';
-    document.getElementById('retouchHead').style.color = "#155EEF"
-    document.getElementById('foodRetouch').style.color = "#155EEF"
+    document.getElementById('retouchHead').style.color = "#475467"
+
+    document.getElementById('foodRetouch').style.color = "#475467"
+
     document.getElementById('foodRetouch').style.background = "#EFF4FF"
     document.getElementById('foodRetouch').style.borderRadius = "8px"
     // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4327,8 +4361,10 @@ document.getElementById('editContainer').style.background = "none"
 function showPara() {
   let para = document.getElementById("hoverPara");
   para.style.display = "block";
-  para.style.color = "#155EEF";
-  document.getElementById('editHead').style.color = "#155EEF"
+  para.style.color = "#475467"
+;
+  document.getElementById('editHead').style.color = "#475467"
+
   document.getElementById('editContainer').style.background = "#EFF4FF"
   document.getElementById('editContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4355,8 +4391,10 @@ function showAccessPara() {
  
   let accessPara = document.getElementById('accessoriesPara')
   accessPara.style.display = "block";
-  document.getElementById('accessHead').style.color = "#155EEF"
-  document.getElementById('accessoriesPara').style.color = "#155EEF"
+  document.getElementById('accessHead').style.color = "#475467"
+
+  document.getElementById('accessoriesPara').style.color = "#475467"
+
   document.getElementById('accessContainer').style.background = "#EFF4FF"
   document.getElementById('accessContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4385,8 +4423,10 @@ function hideAccessPara() {
 function showFootwearPara() {
   let footwearPara = document.getElementById('footWearPara')
   footwearPara.style.display = "block";
-  document.getElementById('footWearHead').style.color = "#155EEF"
-  document.getElementById('footWearPara').style.color = "#155EEF"
+  document.getElementById('footWearHead').style.color = "#475467"
+
+  document.getElementById('footWearPara').style.color = "#475467"
+
   document.getElementById('footwearContainer').style.background = "#EFF4FF"
   document.getElementById('footwearContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4410,8 +4450,10 @@ function hideFootwearPara() {
 function showModelPara() {
   let footwearPara = document.getElementById('modelPara')
   footwearPara.style.display = "block";
-  document.getElementById('modelHead').style.color = "#155EEF"
-  document.getElementById('modelPara').style.color = "#155EEF"
+  document.getElementById('modelHead').style.color = "#475467"
+
+  document.getElementById('modelPara').style.color = "#475467"
+
   document.getElementById('modelContainer').style.background = "#EFF4FF"
   document.getElementById('modelContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4436,8 +4478,10 @@ function hideModelPara() {
 function showApperalPara() {
   let apperalPara = document.getElementById('apperalPara')
   apperalPara.style.display = "block";
-  document.getElementById('apperalHead').style.color = "#155EEF"
-  document.getElementById('apperalPara').style.color = "#155EEF"
+  document.getElementById('apperalHead').style.color = "#475467"
+
+  document.getElementById('apperalPara').style.color = "#475467"
+
   document.getElementById('apperalContainer').style.background = "#EFF4FF"
   document.getElementById('apperalContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4461,8 +4505,10 @@ function hideApperalPara() {
 function showEyeWearPara() {
   let eyeWearPara = document.getElementById('eyeWearPara')
   eyeWearPara.style.display = "block";
-  document.getElementById('eyeWearHead').style.color = "#155EEF"
-  document.getElementById('eyeWearPara').style.color = "#155EEF"
+  document.getElementById('eyeWearHead').style.color = "#475467"
+
+  document.getElementById('eyeWearPara').style.color = "#475467"
+
   document.getElementById('eyeWearContainer').style.background = "#EFF4FF"
   document.getElementById('eyeWearContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4486,8 +4532,10 @@ function hideWearPara() {
 function showAutomotivePara() {
   let automotivePara = document.getElementById('autoPara')
   automotivePara.style.display = "block";
-  document.getElementById('autoHead').style.color = "#155EEF"
-  document.getElementById('autoPara').style.color = "#155EEF"
+  document.getElementById('autoHead').style.color = "#475467"
+
+  document.getElementById('autoPara').style.color = "#475467"
+
   document.getElementById('automotiveContainer').style.background = "#EFF4FF"
   document.getElementById('automotiveContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4511,8 +4559,10 @@ function hideAutomotivePara() {
 function showFurniturePara() {
   let furniturePara = document.getElementById('furniturePara')
   furniturePara.style.display = "block";
-  document.getElementById('furnitureHead').style.color = "#155EEF"
-  document.getElementById('furniturePara').style.color = "#155EEF"
+  document.getElementById('furnitureHead').style.color = "#475467"
+
+  document.getElementById('furniturePara').style.color = "#475467"
+
   document.getElementById('furnitureContainer').style.background = "#EFF4FF"
   document.getElementById('furnitureContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4535,8 +4585,10 @@ function hideFurniturePara() {
 function showInteriorPara() {
   let interiorPara = document.getElementById('interiorPara')
   interiorPara.style.display = "block";
-  document.getElementById('interiorHead').style.color = "#155EEF"
-  document.getElementById('interiorPara').style.color = "#155EEF"
+  document.getElementById('interiorHead').style.color = "#475467"
+
+  document.getElementById('interiorPara').style.color = "#475467"
+
   document.getElementById('interiorContainer').style.background = "#EFF4FF"
   document.getElementById('interiorContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4559,8 +4611,10 @@ function hideInteriorPara() {
 function showCosmeticPara() {
   let cosmeticPara = document.getElementById('cosmeticPara')
   cosmeticPara.style.display = "block";
-  document.getElementById('cosmeticHead').style.color = "#155EEF"
-  document.getElementById('cosmeticPara').style.color = "#155EEF"
+  document.getElementById('cosmeticHead').style.color = "#475467"
+
+  document.getElementById('cosmeticPara').style.color = "#475467"
+
   document.getElementById('cosmeticContainer').style.background = "#EFF4FF"
   document.getElementById('cosmeticContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4584,8 +4638,10 @@ function hideCosmeticPara() {
 function showJewelleryPara() {
   let jewelleryPara = document.getElementById('jewelleryPara')
   jewelleryPara.style.display = "block";
-  document.getElementById('jewelleryHead').style.color = "#155EEF"
-  document.getElementById('jewelleryPara').style.color = "#155EEF"
+  document.getElementById('jewelleryHead').style.color = "#475467"
+
+  document.getElementById('jewelleryPara').style.color = "#475467"
+
   document.getElementById('jewelleryContainer').style.background = "#EFF4FF"
   document.getElementById('jewelleryContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
