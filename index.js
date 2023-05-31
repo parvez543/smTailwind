@@ -4615,7 +4615,8 @@ function showCosmeticPara() {
 
   document.getElementById('cosmeticPara').style.color = "#475467"
 
-  document.getElementById('cosmeticContainer').style.background = "#EFF4FF"
+  document.getElementById('cosmeticContainer').style.background = "#EFF4FF";
+   document.getElementById('vectorContainer').style.marginLeft = "-12px"
   document.getElementById('cosmeticContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
   document.getElementById('cosmeticContainer').style.padding= " 0 12px 12px 12px"
@@ -4658,7 +4659,7 @@ function hideJewelleryPara() {
   document.getElementById('jewelleryContainer').style.padding = "0px"
   document.getElementById('jewelleryContainer').style.marginLeft = "0px"
   document.getElementById('jewelleryHead').style.color = "#475467"
-  document.getElementById('jewelleryContainer').style.marginLeft = "-10px"
+  document.getElementById('jewelleryContainer').style.marginLeft = "-5px"
 }
 
 // Jewellery Ends
@@ -4687,6 +4688,7 @@ function showClipPara() {
   document.getElementById('clipPathContainer').style.background = "#FFFFFF"
   document.getElementById('clipPathContainer').style.marginLeft = "-12px"
   document.getElementById('clipPathContainer').style.borderRadius = "8px"
+  
   document.getElementById('clipPathContainer').style.padding = "0 12px 12px 12px"
   document.getElementById('clippiColor').style.display = "block";
   document.getElementById('clippi').style.display = "none";
@@ -4736,6 +4738,7 @@ document.getElementById('ghostColor').style.display = "none";
 function showGhostPara() {
   document.getElementById('ghostContainer').style.background = "#FFFFFF"
   document.getElementById('ghostContainer').style.borderRadius = "8px"
+  // document.getElementById('ghostContainer').style.width = "320px"
   document.getElementById('ghostContainer').style.padding = "0 12px 12px 12px"
   document.getElementById('ghostContainer').style.marginLeft = "-12px"
   document.getElementById('ghostColor').style.display = "block";
@@ -4761,6 +4764,7 @@ document.getElementById('vectorColor').style.display = "none";
 
 function showVectorPara() {
   document.getElementById('vectorContainer').style.background = "#FFFFFF"
+  document.getElementById('vectorContainer').style.width = "320px"
   document.getElementById('vectorContainer').style.borderRadius = "8px"
   document.getElementById('vectorContainer').style.padding = "0 12px 12px 12px"
   document.getElementById('vectorColor').style.display = "block";
@@ -4772,7 +4776,7 @@ function showVectorPara() {
 
 function hideVectorPara() {
   document.getElementById('vectorContainer').style.background = "none"
-  document.getElementById('vectorContainer').style.marginLeft = "0px"
+  document.getElementById('vectorContainer').style.marginLeft = "0"
   document.getElementById('vectorContainer').style.padding = "0"
   document.getElementById('vectorColor').style.display = "none";
   document.getElementById('vector').style.display = "block";
