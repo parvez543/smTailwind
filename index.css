@@ -75,6 +75,9 @@ background: #EFF4FF;
 border-radius: 0px 0px 0px 16px;
 }
 
+#cosmeticHead{
+  margin-left: 5px !important;
+}
 .dropdown .dropbtn {
   font-size: 16px;  
   border: none;

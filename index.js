@@ -4364,7 +4364,7 @@ function showPara() {
   para.style.color = "#475467"
 ;
   document.getElementById('editHead').style.color = "#475467"
-
+  document.getElementById('editHead').style.marginLeft = "-1px"
   document.getElementById('editContainer').style.background = "#EFF4FF"
   document.getElementById('editContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
@@ -4612,16 +4612,16 @@ function showCosmeticPara() {
   let cosmeticPara = document.getElementById('cosmeticPara')
   cosmeticPara.style.display = "block";
   document.getElementById('cosmeticHead').style.color = "#475467"
-
+  document.getElementById('cosmeticHead').style.marginLeft = "8px"
   document.getElementById('cosmeticPara').style.color = "#475467"
 
   document.getElementById('cosmeticContainer').style.background = "#EFF4FF";
-   document.getElementById('vectorContainer').style.marginLeft = "-12px"
+   document.getElementById('cosmeticContainer').style.marginLeft = "-6px"
   document.getElementById('cosmeticContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
   document.getElementById('cosmeticContainer').style.padding= " 0 12px 12px 12px"
   document.getElementById('cosmeticContainer').style.width = "312px"
-  document.getElementById('cosmeticContainer').style.marginLeft = "-10px"
+  // document.getElementById('cosmeticContainer').style.marginLeft = "15px"
   document.getElementById('cosmeticPara').style.marginLeft = "23px"
 }
 
@@ -4630,7 +4630,7 @@ function hideCosmeticPara() {
   cosmeticPara.style.display = "none";
   document.getElementById('cosmeticContainer').style.background = "none"
   document.getElementById('cosmeticContainer').style.padding = "0px"
-  document.getElementById('cosmeticContainer').style.marginLeft = "0px"
+  document.getElementById('cosmeticContainer').style.marginLeft = "3px"
   document.getElementById('cosmeticHead').style.color = "#475467"
 }
 // Cosmetic Ends
