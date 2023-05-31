@@ -4612,7 +4612,7 @@ function showCosmeticPara() {
   let cosmeticPara = document.getElementById('cosmeticPara')
   cosmeticPara.style.display = "block";
   document.getElementById('cosmeticHead').style.color = "#475467"
-  document.getElementById('cosmeticHead').style.marginLeft = "8px"
+  // document.getElementById('cosmeticHead').style.marginLeft = "8px"
   document.getElementById('cosmeticPara').style.color = "#475467"
 
   document.getElementById('cosmeticContainer').style.background = "#EFF4FF";
@@ -4782,4 +4782,63 @@ function hideVectorPara() {
   document.getElementById('vector').style.display = "block";
   document.getElementById('vectorHead').style.color = " #101828";
   document.getElementById('vectorPara').style.color = "#475467";
+}
+
+function redirectToHomePage() {
+  window.location.href = "#"; // Replace with your desired URL
+}
+
+function redirectToClippingPage(){
+  window.location.href = "#";
+}
+function redirectToGhostPage(){
+  window.location.href = "#";
+}
+function redirectToVectorPage(){
+  window.location.href = "#";
+}
+function redirectToEditorialPage(){
+  window.location.href = "#";
+}
+
+function redirectToJewelleryPage(){
+  window.location.href = "#";
+}
+
+function redirectTomodelPage(){
+  window.location.href = "#";
+}
+
+function redirectApprealPage(){
+  window.location.href = "#";
+}
+
+function redirectCosmeticPage(){
+  window.location.href = "#";
+}
+
+function redirectFashionPage(){
+  window.location.href = "#";
+}
+
+function redirectFurniturePage(){
+  window.location.href = "#";
+}
+
+function redirectEyeWearPage(){
+  window.location.href = "#";
+}
+
+function redirectFootWearPage(){
+  window.location.href = "#";
+}
+function redirectAutomotivePage(){
+  window.location.href = "#";
+}
+
+function redirectInteriorPage(){
+  window.location.href = "#";
+}
+function redirectFoodPage(){
+  window.location.href = "#";
 }
