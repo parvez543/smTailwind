@@ -4213,18 +4213,18 @@ function updateBackground(selectElement) {
 
 
 // NavBar Open And Closing
-const menuContainer = document.querySelector('.menu-container');
-const megaMenu = document.querySelector('.mega-menu');
+// const menuContainer = document.querySelector('.menu-container');
+// const megaMenu = document.querySelector('.mega-menu');
 
-menuContainer.addEventListener('mouseleave', () => {
-    megaMenu.style.display = 'none';
-    document.querySelector('.mega-menu').style.display = 'none'
-});
+// menuContainer.addEventListener('mouseleave', () => {
+//     megaMenu.style.display = 'none';
+//     document.querySelector('.mega-menu').style.display = 'none'
+// });
 
-menuContainer.addEventListener('mouseenter', () => {
-    megaMenu.style.display = 'block';
-    document.querySelector('.mega-menu').style.display = 'block'
-});
+// menuContainer.addEventListener('mouseenter', () => {
+//     megaMenu.style.display = 'block';
+//     document.querySelector('.mega-menu').style.display = 'block'
+// });
 
 
 // Pricing Calculator
@@ -4254,43 +4254,278 @@ downArrow.addEventListener("click", () => {
 
 // TypeWriter Effect
 
-const textToType = ["Multi Clipping Path", "Vector Conversion", "Ghost Mannequin", "Clipping Path", "High-End Photo Editing", "Retouching"]; // Array of text to type
-const delay = 100; // Delay between each character (in milliseconds)
-const elementDelay = 1500; // Delay between each array element (in milliseconds)
-let currentIndex = 0; // Current index in the textToType array
-let currentCharIndex = 0; // Current index of the character being typed
+// const textToType = ["Multi Clipping Path", "Vector Conversion", "Ghost Mannequin", "Clipping Path", "High-End Photo Editing", "Retouching"]; // Array of text to type
+// const delay = 100; // Delay between each character (in milliseconds)
+// const elementDelay = 1500; // Delay between each array element (in milliseconds)
+// let currentIndex = 0; // Current index in the textToType array
+// let currentCharIndex = 0; // Current index of the character being typed
 
-function typeText() {
-    const element = document.getElementById("typewriter");
-    const currentText = textToType[currentIndex];
-    const existingText = element.innerText;
+// function typeText() {
+//     const element = document.getElementById("typewriter");
+//     const currentText = textToType[currentIndex];
+//     const existingText = element.innerText;
 
-    if (existingText !== currentText) {
-        const newText = currentText.slice(0, currentCharIndex + 1);
-        element.innerText = newText;
-        currentCharIndex++;
+//     if (existingText !== currentText) {
+//         const newText = currentText.slice(0, currentCharIndex + 1);
+//         element.innerText = newText;
+//         currentCharIndex++;
 
-        setTimeout(typeText, delay);
-    } else {
-        currentCharIndex = 0;
-        currentIndex = (currentIndex + 1) % textToType.length;
-        setTimeout(typeText, elementDelay); // Delay before typing the next text
-    }
-}
+//         setTimeout(typeText, delay);
+//     } else {
+//         currentCharIndex = 0;
+//         currentIndex = (currentIndex + 1) % textToType.length;
+//         setTimeout(typeText, elementDelay); // Delay before typing the next text
+//     }
+// }
 
 // Start typing the text when the page loads
-window.addEventListener("load", typeText);
+// window.addEventListener("load", typeText);
 
 // Text Rotation Of Header
-setInterval(function () {
-  const show = document.querySelector('span[data-show]')
-  const next = show.nextElementSibling || document.querySelector('span:first-child')
-  const up = document.querySelector('span[data-up]')
-  if (up) {
-    up.removeAttribute('data-up')
-  }
-  show.removeAttribute('data-show')
-  show.setAttribute('data-up', '')
-  next.setAttribute('data-show', '')
-}, 2000)
+// setInterval(function () {
+//   const show = document.querySelector('span[data-show]')
+//   const next = show.nextElementSibling || document.querySelector('span:first-child')
+//   const up = document.querySelector('span[data-up]')
+//   if (up) {
+//     up.removeAttribute('data-up')
+//   }
+//   show.removeAttribute('data-show')
+//   show.setAttribute('data-up', '')
+//   next.setAttribute('data-show', '')
+// }, 2000)
 
+// Food Retouch Start
+
+const container = document.querySelector('.foodRetouchContainer');
+const hiddenParagraph = container.querySelector('.eyeNavPara');
+
+container.addEventListener('mouseover', () => {
+    hiddenParagraph.style.display = 'block';
+    document.getElementById('retouchHead').style.color = "#155EEF"
+    document.getElementById('foodRetouch').style.color = "#155EEF"
+    document.getElementById('foodRetouch').style.background = "#EFF4FF"
+    document.getElementById('foodRetouch').style.borderRadius = "8px"
+    // document.getElementById('editContainer').style.paddingTop = "4px"
+    document.getElementById('foodRetouch').style.padding= " 0 12px 12px 12px"
+    document.getElementById('foodRetouch').style.width = "312px"
+    document.getElementById('foodRetouch').style.marginLeft = "-10px"
+
+});
+
+container.addEventListener('mouseout', () => {
+    hiddenParagraph.style.display = 'none';
+    document.getElementById('foodRetouch').style.background = "none"
+  document.getElementById('foodRetouch').style.padding = "0px"
+  document.getElementById('foodRetouch').style.marginLeft = "0px"
+  document.getElementById('retouchHead').style.color = "#475467"
+});
+
+// Food Retouch End
+
+// Editorial Retouching Start
+document.getElementById('editContainer').style.background = "none"
+function showPara() {
+  let para = document.getElementById("hoverPara");
+  para.style.display = "block";
+  para.style.color = "#155EEF";
+  document.getElementById('editHead').style.color = "#155EEF"
+  document.getElementById('editContainer').style.background = "#EFF4FF"
+  document.getElementById('editContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('editContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('editContainer').style.width = "312px"
+  document.getElementById('editContainer').style.marginLeft = "-10px"
+  
+ 
+}
+
+function hidePara() {
+  let para = document.getElementById("hoverPara");
+  para.style.display = "none";
+  document.getElementById('editContainer').style.background = "none"
+  document.getElementById('editContainer').style.padding = "0px"
+  document.getElementById('editContainer').style.marginLeft = "0px"
+  document.getElementById('editHead').style.color = "#475467"
+}
+
+// Editorial Retouching End
+
+// Accessories Start
+function showAccessPara() {
+ 
+  let accessPara = document.getElementById('accessoriesPara')
+  accessPara.style.display = "block";
+  document.getElementById('accessHead').style.color = "#155EEF"
+  document.getElementById('accessoriesPara').style.color = "#155EEF"
+  document.getElementById('accessContainer').style.background = "#EFF4FF"
+  document.getElementById('accessContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('accessContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('accessContainer').style.width = "312px"
+  document.getElementById('accessContainer').style.marginLeft = "-10px"
+
+
+}
+
+function hideAccessPara() {
+ 
+  let accessPara = document.getElementById('accessoriesPara')
+  accessPara.style.display = "none";
+  document.getElementById('accessContainer').style.background = "none"
+  document.getElementById('accessContainer').style.padding = "0px"
+  document.getElementById('accessContainer').style.marginLeft = "0px"
+  document.getElementById('accessHead').style.color = "#475467"
+}
+// Accessories End
+
+
+
+// Footwear Retouching Start
+
+function showFootwearPara() {
+  let footwearPara = document.getElementById('footWearPara')
+  footwearPara.style.display = "block";
+  document.getElementById('footWearHead').style.color = "#155EEF"
+  document.getElementById('footWearPara').style.color = "#155EEF"
+  document.getElementById('footwearContainer').style.background = "#EFF4FF"
+  document.getElementById('footwearContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('footwearContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('footwearContainer').style.width = "312px"
+  document.getElementById('footwearContainer').style.marginLeft = "-10px"
+}
+
+function hideFootwearPara() {
+  let footwearPara = document.getElementById('footWearPara')
+  footwearPara.style.display = "none";
+  document.getElementById('footwearContainer').style.background = "none"
+  document.getElementById('footwearContainer').style.padding = "0px"
+  document.getElementById('footwearContainer').style.marginLeft = "0px"
+  document.getElementById('footWearHead').style.color = "#475467"
+}
+// Footwear Retouching End
+
+// Model Retouching
+
+function showModelPara() {
+  let footwearPara = document.getElementById('modelPara')
+  footwearPara.style.display = "block";
+  document.getElementById('modelHead').style.color = "#155EEF"
+  document.getElementById('modelPara').style.color = "#155EEF"
+  document.getElementById('modelContainer').style.background = "#EFF4FF"
+  document.getElementById('modelContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('modelContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('modelContainer').style.width = "312px"
+  document.getElementById('modelContainer').style.marginLeft = "-10px"
+}
+
+function hideModelPara() {
+  let footwearPara = document.getElementById('modelPara')
+  footwearPara.style.display = "none";
+  document.getElementById('modelContainer').style.background = "none"
+  document.getElementById('modelContainer').style.padding = "0px"
+  document.getElementById('modelContainer').style.marginLeft = "0px"
+  document.getElementById('modelHead').style.color = "#475467"
+}
+
+// Model Retouching Ends
+
+
+// Apperal Retouching Starts
+function showApperalPara() {
+  let apperalPara = document.getElementById('apperalPara')
+  apperalPara.style.display = "block";
+  document.getElementById('apperalHead').style.color = "#155EEF"
+  document.getElementById('apperalPara').style.color = "#155EEF"
+  document.getElementById('apperalContainer').style.background = "#EFF4FF"
+  document.getElementById('apperalContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('apperalContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('apperalContainer').style.width = "312px"
+  document.getElementById('apperalContainer').style.marginLeft = "-10px"
+}
+
+function hideApperalPara() {
+  let apperalPara = document.getElementById('apperalPara')
+  apperalPara.style.display = "none";
+  document.getElementById('apperalContainer').style.background = "none"
+  document.getElementById('apperalContainer').style.padding = "0px"
+  document.getElementById('apperalContainer').style.marginLeft = "0px"
+  document.getElementById('apperalHead').style.color = "#475467"
+}
+
+// Apperal Retouching Ends
+
+// EyeWear Start
+function showEyeWearPara() {
+  let eyeWearPara = document.getElementById('eyeWearPara')
+  eyeWearPara.style.display = "block";
+  document.getElementById('eyeWearHead').style.color = "#155EEF"
+  document.getElementById('eyeWearPara').style.color = "#155EEF"
+  document.getElementById('eyeWearContainer').style.background = "#EFF4FF"
+  document.getElementById('eyeWearContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('eyeWearContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('eyeWearContainer').style.width = "312px"
+  document.getElementById('eyeWearContainer').style.marginLeft = "-10px"
+}
+
+function hideWearPara() {
+  let eyeWearPara = document.getElementById('eyeWearPara')
+  eyeWearPara.style.display = "none";
+  document.getElementById('eyeWearContainer').style.background = "none"
+  document.getElementById('eyeWearContainer').style.padding = "0px"
+  document.getElementById('eyeWearContainer').style.marginLeft = "0px"
+  document.getElementById('eyeWearHead').style.color = "#475467"
+}
+
+// EyeWear Ends
+
+// Automotive Starts
+function showAutomotivePara() {
+  let automotivePara = document.getElementById('autoPara')
+  automotivePara.style.display = "block";
+  document.getElementById('autoHead').style.color = "#155EEF"
+  document.getElementById('autoPara').style.color = "#155EEF"
+  document.getElementById('automotiveContainer').style.background = "#EFF4FF"
+  document.getElementById('automotiveContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('automotiveContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('automotiveContainer').style.width = "312px"
+  document.getElementById('automotiveContainer').style.marginLeft = "-10px"
+}
+
+function hideAutomotivePara() {
+  let automotivePara = document.getElementById('autoPara')
+  automotivePara.style.display = "none";
+  document.getElementById('automotiveContainer').style.background = "none"
+  document.getElementById('automotiveContainer').style.padding = "0px"
+  document.getElementById('automotiveContainer').style.marginLeft = "0px"
+  document.getElementById('autoHead').style.color = "#475467"
+}
+
+// Automotive Ends
+
+// Furniture Starts
+function showFurniturePara() {
+  let furniturePara = document.getElementById('autoPara')
+  automotivePara.style.display = "block";
+  document.getElementById('autoHead').style.color = "#155EEF"
+  document.getElementById('autoPara').style.color = "#155EEF"
+  document.getElementById('automotiveContainer').style.background = "#EFF4FF"
+  document.getElementById('automotiveContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('automotiveContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('automotiveContainer').style.width = "312px"
+  document.getElementById('automotiveContainer').style.marginLeft = "-10px"
+}
+
+function hideAutomotivePara() {
+  let automotivePara = document.getElementById('autoPara')
+  automotivePara.style.display = "none";
+  document.getElementById('automotiveContainer').style.background = "none"
+  document.getElementById('automotiveContainer').style.padding = "0px"
+  document.getElementById('automotiveContainer').style.marginLeft = "0px"
+  document.getElementById('autoHead').style.color = "#475467"
+}

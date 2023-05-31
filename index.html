@@ -48,81 +48,263 @@
         <div>
             <ul class="navItem flex items-center justify-center 3xl:gap-[30px]">
                 <li>How It Works</li>
-                <div class="menu-container">
-                    <div class="flex gap-[13px]">
-                        <li class="menu-item">Our Services</li>
+                <div class="dropdown">
+                    <div class="flex items-center gap-[13px] dropContainer">
+                        <button class="dropbtn">Our Services
+                        </button>
                         <img src="./home4k/H_S/Icon.svg" />
                     </div>
-                    <div class="mega-menu">
-                        <div class="clippingPathMegaMenu grid grid-cols-2">
-                            <div>
-                                <ul>
-                                    <li class="clipHeadingHeader">Clipping Services</li>
-                                    <!-- Clipping Path -->
-                                    <div class="mt-[24px] flex gap-[16px]">
+                    <div class="dropdown-content">
+                        <!-- <div class="header">
+                        <h2>Mega Menu</h2>
+                      </div>    -->
+                        <div class="row">
+                            <div class="column">
+                                <!-- Clipping Path -->
+                                <div id="clipContainer" class="-ml-[10px] -mt-[15px]">
+                                    <h3>Clipping Services</h3>
+                                    <div class="flex items-center clipNavContentContainer">
                                         <div>
                                             <figure>
-                                                <img src="./home4k/H_S/cliping.svg"
-                                                    alt="Studio MetroDesk Clipping Path Service Icon" />
+                                                <img src="./home4k/H_S/navIcons/clippingPath.svg"
+                                                    alt="Studio MetroDesk Clipping Path Service" />
                                             </figure>
                                         </div>
                                         <div>
-                                            <h6 class="clippingPathService">Clipping Path</h6>
-                                            <p class="clippingPathServicePara">The latest industry news, updates and
-                                                info.</p>
+                                            <a href="#" class="clipNavHead">Clipping Path</a>
+                                            <p class="ml-[15px] -mt-[10px]">The latest industry news, updates and info.
+                                            </p>
                                         </div>
                                     </div>
-                                    <!-- MultiClipping Path -->
-                                    <div class="mt-[24px] flex gap-[16px]">
+                                    <!-- MultiClipping -->
+                                    <div class="flex items-center">
                                         <div>
                                             <figure>
-                                                <img src="./home4k/H_S/multiClipping.svg"
-                                                    alt="Studio MetroDesk MultiClipping Path Service Icon" />
+                                                <img src="./home4k/H_S/navIcons/MultiClipping.svg"
+                                                    alt="Studio MetroDesk Multi Clipping Path Service" />
                                             </figure>
                                         </div>
                                         <div>
-                                            <h6 class="clippingPathService">Multi-Clipping Path</h6>
-                                            <p class="clippingPathServicePara">The latest industry news, updates and
-                                                info.</p>
+                                            <a href="#" class="clipNavHead">Multi Clipping Path</a>
+                                            <p class="ml-[15px] -mt-[10px]">The latest industry news, updates and info.
+                                            </p>
                                         </div>
                                     </div>
-                                    <!-- Ghost Mannequine -->
-                                    <div class="mt-[24px] flex gap-[16px]">
+                                    <!-- Ghost -->
+                                    <div class="flex items-center">
                                         <div>
                                             <figure>
-                                                <img src="./home4k/H_S/ghostM.svg"
-                                                    alt="Studio MetroDesk Ghost Manneqiune Path Service Icon" />
+                                                <img src="./home4k/H_S/navIcons/ghost.svg"
+                                                    alt="Studio MetroDesk Ghost Mannequin Path Service" />
                                             </figure>
                                         </div>
                                         <div>
-                                            <h6 class="clippingPathService">Ghost Mannequin</h6>
-                                            <p class="clippingPathServicePara">The latest industry news, updates and
-                                                info.</p>
+                                            <a href="#" class="clipNavHead">Ghost Mannequin</a>
+                                            <p class="ml-[15px] -mt-[10px]">The latest industry news, updates and info.
+                                            </p>
                                         </div>
                                     </div>
-                                    <!-- Vector Conversion -->
-                                    <div class="mt-[24px] flex gap-[16px]">
+                                    <!-- Vector -->
+                                    <div class="flex items-center">
                                         <div>
                                             <figure>
-                                                <img src="./home4k/H_S/vectorConversion.svg"
-                                                    alt="Studio MetroDesk Vector Conversion vice Icon" />
+                                                <img src="./home4k/H_S/navIcons/Vector.svg"
+                                                    alt="Studio MetroDesk Vector Conversion Service" />
                                             </figure>
                                         </div>
                                         <div>
-                                            <h6 class="clippingPathService">Vector Conversion</h6>
-                                            <p class="clippingPathServicePara">The latest industry news, updates and
-                                                info.</p>
+                                            <a href="#" class="clipNavHead">Vector Conversion</a>
+                                            <p class="ml-[15px] -mt-[10px]">The latest industry news, updates and info.
+                                            </p>
                                         </div>
                                     </div>
-                                </ul>
+                                </div>
                             </div>
-                            <!-- MultiClipping -->
-                            <div class="ml-">
-                                <h1>Hello</h1>
+                            <div class="">
+                                <div class="column">
+                                    <div class=" mt-[10px] ml-[20px]">
+                                        <h3 class="retouchNavHead">Retouching That we offer</h3>
+                                        <!-- EyeWear -->
+                                        <div class="flex items-center mt-[10px]" id="eyeWearContainer"  onmouseover="showEyeWearPara()" onmouseout="hideWearPara()">
+                                            <div>
+                                                <figure>
+                                                    <img src="./home4k/H_S/navIcons/eyeWear.svg" class="eyeWear"
+                                                        alt="Studio MetroDesk Vector Conversion Service" />
+                                                </figure>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="eyeNavHead" id="eyeWearHead">EyeWear Retouching</a>
+                                                <p class="ml-[15px] -mt-[10px] editPara hidden" id="eyeWearPara">The latest industry news, updates
+                                                    and info.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Automotive -->
+                                        <div class="flex items-center" id="automotiveContainer"  onmouseover="showAutomotivePara()" onmouseout="hideAutomotivePara()">
+                                            <div>
+                                                <figure>
+                                                    <img src="./home4k/H_S/navIcons/car.svg" class="eyeWear"
+                                                        alt="Studio MetroDesk Automotive Retouching Service" />
+                                                </figure>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="eyeNavHead" id="autoHead">Automotive Retouching</a>
+                                                <p class="ml-[15px] -mt-[10px] editPara hidden" id="autoPara">The latest industry news, updates
+                                                    and info.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Furniture -->
+                                        <div class="flex items-center" id="furtinureContainer"  onmouseover="showFurniturePara()" onmouseout="hideFurniturePara()">
+                                            <div>
+                                                <figure>
+                                                    <img src="./home4k/H_S/navIcons/furniture.svg" class="eyeWear"
+                                                        alt="Studio MetroDesk Furniture Service" />
+                                                </figure>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="eyeNavHead" id="furnitureHead">Furniture Retouching</a>
+                                                <p class="ml-[15px] -mt-[10px] editPara hidden" id="furniturePara">The latest industry news, updates
+                                                    and info.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Interior -->
+                                        <div class="flex items-center">
+                                            <div>
+                                                <figure>
+                                                    <img src="./home4k/H_S/navIcons/interior.svg" class="eyeWear"
+                                                        alt="Studio MetroDesk Interior Service" />
+                                                </figure>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="eyeNavHead">Interior Retouching</a>
+                                                <p class="ml-[15px] -mt-[10px] hidden">The latest industry news, updates
+                                                    and info.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Cosmetics -->
+                                        <div class="flex items-center ml-[8px]">
+                                            <div class="-ml-[3px]">
+                                                <figure>
+                                                    <img src="./home4k/H_S/navIcons/costetic.svg"
+                                                        class="cosmeticNavHead"
+                                                        alt="Studio MetroDesk Cosmetics Service" />
+                                                </figure>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="eyeNavHead ml-[5px]">Cosmetics Retouching</a>
+                                                <p class="ml-[15px] -mt-[10px] hidden">The latest industry news, updates
+                                                    and info.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Jewellery -->
+
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <figure>
+                                                    <img src="./home4k/H_S/navIcons/jewellery.svg"
+                                                        class="cosmeticNavHead"
+                                                        alt="Studio MetroDesk Jewellery Service" />
+                                                </figure>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="eyeNavHead">Jewelry Retouching</a>
+                                                <p class="ml-[15px] -mt-[10px] hidden">The latest industry news, updates
+                                                    and info.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column mt-[40px]">
+                                    <!-- <h3>Category 3</h3> -->
+                                    <!-- Food Retouch -->
+                                    <div class="flex items-center foodRetouchContainer" id="foodRetouch">
+                                        <div class="">
+                                            <figure>
+                                                <img src="./home4k/H_S/navIcons/food.svg" class="cosmeticNavHead"
+                                                    alt="Studio MetroDesk Food Retouching Service" />
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="eyeNavHead" id="retouchHead">Food Retouching</a>
+                                            <p class="ml-[15px] -mt-[10px] eyeNavPara">The latest industry news, updates
+                                                and
+                                                info.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Editorial -->
+                                    <div class="flex items-center" id="editContainer"  onmouseover="showPara()" onmouseout="hidePara()">
+                                        <div class="">
+                                            <figure>
+                                                <img src="./home4k/H_S/navIcons/edit.svg" class="cosmeticNavHead"
+                                                    alt="Studio MetroDesk Food Retouching Service" />
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="eyeNavHead" id="editHead">Editorial Retouching</a>
+                                            <p class="ml-[15px] -mt-[10px] editPara hidden" id="hoverPara">The latest industry news, updates
+                                                and
+                                                info.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Accessories -->
+                                    <div class="flex items-center" id="accessContainer"  onmouseover="showAccessPara()" onmouseout="hideAccessPara()">
+                                        <div class="">
+                                            <figure>
+                                                <img src="./home4k/H_S/navIcons/accessories.svg" class="cosmeticNavHead"
+                                                    alt="Studio MetroDesk Accessories Retouching Service" />
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="eyeNavHead" id="accessHead">Accessories Retouching</a>
+                                            <p id="accessoriesPara" class="ml-[15px] -mt-[10px] editPara hidden">The latest industry news, updates and
+                                                info.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Footwear -->
+                                    <div class="flex items-center" id="footwearContainer" onmouseover="showFootwearPara()" onmouseout="hideFootwearPara()">
+                                        <div class="">
+                                            <figure>
+                                                <img src="./home4k/H_S/navIcons/footwear.svg" class="cosmeticNavHead"
+                                                    alt="Studio MetroDesk Footwear Retouching Service" />
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="eyeNavHead" id="footWearHead">Footwear Retouching</a>
+                                            <p id="footWearPara" class="ml-[15px] -mt-[10px] editPara hidden">The latest industry news, updates and
+                                                info.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Model And Skin -->
+                                    <div class="flex items-center" id="modelContainer" onmouseover="showModelPara()" onmouseout="hideModelPara()">
+                                        <div class="">
+                                            <figure>
+                                                <img src="./home4k/H_S/navIcons/model.svg" class="cosmeticNavHead"
+                                                    alt="Studio MetroDesk Model Retouching Service" />
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="eyeNavHead" id="modelHead">Model & Skin Retouching</a>
+                                            <p id="modelPara" class="ml-[15px] -mt-[10px] editPara hidden">The latest industry news, updates and
+                                                info.</p>
+                                        </div>
+                                    </div>
+                                    <!--Appreal-->
+                                    <div class="flex items-center"  id="apperalContainer" onmouseover="showApperalPara()" onmouseout="hideApperalPara()">
+                                        <div class="">
+                                            <figure>
+                                                <img src="./home4k/H_S/navIcons/Apprel.svg" class="cosmeticNavHead"
+                                                    alt="Studio MetroDesk Model Retouching Service" />
+                                            </figure>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="eyeNavHead" id="apperalHead">Apparel Retouching </a>
+                                            <p id="apperalPara" class="ml-[15px] editPara -mt-[10px] hidden">The latest industry news, updates and
+                                                info.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="flex gap-[13px]">
@@ -2542,22 +2724,23 @@
                                                                         class="-mt-[15px] -ml-[99px]">Please Enter Your
                                                                         Phone Number.</p>
                                                                     <select class="selectService" id="services">
-                                                                        <option value="" disabled selected hidden>Select
-                                                                            Service</option>
-                                                                        <option value="clippingpath">Clipping Path
+                                                                        <option value="" disabled selected hidden>
+                                                                            Delivery Time</option>
+
+                                                                        <option value="1hrASAP">1 Hr ASAP</option>
+                                                                        <option value="4hours">4 Hours
                                                                         </option>
-                                                                        <option value="multiclippingpath">Multi-Clipping
-                                                                            Path</option>
-                                                                        <option value="ghostmannequine">Ghost Mannequine
+                                                                        <option value="10hours">10 Hours
                                                                         </option>
-                                                                        <option value="photoretouching">Photo Retouching
+                                                                        <option value="20hours">20 Hours
                                                                         </option>
-                                                                        <option value="vectorconversion">Vector
-                                                                            Conversion
+                                                                        <option value="48hours">48 Hours</option>
+                                                                        <option value="72Hours">72 Hours</option>
+                                                                        <option value="92hours">92 Hours
                                                                         </option>
-                                                                        <option value="emboriderydesigning">Emboridery
-                                                                            Designing</option>
-                                                                        <option value="other">Other</option>
+                                                                        <option value="7Days">7 Days
+                                                                        </option>
+
                                                                     </select>
                                                                     <p id="errorServiceTwoMessage"
                                                                         class="-mt-[15px] -ml-[170px]">Please Select A
