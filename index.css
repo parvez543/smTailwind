@@ -96,6 +96,10 @@ line-height: 20px;
   margin: 0;
 }
 
+.commonContainer{
+  cursor: pointer;
+}
+
 .eyeNavHead{
   font-family: 'Poppins';
 font-style: normal;
