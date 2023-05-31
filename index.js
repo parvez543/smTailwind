@@ -4509,23 +4509,117 @@ function hideAutomotivePara() {
 
 // Furniture Starts
 function showFurniturePara() {
-  let furniturePara = document.getElementById('autoPara')
-  automotivePara.style.display = "block";
-  document.getElementById('autoHead').style.color = "#155EEF"
-  document.getElementById('autoPara').style.color = "#155EEF"
-  document.getElementById('automotiveContainer').style.background = "#EFF4FF"
-  document.getElementById('automotiveContainer').style.borderRadius = "8px"
+  let furniturePara = document.getElementById('furniturePara')
+  furniturePara.style.display = "block";
+  document.getElementById('furnitureHead').style.color = "#155EEF"
+  document.getElementById('furniturePara').style.color = "#155EEF"
+  document.getElementById('furnitureContainer').style.background = "#EFF4FF"
+  document.getElementById('furnitureContainer').style.borderRadius = "8px"
   // document.getElementById('editContainer').style.paddingTop = "4px"
-  document.getElementById('automotiveContainer').style.padding= " 0 12px 12px 12px"
-  document.getElementById('automotiveContainer').style.width = "312px"
-  document.getElementById('automotiveContainer').style.marginLeft = "-10px"
+  document.getElementById('furnitureContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('furnitureContainer').style.width = "312px"
+  document.getElementById('furnitureContainer').style.marginLeft = "-10px"
 }
 
-function hideAutomotivePara() {
-  let automotivePara = document.getElementById('autoPara')
-  automotivePara.style.display = "none";
-  document.getElementById('automotiveContainer').style.background = "none"
-  document.getElementById('automotiveContainer').style.padding = "0px"
-  document.getElementById('automotiveContainer').style.marginLeft = "0px"
-  document.getElementById('autoHead').style.color = "#475467"
+function hideFurniturePara() {
+  let furniturePara = document.getElementById('furniturePara')
+  furniturePara.style.display = "none";
+  document.getElementById('furnitureContainer').style.background = "none"
+  document.getElementById('furnitureContainer').style.padding = "0px"
+  document.getElementById('furnitureContainer').style.marginLeft = "0px"
+  document.getElementById('furnitureHead').style.color = "#475467"
+}
+// Furniture Ends
+
+// Interior Starts
+function showInteriorPara() {
+  let interiorPara = document.getElementById('interiorPara')
+  interiorPara.style.display = "block";
+  document.getElementById('interiorHead').style.color = "#155EEF"
+  document.getElementById('interiorPara').style.color = "#155EEF"
+  document.getElementById('interiorContainer').style.background = "#EFF4FF"
+  document.getElementById('interiorContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('interiorContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('interiorContainer').style.width = "312px"
+  document.getElementById('interiorContainer').style.marginLeft = "-10px"
+}
+
+function hideInteriorPara() {
+  let interiorPara = document.getElementById('interiorPara')
+  interiorPara.style.display = "none";
+  document.getElementById('interiorContainer').style.background = "none"
+  document.getElementById('interiorContainer').style.padding = "0px"
+  document.getElementById('interiorContainer').style.marginLeft = "0px"
+  document.getElementById('interiorHead').style.color = "#475467"
+}
+// Interior Ends
+
+// Cosmetic Start
+function showCosmeticPara() {
+  let cosmeticPara = document.getElementById('cosmeticPara')
+  cosmeticPara.style.display = "block";
+  document.getElementById('cosmeticHead').style.color = "#155EEF"
+  document.getElementById('cosmeticPara').style.color = "#155EEF"
+  document.getElementById('cosmeticContainer').style.background = "#EFF4FF"
+  document.getElementById('cosmeticContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('cosmeticContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('cosmeticContainer').style.width = "312px"
+  document.getElementById('cosmeticContainer').style.marginLeft = "-10px"
+  document.getElementById('cosmeticPara').style.marginLeft = "23px"
+}
+
+function hideCosmeticPara() {
+  let cosmeticPara = document.getElementById('cosmeticPara')
+  cosmeticPara.style.display = "none";
+  document.getElementById('cosmeticContainer').style.background = "none"
+  document.getElementById('cosmeticContainer').style.padding = "0px"
+  document.getElementById('cosmeticContainer').style.marginLeft = "0px"
+  document.getElementById('cosmeticHead').style.color = "#475467"
+}
+// Cosmetic Ends
+
+// Jewellery Start
+function showJewelleryPara() {
+  let jewelleryPara = document.getElementById('jewelleryPara')
+  jewelleryPara.style.display = "block";
+  document.getElementById('jewelleryHead').style.color = "#155EEF"
+  document.getElementById('jewelleryPara').style.color = "#155EEF"
+  document.getElementById('jewelleryContainer').style.background = "#EFF4FF"
+  document.getElementById('jewelleryContainer').style.borderRadius = "8px"
+  // document.getElementById('editContainer').style.paddingTop = "4px"
+  document.getElementById('jewelleryContainer').style.padding= " 0 12px 12px 12px"
+  document.getElementById('jewelleryContainer').style.width = "312px"
+  document.getElementById('jewelleryContainer').style.marginLeft = "-10px"
+  document.getElementById('jewelleryContainer').style.marginLeft = "-15px"
+}
+
+function hideJewelleryPara() {
+  let jewelleryPara = document.getElementById('jewelleryPara')
+  jewelleryPara.style.display = "none";
+  document.getElementById('jewelleryContainer').style.background = "none"
+  document.getElementById('jewelleryContainer').style.padding = "0px"
+  document.getElementById('jewelleryContainer').style.marginLeft = "0px"
+  document.getElementById('jewelleryHead').style.color = "#475467"
+  document.getElementById('jewelleryContainer').style.marginLeft = "-10px"
+}
+
+// Jewellery Ends
+function showColorFulIcon() {
+  let rawIcon = document.getElementById("rawIcon");
+  let colorFulIcon = document.getElementById("colorFulIcon");
+
+  rawIcon.style.display = "none";
+  colorFulIcon.style.display = "block";
+  document.getElementById('dropBtn').style.color = '#004EEB'
+}
+
+function showRawIcon() {
+  let rawIcon = document.getElementById("rawIcon");
+  let colorFulIcon = document.getElementById("colorFulIcon");
+
+  rawIcon.style.display = "block";
+  colorFulIcon.style.display = "none";
+  document.getElementById('dropBtn').style.color = '#475467'
 }
