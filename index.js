@@ -4685,6 +4685,7 @@ document.getElementById('clippiColor').style.display = "none";
 
 function showClipPara() {
   document.getElementById('clipPathContainer').style.background = "#FFFFFF"
+  document.getElementById('clipPathContainer').style.marginLeft = "-12px"
   document.getElementById('clipPathContainer').style.borderRadius = "8px"
   document.getElementById('clipPathContainer').style.padding = "0 12px 12px 12px"
   document.getElementById('clippiColor').style.display = "block";
@@ -4695,7 +4696,7 @@ function showClipPara() {
 
 function hideClipPara() {
   document.getElementById('clipPathContainer').style.background = "none"
- 
+  document.getElementById('clipPathContainer').style.marginLeft = "0px"
   document.getElementById('clipPathContainer').style.padding = "0"
   document.getElementById('clippiColor').style.display = "none";
   document.getElementById('clippi').style.display = "block";
@@ -4709,6 +4710,7 @@ document.getElementById('multiColor').style.display = "none";
 
 function showMultiClipPara() {
   document.getElementById('multiclipPathContainer').style.background = "#FFFFFF"
+  document.getElementById('multiclipPathContainer').style.marginLeft = "-12px"
   document.getElementById('multiclipPathContainer').style.borderRadius = "8px"
   document.getElementById('multiclipPathContainer').style.padding = "0 12px 12px 12px"
   document.getElementById('multiColor').style.display = "block";
@@ -4725,6 +4727,7 @@ function hideMultiClipPara() {
   document.getElementById('multiRaw').style.display = "block";
   document.getElementById('multiHead').style.color = " #101828";
   document.getElementById('multiPara').style.color = "#475467";
+  document.getElementById('multiclipPathContainer').style.marginLeft = "-0px"
 }
 
 // Ghost Mannequin
@@ -4734,6 +4737,7 @@ function showGhostPara() {
   document.getElementById('ghostContainer').style.background = "#FFFFFF"
   document.getElementById('ghostContainer').style.borderRadius = "8px"
   document.getElementById('ghostContainer').style.padding = "0 12px 12px 12px"
+  document.getElementById('ghostContainer').style.marginLeft = "-12px"
   document.getElementById('ghostColor').style.display = "block";
   document.getElementById('ghost').style.display = "none";
   document.getElementById('ghostHead').style.color = "#155EEF";
@@ -4748,6 +4752,7 @@ function hideGhostPara() {
   document.getElementById('ghost').style.display = "block";
   document.getElementById('ghostHead').style.color = " #101828";
   document.getElementById('ghostPara').style.color = "#475467";
+  document.getElementById('ghostContainer').style.marginLeft = "-0px"
 }
 
 // Vector
@@ -4759,6 +4764,7 @@ function showVectorPara() {
   document.getElementById('vectorContainer').style.borderRadius = "8px"
   document.getElementById('vectorContainer').style.padding = "0 12px 12px 12px"
   document.getElementById('vectorColor').style.display = "block";
+  document.getElementById('vectorContainer').style.marginLeft = "-12px"
   document.getElementById('vector').style.display = "none";
   document.getElementById('vectorHead').style.color = "#155EEF";
   document.getElementById('vectorPara').style.color = "#155EEF";
@@ -4766,7 +4772,7 @@ function showVectorPara() {
 
 function hideVectorPara() {
   document.getElementById('vectorContainer').style.background = "none"
- 
+  document.getElementById('vectorContainer').style.marginLeft = "0px"
   document.getElementById('vectorContainer').style.padding = "0"
   document.getElementById('vectorColor').style.display = "none";
   document.getElementById('vector').style.display = "block";
