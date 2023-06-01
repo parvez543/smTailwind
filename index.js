@@ -4784,6 +4784,8 @@ function hideVectorPara() {
   document.getElementById('vectorPara').style.color = "#475467";
 }
 
+// Redirect to A Specific Page
+
 function redirectToHomePage() {
   window.location.href = "#"; // Replace with your desired URL
 }
