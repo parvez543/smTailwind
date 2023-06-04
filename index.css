@@ -644,6 +644,7 @@ color: #004EEB !important;
   background-image: url(./home4k/H_S/Vector_1.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* max-width: 100%; */
   /* position: relative; */
   /* height: 716px; */
   /* margin-top: 32px; */
@@ -651,12 +652,12 @@ color: #004EEB !important;
 .heading {
   display: block;
   margin: auto;
-  width: 853px;
+ 
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 84px;
+  /* font-size: 72px; */
+  /* line-height: 84px; */
   /* or 117% */
   
   text-align: center;
@@ -670,13 +671,20 @@ color: #004EEB !important;
   font-weight: 400;
   text-align: center;
 }
+.headContentContainer{
+  background-image: url(./home4k/H_S/responsive/Vector_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .tryUsFree {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  /* width: 199px; */
+ 
   height: 60px;
 
   /* Primary/600 */
@@ -1187,7 +1195,7 @@ color: #475467;
   padding: 8px 12px;
   gap: 8px;
 
-  width: 290px;
+  width: 280px;
   height: 40px;
 
   /* Base/White */
@@ -1214,7 +1222,7 @@ color: #475467;
 
 
 .selectFlag {
-  width: 100px;
+  width: 110px;
   height: 38px;
 
   /* Gray/100 */
@@ -1228,7 +1236,7 @@ color: #475467;
   border-radius: 8px 0px 0px 8px;
 }
 .phoneInput {
-  width: 210px;
+  width: 200px;
   height: 38px;
 
   /* Base/White */
@@ -3283,7 +3291,7 @@ border: 1px solid #FDA29B; /* Error border color */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  
   line-height: 38px;
   /* identical to box height, or 127% */
 
@@ -3293,11 +3301,15 @@ border: 1px solid #FDA29B; /* Error border color */
 
   color: #101828;
 }
+.extraLogo{
+  width: 450px;
+}
+
 .clientNumber {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  /* font-size: 30px; */
   line-height: 38px;
   /* identical to box height, or 127% */
 

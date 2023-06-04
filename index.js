@@ -4787,7 +4787,7 @@ function hideVectorPara() {
 // Redirect to A Specific Page
 
 function redirectToHomePage() {
-  window.location.href = "#"; // Replace with your desired URL
+  window.location.href = ""; // Replace with your desired URL
 }
 
 function redirectToClippingPage(){
