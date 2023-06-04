@@ -559,7 +559,7 @@
         <div class="valueContainer p-[16px]  3xl:pt-[80px] 3xl:pr-[0px] 3xl:pb-[80px] 3xl:pl-[80px] w-[328px] h-[500px] 3xl:h-[400px] 3xl:w-[1216px] grid grid-cols-1 3xl:flex 3xl:flex-row justify-center items-center">
             <div>
                 <h3 class="goUpHeading h-[76px] 3xl:h-[88px] leading-[38px] 3xl:leading-[38px] text-[30px] w-[250px] 3xl:text-[36px] 3xl:w-[327px]">Go Up in Value Over Time</h3>
-                <p class="goUpPara text-[16px] h-[120px] leading-[24px] 3xl:leading-[28px] 3xl:h-[140px] 3xl:text-[18px] w-[296px] 3xl:w-[327px] mt-[12px] 3xl:mt-[24px]">For both of us, time is invaluable, but so is value. With our
+                <p class="goUpPara text-[16px] leading-[24px] 3xl:leading-[28px] 3xl:h-[140px] 3xl:text-[18px] w-[296px] 3xl:w-[327px] mt-[12px] 3xl:mt-[24px]">For both of us, time is invaluable, but so is value. With our
                     high-functioning workaholic team, you can double down your value over time.</p>
             </div>
             <div>
@@ -643,15 +643,13 @@
 
 
     <!-- How It Works Start -->
-    <section class="howItWorksContainer hidden 3xl:block">
-        <h2 class="text-[48px] text-center pt-[105px] text-[#101828] howItWorksHeading">Let’s Get Started...</h2>
-        <p class="mt-[16px] w-[805px] text-[#475467] text-[18px] text-center block mx-auto howItWorksPara"> Home to all
-            your service needs, whether you want to test our quality, get a custom quote, place an order, or get a
-            customized service.</p>
+    <section class="howItWorksContainer">
+        <h2 class="text-[36px] 3xl:text-[48px] text-center pt-[105px] text-[#101828] howItWorksHeading">Let’s Get Started...</h2>
+        <p class="mt-[16px] w-[328px] 3xl:w-[805px] text-[#475467] text-[18px] text-center block mx-auto leading-[28px] howItWorksPara"> Introducing a simpler and economical way to get the best photo editing solutions for Pro-photographers, Fashion, Apparel, and E-commerce businesses. Home to all your service needs, whether you want to test our quality, get a custom quote, place an order, or get a customized service.</p>
 
         <!-- Process Section -->
-        <div class="processContainer p-[8px] flex gap-[10px]">
-            <div class="steps">
+        <div class="processContainer mt-[12px] 3xl:mt-[0px] flex justify-center items-center p-[8px] gap-[10px]">
+            <div class="steps ">
                 <!-- Try Us Free Start -->
                 <div class="flex gap-[10px] tryUsFreeContent" id="tryUsFree">
                     <div class="tryUsFreeButton" id="tryFreeContentOne">
@@ -673,7 +671,7 @@
                             <p class="mt-[4px] text-[#475467] text-center tryUsFreePara">Check our service quality</p>
                         </button>
                     </div>
-                    <div id="tryUs">
+                    <div id="tryUs" class="hidden 3xl:block">
                         <div class="grid grid-cols-2 ml-[32px]">
                             <div id="formText">
                                 <h3 class="text-[36px] weUnderstand mt-[130px]">We understand you!</h3>
@@ -1202,7 +1200,7 @@
                             </button>
                         </div>
 
-                        <div id="getQuoteContent">
+                        <div id="getQuoteContent" class="hidden 3xl:block">
                             <div class="">
                                 <div id="getFormText">
                                     <!-- Form Content -->
@@ -3903,9 +3901,9 @@
     <!-- How It Works End -->
 
     <!-- Photo Editing Service Starts -->
-    <section class="mt-[100px] mb-[120px] hidden 3xl:block">
-        <h2 class="photoEditingHeading">Photo Editing Services</h2>
-        <p class="photoEditingPara">Let us look after the edits, so you can get back to the work that needs you. You can
+    <section class="mt-[100px] mb-[120px] hidden">
+        <h2 class="photoEditingHeading text-[36px] 3xl:text-[48px] leading-[44px] 3xl:leading-[60px]">Photo Editing Services</h2>
+        <p class="photoEditingPara w-[328px] 3xl:w-[604px]">Let us look after the edits, so you can get back to the work that needs you. You can
             always get up to 20% discount.</p>
 
         <!-- Clipping Path Service -->
@@ -3913,7 +3911,7 @@
 
         <!-- MultiClipping Path Service -->
         <div
-            class="homServiceSinglimg flex 3xl:justify-end 3xl:pl-[112px] 3xl:pr-[0] 4xl:pl-[112px] 4xl:pr-[112px] 4xl:justify-center  gap-[32px] mt-[60px]">
+            class="3xl:homServiceSinglimg flex flex-col-reverse 3xl:flex-row 3xl:justify-end 3xl:pl-[112px] 3xl:pr-[0] 4xl:pl-[112px] 4xl:pr-[112px] 4xl:justify-center  gap-[32px] mt-[60px]">
             <div class="">
                 <h6 class="clipHeading">Multi-clipping Path Service</h6>
                 <p class="clipPara">We make your life easy by helping your post-production team to achieve large batches
@@ -3928,7 +3926,9 @@
             <div>
                 <figure class="clippingImageOne">
                     <img src="./home4k/H_S/Multi-clipping-Path-service.png" alt="Studio MetroDesk Multi-clipping Path Image"
-                        class="clipOne  w-[896px] 3xl:rounded-tl-[64px] 3xl:rounded-bl-[64px] 4xl:rounded-[64px]" />
+                        class="clipOne  w-[896px] 3xl:rounded-tl-[64px] 3xl:rounded-bl-[64px] 4xl:rounded-[64px] hidden 3xl:block" />
+                        <img src="./home4k/H_S/mclp.png" alt="Studio MetroDesk Multi-clipping Path Image"
+                        class="block 3xl:hidden" />
                 </figure>
             </div>
         </div>
@@ -4457,23 +4457,24 @@
     <!-- Pricing Section Ends -->
 
     <!-- Testimonial Section Start -->
-    <section class="mt-[120px] mb-[120px] hidden 3xl:block">
+    <section class="mt-[120px] mb-[120px]">
         <div class="testimonialContainer">
-            <h2 class="testimonialHeading">We've so many happy customers <br /> all over the world!</h2>
+            <h2 class="testimonialHeading text-[36px] 3xl:text-[48px] leading-[44px] 3xl:leading-[60px]">We've so many happy customers <br /> all over the world!</h2>
             <p class="testimonialPara mt-[16px]"></p>
             <div class="testimonialContent mt-[32px]">
                 <!-- Testimonial One -->
-                <div class="flex justify-center gap-[32px]">
-                    <div class="testimonialContentContainer">
-                        <div class="flex gap-[3px]">
+                <div class="grid grid-cols-1 3xl:flex justify-center gap-[32px]">
+                    <div class="testimonialContentContainer  w-[328px] h-[330px] block mx-auto 3xl:w-[512px] 3xl:h-[222px]">
+                        <div class="flex gap-[18px] 3xl:gap-[3px]">
                             <figure>
-                                <img src="./home4k/H_S/colon.svg" alt="Studio MetroDesk Quotation Mark" />
+                                <img src="./home4k/H_S/colon.svg" alt="Studio MetroDesk Quotation Mark" class="hidden 3xl:block"/>
+                                <img src="./home4k/H_S/quotaionMobile.svg" alt="Studio MetroDesk Quotation Mark" class="block 3xl:hidden mobileQuote"/>
                             </figure>
                             <p class="clientReviewPara">I've relied on Studio Metrodesk for on-time and well-done
                                 clipping paths for several years. I'm always happy with....</p>
 
                         </div>
-                        <div class="flex items-center gap-[114px]">
+                        <div class="grid grid-cols-1 mt-[32px] 3xl:mt-[0px] 3xl:flex items-center gap-[25.5px] 3xl:gap-[114px]">
                             <div class="flex items-center gap-[8px]">
                                 <!-- <figure>
                                     <img src="./home4k/H_S/AvatarOne.svg" alt="Studio MetroDesk Client Image" />
@@ -4490,16 +4491,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonialContentContainerTwo">
-                        <div class="flex gap-[3px]">
+                    <div class="testimonialContentContainerTwo  w-[328px] h-[330px] block mx-auto 3xl:w-[512px] 3xl:h-[222px]">
+                        <div class="flex gap-[12px] 3xl:gap-[3px]">
                             <figure>
-                                <img src="./home4k/H_S/colon.svg" alt="Studio MetroDesk Quotation Mark" />
+                                <img src="./home4k/H_S/colon.svg" alt="Studio MetroDesk Quotation Mark" class="hidden 3xl:block"/>
+                                <img src="./home4k/H_S/quotaionMobile.svg" alt="Studio MetroDesk Quotation Mark" class="block 3xl:hidden mobileQuote"/>
                             </figure>
                             <p class="clientReviewPara">I've relied on Studio Metrodesk for on-time and well-done
                                 clipping paths for several years. I'm always happy with....</p>
 
                         </div>
-                        <div class="flex items-center gap-[114px]">
+                        <div class="grid grid-cols-1 mt-[32px] 3xl:mt-[0px] 3xl:flex items-center gap-[25.5px] 3xl:gap-[114px]">
                             <div class="flex items-center gap-[8px]">
                                 <!-- <figure>
                                     <img src="./home4k/H_S/AvatarTwo.svg" alt="Studio MetroDesk Client Image" />
@@ -4517,7 +4519,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center gap-[28px] mt-[48px]">
+                <div class="flex justify-center gap-[28px] mt-[48px] hidden 3xl:block">
                     <button class="createAccount">Create account</button>
                     <button class="seeAllTestimonial">See All Testimonials</button>
                 </div>
@@ -4702,20 +4704,20 @@
     <!-- Faq Section Ends -->
 
     <!-- Speak With Lutfor Rahman Start -->
-    <section class="mt-[100px] hidden 3xl:block">
+    <section class="mt-[100px]">
         <div class="speakContainer">
             <div>
-                <h2 class="speakWith">Speak to Lutfor Rahman</h2>
-                <p class="speakWithPara">Hi, I would love to answer your questions. Give me a call or send an email.</p>
+                <h2 class="speakWith text-[36px] 3xl:text-[48px] leading-[44px] 3xl:leading-[60px]">Speak to Lutfor Rahman</h2>
+                <p class="speakWithPara w-[328px] 3xl:w-[402px]">Hi, I would love to answer your questions. Give me a call or send an email.</p>
                 <div>
-                    <div class="speakContainerContent">
-                        <div class="flex gap-[305px]">
+                    <div class="speakContainerContent p-[16px] 3xl:pt-[72px] 3xl:pl-[72px] w-[328px] 3xl:w-[1056px] h-[601px] 3xl:h-[576px]">
+                        <div class="grid grid-cols-1 3xl:flex gap-[305px]">
                             <div>
                                 <h6 class="speakerName">Lutfor Rahman</h6>
                                 <p class="speakDesignation mt-[6px]">Vice President, Sales</p>
 
-                                <h4 class="speakPhoneNumber mt-[276px]">+1 (973) 262 9181</h4>
-                                <div class="flex items-center gap-[14px] mt-[24px]">
+                                <h4 class="speakPhoneNumber mt-[32px] text-[30px] 3xl:text-[36px] 3xl:mt-[276px]">+1 (973) 262 9181</h4>
+                                <div class="flex items-center gap-[14px] mt-[16px] 3xl:mt-[24px]">
                                     <figure>
                                         <img src="./home4k/H_S/support.svg" alt="Studio MetroDesk Email Icon" />
                                     </figure>
@@ -4724,9 +4726,11 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class=" -mt-[16px]">
+                            <div class=" -mt-[264px] 3xl:-mt-[16px]">
                                 <figure>
-                                    <img class="speakImage" src="./home4k/H_S/peri.png"
+                                    <img class="speakImage hidden 3xl:block" src="./home4k/H_S/peri.png"
+                                        alt="Studio MetroDesk Contact" />
+                                        <img class="speakImage ml-[85px] 3xl:ml-[0px] block 3xl:hidden" src="./home4k/H_S/caller.png"
                                         alt="Studio MetroDesk Contact" />
                                 </figure>
                             </div>
@@ -4739,7 +4743,7 @@
         <section class="mb-[120px] mt-[170px]">
             <div>
                 <div class="successContainerContent">
-                    <div class="flex justify-center items-center gap-[32px]">
+                    <div class="grid grid-cols-1 justify-items-center 3xl:flex justify-center items-center gap-[32px]">
                         <div class="trustOneContainer">
                             <h4 class="oneNumber">90%</h4>
                             <p class="onePara">of our new clients become permanent</p>
@@ -4760,22 +4764,23 @@
     <!-- Speak With Lutfor Rahman Ends -->
 
     <!-- Our Mission Starts -->
-    <section class="pb-[32px] hidden 3xl:block">
-        <div class="missionContainer flex gap-[40px]">
+    <section class="pb-[32px]">
+        <div class="missionContainer p-[16px] 3xl:p-[76px] w-[328px] h-[744px] 3xl:h-[463px] 3xl:w-[1216px] grid grid-cols-1 justify-items-center 3xl:flex gap-[40px]">
             <div>
-                <h2 class="missionAndValues">Mission and Values</h2>
-                <p class="missionAndValuesPara mt-[24px]">With us, you are in the driving seat. You decide everything
+                <h2 class="missionAndValues text-[30px] leading-[38px] 3xl:leading-[44px] 3xl:text-[36px] w-[260px] 3xl:w-[327px]">Mission and Values</h2>
+                <p class="missionAndValuesPara text-[16px] 3xl:text-[18px] w-[296px] 3xl:w-[327px] mt-[12px] 3xl:mt-[24px]">With us, you are in the driving seat. You decide everything
                     from price, packages, turnaround time to quality. Enjoy the drive!</p>
+                    <button class="learnAboutBtn mt-[24px] mb-[32px] block 3xl:hidden">Learn About Us</button>
             </div>
-            <div class="flex gap-[16px]">
-                <div class="perksAndBenefits">
-                    <h3 class="perksHeading">Perks & Benefits</h3>
-                    <p class="perksPara">Who doesn’t love nice things? We often offer discounts and it gets bigger &
+            <div class="-mt-[45px] flex flex-col 3xl:flex-row gap-[16px]">
+                <div class="perksAndBenefits p-[16px] 3xl:p-[24px] w-[296px] h-[180px] 3xl:h-[311px] 3xl:w-[338.5px]">
+                    <h3 class="perksHeading text-[24px] 3xl:text-[30px]">Perks & Benefits</h3>
+                    <p class="perksPara text-[16px] 3xl:text-[18px] -mt-[15px] 3xl:-mt-[0]">Who doesn’t love nice things? We often offer discounts and it gets bigger &
                         better every time you collaborate with us.</p>
                 </div>
-                <div class="perksAndBenefits">
-                    <h3 class="perksHeading">Collective Impact</h3>
-                    <p class="perksPara">Each payment we receive goes directly to your photo editor, who works 24/7 with
+                <div class="perksAndBenefits p-[16px] 3xl:p-[24px] w-[296px] h-[210px] 3xl:h-[311px] 3xl:w-[338.5px]">
+                    <h3 class="perksHeading text-[24px] 3xl:text-[30px]">Collective Impact</h3>
+                    <p class="perksPara text-[16px] 3xl:text-[18px] -mt-[15px] 3xl:-mt-[0]">Each payment we receive goes directly to your photo editor, who works 24/7 with
                         the lowest of opportunities in life and the highest of skills.</p>
                 </div>
             </div>
@@ -4784,13 +4789,13 @@
     <!-- Our Mission Ends -->
 
     <!-- Start Free Trial Star -->
-    <section class="hidden 3xl:block">
-        <div class="flex pl-[112px] pr-[112px] pb-[60px] pt-[64px] items-center justify-center gap-[32px]">
+    <section class="mt-[112px] 3xl:mt-[0px]">
+        <div class="grid grid-cols-1 3xl:flex p-[16px] 3xl:pl-[112px] 3xl:pr-[112px] 3xl:pb-[60px] 3xl:pt-[64px] items-center justify-center gap-[32px]">
             <div>
-                <h2 class="startFreeTrial">Hey! As you have come this far, why don’t you take a chance on us?</h2>
+                <h2 class="startFreeTrial text-[24px] 3xl:text-[36px] w-[328px] 3xl:w-[759px]">Hey! As you have come this far, why don’t you take a chance on us?</h2>
 
             </div>
-            <div class="flex gap-[12px]">
+            <div class="grid grid-cols-1 3xl:flex gap-[12px] mt-[24px] 3xl:mt-[0px]">
 
                 <button class="btnGetStarted">Try Us For Free</button>
             </div>
@@ -4799,11 +4804,11 @@
     <!-- Start Free Trial Ends -->
 
     <!-- Footer Section Start -->
-    <hr class="footerLine hidden 3xl:block" />
-    <section class="mt-[120px]  pl-[112px] pr-[112px] hidden 3xl:block">
-        <div class="footerContainer">
-            <div class="footerContainerContent">
-                <div class="flex justify-center 3xl:gap-[70px] 6xl:gap-[264px]">
+    <hr class="footerLine" />
+    <section class="3xl:mt-[120px] p-[16px] 3xl:pl-[112px] 3xl:pr-[112px]">
+        <div class="footerContainer g">
+            <div class="footerContainerContent grid grid-cols-1">
+                <div class="grid grid-cols-1 3xl:flex justify-start 3xl:justify-center 3xl:gap-[70px] 6xl:gap-[264px]">
                     <div>
                         <figure>
                             <img class="facebook" src="./home4k/H_S/footer.svg" alt="Studio MetroDesk Footer Logo"/>
@@ -4827,7 +4832,8 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="flex gap-[48px]">
+                   <div class="">
+                    <div class="grid grid-cols-1 mt-[48px] 3xl:mt-[0px] 3xl:flex gap-[48px]">
                         <div class="flex flex-col gap-[16px]">
                             <p class="footerHeading">Services</p>
                             <div class="serviceLink flex flex-col gap-[14px]">
@@ -4887,22 +4893,19 @@
                             </div>
                         </div>
                     </div>
+                   </div>
                 </div>
             </div>
-            <div class="6xl:w-[1056px] 6xl:block 6xl:mx-auto">
-                <div class="logoContainer flex items-center justify-between">
-                    <div>
+            <!-- <div class="6xl:w-[1056px] 6xl:block 6xl:mx-auto">
+                <div class="logoContainer flex flex-col-reverse 3xl:flex-row 3xl:items-center justify-between">
+                    <div class="">
                         <div class="flex items-center gap-[8px]">
                             <figure>
                                 <img src="./home4k/H_S/stripe.svg" alt="Studio MetroDesk Stripe Logo" />
                             </figure>
                             <p class="logoPara">Guaranteed safe & secure checkout.</p>
                         </div>
-                        <div class="mt-[24px]">
-                            <figure>
-                                <img src="./home4k/H_S/Visa.svg" alt="Studio MetroDesk Payment Gateway Logo" />
-                            </figure>
-                        </div>
+                     
                     </div>
                     <div>
                         <figure>
@@ -4912,13 +4915,13 @@
                 </div>
             </div>
             <div class="mt-[75px] flex gap-[32px] justify-center items-center">
-                <div>
+                <div class="hidden 3xl:block">
                     <p class="copyWrite ">© 2023 Studio Metrodesk. All rights reserved.</p>
                 </div>
-                <div>
+                <div class="hidden 3xl:block">
                     <p class="terms">Privacy Policy || Terms & conditions</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         </div>
     </section>
